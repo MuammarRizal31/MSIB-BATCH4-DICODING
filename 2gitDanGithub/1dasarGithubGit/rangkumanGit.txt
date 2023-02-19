@@ -72,5 +72,3 @@ git revert      -> Perintah ini akan mengembalikan kondisi suatu berkas ke waktu
 - Pada halaman detail commit, Anda juga dapat melihat berbagai perubahan yang telah dilakukan baik penambahan, pengubahan, atau pengurangan
 
 - Dengan bantuan release dari GitHub, kita dapat memublikasikan sesuatu sehingga orang lain dapat menemukannya dengan mudah. Caranya pergi ke halaman repository, kemudian fokus pada bagian kanan di sub Release. Lalu, silakan klik create a new release untuk memublikasikan project repository Anda.
-
-
