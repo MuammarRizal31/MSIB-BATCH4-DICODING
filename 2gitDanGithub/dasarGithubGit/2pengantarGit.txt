@@ -1,1 +1,49 @@
 Di dalam dunia pengembangan aplikasi, kita akan sering mendengar istilah source code management atau yang biasa dikenal dengan version control system.
+
+Version Control System merupakan tools untuk mengatur suatu perubahan dan konfigurasi dari suatu aplikasi, termasuk juga source code. Setiap perubahan yang dilakukan akan dicatat, sehingga memperjelas siapa yang telah melakukan perubahan tersebut. Selain itu, version control juga berfungsi sebagai backup files. Dengan begitu, akan mempermudah pencarian bug atau masalah.
+
+Version Control System atau yang biasa disingkat dengan VCS, merupakan tools terbaik untuk berkolaborasi antar developer ketika membangun aplikasi
+
+-->     GIT REPOSITORY
+Git Repository (Repositori Git) merupakan wadah penyimpanan kumpulan file dari berbagai versi proyek yang berbeda.
+Kumpulan file ini diimpor melalui repository ke server lokal pengguna untuk pembaruan dan modifikasi lebih lanjut dalam konten file
+
+-->     GIT BRANCH
+Git Branch merupakan fitur yang dapat digunakan untuk membuat sebuah percabangan untuk versi baru dari proyek Anda. Penggunaan Git Branch ini sangat berguna pada saat Anda melakukan eksperimen dengan proyek Anda. Dengan begitu, Anda tidak akan mengubah apa pun di dalam proyek utama.
+
+Pada Git branch terdapat cabang utama (master) sebagai induk dari pekerjaan. Selain itu, terdapat juga percabangan baru yang dapat Anda visualisasikan sebagai penambahan fitur, ada fitur kecil dan fitur besar
+
+-->     GIT FORK
+Fork merupakan salinan dari sebuah repository orang lain yang tersimpan di dalam sebuah repository Git. Forking repository memungkinkan Anda untuk bereksperimen dengan bebas dan membuat perubahan tanpa memengaruhi repository utamanya.
+
+Alur kerja fork dimulai dengan menemukan repository publik asli yang tersimpan dalam server. Namun ketika pengembang ingin memulai mengerjakan proyek, mereka tidak langsung mengkloning repository resmi. Sebagai gantinya, mereka mengambil repository resmi untuk membuat salinannya di server. Salinan baru ini bersifat sebagai repository publik pribadi mereka. Tidak ada pengembang lain yang diizinkan untuk mengirim perubahan pada repository tersebut. Namun, mereka dapat mendapatkan perubahan dari repository tersebut. Selain bersifat publik, kita juga dapat menyimpan salinan repository menjadi private. Sehingga pengembang lain tidak akan bisa melihat perubahan yang telah kita lakukan.
+
+
+-->     GIT CLONE
+Git Clone hampir sama dengan Git Fork, keduanya sama-sama melakukan salinan pada repository. Yang berbeda adalah saat melakukan git fork, repository akan disimpan berada di dalam server. Sedangkan untuk git clone, hasil salinannya disimpan dalam penyimpanan lokal
+
+Perintah Git Clone adalah cara yang paling umum bagi pengguna untuk mendapatkan salinan tulisan. Melakukan Clone hanya dilakukan satu kali, yaitu saat akan mengerjakan satu proyek yang telah tersimpan di dalam Git repository. Kemudian pengembang menyalin proyek yang tersimpan di dalam repository untuk diletakkan di penyimpanan lokal. Setelah pengembang mendapatkan salinan pekerjaan, semua operasi dan kolaborasi kontrol versi dikelola melalui repository lokal.
+
+Penggunaan clone paling umum digunakan untuk mengambil satu repository yang ada dan membuat clone dari repository tersebut ke direktori baru di lokasi lain. 
+
+-->     GIT COMMIT
+Commit merupakan cuplikan perubahan (snapshot) dari repository Anda pada waktu tertentu. Dengan begitu, setiap pekerjaan yang telah selesai, dapat disimpan ke dalam repository Anda.
+
+Ketika Anda menggunakan antarmuka GitHub, Anda dapat secara langsung menggunakan perintah git commit untuk menyimpan setiap perubahan yang dilakukan. Namun, ketika Anda menggunakan penyimpanan lokal, Anda harus mengoperasikan Git add sebelum memanggil git commit. Git add berguna untuk menambahkan file yang diubah ke dalam daftar antrean perubahan. Kedua perintah ini, baik Git commit maupun Git add, merupakan dua perintah yang sering digunakan saat Anda menggunakan Git dengan penyimpanan lokal.
+
+-->     GIT PUSH
+Perintah Git push merupakan tindakan lanjutan dari perintah Git commit. Git push mengunggah semua commit cabang (branch commit) pada repository lokal ke repository server.
+
+Namun, ketika Anda menggunakan penyimpanan lokal, penting untuk menjalankan perintah Git pull sebelum meng-upload (git push) perubahan baru ke server
+
+Dengan melakukan git pull, repository lokal akan diperbarui sesuai dengan repository remote saat ini. Sehingga ketika ada kontributor lain yang melakukan perubahan pada repository server, repository lokal ikut diperbarui. Melakukan git pull (menarik) sebelum Anda melakukan git push (mendorong), dapat mengurangi jumlah konflik pada proses penggabungan yang dibuat, serta memungkinkan Anda untuk menyelesaikannya permasalahan secara lokal sebelum mendorong perubahan ke  server.
+
+
+-->     MENU TAB ISSUES
+Menu tab “issues” merupakan kumpulan dari semua pertanyaan seputar permasalahan yang terjadi saat user mencoba untuk mengambil dan meng-explore file yang ada pada repository tersebut sehingga mereka dapat mengajukan pertanyaan di dalam “issues” tersebut.
+
+-->     MENU TAB PULL REQUEST
+Setiap perubahan pada file repository ataupun penambahan file, maka riwayat perubahan tersebut akan terlihat pada “pull request”. Selain itu, user yang melakukan perubahan pada file tersebut juga akan terlihat pada menu tab ini.
+
+-->     MENU TAB GITHUB PROJECT
+GitHub Project dapat membantu Anda untuk mengatur dan memprioritaskan pekerjaan. Anda dapat membuat papan proyek (project board) untuk mengerjakan fitur tertentu, peta alur yang komprehensif (comprehensive roadmaps), atau bahkan merilis daftar periksa (release checklists). Dengan papan proyek, Anda memiliki fleksibilitas untuk membuat alur kerja khusus yang sesuai dengan kebutuhan Anda.

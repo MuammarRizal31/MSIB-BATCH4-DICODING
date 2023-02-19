@@ -6,3 +6,26 @@ git fork        -> penyalinan dari repository orang lalu menyimpannya didalam re
 git clone       -> mengambil sebuah repository dan menyimpan nya pada directory lokal
 git commit      -> cuplikan perubahan dari repository pada waktu tertentu
 git push        -> mengirim hasil dari perubahan file yang dilakukan ke dalam repository server
+git checkout    -> perintah untuk kembali pada commit sebelumnya
+git reset       -> untuk mengatur ulang,perintah ini merupakan perintah untuk mengembalikan suatu kondisi berkas ke commit yang dituju dan menghapus riwayat sesudahnya.
+git revert      -> Perintah ini akan mengembalikan kondisi suatu berkas ke waktu/commit yang dituju tanpa menghapus catatan riwayat commit.
+
+
+
+- Terdapat menu utama pada saat mengakses halaman GitHub yaitu, Explore Repository, Sign up, dan Sign in. Selain itu, ada juga fitur-fitur pendukung pada GitHub seperti:
+    > New Repository, digunakan membuat repository baru dengan jenis public & private.
+    > Import Repository, digunakan untuk mengambil/menyalin file proyek dari vendor lain seperti Subversion atau Mercurial ke dalam repository baru pada GitHub. Proses impor dilakukan dengan menggunakan link URL.
+    > Gist, digunakan untuk berbagi potongan kode, catatan, melakukan daftar, dan lainnya. Seperti halnya repositori, Anda dapat menyetel dan menyimpan Intisari Anda sebagai rahasia atau publik.
+    > GitHub Organization, digunakan untuk berkolaborasi bersama pada suatu organisasi misalnya untuk bisnis dengan sejumlah kelebihan misalnya banyak proyek sekaligus. Pemilik dan administrator dapat mengelola hak akses anggota ke suatu data atau proyek dengan fitur keamanan dan administratif yang canggih.
+    > GitHub Project, digunakan untuk mengatur dan memprioritaskan pekerjaan. Anda dapat membuat papan proyek (project board) untuk mengerjakan fitur tertentu, peta alur yang komprehensif (comprehensive roadmaps), atau bahkan merilis daftar periksa (release checklists). Dengan papan proyek, Anda memiliki fleksibilitas untuk membuat alur kerja khusus yang sesuai dengan kebutuhan Anda.
+
+- Melihat bagian toolbar pada halaman GitHub dashboard. Dalam toolbar terdapat beberapa menu seperti:
+    > Pull request untuk melihat semua aktivitas mengenai pekerjaan yang telah selesai dan tersimpan di dalam GitHub
+    > Issues untuk melihat semua tanggapan atau komentar mengenai permasalahan yang kita dapat saat menggunakan repository milik orang lain
+    > Marketplace untuk mencari dan memasang fitur tools pendukung yang disediakan oleh GitHub. Tools dalam marketplace akan membantu Anda dalam mengoptimalkan penggunaan GitHub di dalam proyek
+    > Explore untuk melihat berbagai informasi atau berita terkini mengenai repository, topik, dan trending di GitHub
+    > Settings untuk melakukan perubahan profil seperti username, foto, serta informasi lainnya
+
+- Setiap proyek repository memiliki kolaborator dan kontributor. Seorang kolaborator merupakan anggota tim yang memiliki akses dalam sebuah repositori proyek (project repository). Akses ini tentunya bermacam-macam ya, ada yang dibatasi pada pekerjaan-pekerjaan tertentu, ada pula yang dapat melakukan semua pekerjaan dalam sebuah repository
+
+- 

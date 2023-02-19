@@ -1,0 +1,4 @@
+Sudah sering kita singgung pada materi sebelumnya tentang tipe data. Bahkan kita juga sempat menggunakan salah satu tipe data dalam membuat variabel yaitu integer (int). Kali ini kita akan membahas lebih detail mengenai tipe data dan macam-macam contohnya. Tahukah Anda mengapa kita harus memahami tipe data?
+
+--> MACAM MACAM TIPE DATA   
+Setiap bahasa pemrograman memiliki tingkat detail yang berbeda-beda saat menentukan tipe data. Beberapa bahasa memperbolehkan atau fleksibel dalam tipe data dan ada juga yang harus ditulis spesifik dalam proses deklarasi variabel. Oke kita memiliki variabel yang bertipe angka tetapi tidak berhenti di sana. Kita harus menentukan apakah itu angka positif, negatif, bilangan bulat, atau desimal

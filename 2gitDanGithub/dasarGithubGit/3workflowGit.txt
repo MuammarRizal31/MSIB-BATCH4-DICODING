@@ -1,2 +1,6 @@
 Mempelajari alur kerja Git adalah hal yang penting karena kita bisa memahami tentang bagaimana cara menggunakan Git untuk menyelesaikan pekerjaan secara konsisten dan produktif serta memanfaatkan Git secara efektif.
 
+Dengan memahami workflow Git, kita juga dapat mempermudah proses pengerjaan proyek yang melibatkan tim, terlebih lagi jika skala proyek yang dikerjakan itu besar. Setiap anggota dalam tim perlu memahami alur kerja dari git sehingga dapat mengurangi terjadinya konflik kerja di mana satu anggota dengan anggota yang lain mengerjakan hal yang serupa
+
+Dalam Git, kita dapat membagi alur kerja dari setiap anggota dalam tim dengan menggunakan fitur branch atau cabang kerja. Fitur ini berfungsi untuk menciptakan alur kerja baru sehingga tidak akan mengganggu riwayat atau catatan perubahan pada cabang kerja utama (akan dibahas lebih lanjut dalam Modul Git Branches).
+

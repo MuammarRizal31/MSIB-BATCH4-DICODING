@@ -1,2 +1,20 @@
 Repository atau dalam bahasa Indonesia repositori, jika diartikan yaitu gudang; tempat penyimpanan.
+
 repository bisa diartikan sebagai tempat penyimpanan atau direktori dari sekumpulan file/berkas yang mana dalam repository ini Git bisa merekam setiap perubahan berkas dan menyimpannya  di dalam riwayat commit
+
+    - REMOTE REPOSITORY
+        * Remote Repository merupakan tempat penyimpanan berkas-berkas pekerjaan atau kenangan yang kita miliki di dalam server
+    
+    - LOCAL REPOSITORY
+        * Local Repository merupakan tempat penyimpanan lokal yang berada di komputer kita
+
+Di dalam Repository, kita dapat menyimpan berbagai jenis file/berkas, mulai dari dokumen txt, pdf, doc, xls, dkk. Kita juga bisa menyimpan file berbentuk compressed seperti .zip atau .rar, bahkan berkas gambar atau audio pun bisa. Namun tidak semua berkas bisa dikenali oleh GitHub atau tampil dalam mode preview. Contohnya adalah berkas readme.md dengan berkas markdown akan muncul dalam tampilan preview.
+
+terdapat 3 hal yang dapat di inisialisasi ketika membuat repository baru di GitHub
+    A. Add a README file atau penambahan README File pada repository baru. Ketika repository telah dibuat, GitHub secara otomatis membuatkan file Readme ke dalam repository. Berkas README ini nantinya dapat Anda ubah untuk keperluan penjelasan lebih detail terhadap apa yang ada di dalam repository tersebut
+
+    B. Add .gitignore atau penambahan berkas .gitignore pada repository. Ketika repository telah terbuat, file .gitignore akan tercipta sesuai dengan pilihan template .gitignore yang dipilih.
+
+    apa itu berkas .gitignore? Berkas .gitignore merupakan sebuah berkas yang berisi daftar nama-nama berkas serta direktori yang akan diabaikan oleh Git. Perubahan apa pun yang dilakukan pada berkas dan direktori yang sudah masuk ke dalam daftar .gitignore tidak akan dicatat oleh Git. Berkas .gitignore ini biasanya digunakan para pengguna Git ketika ingin membuat repository yang berisi proyek aplikasi atau software.
+
+    C. Choose a license atau penambahan berkas license pada repository. Ketika membuat repository, Anda bisa memilih lisensi untuk repository tersebut sehingga proyek yang ada di dalamnya dapat digunakan secara bebas oleh orang lain. Tentunya dengan syarat dan ketentuan yang berlaku sesuai dengan lisensi yang kita pilih ya. Biasanya penambahan lisensi diperuntukan bagi para pengguna Git yang biasa membuat proyek software atau aplikasi yang bersifat open source di repository mereka

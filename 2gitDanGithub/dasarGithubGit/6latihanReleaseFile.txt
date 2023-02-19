@@ -1,3 +1,18 @@
 release file atau istilahnya membuat versi rilis dari proyek yang ada di repository
 
-untuk membuat release file,cukup tekan menu create a new release yang berada disamping kanan atau lebih tepatnya dibawah bagian about repository
+1. untuk membuat release file,cukup tekan menu create a new release yang berada disamping kanan atau lebih tepatnya dibawah bagian about repository
+2. Setelah itu akan diarahkan ke halaman pembuatan release file
+Dapat dilihat bahwa pada halaman tersebut terdapat beberapa bagian yang ditandai dengan kotak merah. Berikut detailnya :
+    A.  Bagian tag version berfungsi untuk membuat nama versi
+    B.  bagian relase title atau judul dari bersi rilis berfungsi sebagai judul rilis yang menjelaskan secara singkat bersi rilis yang akan dibuat
+    C.  Bagian description atau deskripsi versi rilis berfungsi untuk menuliskan deskripsi detail dari versi rilis yang akan dibuat
+    D.  bagian attach binaries berfungsi untuk tempat mengunggah file binary,contohnya file-file hasil compile program, compressed file source code, atau file dokumentasi. Biasanya attach binaries digunakan para pengguna Git yang membuat release file untuk proyek aplikasi.
+    E.  Bagian checkbox pre-release berfungsi untuk menandai bahwa pembuatan rilis ini bersifat pra rilis atau masih dalam bentuk beta. Bagian ini biasa digunakan para pengguna Git yang sedang dalam pengembangan proyek aplikasi di repository GitHub.
+
+3. UNTUK LATIHAN KALI INI KITA ISI BEBERAPA OPSI TERSEBUT YA
+    A.  untuk tag version,kita bisa isi dengan "v.1.0" 
+    B.  Untuk branch, kita biarkan secara default di cabang kerja utama atau branch main
+    C.  Untuk release title, kita isi dengan “Daftar Biodata Siswa v1.0”.
+    D.  Untuk description, kita bisa mengisinya dengan detail dari versi rilis yang akan dibuat
+    E.  Untuk Attach binaries, tidak perlu diisi.
+    F.  Setelah yakin dengan semua yang Anda tulis, silakan klik button Publish release. Nantinya Anda akan diarahkan ke halaman list release pada repository di GitHub

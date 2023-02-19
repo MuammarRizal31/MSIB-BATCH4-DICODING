@@ -1,6 +1,11 @@
 -->     LOGIKA DAN ALGORITMA
--logika dan algoritma dalam pemrgoraman adalah dua hal yang berbeda,namun keduanya tidak terpisahkan dan saling melengkapi
+- logika dan algoritma dalam pemrgoraman adalah dua hal yang berbeda,namun keduanya tidak terpisahkan dan saling melengkapi
+- logika merupakan pemikiran yang digunakan untuk mencari solusi terhadap sebuah permasalahan dalam program
+- algoritma merupakan alur yang berurutan ketika menyelesaikan permasalahan tersebut
 
--logika merupakan pemikiran yang digunakan untuk mencari solusi terhadap sebuah permasalahan dalam program
+-->     LOGIKA PERBANDINGAN SEDERHANA
+- digunakan untuk membandingkan dua hal yang mempunyai nilai
+- biasanya digunakan untuk menentukan suatu kondisi pada percabangan
 
--algoritma merupakan alur yang berurutan ketika menyelesaikan permasalahan tersebut
+-->     MENGECEK KONDISI PADA IF
+
