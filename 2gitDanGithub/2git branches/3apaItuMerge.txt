@@ -1,0 +1,2 @@
+APA ITU MERGE ? Setelah kita memahami bagaimana cara membuat branch baru dan sedikit mempelajari tentang bagaimana fungsi merge atau penggabungan, maka di sini kita akan membahas lebih dalam lagi tentang apa itu merge beserta fungsinya.
+

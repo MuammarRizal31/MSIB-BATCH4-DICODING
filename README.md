@@ -4,7 +4,7 @@ Mempelajari tentang dunia web developer baik front-end maupun backend
 
 **16 februari 2023**
 
-- Belajar kelas memulai dasar pemrograman untuk menjadi pengembang software
+- Belajar kelas memulai dasar pemrograman untuk menjadi pengembang software (progress 100%)
   - persiapan
   - memahami kebutuhan aplikasi
   - perencanaan modifikasi aplikasi
