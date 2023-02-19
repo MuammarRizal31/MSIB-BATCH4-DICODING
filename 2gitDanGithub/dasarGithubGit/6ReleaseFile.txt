@@ -16,3 +16,16 @@ Dapat dilihat bahwa pada halaman tersebut terdapat beberapa bagian yang ditandai
     D.  Untuk description, kita bisa mengisinya dengan detail dari versi rilis yang akan dibuat
     E.  Untuk Attach binaries, tidak perlu diisi.
     F.  Setelah yakin dengan semua yang Anda tulis, silakan klik button Publish release. Nantinya Anda akan diarahkan ke halaman list release pada repository di GitHub
+
+Sebagai pembuktian bahwa kita benar-benar lulus dari kelas tersebut, maka kita lampirkan sertifikat tersebut ke dalam deskripsinya. Anda bisa upload sertifikat baik dalam bentuk gambar maupun pdf dengan cara drag and drop. Setelah itu, Anda akan mendapatkan teks seperti ini
+Perlu Anda tahu bahwa teks tersebut merupakan tautan dari apa telah kita upload. Format yang digunakan sudah disesuaikan dengan Markdown. Kurang lebih seperti inilah formatnya:
+Agar nama url mudah dibaca, maka kita bisa mengubahnya menjadi seperti ini:
+
+[Sertifikat Kompetensi Memulai Pemrograman Dengan Java.pdf] (https://github.com/dicodingacademy/PengalamanBelajar/files/6647768/sertifikat_course_60_11531_190521165919.pdf)
+
+Dalam skenario lain, Anda dapat memperbarui versi release dengan pencapaian lain, contohnya lulus dari kelas Android di Dicoding atau yang lainnya.
+
+Menarik ya, Anda sudah belajar berbagai hal seputar perintah Git dasar, seperti Commit, melihat history, dan melakukan publikasi. Anda juga belajar bagaimana mengatur format Markdown agar hasilnya menjadi menarik. Tentunya, materi mengenai Git akan jauh lebih bervariasi ke depannya. Ini hanya sebagian kecil mengenai Git. Jadi, mari kita menyibak ke materi selanjutnya untuk mempelajarinya. Selamat belajar!
+
+
+

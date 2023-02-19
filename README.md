@@ -1,7 +1,18 @@
 # MSIB-BATCH4-DICODING
+
 Mempelajari tentang dunia web developer baik front-end maupun backend
 
+**16 februari 2023**
+
+- Belajar kelas memulai dasar pemrograman untuk menjadi pengembang software
+  - persiapan
+  - memahami kebutuhan aplikasi
+  - perencanaan modifikasi aplikasi
+  - konsep dasar pemrograman
+  - dokumentasi perangkat lunak
+
 **19 februari 2023**
-- Belajar kelas git/github (progress 40%)
-  * Mempelajari tentang github/git
-  * belajar dasar dasar git
+
+- Belajar kelas git/github (progress 50%)
+  - Mempelajari tentang github/git
+  - belajar dasar dasar git
