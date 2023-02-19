@@ -1,0 +1,7 @@
+Anda sudah membuat sebuah dokumentasi teknis dengan sangat baik. Lantas apa yang perlu Anda lakukan selanjutnya? Tentu, Anda perlu mengomunikasikan dokumentasi teknis tersebut kepada Stakeholders. Stakeholders atau pemilik kepentingan perusahaan dapat diartikan sebagai atasan atau pemilik perusahaan.
+
+Tentu sebelum Anda mengomunikasikan perihal dokumentasi, Anda perlu memperhatikan beberapa hal penting berikut.
+    1.  Pastikan apa yang sudah anda tulis dalam dokumentasi sudah benar dan sudah sesuai
+    2.  perlu diketahui bahwa dokumentasi ini tidak hanya ditunjukan kepada kita saja,namun orang lain..oleh karena itu menulis dokumentasi jangan terlalu berpikir secara tertutup
+    3.  ketika menyampaikan pun harus dengan adap
+    4.  pastikan anda mendokumentasikan teknis aplikasi secara online

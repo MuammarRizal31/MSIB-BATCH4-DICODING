@@ -1,0 +1,29 @@
+-->     KEYWORD
+KEYWORD adalah kata kunci yang disediakan dalam bahasa pemrogaman
+
+contoh keyword pada javascript :
+abstract arguments boolean break byte case catch char const continue debugger default delete do double else eval false final finally float for function goto if implements in instanceof int interface let long native new null package private protected public return short static switch synchronized this throw throws transient true try typeof var void volatile while with yield
+
+Sedari tadi kita membahas tentang keyword, tahukah Anda apa sih sebenarnya keyword dalam bahasa pemrograman? Keyword merupakan kata kunci yang telah disediakan oleh sebuah bahasa pemrograman. Keyword tidak bisa berdiri sendiri guna membuat sebuah program yang dapat dijalankan. Kita harus mengkombinasikan keyword dengan logika pemrograman yang ada dengan bahasa yang kita pahami. Untuk memperjelas maksud dari pernyataan di atas, perhatikan ilustrasi kode di bawah ini. 
+
+
+-->     MENULIS PSEUDOCODE
+PSEUDO CODE ADALAH ISTILAH DALAM PEMROGRAMAN UNTUK MENULISKAN SEBUAH SINTAKS,STATEMENT,ALGORITMA DAN LAINNYA DALAM BAHASA YANG DIPAHAMI OLEH MANUSIA
+
+>> contoh ketika kita ingin membuat aplikasi login <<
+1.pengguna harus memasukan id
+2.pengguna harus memasukan password
+3.pengguna klik login
+4.ketika pengguna punya akun yang sesuai seperti di database
+5.maka pengguna masuk ke halaman home page
+
+Sebelum menulis sebuah statement yang bisa dipahami oleh komputer, kita terlebih dahulu harus bisa membuat statement yang bisa dipahami oleh manusia. Maka dari itu pada materi ini kita akan belajar tentang menulis Pseudocode. Pernah mendengar istilah Pseudocode sebelumnya? Pseudocode merupakan istilah dalam pemrograman untuk menuliskan sebuah sintaks, statement, algoritma, dan lainnya dalam bahasa yang bisa dipahami oleh manusia. Sederhananya, pseudocode adalah bentuk representasi dari kode kita nantinya dengan versi yang human readable, bukan computer readable
+
+-->     mengapa memulai dari pseudocode ?
+Banyak orang yang langsung melompat untuk ngoding secara langsung tanpa membuat pseudocode karena dianggap membuang waktu. Padahal pseudocode sangat penting sekali sebelum memulai sebuah program. Itu akan melatih kita tentang bagaimana program tersebut berjalan dan berpikir. Berikut ini adalah beberapa keuntungan jika kita menggunakan pseudocode sebelum memulai menulis kode.
+
+1.  Meningkatkan pemahaman dari pendekatan apa pun. Hal ini merupakan cara terbaik untuk menjelaskan apa yang kita inginkan dan melatih logika dalam pemrograman.
+
+2.  Menjelaskan secara detail tentang apa yang harus dilakukan setiap baris dari sebuah kode yang akan dibuat nantinya, sehingga membuat fase penulisan kode lebih mudah bagi seorang pengembang software. 
+
+3.  Bertindak seperti penghubung antara program yang akan kita buat dengan logika pemrograman. Selain itu juga digunakan sebagai dokumentasi kasar, sehingga kode program yang dibuat dapat mudah dipahami orang lain yang ingin mengembangkannya

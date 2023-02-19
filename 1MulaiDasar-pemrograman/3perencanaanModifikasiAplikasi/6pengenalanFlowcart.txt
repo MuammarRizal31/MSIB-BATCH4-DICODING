@@ -1,0 +1,32 @@
+Flowchart atau bisa disebut dengan diagram alur merupakan bentuk penggambaran dengan pendekatan visual terkait langkat langkat dan keputusan untuk melakukan sebuah proses,alur kerja,ataupun algoritma.setiap langkah dalam urutan proses akan digambarkan dalam bentuk diagram dan dihubungkan dengan garis atau arah panah.
+
+Diagram alur ini juga berperan penting dalam kasus yang melibatkan banyak orang secara bersamaan dalam memutuskan sebuah langkah atau fungsionalitas yang diinginkan dari sebuah proyek. Mereka akan lebih jelas, ringkas, dan mengurangi kemungkinan untuk salah tafsir tentang langkah apa yang harus dilakukan.
+
+Selain itu penggunaan flowchart dalam dunia pemrograman adalah sebuah cara yang bagus untuk menjembatani antara kebutuhan teknis dan non-teknis. Misalnya seseorang yang memiliki ide dalam pengembangan sebuah fitur dapat menyampaikannya dengan bahasa yang ia pahami kepada pengembang software, begitu pun sebaliknya.
+
+
+-->     SIMBOL SIMBOL PADA FLOWCHART
+Flowchart atau diagram alur memiliki beberapa simbol tertentu untuk mewakili fungsi atau langkahnya dalam sebuah proses.garis dan panah menunjukan urutan langkah dan hubungan antar blok diagram.
+
+contoh ada pada di folder contoh flowchart
+
+NAMA                FUNGSI
+Terminator          titik awal atau akhir dari sebuah alur atau proses
+proses              menunjukan proses,aktivitas atau langkah
+data                menunjukan input dan outpun
+desicion            menunjukan adanya pemilihan keputusan/decision making
+arrow               menghubungkan dari satu bentuk simbol ke simbol lainnya menunjukan arah proses atau alur
+database            merepresentasikan dari penyimpanan data atau database
+document            merepresentasikan bentuk documen atau laporan
+
+-->     JENIS JENIS FLOWCHART YANG UMUM DIGUNAKAN
+Tidak hanya dalam bidang pengembangan software saja, flowchart juga bisa digunakan dalam berbagai kondisi misalnya seperti mendeskripsikan alur kerja organisasi, bisnis, hubungan antar departemen dalam sebuah perusahaan, bahkan tentang kegiatan sehari-hari. Berikut merupakan beberapa jenis flowchart atau diagram alur yang populer:
+
+CONTOH DI FOLDER GAMBAR <<<
+
+Diagram Proses pertama kali dikemukakan oleh Frank Gilbreth, seorang Insinyur Industri Amerika pada tahun 1920. Beberapa dekade berikutnya, diagram proses ini sering digunakan dalam bidang teknik industri dan bahkan di sektor bisnis. 
+
+Beberapa keunggulan dari diagram proses antara lain :
+    -memantau dan menganalisis dengan lebih lengkap mulai dari proses produksi hingga memeriksa kendala yang terjadi
+    -meningkatkan efisiensi dalam proses produksi
+    -meningkatkan komunikasi dan kolaborasi antar tim

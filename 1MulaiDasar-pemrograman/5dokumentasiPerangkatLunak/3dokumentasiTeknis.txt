@@ -1,0 +1,24 @@
+menurut KBBI,Dokumentasi adalah deskripsi tertulis yang komprehensif dari perangkat lunak dalam berbagai bentuk dan tingkat perincian yang secara jelas mendefinisikan persyaratan,konten,komposisi,desain,kinerja,pengujian,penggunaan dan pemeliharaan
+
+Dokumentasi teknis mengacu pada dokumen yang melibatkan informasi dan data terkait produk, seperti detail produk atau layanan teknis yang sedang dikembangkan atau sudah siap digunakan. Sederhananya, dokumentasi teknis akan menceritakan mengenai produk dengan cara yang mudah untuk digunakan, dibaca, dimengerti, dan tentunya membantu pembaca. Dokumen teknis ini biasanya dibuat di berbagai industri seperti pada bidang teknik, kedokteran, teknologi informasi, pemasaran, dan sebagainya.
+
+Dokumen teknis dibagi menjadi beberapa jenis dan area sesuai kebutuhan
+    1. end-user support
+        - Dokumen ini biasanya berisi tentang panduan pengguna, sistem bantuan secara online, catatan rilis, panduan pelatihan, panduan cara instalasi, atau prosedur operasional. Intinya adalah apa pun yang mendukung pengguna dengan produk Anda
+
+    2. Marketing Support
+        - Dokumen ini fokus pada produk dan digunakan untuk memasarkan perusahaan Anda.
+
+    3. Development Support
+        - Dokumen ini berisi mengenai segala spesifikasi teknis dan fungsional, panduan pengembangan produk perangkat lunak, glosarium, atau prosedur serta tools untuk membantu tim dalam melakukan pekerjaan mereka.
+
+    4. Organization support 
+        - Dokumen ini berisi segala informasi mengenai perusahaan seperti struktur organisasi, panduan bekerja, alur kerja, kebijakan-kebijakan, aturan yang ada, dan hal lain yang perlu diketahui karyawan untuk melakukan pekerjaan mereka.
+
+
+Jika Anda merasa kesulitan dengan cara membuat dokumentasi teknis, perhatikan langkah-langkah berikut.
+    1. Tentukan siapa targetnya,apakah untuk rekan tim anda atau untuk pengguna aplikasi
+    2. kemudian pikirkan dengan matang dan jelas apa yang ingin anda sampaikan dalam dokumentasi teknis
+    3. gunakanlah outline atau kerangka tulisan terlebih dahulu ketika membangun nya
+    4. anda juga dapat menggunakan ilustrasi dan teks dalam dokumentasi tersebut
+    5. terakhir,jika anda sudah menyelesaikan documentasi teknsi,pastikan sudah membacanya kembali.Lalu jika ada yang kurang sesuai segera lakukan revisi

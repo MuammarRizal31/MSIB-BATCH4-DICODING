@@ -1,0 +1,7 @@
+Studi Kasus ini bertujuan untuk memperdalam materi tentang Penyelesaian Masalah Menggunakan Cara Berpikir Komputasional. Sehingga kita dapat menyelesaikan masalah yang terjadi pada sebuah aplikasi dengan menerapkan teknik-teknik seperti berikut: 
+
+1.Memecah permasalahan yang besar menjadi bagian kecil (decomposition).
+2.Pelajari pola dari setiap permasalahan (pattern recognition).
+3.Mengabstraksikan suatu permasalahan (abstraction).
+4.Susun langkah menggunakan algoritma (algorithm).
+5.Mengevaluasi solusi yang didapatkan (evaluation).

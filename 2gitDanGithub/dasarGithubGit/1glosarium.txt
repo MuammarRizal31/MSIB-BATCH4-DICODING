@@ -1,0 +1,74 @@
+BRANCH
+    - cabang dari sebuah repository untuk membuat alur baru,seperti pembuatan fitur,penyelesaian masalah atau pekerjaan lainnya
+
+Checkout   
+    - perintah untuk kembali ke posisi tertentu dan berpindah ke branch tertentu
+
+Clone
+    - menyalin remote repository ke local repository
+
+Code Reviews
+    - sebuah fitur untuk memeriksa kode dan meningkatkan kualitas kode
+
+Commit
+    - menyimpan perubahan dalam staging area ke git directory
+
+Diff
+    - Perintah untuk menginformasikan secara detail mengenai apa saja perubahan yang terjadi di antara dua titik reference git
+
+Fork
+    - fitur yang disediakan github untuk menyalin repository global atau milik user lain ke akun pribadi sehingga dapat melakukan perubahan pada repository tersebut
+
+GIT
+    - VCS yang dibuat oleh linus torvalds pada tahun 2005,digunakan untuk mengelola task/pekerjaan dalam membangun sebuah produk
+
+Git directory
+    - sebuah area untuk menyimpan perubahan data yang ada
+
+github
+    - manajemen proyek dan sistem versioning code sekaligus platform jaringan sosial yang dirancang khusus bagi para developer
+
+Head / HEAD
+    - branch yang sedang anda gunakan saat ini dan akan anda ubah
+
+Issues
+    - Sebuah cara untuk melacak sebuah pekerjaan,peningkatan sebuah fitur dan melaporkan bug dalam sebuah project
+
+Main/master
+    - sebuah branch default ketika membuat git repository
+
+Merge
+    - menggabungkan data dan history dari dua buah branch secara bersamaan
+
+Open source
+    - sebuah repository publik dan semua orang dapat berkontribusi untuk mengembangkan produk dalam repository tersebut
+
+Pull Request
+    - sebuah permintaan untuk menggabungkan perubahan dalam sebuah project
+
+Readme
+    - sebuah berkas yang berisi informasi dari repository atau project yang dibuat
+
+Rebase
+    - Perintah untuk mengubah serangkaian commit dan memodifikasi history/riwayat dari repository sehingga hanya tercipta satu alur. Biasanya digunakan untuk menggabungkan branch tanpa membuat commit baru.
+
+Releases
+    - Membuat versi rilis dari sebuah project yang telah dibuat dengan catatan rilis.
+
+Repository
+    - sebuah folder yang menyimpan data dalam sebuah project git
+
+Reset
+    - Menghapus perubahan yang ada dalam staging area agar kembali ke perubahan terakhir yang tersimpan
+
+Revert
+    - Kembali ke commit tertentu dengan membuat commit baru.
+
+Staging Area
+    - Cuplikan data (snapshot) terakhir dari working folder yang akan kita simpan pada saat commit. Semua berkas yang mengalami perubahan akan dilacak/tracking dalam area ini.
+
+VCS (version control system)
+    - Dapat disebut sebagai "sistem atau software", yang dapat mendukung praktik pelacakan dan pengelolaan perubahan suatu kode aplikasi
+
+Working Tree
+    - sebuah area kerja yang berisi semua berkas yang telah dilacak saat ini dengan git

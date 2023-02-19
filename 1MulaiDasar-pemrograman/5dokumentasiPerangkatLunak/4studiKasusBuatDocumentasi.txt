@@ -1,0 +1,9 @@
+Tahapan Proses
+Pada studi kasus kali ini kita akan membuat dokumentasi teknis menggunakan tools JSDoc. Sebab, pada studi kasus sebelumnya kita menggunakan bahasa pemrograman Javascript. Dan JSDoc ini adalah tools yang dapat digunakan untuk mengubah komentar menjadi dokumentasi teknis. 
+
+Berikut tahapan proses yang akan kita lakukan:
+    1. melakukan fork atau menyalin aplikasi yang telah di arsipkan dalam GitHub
+    2. menambahkan komentar yang sudah ada ke dalam program
+    3. menjalankan JSDoc
+    4. Melihat hasilnya
+    

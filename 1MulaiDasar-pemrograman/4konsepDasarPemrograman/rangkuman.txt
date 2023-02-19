@@ -1,0 +1,42 @@
+-->     RANGKUMAN MENGERTI KONSEP DASAR PEMROGRAMAN
+1. SINTAKSIS
+    - sintaksis merupakan aturan atura yang ada dalam bahasa pemrograman
+    - hampir semua bahasa pemrograman saat ini bersifat case sensitive
+    - program komputer terdiri dari kumpulan instruksi tunggal yang berkaitan satu sama lain,instruksi itulah yang disebut dengan statement
+    - tidak semua bahasa pemrograman menggunakan semicolon sebagai penutup statement
+    - pseudocode atau kode semu merupakan istilah dalam pemrograman untuk menuliskan sebuah sintaks,statement,algoritma dan lainnya
+    - white space saat kita mengetik kode biasanya berupa spasi atau tab untuk indentasi
+    - keyword merupakan kata kunci yang telah disediakan oleh sebuah bahasa pemrograman
+
+2. DASAR PEMROGRAMAN SECARA UMUM
+    - Variable dalam pemrograman berfungsi untuk menyimpan nilai dari suatu data
+    - operator sama dengan menyatakan perintah pada komputer untuk melakukan sesuatu atau bisa disebut assignment operator(operator penugasan)
+    - tipe data ada 3 jenis yaitu numerik,boolean,dan teks atau karakter
+    - logika pemrograman dasar yang dapat diterapkan dalam pemrograman antara lain,logika perbandingan dan perulangan
+    - dalam pemrograman,logika perbandingan berguna untuk membandingkan dua hal yang memiliki nilai dengan kondisi tertentu,salah satunya dengan operator logika( == )
+    - logika perbandingan kompleks dapat menggabungkan IF/ELSE dengan AND dan OR
+    - supaya tidak mengulang menulis statement yang berulang kali,kita bisa menggunakan logika perulangan.
+
+3. DASAR PEMROGRAMAN JAVASCRIPT
+    - javascript erat kaitannya dengan pengembangan web yang berfungsi untuk membuat tampilan web dinamis dan iteraktif
+    - kita dapat menyimpan suatu nilai ke dalam variable
+    - terdapat 5 tipe data yang sering atau umum digunakan dalam javascript,antara lain :
+        1. undifined
+            > variable tidak memiliki nilai.artinya kita hanya mendeklarasikan nama variable saja tanpa menginisialiasikan nilai didalam nya
+        2. number
+            > niLAI dari tipe data number adalah angka
+        3. boolean
+            > boolean hanya memiliki dua nilai,yaitu true dan false...tipe data ini menjadi kunci utama dalam penentuan logika
+        4. string
+            > merupakan sebuah teks
+        5. null
+            > hampir sama dengan undefined,tetapi null perlu diinisialisasikan pada variable.null biasa digunakan sebagai nilai sementara pada Variable
+
+    - secara umum bahasa pemrograman memiliki 3 komsep dasar yang mirip yaitu,
+            > Statement selalu dieksekusi secara berurutan dari atas ke bawah (sequences)
+            > logika pemilihan keputusan sesuai kondisi yang berlaku,misalnya seperti IF/Else (selection)
+            > sebuah proses yang dilakukan secara berulang,misalnya seperti for ( looping )
+
+    -bahasa javascript yang telah kita pelajari dimateri sebelumnya merupakan salah satu media yang menerapkan 3 kosnep dasar pemrograman seperti sequence,selection dan looping
+
+    

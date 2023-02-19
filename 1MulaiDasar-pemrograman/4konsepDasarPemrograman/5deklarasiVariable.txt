@@ -1,0 +1,4 @@
+A.  pada banyak bahasa pemrograman kita harus mendeklarasikan variable terlebih dahulu sebelum bisa digunakan
+B.  deklarasi variable adalah membuat statement pada source code untuk mengatakan bahwa " saya ingin membuat variable baru"
+C.  jelaskan tentang apa nama variable dan tipe data dari variable tersebut
+D.  setelah mendeklarasi varibale tersebut,barulah anda bisa memberi nilai ataupun mengubah nilainya

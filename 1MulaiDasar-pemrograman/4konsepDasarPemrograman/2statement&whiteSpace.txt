@@ -1,0 +1,20 @@
+-->     MENULIS STATEMENT
+Aplikasi terdiri dari kumpulan instruksi tunggal yang berkaitan satu sama lain. Misalnya dalam buku resep masakan kita sering menemui instruksi, “Panaskan air hingga 200 derajat celcius.”, “Diamkan adonan di dalam kulkas selama 3 jam.”, dan banyak lagi instruksi lainnya. Dalam aturan menulis sebuah kode pemrograman, instruksi di atas sering disebut dengan istilah statement. 
+
+SINGKATNYA STATEMENT HARUS SINGKAT PADAT DAN JELAS
+Mengakhiri Statement
+Jika statement Add 10 to Health dibuat dalam bahasa C, C++, atau Java, maka sintaksnya sama seperti sebelumnya tetapi ada tambahan semicolon di belakangnya. Sehingga menjadi healthPoint = healthPoint + 10;
+
+Semicolon atau titik koma merupakan ciri khas dari sintaks bahasa pemrograman seperti C, C++, Java, dan beberapa bahasa pemrograman lainnya. Fungsi dari semicolon adalah untuk mengakhiri sebuah statement. Statement tidak selalu pendek. Ada juga yang panjang dan harus dipisahkan menjadi beberapa baris supaya mudah dibaca. Perhatikan pseudocode di bawah ini.
+
+Nah, setiap statement pada contoh ilustrasi di atas akan diakhiri dengan semicolon. Jika statement terlalu panjang maka bisa dipisah ke baris selanjutnya supaya mudah dibaca. Namun, semicolon tetap harus berada di akhir dari statement tersebut seperti contoh statement empat di atas. Inilah kaidah dalam bahasa pemrograman seperti C, C++, Objective C, Java, dan PHP di mana Anda wajib menggunakan semicolon untuk mengakhiri statement. Kurangnya tanda semicolon (;) akan menyebabkan aplikasi gagal/error untuk dijalankan.
+
+Namun ingat. Tidak semua bahasa pemrograman menggunakan semicolon sebagai penutup statement. Ada juga yang tidak wajib menggunakan semicolon seperti Python, Swift, dan Kotlin.
+
+
+-->     WHITESPACE DALAM PEMROGRAMAN
+Pernahkah Anda mendengar istilah whitespace sebelumnya? Whitespace saat kita mengetik kode biasanya berupa spasi atau tab untuk indentasi
+
+Kebanyakan bahasa pemrograman tidak terlalu memperhatikan whitespace. Sehingga jika kita menambahkan tiga sampai lima baris kosong atau menambahkan spasi sebanyak mungkin juga tidak masalah. Namun, whitespace juga penting untuk formatting kode kita supaya lebih mudah dipahami. Mungkin jika kode yang dibuat hanya beberapa baris dan menggunakan whitespace yang tidak beraturan masih bisa dipahami. Tetapi jika kode yang dibuat kompleks sampai ratusan baris atau lebih, maka harus memperhatikan whitespace supaya setiap baris kodenya bisa dipahami. 
+
+Penggunaan whitespace yang rapi juga memungkinkan developer lain tidak kebingungan saat ingin memperbaiki atau menambahkan fitur lainnya. Penggunaan indentasi juga berkaitan dalam kurung kurawal dalam sebuah kode. Biasanya sering kita temui dalam sintaks bahasa C, C++, Swift, dan lainnya. Perhatikan contoh kode di bawah ini

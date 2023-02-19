@@ -1,0 +1,14 @@
+kita implementasikan Spesifikasi Teknis Aplikasi dengan menggunakan studi kasus proses login dan logout
+-->     Pertama yaitu proses login, kita bisa membuat spesifikasi seperti berikut:
+
+1.Untuk melakukan proses login, pengguna haruslah mengisi kolom email dan juga password terlebih dahulu.
+2.Kolom email harus memiliki pengecekan kesesuaian format email.
+3.Kolom password harus mampu menutupi (masking) nilai yang dimasukkan oleh pengguna dengan mengubahnya menjadi asterisk (*).
+4.Ketika user melakukan proses login tetapi email atau passwordnya tidak cocok maka harus muncul informasi bahwa email atau 5.5.5.5.passwordnya salah dan perbaiki terlebih dahulu.
+
+-->     Kedua yaitu proses logout, kita bisa membuat spesifikasi seperti berikut:
+1.Tombol logout haruslah terlihat jelas.
+2.Ketika tombol logout ditekan maka halamannya akan berpindah ke halaman login.
+
+Materi yang telah kita bahas tadi merupakan analisis spesifikasi teknis aplikasi untuk proses login dan logout. Tentu saja, spesifikasi teknis untuk satu aplikasi akan berbeda dengan aplikasi lainnya. Anda bisa menyesuaikan spesifikasi teknis untuk aplikasi yang akan dikembangkan nanti sesuai dengan kebutuhan. 
+

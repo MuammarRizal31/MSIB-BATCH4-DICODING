@@ -1,0 +1,5 @@
+-->     PENGARSIPAN VERSI SOFTWARE
+arti pengarsipan menurut KBBI merupakan sebuah proses,cara atau perbuatan,mengarsipkan
+sedangakan arsip sendiri adalah tempat penyimpan berkas(program atau data) sebagai cadangan
+
+Lalu apa itu pengarsipan versi perangkat lunak? Hal ini dapat diartikan sebagai proses mengarsipkan perangkat lunak atau aplikasi yang telah kita buat. 

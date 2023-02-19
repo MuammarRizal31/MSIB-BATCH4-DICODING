@@ -1,0 +1,40 @@
+Ketika pengembang software membuat aplikasi, mereka akan mulai berpikir secara terstruktur layaknya sebuah komputer mengeksekusi setiap perintah. Begitu pula saat memecahkan sebuah permasalahan. Mereka akan mencari solusi dari permasalahan secara terstruktur dan seefisien mungkin. Berikut teknik penyelesaian masalah menggunakan cara berpikir komputasional
+
+-->     Memecah permasalahan yang besar menjadi bagian kecil (decomposition)
+Teknik pertama memecah permasalah yang besar menjadi bagian kecil(DECOMPOSITION).
+kemampuan tersebut secara alami dimiliki oleh manusia
+
+-->     MEMPERLAJARI POLA DARI SETIAP PERMASALAHAN (pattern recongnition)
+Apa yang dimaksud mempelajari pola atau pattern recognition?
+    -Pattern Recognition merupakan teknik melihat perbedaan atau persamaan pola dari berbagai permasalahan...Sehingga, kita dapat memprediksi atau memproyeksikan solusi apa yang harus dilakukan. Untuk dapat memperjelas maksud dari Pattern Recognition
+
+CONTOH DARI PATTERN RECOGNITION
+    -Bayangkan Anda mendapat tugas untuk menggambar 3 jenis kucing, antara lain kucing persia, anggora, dan kucing oranye. Kita harus mempelajari persamaan dan perbedaan setiap jenis kucing. Persamaan yang dapat diambil misalnya ketiga jenis kucing tersebut memiliki bulu, berkaki empat, bermata dua, dan mempunyai ekor. Persamaan tersebut merupakan ciri-ciri kucing secara umum yang ada di ketiga jenis kucing tersebut. Sedangkan perbedaannya bisa dilihat dari segi warna, panjang kaki, dan kelebatan bulu. 
+
+    Setelah mengetahui perbedaan dan persamaan tersebut, kita dapat mulai menggambarkan setiap jenis kucing dengan cepat dan tepat.
+
+-->     MENGABSTRAKSIKAN SUATU PERMASALAHAN (abstraction)
+apa itu abstraksi ? absraksi identik dengan penyaringan dan pengumpulan data yang bersifat umum
+
+Setelah mengetahui pola dari sebuah permasalahan, kita perlu mengabstraksikannya untuk mendapat data yang bersifat umum dan menyaring data yang tidak diperlukan.
+
+CONTOH DARI ABSTRAKSI
+    -Selain itu, abstraksi juga mengesampingkan detail data yang bersifat khusus supaya lebih berkonsentrasi terhadap apa yang akan dilakukan. Misalnya saat naik sepeda motor, kita tidak perlu tahu komponen mana yang membuatnya berjalan. Kita cukup mengetahui cara menyalakan mesin dengan menekan tombol starter yang ada di setir atau pedal kaki.
+
+-->     SUSUN LANGKAH MENGGUNAKAN ALGORITMA (algorithm)
+Apa itu algoritma ? Algoritma merupakan sekumpulan alur instruksi yang berurutan untuk menyelesaikan permasalahan.
+Sehingga kita akan merangkai sekumpulan instruksi menjadi urutan yang terstruktur, logis, dan mudah dipahami
+
+Ketika kita memberikan algoritma yang tidak cukup efisien terhadap komputer, maka hasilnya juga pasti tidak seperti yang diharapkan. Begitu pun dalam kehidupan sehari-hari, jika kita tidak menyusun langkah-langkah penyelesaian dengan perencanaan yang baik, hasilnya juga tidak baik.
+
+Proses yang dimulai dari memecah masalah menjadi bagian kecil hingga abstraksi dan mengurutkannya menjadi urutan yang tepat sesuai jenis permasalahan juga bisa disebut algoritma. Algoritma yang dibuat harus memuat beberapa hal yaitu, titik awal, titik akhir, dan serangkaian instruksi yang jelas. 
+
+-->     MENGEVALUASI SOLUSI YANG DIDAPATKAN (EVALUATION)
+salah satu penyebaba kegagalan adalah kurangnya proses evaluasi yang tepat.
+Kita telah melalui proses pemecahan masalah menjadi bagian kecil hingga merangkainya menjadi sebuah solusi
+
+Proses terakhir yang dapat kita lakukan adalah melakukan evaluasi terhadap solusi yang telah kita dapatkan. Proses ini perlu dilakukan sebelum melangkah ke permasalahan atau tugas yang baru.
+
+Bayangkan ketika membuat sebuah program yang menurut Anda sudah tidak ada eror. Karena Anda tidak mengevaluasi, seorang pengguna menemukan sebuah kendala yang membuat program tersebut terasa lambat. Ketika Anda memeriksanya kembali ternyata ada beberapa kode yang harusnya perlu ditambahkan untuk membuat programnya berjalan lancar. Seandainya Anda telah melakukan evaluasi sebelumnya, maka pengguna tidak akan merasakan aplikasinya berjalan lambat.
+
+Sehingga dengan memahami cara berpikir komputasional mulai dari decomposition hingga evaluation, kita dapat membiasakan diri untuk menyelesaikan permasalahan dengan lebih efektif dan efisien baik dalam bidang pemrograman maupun kehidupan sehari-hari

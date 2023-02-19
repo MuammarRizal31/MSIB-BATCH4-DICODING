@@ -1,0 +1,74 @@
+Kita akan menggunakan struktur dokumen SKPL seperti pembahasan materi sebelumnya, tetapi dengan penyesuaian khusus berdasarkan aplikasi yang ingin kita buat. Beberapa bagian dari studi kasus ini akan menjawab beberapa pertanyaan umum seperti:
+    1.Bagaimana gambaran umum dari aplikasi yang akan dikembangkan?
+    2.Bagaimana cara kerja sistem yang akan dikembangkan?
+    3.Apa yang akan didapatkan oleh pengguna?
+    4.Teknologi apa saja yang digunakan dalam aplikasi?
+
+TAHAPAN PROSES
+membuat sebuah dokumen SKPL untuk membuat autentikasi dari halaman website. Tenang saja, kita hanya membahas fitur login dan logout dari halaman website secara sederhana.
+
+STRUKTUR DATA DASAR DOCUMENT SKPL SEDERHANA
+    1.pengantar
+        -tujuan aplikasi
+        -sasaran pengguna
+    
+    2.Kebutuhan pengguna
+        -deskripsi umum dari aplikasi
+        -kegunaan aplikasi bagi pengguna
+    
+    3.spesifikasi kebutuhan sistem
+        -kebutuhan fungsional
+        -kebutuhan non fungsional
+        -antarmuka pengguna(user interface)
+        -antarmuka perangkat keras(hardware interface)
+
+    4.Rencana pengembangan sistem
+
+Dari kerangka tersebut, jabarkan setiap poin-poin yang ada mulai dari pengantar, hingga kesimpulan
+Mari kita mulai dari tujuan aplikasi dan sasaran pengguna yang ada di bab pengantar. Anda dapat menuliskan bagian pengantar sebagai berikut:
+
+1.)Pengantar
+Tujuan Aplikasi: 
+    -Pengguna dapat mengakses suatu halaman web setelah melakukan proses autentikasi dengan memasukkan username dan password.
+
+Sasaran Pengguna:
+    -Semua pengguna atau masyarakat umum yang sudah memiliki hak akses dalam website.
+
+2).Kebutuhan Pengguna
+Deskripsi Umum Aplikasi:
+Autentikasi dari sebuah halaman website adalah hal yang penting. Kita harus mengetahui elemen apa saja yang dibutuhkan untuk masuk ke halaman website seperti email, password, dan tombol login.
+
+Ketika pengguna berhasil melakukan autentikasi dengan memasukkan email dan password dengan benar, maka ia dapat mengakses konten website yang ada di dalamnya. Sedangkan jika pengguna tidak berhasil melakukan proses autentikasi, pengguna tidak dapat mengakses konten yang ada dan harus memeriksa kembali apakah email dan password yang dimasukkan sudah benar.
+
+Supaya lebih aman, ketika pengguna selesai mengakses konten website, ia dapat melakukan proses logout dengan menekan tombol logout yang ada di dalam halaman website tersebut. Setelah logout, pengguna akan keluar dari konten halaman website dan harus melakukan autentikasi kembali untuk bisa masuk.
+
+3.)Kegunaan Aplikasi:
+    1.Pengguna dapat masuk (login) untuk mengakses konten yang ada di halaman website.
+    2.Aplikasi dapat memeriksa penulisan format email di dalam form pengisian email.
+    3.Pengguna dapat memasukkan password dengan aman karena antarmuka form password tersamarkan tampilannya.
+    4.Pngguna dapat keluar (logout) dari halaman konten website dengan menekan tombol logout.
+
+4.)SPESIFIKASI KEBUTUHAN SISTEM
+    A.Kebutuhan fungsional
+        -Sistem menyediakan form login yang berisi email dan password yang harus diisi pengguna. Kemudian di sana juga terdapat tombol login. Ketika tombol tersebut ditekan, pengguna yang sudah melengkapi email dan password dengan benar dapat mengakses konten halaman website.
+
+        -Pengguna dapat keluar dari konten halaman website dengan menekan tombol logout
+
+    B.KEBUTUHAN NON FUNGSIONAL
+        -Ketika pengguna memasukkan email di dalam form email, sistem dapat memeriksa apakah inputan tersebut sudah sesuai dengan struktur email yang benar. Jika tidak sesuai, pengguna diberi pengingat bahwa belum mengisi form email dengan benar.
+
+        -Ketika pengguna memasukkan password di dalam form password, sistem dapat menyembunyikan setiap huruf yang diketikkan. Sehingga, pengguna akan merasa aman ketika mengetik passwordnya di tempat umum sekalipun.
+
+        -Ketika proses autentikasi tidak berhasil, sistem menampilkan informasi bahwa terjadi kesalahan pengisian data email atau password.
+
+    C.ANTARMUKA PENGGUNA(USER INTERFACE)
+        -perangkat lunak front-end  : HTML DAN CSS
+        -perangkat lunak back-end   : javascript
+
+    D.ANTARMUKA PERANGAKT KERAS(HARDWARE INTERFACE)
+        -komputer atau ponsel cerdas dengan browser yang sudah terinstal didalam nya
+
+5.RENCANA PENGEMBANGAN SISTEM   :
+Dalam pengembangan sistem ke depannya, pengembang software akan menambahkan fitur sebagai berikut:
+    -Enkripsi password pada aplikasi autentikasi halaman website.
+    -Pengecekan panjang password yang harus memiliki minimal 6 karakter

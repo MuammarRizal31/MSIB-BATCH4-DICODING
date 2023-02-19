@@ -1,0 +1,29 @@
+PROSES KOMUNIKASI APLIKASI DENGAN komputer
+Berkomunikasi dengan komputer tidak dapat menggunakan bahasa manusia, melainkan menggunakan bahasa pemrograman.
+Instruksi yang kita berikan akan diproses oleh CPU (Central Processing Unit) yang ada pada komputer. Lalu, bagaimana kode yang kita buat bisa dipahami oleh komputer?
+
+Ketika seorang pengembang software menulis dan menjalankan sebuah kode, maka terjadilah proses konversi. Proses tersebut dibedakan menjadi dua yaitu Compile dan Interpret.
+
+Bayangkan Anda membuat sebuah aplikasi sederhana di komputer milik Anda sendiri. Kemudian Anda juga ingin menjalankan aplikasi tersebut di komputer teman Anda. Metode pertama kita menggunakan compile
+
+Jika membahas tentang metode compile, kita akan berteman dengan compiler. Compiler merupakan sebuah aplikasi yang bertugas untuk mengonversi source code yang kita buat menjadi bahasa mesin. Apabila terdapat penulisan kode yang salah, maka compiler akan mengirimkan pesan eror kepada kita dan harus diperbaiki. Jika tidak, maka akan menghasilkan berkas executable, contohnya seperti .exe. 
+
+Setelah proses compile di komputer Anda selesai, berikanlah berkas .exe tersebut kepada teman Anda. Lalu, apa yang terjadi? Aplikasi dapat dijalankan di komputer teman Anda, tetapi ia tidak mengetahui source code atau bahasa pemrograman apa yang digunakan. Sehingga, source code-nya masih berada di komputer Anda
+
+Metode interpret sama dengan compile yaitu mengonversi bahasa pemrograman supaya bisa dipahami oleh mesin dengan bantuan interpreter. Perbedaannya adalah ketika kita menggunakan compiler, source code akan dikonversi menjadi machine code (membuat berkas executable) sebelum aplikasi tersebut dijalankan. Sedangkan interpreter mengonversi source code menjadi machine code secara langsung ketika aplikasi dijalankan. 
+
+Salah satu bahasa pemrograman yang dapat diinterpretasikan adalah JavaScript. Bayangkan Anda membuat aplikasi sederhana menggunakan JavaScript. Kemudian bagikan source code tersebut ke teman Anda. Untuk menjalankan JavaScript tersebut, teman Anda bisa menggunakan web browser. Web browser terdapat interpreter di dalamnya sehingga berkas JavaScript tersebut bisa diinterpretasikan secara langsung.
+
+PERBEDAAN COMPILER DAN INTERPRETER SECARA GARIS BESAR
+    -Perbedaannya adalah ketika kita menggunakan compiler, kode sumber akan dikonversi menjadi machine code (membuat berkas executable) sebelum program tersebut dijalankan. Sedangkan interpreter mengonversi source code menjadi machine code secara langsung ketika program dijalankan
+
+
+KONSEP JALANNYA PROGRAM SECARA SEKUENSIAL
+Suatu program pada dasarnya adalah kumpulan instruksi yang memiliki tujuan tertentu. Kumpulan instruksi tersebut perlu kita susun secara berurutan agar berjalan dengan semestinya. Penyusunan instruksi tersebut adalah tugas seorang pengembang software.
+
+Kenapa harus secara berurutan? Karena ketika suatu program dieksekusi, sistem akan membaca kumpulan instruksinya dari atas ke bawah satu per satu. Sehingga, ketika ada instruksi yang posisinya tidak pas, program menjadi eror
+
+Pada praktiknya seorang pengembang software harus tahu instruksi-instruksi untuk melakukan login yang baik dan benar. Biasanya proses login dimulai dari pengecekan apakah kolom email dan password sudah diisi, kemudian pengecekan apakah emailnya sudah valid. Jika kedua data sudah ada, barulah proses request ke server dilakukan dengan mengirimkan informasi email dan password. Lalu, tunggu balasan dari server apakah loginnya berhasil atau tidak.
+
+Bergantung dari program yang kita buat, jumlah instruksi yang harus kita tulis tentunya akan semakin banyak sesuai dengan kompleksitas programnya. Oleh karena itu pastikan sebelum mulai membuat program, pecah instruksi-instruksi menjadi bagian-bagian kecil dan susun instruksi tersebut sesuai alur yang tepat. Dengan demikian Anda dapat mulai membuat program dengan lebih mudah dan terhindar dari kemungkinan eror.
+

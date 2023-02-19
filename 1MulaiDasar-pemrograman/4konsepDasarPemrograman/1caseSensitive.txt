@@ -1,0 +1,17 @@
+Setiap bahasa pemrograman memiliki kaidahnya masing-masing, seperti bagaimana cara menulisnya, penggunaan huruf besar dan kecil, keyword apa yang sudah ada di bahasa tertentu, dan lain sebagainya. Sedangkan untuk mengakhiri baris kode, beberapa bahasa pemrograman kerap memerlukan tanda baca semicolon alias titik koma, tetapi ada pula yang tidak. Kaidah-kaidah itulah yang dinamakan sintaksis
+
+Sintaksis merupakan aturan-aturan yang ada di dalam bahasa pemrograman. Sintaksis harus benar-benar dipatuhi aturannya supaya kode kita berjalan dengan baik. Di beberapa bahasa pemrograman, sintaksisnya ada yang hampir sama, ada juga yang jauh berbeda.
+
+Berikut beberapa sintaksis dasar yang akan kita pelajari:
+    1.Case Sensitivity
+    2.Penulisan Statement
+    3.Whitespace
+    4.Keyword, dan
+    5.Penulisan pseudocode
+
+-->     CASE SENSITIVE VS NON CASE SENSITIVE
+Hampir semua bahasa pemrograman saat ini bersifat case sensitive. Artinya, setiap kapitalisasi huruf pada sebuah kode akan berpengaruh
+
+-Case Sensitive merupakan kasus dimana huruf besar dan huruf kecil diartikan berbeda.
+
+-Non case sensitive/Case Insensitive merupakan kasus dimana huruf besar dan huruf kecil diartikan sama.

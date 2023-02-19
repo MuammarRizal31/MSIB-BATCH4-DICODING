@@ -1,0 +1,8 @@
+-   Pada materi Git kita mempelajari sejarah berdirinya platform Git, bagaimana Linus Torvalds bersama tim membangun platform tersebut pada tahun 2005. Git dibangun dengan tujuan agar dapat melakukan kolaborasi antar tim serta bagaimana proyek dapat dikontrol dengan baik. Untuk bisa berkolaborasi, bisa dengan membangun proyek menjadi open source atau pilihan lainnya menyetel kolaborasi dengan orang lain.
+
+git repository  -> media penyimpanan file projek didalam git server
+git branch      -> percabangan untuk versi baru dari projek repository
+git fork        -> penyalinan dari repository orang lalu menyimpannya didalam repository git sendiri/kita
+git clone       -> mengambil sebuah repository dan menyimpan nya pada directory lokal
+git commit      -> cuplikan perubahan dari repository pada waktu tertentu
+git push        -> mengirim hasil dari perubahan file yang dilakukan ke dalam repository server

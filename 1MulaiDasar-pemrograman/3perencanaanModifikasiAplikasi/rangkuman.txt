@@ -1,0 +1,71 @@
+RANGKUMAN PERENCANAAN MODIFIKASI APLIKASI SPESIFIKASI KEBUTUHAN PERANGKAT LUNAK
+A.  spesifikasi kebutuhan aplikasi pernagkat lunak adalah sebuah dokumen yang dibuat sebelum mengembangkan sebuah aplikasi  perangkat lunak. documen ini menjelaskan cara kerja dan kebutuhan fungsional maupun non fungsional dari aplikasi yang digunakan pengguna nantinya
+
+B.  Beberapa keuntungan yang didapatkan dari pembuatan dokumen spesifikasi kebutuhan aplikasi perangkat lunak: 
+    -Desainer dalam tim baik dari sisi UI/UX akan mendapat gambaran sehingga mereka dapat mencocokkan desain dengan kebutuhan aplikasi.
+
+    -Tim penguji aplikasi (tester) akan mendapatkan panduan untuk membuat studi kasus untuk melakukan proses pengujian aplikasi.
+
+    -Pengguna (end user) akan mendapatkan gambaran umum terkait aplikasi yang akan dibuat.
+
+    -Pihak investor juga akan mendapatkan gambaran umum terkait fitur apa saja yang ada di dalam aplikasi. Sehingga membantu mereka untuk mengambil keputusan untuk investasi atau tidak.
+
+C.  CAKUPAN ELEMENT YANG ADA DALAM DOCUMENT SPESIFIKASI KEBUTUHAN PERANGKAT LUNAK
+    -Tujuan dari aplikasi
+    -deskripsi umum mengenai aplikasi
+    -kebutuhan fungsional dan non fungsional dari aplikasi
+    -performa aplikasi dalam proses produksi
+    -antarmuka eksternal atau bagaimana sebuah apliakasi berinteraksi dengan perangkat keras atau perangkat lunak lainnya
+    -batasan dari sistem aplikasi yang akan dibuat
+
+D.  Kebutuhan fungsional menggambarkan bagaimana sistem membantu menyelesaikan tugas atau kebutuhan pengguna ketika menggunakan aplikasi yang kita buat. Kebutuhan fungsional ini sama halnya dengan fitur yang ditawarkan aplikasi untuk pengguna. Tanpa terpenuhinya kebutuhan fungsional dalam dokumen SKPL, sama halnya dengan Anda meniadakan fungsi atau fitur dari sebuah aplikasi.
+
+E.  Kebutuhan non fungsional mendukung kebutuhan fungsional yang sudah ada. Tanpa adanya persyaratan non fungsional, sistem aplikasi masih akan tetap bisa berjalan untuk memenuhi kebutuhan yang diinginkan pengguna. Walaupun begitu, kebutuhan non fungsional juga tetap harus diperhatikan karena dapat mempengaruhi pengalaman pengguna (user experience) ketika menggunakan aplikasi. Biasanya persyaratan non fungsional ini, meliputi kinerja, keandalan, keamanan, dan kegunaan dari aplikasi itu sendiri.
+
+
+-->     Struktur Penulisan Dokumen Spesifikasi Kebutuhan Perangkat Lunak (SKPL)
+Anda dapat mengacu pada standar IEEE 1998 untuk menulis dokumen Spesifikasi Kebutuhan Perangkat Lunak. Standar ini dapat Anda sesuaikan kembali bergantung pada kebutuhan aplikasi atau perangkat lunak yang ingin dikembangkan. Untuk lebih jelasnya, simak tabel berikut ini:
+
+BAB                             DESKRIPSI
+Pengantar                       :Menjelaskan secara singkat fungsi dari sistem yang dibuat dan cara kerja aplikasi. Selain itu juga menjelaskan tujuan dari aplikasi yang akan dibuat.
+GLOSARIUM                       :Berisi definisi istilah-istilah teknis yang ada dalam dokumen.
+Kebutuhan Pengguna              :Menjelaskan secara umum layanan yang disediakan sistem untuk pengguna. Deskripsi yang ada bisa menggunakan narasi biasa atau diagram supaya dapat dimengerti
+Sistem arsitektur               :Menjelaskan gambaran tingkat tinggi (high level overview) dari sistem arsitektur yang digunakan dalam aplikasi.
+Spesifikasi kebutuhan sistem    :Menjelaskan secara lebih rinci tentang kebutuhan fungsional dan non fungsional dari aplikasi yang akan dibuat. Selain itu jika sistem memiliki antarmuka dengan sistem atau perangkat keras lain juga dapat ditambahkan di sini
+Model sistem                    :Menjelaskan object model, data-flow models, atau semantic data models yang digunakan dalam aplikasi.
+Rencana pengembangan sistem     :Menjelaskan asumsi Anda terkait rencana pengembangan sistem di masa depan. Bagian ini akan berguna bagi desainer aplikasi untuk tidak membatasi idenya untuk kemungkinan pengembangan sistem.
+Apendiks                        :Menjelaskan detail tambahan yang mendukung pengembangan aplikasi
+
+
+-->     ALUR KERJA APLIKASI
+A.  Bahasa pemrograman tidak bisa langsung berkomunikasi dengan komputer. Komputer hanya bisa memahami bahasa mesin. Oleh karena itu diperlukan jembatan yaitu compiler atau interpreter supaya bahasa pemrograman bisa dipahami oleh komputer. Selengkapnya mengenai perbedaan compiler bisa Anda simak di tabel berikut:
+
+-->     PENYELESAIAN MASALAH MENGGUNAKAN CARA BERPIKIR KOMPUTASIONAL
+A.  MEMECAH PERMASALAHAN YANG BESAR MENJADI BAGIAN KECIL (DECOMPOSITION)
+Dengan teknik decomposition tersebut, maka kita tidak lagi melihat sebuah permasalahan sebagai hal yang kompleks. Karena kita telah memecahnya menjadi bagian atau tugas-tugas kecil yang bisa dikerjakan.
+
+B.  PELAJARI POLA DARI SETIAP MASALAH (PATTERN RECOGNITION)
+Pattern Recognition merupakan teknik pemecahan masalah dengan melihat perbedaan atau persamaan pola dari berbagai permasalahan. Sehingga kita dapat memprediksi atau memproyeksikan solusi apa yang harus kita lakukan. Ketika kita dihadapkan dengan banyak permasalahan, kita harus bisa mempelajari polanya supaya dapat menyelesaikan dengan cepat.
+
+C.  MENGABSTRASIKAN SUATU PERMASALAHAN (ABSTRACTION)
+Abstraksi merupakan cara berpikir komputasional yang identik dengan penyaringan dan pengumpulan data yang bersifat umum. Selain itu, abstraksi juga akan mengesampingkan detail data yang bersifat khusus atau yang tidak kita perlukan untuk lebih berkonsentrasi terhadap apa yang akan dilakukan.
+
+D.  SUSUN LANGKAH MENGGUNAKAN ALGORITMA
+Algoritma merupakan sekumpulan alur instruksi yang berurutan untuk menyelesaikan permasalahan. Sehingga kita akan merangkai sekumpulan instruksi tersebut menjadi urutan yang terstruktur, logis, dan mudah dipahami. Algoritma yang dibuat harus memuat beberapa hal yaitu, titik awal, titik akhir, dan serangkaian instruksi yang jelas.
+
+E.  MENGEVALUASI SOLUSI YANG DIDAPATKAN (EVALUATION)
+Proses terakhir yang dapat kita lakukan adalah melakukan evaluasi terhadap solusi yang telah kita dapatkan. Proses ini perlu dilakukan sebelum melangkah ke permasalahan atau tugas yang baru.  
+
+
+-->     FLOWCHART
+A.  Flowchart atau bisa disebut dengan diagram alur merupakan bentuk penggambaran dengan pendekatan visual terkait langkah-langkah dan keputusan untuk melakukan sebuah proses, alur kerja, ataupun algoritma. Beberapa jenis flowchart antara lain, process, workflow, dan program flowchart
+
+B.  Flowchart atau diagram alur memiliki beberapa simbol tertentu untuk mewakili fungsi atau langkahnya dalam sebuah proses. Garis dan panah menunjukkan urutan langkah dan hubungan antar blok diagram. Berikut adalah beberapa simbol yang sering dijumpai pada flowchart
+
+-->     tips sikap kerja dalam kolaborasi perencanaan aplikasi dengan tim
+A.  EFEKTIFKAN KOMUNIKASI
+B.  BERTANGGUNG JAWAB PADA TUGAS YANG dikerjakan
+C.  BERIKAN SEMANGAT PADA ANDA
+D.  UTAMAKAN DISKUSI
+E.  HINDARI SIKAP TIDAK TANGGAP (SLOW RESPONSE)
+F.  MENENTUKAN PRIORITAS

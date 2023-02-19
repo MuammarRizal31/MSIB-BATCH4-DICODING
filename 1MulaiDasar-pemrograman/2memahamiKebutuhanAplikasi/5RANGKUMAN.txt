@@ -1,0 +1,33 @@
+-->     RANGKUMAN MEMAHAMI KEBUTUHAN APLIKASI
+* User Requirement Specification(URS) adalah dokumen yang menyimpan informasi mengenai kebutuhan pengguna yang dibuat sebelum proses pengembang suatu software
+
+* Document user requirement specification tidak boleh menggunakan jargon teknis yang hanya dipahami oleh kelompok tertentu...melainkan harus menggunakan bahasa yang bisa dipahami oleh seluruh stakeholder(pemegang kepentingan) seperti manajer,developer,customer,dan user
+
+BEBERAPA TEKNIK REQUIREMENT GATHERING YANG BISA KITA GUNAKAN ADALAH :
+    1.interview     --> proses wawancara yang berupa tanya jawab
+    2.User stories  --> menuliskan
+    3.Straw Man     --> menyampaikan ide tanpa menggunakan kode
+    4.Prototyping   --> membuat sampel program yang hanya memiliki fitur fitur utama saja
+
+Spesifikasi teknis aplikasi yakni dokumen yang menyimpan informasi detail mengenai fungsionalitas dari sistem/aplikasi,servis dan juga limitasi limitasi lainnya
+
+Beberapa prinsip yang perlu diperhatikan ketika membuat spesifikasi teknis aplikasi seperti berikut :
+    1.CLEAR         (jelas)
+    2.Unambiguoes   (tidak ambigu)
+    3.mudah dipahami
+    4.complete      (lengkap)
+    5.CONSISTENT    (konsisten)
+
+dalam proses pembuatan spesifikasi teknis aplikasi kita perlu mempertimbangkan kebutuhan dari berbagai macam stakeholder.berikut pandangan beberapa stakeholder terkait spesifikasi teknis
+    1.DEVELOPER
+        -dari sisi developer tentunya yang diperlukan ada kedetailan dan kejelasan spesifikasi,karena merekalah yang akan mengimplementasinya kedalam aplikasi
+
+    2.client/user
+        -dari sisi client meskipun spesifikasi teknis lebih mengarah ke teknis akan tetapi mereka berharap tetap bisa dimengerti
+
+    3.LEGAL
+        -karena spesifikasi teknis ini bisa menjadi kontrak,maka perlu memasukkan acceptance criteria dengan jelas juga.acceptance criteria adalah klausul kriteria yang berisi apakah suatu fitur sudah berjalan dengan baik.jika aplikasi yang dibuat lulus semua acceptance criteria maka seharusnya tidak ada masalah dari sisi kontarak/legal
+
+
+dalam mengembangkan aplikasi,sebaiknya disiapkan juga plan B atau contingency plan.
+contingency plan adalah suatu tindakan alternatif yang dipersiapkan ketika tindakan utama yang direncanakan untuk melakukan sesuatu gagal atau terhambat oleh berbagai faktor

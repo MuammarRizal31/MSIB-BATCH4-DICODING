@@ -1,0 +1,2 @@
+Repository atau dalam bahasa Indonesia repositori, jika diartikan yaitu gudang; tempat penyimpanan.
+repository bisa diartikan sebagai tempat penyimpanan atau direktori dari sekumpulan file/berkas yang mana dalam repository ini Git bisa merekam setiap perubahan berkas dan menyimpannya  di dalam riwayat commit

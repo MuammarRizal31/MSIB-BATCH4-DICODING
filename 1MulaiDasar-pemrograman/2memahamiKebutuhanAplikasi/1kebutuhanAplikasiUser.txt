@@ -1,0 +1,69 @@
+dalam dunia software development(pengembang aplikasi) ada beberapa proses yang bisa diikuti untuk membuat suatu aplikasi.dimulai dari perencanaan hingga ke pengelolaan,biasanya runtutan ini disebut dengan software development life cycle(SDLS)
+
+ILUSTRASI PROSES NYA
+    1.PLANNING      : perencanaan
+    2.ANALYSIS      : analisis
+    3.DESIGN        : desain
+    4.DEVELOPMENT   : pengembangan
+    5.TESTING       : pengujian
+    6.DEPLOYMENT    : penggelaran
+    7.MAINTENANCE   : pemeliharaan
+
+Tiap-tiap proses dalam SDLC adalah penting, di mana setiap proses akan memberikan dampak terhadap proses setelahnya. Misalnya jika kita melakukan proses planning, analysis, dan design secara matang, maka proses implementasi dan testing akan bisa dieksekusi secara lebih baik dan juga lancar. Kebalikannya, jika proses implementasi dan testing tidak bisa dilakukan secara baik, maka proses maintenance (pemeliharaan) akan mengalami banyak masalah.Dalam pengembangan aplikasi, untuk mengetahui kebutuhan pengguna secara utuh, biasanya dilakukan proses pembuatan dokumen User Requirements Specification (URS) atau User Requirement Document (URD). Dokumen ini bukan bersifat teknis, melainkan dibikin dengan format agar semua orang dapat membaca dan paham dengan gambaran besarnya.
+
+Tapi yang perlu diingat adalah kebutuhan pengguna sangatlah beragam yang tentunya akan menjadi tantangan tersendiri dalam proses pengembangan aplikasi. Dengan fakta beragamnya kebutuhan pengguna, maka akan menjadi mustahil untuk membuat solusi aplikasi yang bisa memenuhi kebutuhan semua pengguna secara sempurna. Pasti akan bertemu dengan titik di mana kita harus mengambil keputusan dan akan muncul pertanyaan, “Apakah keputusan ini menguntungkan? Bukankah ini akan merugikan kelompok tertentu?”. Hal ini sudah menjadi lazim dalam pengembangan aplikasi, makanya banyak sekali opsi-opsi atau alternatif dalam dunia aplikasi, misalnya ada dua aplikasi yang memiliki tujuan sama akan tetapi fiturnya sangat berbeda.
+
+Seperti yang kita tahu, User Requirement Specification diperlukan sebelum mengembangkan aplikasi. Lalu pertanyaannya,
+    1.Apa saja yang harus diperhatikan ketika membuat User Requirement Specification (URS)? 
+    2.Poin-poin penting apa saja yang tidak boleh terlewatkan ketika membuatnya?
+
+URS dibuat supaya stakeholder (pemegang kepentingan) dapat memahami suatu aplikasi yang ingin dibuat. Sehingga, ketika ada yang membaca dokumen ini, mereka akan mendapat pemahaman yang sama dan mengurangi kesalahpahaman yang terkadang membuat proses pengembangan menjadi terhambat.
+
+URS dibuat supaya stakeholder (pemegang kepentingan) dapat memahami suatu aplikasi yang ingin dibuat. Sehingga, ketika ada yang membaca dokumen ini, mereka akan mendapat pemahaman yang sama dan mengurangi kesalahpahaman yang terkadang membuat proses pengembangan menjadi terhambat.
+
+Dalam pembuatan URS tidak boleh menggunakan jargon teknis yang hanya dipahami oleh sekelompok orang saja. Misalnya, kita tidak boleh menggunakan istilah encryption (enkripsi) karena mungkin hanya pengembang aplikasi di bidang security (keamanan) saja yang mengetahui artinya.
+
+Kemudian dalam pembuatan dokumen URS, penggunaan media seperti tabel atau diagram sangat disarankan karena dapat mempermudah penyampaian pesan asli terkait kebutuhan pengguna.
+
+Lalu, bagaimana cara mendapatkan kebutuhan pengguna? Untuk menjawab pertanyaan tersebut, kita perlu melakukan requirement gathering. 
+
+Requirement gathering adalah proses mendapatkan informasi dari para stakeholder (pemegang kepentingan), seperti manajer, developer, customer, dan user. Teknik yang dapat digunakan untuk requirement gathering, antara lain interview, user stories, straw man documents, dan prototyping.
+
+-->      INTERVIEW
+Pertama adalah interview. Proses interview pada dasarnya merupakan proses tanya jawab, di mana kita menanyakan suatu pertanyaan, kemudian dijawab oleh peserta wawancara. Selain memberikan pertanyaan, kita juga perlu mencatat apa saja yang disampaikan oleh peserta wawancara.
+
+INTERVIEW juga bisa dilakukan dengan beberapa cara
+    1.Cara pertama adalah Master-apprentice relationship. Cara ini merupakan proses transfer knowledge (transfer pengetahuan) dengan maksud mengajari suatu hal. Di sini seorang master (pengajar) dapat menanyakan beberapa hal sambil memberikan arahan kepada apprentice-nya (yang diajar).
+
+    2.Kedua, kita dapat meminta seseorang untuk mengajarkan kepada kita apa yang mereka lakukan
+
+    3.Ketiga, kita dapat mengamati seseorang ketika melakukan suatu tugas. Sehingga, kita dapat mengetahui penyebab terhambatnya suatu proses atau bahkan faktor yang dapat membantu proses mereka menjadi lebih baik.
+
+-->      USER STORIES
+Selain menggunakan teknik interview, kita juga bisa menggunakan teknik User Stories. 
+
+User stories digunakan sebagai kriteria dalam menentukan product acceptance atau produk yang diinginkan. Selain itu, teknik ini juga dapat meningkatkan pemahaman tentang produk yang kita buat. Sebab, melalui user stories, Anda dapat menemukan berbagai kelebihan dan kekurangan dari suatu produk. Sehingga, Anda dapat mengetahui bagian manakah yang harus diperbaiki. 
+
+User Stories dilakukan dengan menuliskan kebutuhan user sesuai dengan role dan keinginannya. Contoh format penulisan user stories adalah sebagai berikut: 
+
+Sebagai seorang [deskripsi dari pengguna], Saya menginginkan [suatu fungsionalitas], sehingga mendapatkan [suatu kemampuan atau fitur tertentu].
+
+User Stories
+Selain menggunakan teknik interview, kita juga bisa menggunakan teknik User Stories. 
+
+User stories digunakan sebagai kriteria dalam menentukan product acceptance atau produk yang diinginkan. Selain itu, teknik ini juga dapat meningkatkan pemahaman tentang produk yang kita buat. Sebab, melalui user stories, Anda dapat menemukan berbagai kelebihan dan kekurangan dari suatu produk. Sehingga, Anda dapat mengetahui bagian manakah yang harus diperbaiki. 
+
+User Stories dilakukan dengan menuliskan kebutuhan user sesuai dengan role dan keinginannya. Contoh format penulisan user stories adalah sebagai berikut: 
+
+Sebagai seorang [deskripsi dari pengguna], Saya menginginkan [suatu fungsionalitas], sehingga mendapatkan [suatu kemampuan atau fitur tertentu].
+
+ 
+
+-->         STRAW MAN DOCUMENTS
+Teknik selanjutnya adalah Straw Man Documents. Teknik ini berguna untuk menyampaikan ide dari aplikasi tanpa menuliskan kode program apa pun. Teknik Straw Man Documents dapat dilakukan dengan berbagai macam media, misalnya storyboards, flowcharts, dan mock-up html.
+
+-->         PROTOTRYPING
+Selanjutnya kita beralih ke teknik terakhir yaitu Prototyping. Teknik ini merupakan proses pembuatan prototipe program yang terbatas pada fungsionalitas utama saja. Dengan prototyping, kita bisa mendapatkan feedback yang lebih lengkap karena stakeholder sudah bisa mencoba langsung dan mendapatkan gambaran cara kerja aplikasi ketika sudah selesai nantinya. Namun, prototyping membutuhkan biaya ekstra karena mau tidak mau kita harus membuat programnya terlebih dahulu meskipun fungsionalitasnya terbatas. Selain itu, jika ada feedback dari stakeholder yang bertolak belakang, akan menyebabkan keluarnya biaya tambahan lagi untuk mengubahnya.
+
+Nah, dengan adanya pembahasan materi tadi, diharapkan Anda dapat menerapkannya untuk menentukan kebutuhan aplikasi dari sisi pengguna sebelum membuat sebuah aplikasi. Tetap Semangat, ya!
+

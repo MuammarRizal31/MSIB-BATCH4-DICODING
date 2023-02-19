@@ -1,0 +1,24 @@
+Sejauh ini kita sudah banyak belajar mengenai dasar – dasar Git dan melakukan latihan, mulai dari membuat repository baru di GitHub hingga membuat release file atau versi rilis untuk sebuah berkas tertentu dan mengirimkan iterasi proyek kepada pengguna. Berikut beberapa poin yang telah kita pelajari sebelumnya:
+
+- Dengan Git, pekerjaan menjadi lebih praktis. Kita dapat melacak perubahan pada berkas yang ada di dalam repository atau direktori kerja. Selain itu, kita juga dapat mengelola versi rilis dari sebuah proyek dalam repository.
+
+- Penggunaan Git memerlukan adanya repository, yaitu wadah atau tempat penyimpanan proyek di mana setiap berkas yang ada di dalamnya dapat dilacak jika terjadi perubahan
+    * Local repository merupakan tempat penyimpanan lokal yang berada di komputer kita.
+    * Remote Repository merupakan tempat penyimpanan berkas-berkas pekerjaan atau kenangan yang kita miliki di dalam server
+
+- di mana saat membuat repository terdapat pengaturan visibilitas yang terdiri dari 2 yaitu private dan public
+    * Private repository merupakan repository yang bersifat tertutup/pribadi dan hanya akun–akun yang telah diberikan akses saja yang bisa melihatnya
+    * Public repository merupakan repository yang bersifat terbuka dan semua orang dapat melihat dan menggunakan projek yang ada di repository tersebut.
+
+- Ketika membuat repository ada beberapa inisialisasi yang bisa kita lakukan, yaitu: 
+    * Add a README file atau penambahan README File pada repository baru
+    * Add .gitignore atau penambahan berkas .gitignore pada repository...ini bersifat hidden
+    * Choose a license atau penambahan berkas license pada repository. Ketika membuat repository, Anda bisa memilih lisensi untuk repository tersebut sehingga proyek yang ada di dalamnya dapat digunakan secara bebas oleh orang lain
+
+- kita juga membuat file readme yang berekstensi Markdown(md) untuk memberikan informasi tentang tujuan atau isi dalam repository. Biasanya berkas readme berupa file pertama yang akan dilihat oleh pengunjung repository Anda.
+    * heading       -> # atau ==
+    * Subheading    -> --
+    * italic        -> *
+    * list          -> -
+
+- belajar menuliskan tag version yang baik dan benar yaitu diawali dengan menggunakan huruf v kecil untuk singkatan versi lalu diikuti tanda titik(.) dan angka versi. Jika memiliki versi yang lebih dari satu angka dapat dipisah menggunakan tanda titik(.) atau jika ada penggunaan versi nama seperti beta atau alpha bisa dipisahkan dengan tanda hubung(-). Berikut contoh – contoh penulisan tagversionyang baik dan benar

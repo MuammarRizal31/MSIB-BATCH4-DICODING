@@ -1,0 +1,43 @@
+SKPL(SPESIFIKASI KEBUTUHAN PERANGKAT LUNAK)
+apa itu document SKPL ?
+    -pernahkan anda mendengar istilah spesifikasi kebutuhan perangkat lunak(SKPL) atau juga bisa disebut dengan software requirement specification(SRS)?kita akan mengulasnya secara detail disertai studi kasus untuk memperkuat pemahaman kita
+
+spesifikasi kebutuhan pernagkat lunak(SKPL) adalah sebuah dokument yang dibuat sebelum mengembangkan sebuah aplikasi perangkat lunak.
+Document ini menjelaskan cara kerja dan kebutuhan fungsional maupun non fungsional dari aplikasi yang digunakan pengguna nantinya
+
+KEUNTUNGAN YANG BISA DIDAPAT DARI PEMBUATAN DOCUMENT SPESIFIKASI KEBUTUHAN PERANGKAT LUNAK  :
+    1.Keuntungan pertama adalah seorang desainer UI/UX dalam tim akan mendapat gambaran sehingga mereka dapat mendeasain sesuai kebutuhan aplikasi.
+    2.selain desainer,tim penguji aplikasi(tester) akan mendapatkan panduan untuk membuat studi kasus dalam proses pengujian aplikasi
+    3.bukan hanya dari sisi internal tim saja,pengguna akhir(end user)  juga akan mendapatkan gambaran umum terkait aplikasi yang akan dibuat
+    4.bahkan,dari sisi investor juga akan mendapatkan gambaran umum terkait fitur apasaja yang ada didalam aplikasi.sehingga,membantu mereka untuk mengambil keputusan untuk invertasi atau tidak
+
+Kita telah mengetahui document spesifikasi kebutuhan perangkat lunak(SKPL) memiliki banyak keuntungan bagi tim pengembang aplikasi,pengguna,hingga pihak investor.sehingga,sebuah document SKPL harus memiliki informasi yang cukup untuk memenuhi semua kebutuhan dari pihak pihak yang memiliki kepentingan tersebut
+
+berikut cakupan elemen yang ada dalam document spesifikasi kebutuhan perangkat lunak    :
+    1.mulai dari tujuan aplikasi
+    2.deskripsi umum
+    3.kebutuhan fungsional dan non fungsional
+    4.performa aplikasi dalam proses produksi
+    5.antarmuak eksternal atau bagaimana sebuah aplikasi berinteraksi dengan perangkat keras dan perangkat lunak lainnya
+    6.hingga batasan sistem aplikasi yang akan dibuat
+
+
+APA PERBEDAAN DARI KEBUTUHAN FUNGSIONAL DAN NON FUNGSIONAL  ?
+    -Kebutuhan fungsional menggambarkan cara sistem membantu menyelesaikan tugas atau kebutuhan pengguna ketika menggunakan aplikasi. Kebutuhan fungsional ini sama halnya dengan fitur yang ditawarkan aplikasi untuk pengguna. Misalnya, dalam aplikasi pesan antar makanan secara daring adalah fitur yang memungkinkan pengguna dapat memilih menu yang tersedia di suatu restoran. Tanpa terpenuhinya kebutuhan fungsional dalam dokumen SKPL, sama halnya dengan Anda meniadakan fungsi atau fitur dari sebuah aplikasi
+
+    -Sedangkan kebutuhan non fungsional berguna untuk mendukung kebutuhan fungsional yang sudah ada. Tanpa adanya persyaratan non fungsional, sistem aplikasi masih bisa berjalan untuk memenuhi kebutuhan pengguna
+
+kebutuhan non fungsional juga tetap harus diperhatikan karena dapat mempengaruhi pengalaman pengguna (user experience) ketika menggunakan aplikasi. Karena berfokus pada kenyamanan pengguna, biasanya persyaratan non fungsional ini meliputi kinerja, keandalan, keamanan, dan kegunaan dari aplikasi itu sendiri. Contohnya, ketika pengguna berhasil memesan makanan secara daring, pihak pengemudi (driver) yang mengantarkan makanan hanya dapat menghubungi pengguna melalui fitur chat yang disediakan oleh aplikasi. Sehingga, keamanan nomor pribadi pengguna akan terjamin dan tidak diketahui oleh siapa pun.
+
+STRUKTUR PENULISAN DOCUMENT SKPL
+mengacu pada standar IEEE 1998 untuk menulis dokumen Spesifikasi Kebutuhan Perangkat Lunak. Standar ini dapat Anda sesuaikan kembali bergantung pada kebutuhan aplikasi atau perangkat lunak yang ingin dikembangkan. Untuk lebih jelasnya, simak tabel berikut ini:
+
+BAB                          ||                  DESKRIPSI
+pengantar                    - Menjelaskan secara singkat fungsi dari sistem yang dibuat dan cara kerja aplikasi. Selain itu juga menjelaskan tujuan dari aplikasi yang akan dibuat
+GLOSARIUM                    - Berisi definisi istilah-istilah teknis yang ada dalam dokumen
+Kebutuhan Pengguna           - Menjelaskan secara umum layanan yang disediakan sistem untuk pengguna. Deskripsi yang ada bisa menggunakan narasi biasa atau diagram supaya dapat dimengerti.
+sistem arsitektur            - Menjelaskan gambaran tingkat tinggi (high level overview) dari sistem arsitektur yang digunakan dalam aplikasi
+Spesifikasi Kebutuhan Sistem - Menjelaskan secara lebih rinci tentang kebutuhan fungsional dan non fungsional dari aplikasi yang akan dibuat. Selain itu jika sistem memiliki antarmuka dengan sistem atau perangkat keras lain juga dapat ditambahkan di sini.
+Model Sistem                 - Menjelaskan object model, data-flow models, atau semantic data models yang digunakan dalam aplikasi.
+Rencana Pengembangan Sistem  - Menjelaskan asumsi Anda terkait rencana pengembangan sistem di masa depan. Bagian ini akan berguna bagi desainer aplikasi untuk tidak membatasi idenya untuk kemungkinan pengembangan sistem.
+Apendiks                     - Menjelaskan detail tambahan yang mendukung pengembangan aplikasi

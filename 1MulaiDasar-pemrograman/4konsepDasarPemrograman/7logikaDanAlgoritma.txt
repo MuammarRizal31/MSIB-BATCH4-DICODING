@@ -1,0 +1,6 @@
+-->     LOGIKA DAN ALGORITMA
+-logika dan algoritma dalam pemrgoraman adalah dua hal yang berbeda,namun keduanya tidak terpisahkan dan saling melengkapi
+
+-logika merupakan pemikiran yang digunakan untuk mencari solusi terhadap sebuah permasalahan dalam program
+
+-algoritma merupakan alur yang berurutan ketika menyelesaikan permasalahan tersebut

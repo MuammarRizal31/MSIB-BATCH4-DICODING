@@ -1,0 +1,73 @@
+-->     RANGKUMAN DARI DOKUMENTASI PEMROGRAMAN DAN PENGEMBANG APLIKASI PERANGKAT LUNAK
+PENGARSIPAN VERSI PERANGKAT LUNAK
+    -   pengarsipan adalah proses,cara atau perbuatan mengarsip
+    -   arsip adalah tempat penyimpanan berkas
+    -   pengarsipan perangkat lunak dapat diartikan sebagai proses mengarsipkan perangkat lunak atau aplikasi yang telah dibuat
+    -   version control system merupakan tools untuk mengatur suatu perubahan dan konfigurasi dari suatu aplikasi,termasuk juga source code
+    -   github merupakan layanan hosting repository git berbasis web yang juga memiliki banyak fitur seperti bug tracking dan task management
+    -   semua perubahan yang ada dalam repository git dapat kita lihat dalam halaman history
+    -   anda dapat menggunakan commit untuk menyimpan perubahan yang ada dalam git,selain itu juga terdapat fitur revert untuk kembali keperubahan atau commit tertentu/sebelumnya
+
+STYLE GUIDE
+    -   saat anda bekerja sebagai software developer,perusahaan tak hanya menginginkan fitur-fitur aplikasi bisa berjalan dengan baik ya. Perusahaan juga menginginkan kode dengan kualitas terbaik dan mampu menjadi pendukung bisnis. Salah satu indikatornya adalah Anda dapat melakukan perubahan dengan mudah pada aplikasi saat terdapat fitur baru. Selain itu, perusahaan dapat melakukan upaya (effort) seminimal mungkin untuk beradaptasi dengan kebutuhan bisnisnya.
+
+    -   Kode yang baik tak hanya mudah dibaca oleh komputer saja, namun mudah dibaca oleh manusia. Kenapa demikian? Karena programming kebanyakan tentang membaca, bukan menulis.
+
+    -   Style Guide merupakan kumpulan peraturan mengenai bagaimana cara penulisan kode yang baik bagi developer secara individu maupun tim. Pada style guide tertulis secara lengkap aturan yang harus diikuti oleh developer. Seperti penggunaan double atau single quote, indentasi, semicolon, penamaan variabel, dan lainnya.
+
+    -   Style guide yang sudah disepakati dan direkomendasikan oleh banyak developer itulah yang disebut dengan Code Convention. Tentunya setiap bahasa pemrograman memiliki berbagai referensi style guide terkenal yang direkomendasikan untuk Anda ikuti. Dalam bahasa JavaScript, Anda dapat mengikuti style guide dari AirBNB JavaScript, Google JavaScript, dan Standard JavaScript
+
+    -   berbagi alasan mengapa style guide penting bagi developer:
+            * Konsistensi
+            * Membantu Proses Onboarding
+            * Menambah Wawasan
+            * Membantu proses Code Review
+
+    -   Selain itu, dengan mengikuti style guide, Anda akan dapat beberapa keuntungan seperti:
+            * Memahami dan membaca kode jadi lebih mudah.
+            * Memelihara kode jadi lebih mudah untuk dipelihara.
+            * Mengurangi kesalahan programmer yang sering terjadi.
+            * Mengurangi beban secara kognitif saat memuat kode.
+            * Menjadi lebih fokus pada permasalahan logika kode dibandingkan style-nya saat berdiskusi dengan rekan kerja Anda.
+
+
+DOCUMENTASI TEKNIS APLIKASI
+    -   Dokumentasi adalah deskripsi tertulis yang komprehensif dari perangkat lunak dalam berbagai bentuk dan tingkat perincian yang secara jelas mendefinisikan persyaratan, konten, komposisi, desain, kinerja, pengujian, penggunaan, dan pemeliharaan.
+
+    -   Dokumentasi teknis akan menceritakan mengenai produk dengan cara yang mudah untuk digunakan, dibaca, dimengerti, dan tentunya membantu pembaca.
+
+    -   Dokumentasi Teknis dibagi menjadi beberapa jenis dan area sesuai kebutuhan, berikut detailnya
+        *   End-user support: Dokumen ini biasanya berisi tentang panduan pengguna, sistem bantuan secara online, catatan rilis, panduan pelatihan, panduan cara instalasi, atau prosedur operasional. Intinya adalah apa pun yang mendukung pengguna dengan produk Anda.
+
+        *   Marketing support: Dokumen ini fokus pada produk dan digunakan untuk memasarkan perusahaan Anda. Contohnya berupa video pelatihan berbasis komputer, presentasi, bantuan secara online, atau sebuah halaman untuk arahan teknis.
+
+        *   Development support: Dokumen ini berisi mengenai segala spesifikasi teknis dan fungsional, panduan pengembangan produk perangkat lunak, glosarium, atau prosedur serta tools untuk membantu tim dalam melakukan pekerjaan mereka.
+
+        *   Organization support: Dokumen ini berisi segala informasi mengenai perusahaan seperti struktur organisasi, panduan bekerja, alur kerja, kebijakan-kebijakan, aturan yang ada, dan hal lain yang perlu diketahui karyawan untuk melakukan pekerjaan mereka.
+
+
+    -   Dokumentasi teknis itu sendiri dapat dilakukan secara offline maupun online.
+
+    -   Ketika Anda membuat dokumentasi secara online, maka dapat diakses kapan saja dan di mana saja. Tentunya ini akan memudahkan dan tidak memakan waktu lama untuk memahaminya sehingga lebih efisien dan uptodate.
+
+    -   Beda cerita jika Anda mendokumentasikan sebuah aplikasi atau produk, namun disimpan dalam bentuk offline seperti catatan atau mungkin dalam bentuk buku. Jika dibutuhkan dalam keadaan terdesak, informasi tersebut tidak bisa langsung didapatkan. Bahkan proses pencariannya juga akan lebih rumit dibandingkan dokumentasi teknis secara online.
+
+    -   Manfaat yang akan didapatkan ketika kita mengimplementasikan dokumentasi teknis ketika pembuatan aplikasi.
+            * Meningkatkan retensi pengguna.
+            * Menghemat waktu dan tenaga.
+            * Meningkatkan penjualan produk Anda.
+    
+    -   Berikut merupakan langkah singkat untuk membangunnya
+            *   Tentukan siapa targetnya, apakah untuk rekan tim Anda atau untuk pengguna aplikasi Anda
+            *   Pikirkan dengan matang dan jelas apa yang ingin Anda sampaikan ke dalam dokumentasi teknis. 
+            *   Gunakanlah outline atau kerangka tulisan terlebih dahulu ketika membangunnya.
+            *   Anda juga dapat menggunakan ilustrasi dan teks dalam dokumentasi tersebut.
+            *   Terakhir, jika Anda sudah menyelesaikan dokumentasi teknis, maka pastikan kembali. Anda bisa membacanya kembali dan bila ada yang kurang sesuai segera Anda revisi.
+
+    -   JSDoc merupakan salah satu tools yang dapat digunakan untuk membuat dokumentasi teknis dari komentar yang diberikan pada berkas program Javascript.
+
+    -   Sebelum Anda mengomunikasikan perihal dokumentasi, Anda perlu memperhatikan beberapa hal penting berikut. 
+            *   Pastikan apa yang sudah Anda tulis dalam dokumentasi sudah benar dan sudah sesuai
+            *   Perlu kamu tahu bahwa suatu dokumentasi teknis tidak hanya ditujukan kepada Anda saja melainkan untuk orang lain
+            *   Ketika menyampaikan pun harus dengan adab atau beretika atau sopan santun
+            *   Pastikan Anda mendokumentasikan teknis aplikasi secara online, serta memikirkan juga siapa saja yang dapat mengaksesnya karena keamanan dokumentasi teknis juga perlu dipikirkan.

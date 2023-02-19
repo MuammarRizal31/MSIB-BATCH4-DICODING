@@ -1,0 +1,68 @@
+GLOSARIUM
+
+    B
+BROWSER
+    -browser atau peramban merupakan sebuah software untuk mencari informasi dalam situs internet
+
+    C
+COMPILER
+    -program komputer yang menerjemahkan kode yang ditulis dalam satu bahasa pemrograman ke bahasa lain yang dimengerti oleh mesin
+
+    D
+DEBUGGING
+    -proses identifikasi dan menghilangkan error
+
+    E
+END USER
+    -Calon pengguna dari aplikasi yang dibuat.
+
+EXECUTABLE
+    -Sebuah format file yang bisa langsung dijalankan tanpa menggunakan aplikasi tambahan
+
+    F
+FLOWCART
+    -Bentuk penggambaran dengan pendekatan visual terkait langkah-langkah dan keputusan untuk melakukan sebuah proses, alur kerja, ataupun algoritma
+
+    I
+INSPECT ELEMENT
+    -Fitur yang disediakan oleh browser untuk memudahkan kita untuk melihat kode yang digunakan dalam sebuah website
+
+INTERACTIVE CODE
+    -Fitur yang disediakan Dicoding untuk menulis dan menjalankan kode secara langsung di dalam sub-modul
+
+INTERPRETER
+    -Program untuk menerjemahkan setiap baris kode dari bahasa pemrograman menjadi bahasa yang dimengerti oleh mesin secara langsung. Tanpa melalui proses kompilasi.
+
+    L
+LIBRARY
+    -Sekumpulan sumber daya, biasanya berupa kode atau program, yang memiliki fungsionalitas tertentu dan bisa digunakan pada program lain.
+
+LOGIN
+    -Mekanisme untuk masuk ke dalam suatu sistem
+
+LOGOUT
+    -Mekanisme untuk keluar dari suatu sistem
+
+    M
+MOCKUP
+    -Media visual yang digunakan untuk melihat preview sebuah konsep desain
+
+    P
+PSEUDOCODE
+    -Istilah dalam pemrograman untuk menuliskan sebuah sintaks, statement, algoritma, dan lainnya dalam bahasa yang bisa dipahami oleh manusia
+
+    R
+RUNTIME
+    -Lingkungan, platform, atau sumber daya yang menjalankan suatu kode/program
+
+    S
+SCRIPT 
+    -KODE YANG KITA TULIS
+
+SYNTAX
+    -ATURAN DALAM BAHASA pemrograman
+
+STAKE HOLDER
+    -Pihak yang berkepentingan dalam membuat aplikasi, seperti manager sebagai pemilik aplikasi, developer sebagai pembuat aplikasi, customer sebagai yang membiayai pembuatan aplikasi, dan user sebagai pengguna aplikasi.
+
+

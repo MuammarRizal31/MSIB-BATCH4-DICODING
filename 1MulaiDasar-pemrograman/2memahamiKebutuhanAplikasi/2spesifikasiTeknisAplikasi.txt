@@ -1,0 +1,45 @@
+APA ITU SPESIFIKASI TEKNIS APLIKASI ?
+kita sudah belajar mengenai user requirement specification(URS),yang fungsinya untuk memahami kebutuhan pengguna sebelum membuat aplikasi,kita akan membahan mengenai spesifikasi teknis aplikasi,yakni dokumen yang menyimpan informasi detail mengenai fungsionalitas dari sistem/aplikasi,servis dan juga limitasi-limitasinya
+
+berbeda dengan UTS dimana tidak boleh menggunakan jargon teknis,document spesifikasi teknis justru akan banyak jargon-jargon yang digunakan...ini memang karena kebutuhannya sudah mengarah ke sistemnya
+
+CONTOH SPESIFIKASI TEKNIS APLIKASI UNTUK HALAMAN CHECKOUT DARI PROSES PEMBELIAN SUATU BARANG :
+    -jika melakukan pembelian diatas 50 ribu rupiah maka otomatis tambahkan kupon diskon yang saat itu statusnya tersedia pada sistem,jika tidak ada kupon yang statusnya tersedia maka tampilkan tulisan tidak ada diskon yang tersedia
+
+dari spesifikasi tersebut,bisa dilihat bahwa apa yang seharusnya sistem bisa lakukan cukuplah jelas dan detail.dengan bahasa yang jelas dan detail akan membantu pengembang software dalam proses membuat aplikasinya
+
+-->     CARA MENETUKAN SPESIFIKASI TEKNIS APLIKASI
+Sebelumnya kita sudah mengetahui ada beragam solusi yang ditawarkan untuk memenuhi kebutuhan pengguna. Misalnya ada kebutuhan pengguna untuk mengirimkan pesan ke orang lain. Nah, solusi yang ditawarkan bermacam-macam, bisa dengan menggunakan email, atau aplikasi messenger seperti whatsapp
+
+Banyaknya alternatif atau solusi dalam hal pengembangan software tentunya malah memberikan potensi munculnya ide-ide bagus, yang memiliki dampak baik pada aplikasi. Sebagai seorang pengembang software memang kita harus selalu memikirkan ide yang cocok untuk menyelesaikan permasalahan, tapi perlu dipahami juga bahwa dalam dunia pengembangan software tidak ada ide/solusi yang sempurna. Oleh karena itu, yang bisa dilakukan sebagai pengembang software adalah memilih ide yang dirasa paling cocok dan kemudian melakukan pembaharuan terhadap ide tersebut secara berkala mengikuti kebutuhan pengguna. 
+
+BEBERAPA PRINSIP PADA SPESIFIKASI TEKNIS YANG BISA KITA TERAPKAN
+    1.CLEAR         (JELAS)
+    2.UNAMBIGUOUS   (TIDAK AMBIGU)
+    3.MUDAH DIPAHAMI
+    4.COMPLETE      (LENGKAP)
+    5.CONSISTENT    (konsisten)
+
+Dari beberapa prinsip tersebut memang mengarah kepada kejelasan implementasi fiturnya. Ini memanglah penting, karena ada beberapa stakeholder yang perlu memahami dokumen spesifikasi teknis aplikasi. Misalnya, ketika spesifikasinya jelas dan tidak ambigu maka seorang developer dapat mengimplementasinya dengan benar. Selain itu, juga berguna bagi client di mana ekspektasi client dengan aplikasi jadi bisa selaras, karena tentu akan berakibat sangat fatal jika kita sudah membuat aplikasi tapi client tidak puas dan penyebab utamanya adalah tidak jelasnya spesifikasi teknis.
+
+DARI BERBAGAI MACAM STAKEHOLDER MEMANG MEMILIKI KEBUTUHANNYA MASING MASING,OLEH KARENA ITU KITA PERLU TAHU KEBUTUHAN BERDASARKAN SISI PANDANGNYA
+    -DEVELOPER
+        > Dari sisi developer tentunya diperlukan ada kedetailan dan kejelasan spesifikasi.karena merekalah yang akan mengimplementasinya kedalam aplikasi
+    
+    -CLIENT/USER
+        > Dari sisi client meskipun spesifikasi teknis lebih mengarah ke teknis akan tetapi mereka berharap tetap bisa dimengerti dalam artian istilah teknis yang dipakai harus bisa dibuat semudah mungkin untuk dimengerti.
+
+    -LEGAL
+        > Karena spesifikasi teknis ini bisa menjadi kontrak,maka perlu memasukan acceptance criteria dengan jelas juga.acceptance criteria adalah klausul kriteria yang berisi apakah suatu fitur sudah berjalan dengan baik,jika aplikasi yang dibuat lulus semua acceptance criteria maka seharusnya tidak ada masalah dari sisi kontrak/legal
+
+untuk menentukan spesifikasi aplikasi haruslah mempertimbangkan beberapa hal seperti para stakeholder dan juga solusi yang cocok kebutuhannya. Dan pada praktiknya memang kita akan memiliki banyak ide atau solusi yang bisa kita pilih. 
+
+Ide-ide atau solusi yang sudah pernah kita pikirkan alangkah baiknya juga ikut didokumentasikan atau setidaknya dicatat. Ini penting karena terkadang implementasi dari suatu solusi tidaklah semulus yang kita pikirkan. Dan ketika suatu solusi mengalami hambatan dalam implementasinya maka ada potensi solusi sebelumnya yang tidak kita pilih bisa menjadi plan B, inilah yang disebut dengan contingency plan. Contingency plan adalah suatu tindakan alternatif yang dipersiapkan ketika tindakan utama yang direncanakan untuk melakukan sesuatu gagal atau terhambat oleh berbagai faktor.
+
+Misalkan ada kebutuhan untuk menyelesaikan suatu proses dalam aplikasi, dan kita memiliki 2 solusi yang bisa digunakan, pertama adalah menggunakan layanan third party (pihak ketiga) yang memiliki fitur lengkap, kedua adalah membuat layanan sendiri meskipun adanya limitasi tapi kita punya kuasa penuh terhadapnya. 
+
+Dalam proses implementasi kita sudah sepakat untuk memilih penggunaan third party. Akan tetapi di tengah jalan, layanan third party tersebut mengalami masalah terkait legal yang berujung pada ditutupnya layanan tersebut. Ini tentunya berdampak pada proses pengembangan aplikasi kita. Nah, ketika terjadi problem seperti ini, maka solusi kedua yang kita rencanakan di awal justru malah bisa menjadi pilihan yang cocok. 
+
+Pada praktiknya, tentu berpindah di tengah jalan akan berdampak buruk jika kita tidak berhati-hati. Tapi yang terpenting adalah bagaimana proses pengembangan tetap terus berjalan dan tidak stuck (terhenti) atau terpaku pada suatu hal yang belum jelas kapan stabilnya.
+
+

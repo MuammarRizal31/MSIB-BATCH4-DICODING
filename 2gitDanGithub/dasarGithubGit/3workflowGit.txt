@@ -1,0 +1,2 @@
+Mempelajari alur kerja Git adalah hal yang penting karena kita bisa memahami tentang bagaimana cara menggunakan Git untuk menyelesaikan pekerjaan secara konsisten dan produktif serta memanfaatkan Git secara efektif.
+

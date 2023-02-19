@@ -1,0 +1,3 @@
+release file atau istilahnya membuat versi rilis dari proyek yang ada di repository
+
+untuk membuat release file,cukup tekan menu create a new release yang berada disamping kanan atau lebih tepatnya dibawah bagian about repository
