@@ -10,3 +10,21 @@ Pada contoh diatas terdapat 3 branch yaitu :
     * Fitur baru,yaitu menambahkan fitur baru.semua commit yang berhubungan dengan fitur baru akan di push ke branch ini
 
     * bug fixing,yaitu branch yang digunakan untuk memperbaiki bug yang terjadi. cabang bug fixing dibuat terpisah untuk menghidari kesalahan penulisan pada kode perbaikan yang dapat menyebabkan cabang utama menjadi memiliki lebih banyak bug.
+
+
+-->         WORK FLOW GIT BRANCH
+Implementasi Git branch lebih terasa meringankan  penyimpanan daripada model sistem kontrol versi lainnya. Alih-alih menyalin keseluruhan project dari direktori ke direktori lain, Git menyimpan branch/cabang sebagai referensi commit. Ini berarti, ketika Anda membuat branch baru dari branch tertentu, maka history dari branch tersebut akan melekat pada branch baru.
+
+branch mewakili serangkaian commit yang telah dilakukan, bukan sebagai wadah untuk commit-nya. Sebab branch merupakan sebuah alur atau proses commit dari awal hingga akhir. Mari kita jabarkan urutan proses yang lazim dipakai dalam Git Branch, mulai dari membuat branch hingga menggabungkan ke branch tujuan:
+* membuat branch atau acabang baru dalam repository git
+    - Ketika membuat branch atau cabang baru, penting untuk dipahami bahwa branch baru bertujuan untuk membuat jalur lain dari branch yang sudah ada. Contohnya, Anda memiliki branch A berisi File 1 dan File 2 dengan commit 1, 2, 3, dan 4. Ketika Anda menjadikan branch A sebagai dasar dalam pembuatan branch baru (branch B), maka ia akan memiliki pointer commit (termasuk history commit) yang sama dengan branch A. Lalu, sewaktu Anda melakukan perubahan data pada File 1 atau File 2 dalam branch B, ia akan memiliki pointer commit yang berbeda dengan branch A.
+
+* Berpindah dari satu branch ke branch lainnya
+    - Branch dalam Git sangatlah ringan, maksudnya yaitu untuk pindah dari tiap branch sangat cepat. Contohnya ketika ingin berpindah dari branch A ke branch B, Anda cukup klik ke branch yang dimaksud (dalam GitHub) dan seketika itu juga langsung berpindah.
+    - Ketika Anda berpindah dari satu branch ke branch lain, semua history (working tree/line commit) dari branch akan berubah. Contohnya branch A memiliki history commit 1, 2, dan 3, sedangkan branch B memiliki history commit 4, 5, dan 6. Nah, ketika Anda berpindah dari branch A ke branch B, history commit akan menyesuaikan ke branch yang dipilih, yakni menjadi commit 4, 5, dan 6. Oleh karena itu, semua data atau informasi dari branch sebelumnya akan berubah menjadi branch yang dituju.
+* menggabungkan suatu cabang (source branch) ke cabang tujuan (destionation branch)
+    - Merge branch atau penggabungan cabang merupakan perintah untuk menggabungkan urutan riwayat commit menjadi satu padu
+* memperbaiki conflict yang terjadi ketika menggabungkan branch
+    - Conflict adalah kondisi ketika Anda menggabungkan branch satu ke branch lainnya terdapat masalah dalam satu baris yang sama pada suatu file.
+    - Biasanya isi/codingan di dalam kedua branch berbeda. Ketika terjadi conflict, kita perlu menyesuaikan mana yang seharusnya dipertahankan dan mana yang perlu dihapus.
+    - Misal, Anda mempunyai dua buah branch, yakni Branch A dan B. Di dalam dua branch tersebut memiliki satu berkas yang sama bernama file 1. Kemudian file 1 dalam branch A Anda ubah teks di dalamnya menjadi “Halo Dunia”. Di waktu yang bersamaan teman Anda melakukan perubahan pada file 1 di branch B menjadi “Hello World”. Ketika Anda ingin melakukan merge dari branch B ke branch A, Anda perlu menentukan kata mana yang ingin dipertahankan. apakah tetap menggunakan “Halo Dunia” atau “Hello World”. Pada akhirnya, tergantung keinginan/kebutuhan Anda sebagai orang yang akan menyelesaikan konflik (resolve conflict) tersebut.

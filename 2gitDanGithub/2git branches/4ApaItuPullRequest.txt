@@ -1,0 +1,12 @@
+APA ITU PULL REQUEST ? Pull Request adalah mekanisme bagi pengembang untuk memberi tahu anggota tim lain bahwa mereka telah menyelesaikan sebuah fitur
+
+Sebuah Pull Request dalam GitHub adalah kegiatan yang memungkinkan Anda memberitahu antar anggota tim tentang perubahan yang telah didorong ke cabang repository GitHub.
+
+bagaimana pull request bekerja ? Pull Request dilakukan dengan menginisialisasi permintaan tarik (Pull Request), Anda akan melihat halaman ulasan yang menunjukkan gambaran umum tentang perubahan yang dilakukan dari cabang satu (source branch) ke cabang tujuan (destination branch). 
+
+Anda dapat menambahkan ringkasan perubahan yang diusulkan, meninjau perubahan, menambahkan label, penerima tugas, dan pemberi tugas. Anda juga dapat menyebutkan akun kontributor atau anggota tim lain ke dalam deskripsi pull-request menggunakan @mention.
+
+Setelah membuat pull request, Anda dapat melakukan perubahan baru (commit) dan mendorong  (push) commit tersebut dari cabang sumber (source branch) ke cabang tujuan (destination branch) untuk menambahkan perubahan. Semua commit yang dilakukan akan muncul dalam urutan kronologis atau pekerjaan pull-request. Untuk informasi yang lebih detail dari perubahan tersebut, dapat Anda lihat dalam tab "Files changed".
+
+Kontributor lain dapat meninjau perubahan yang diusulkan, menambahkan komentar ulasan, berkontribusi pada diskusi pull request, dan bahkan menambahkan commit baru ke pull request tersebut.
+
