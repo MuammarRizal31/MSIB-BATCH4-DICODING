@@ -37,3 +37,36 @@ Perlu Anda tahu bahwa fork sejatinya seperti standar operasi git clone. Mengapa 
 - Melihat perbedaan sebelum dan sesudah pull request dilakukan
 
 -->     TAHAPAN DETAIL PROSES MENGELOLA PUBLIC REPOSITORY
+1. Ketika ingin berkolaborasi pada public repository (open source), hal yang perlu Anda lakukan adalah menjalankan git fork atau menyalin repository tersebut. Menyalin sebuah repository milik organisasi atau orang lain (fork repository) sangatlah mudah.
+
+2. Kemudian klik Fork untuk menyalin repository tersebut ke repository pribadi
+
+3. Setelah berhasil melakukan fork, Anda dapat melakukan perubahan terhadap repository tersebut secara leluasa. Jumlah Watch, Star, Fork, dan Pull Request otomatis direset setelah Anda melakukan fork, hanya jumlah fork saja yang tidak ter-reset
+
+4. Anda telah melakukan Pull request secara langsung pada repository asal. Hal itu bisa dilakukan karena Anda memiliki akses atau diundang menjadi salah satu kolaborator dalam repository tersebut. Karena saat ini kita tidak memiliki akses, Anda perlu melakukan pull request melalui fork.
+
+5. Kemudian lakukan perubahan pada file di dalam repository pada branch main.
+
+6. Setelah itu buat commit pada perubahan tersebut, dan lanjutkan membuat permintaan New pull request.
+
+7. Anda akan diarahkan menuju halaman form pull request dari repository asal (original repository). Di sini kita akan membuat pull request untuk melakukan permintaan penggabungan antara fork repository menuju original repository (repositori asal).
+
+Pilih compare main pada sebelah kanan (fork repository) dan pilih base main pada sebelah kiri (original repository). Pada bagian ini, Anda akan melihat berbagai perubahan yang dilakukan antara branch compare main (fork repository) dengan base main (original repository). Lanjutkan dengan klik Create pull request.
+
+8. Masukkanlah commit message dan commit description pada form pull-request. Kemudian klik Create pull request
+
+9. Jika perubahan pull request ingin direviu kodenya terlebih dahulu, klik bagian sebelah kanan, kemudian pilih siapa yang akan melakukan reviu terhadap pull request sebelum dilakukan merge.
+
+10. Kita tidak dapat melakukan merge pull request karena pada repository asal (original repository) menerapkan reviu terlebih dahulu sebelum penggabungan dilakukan. Setelah pengelola repository (baik pemilik maupun anggota tim yang memiliki hak akses) melakukan reviu, mereka dapat menjalankan perintah merge untuk menggabungkan perubahan tersebut.
+
+11. bagaimana cara mengelola pull request dari sisi pemilik repository atau kolaborator yang memiliki hak akses?
+
+Katakanlah Anda saat ini menjadi pemilik/pengelola dari repositori asli (Original repository). Kemudian masuk ke halaman Pull requests dengan akun tersebut. Saat ini, terlihat ada satu permintaan perubahan/pull request yang dilakukan oleh kontributor.
+
+12. Biasanya seorang pengelola akan melakukan reviu pada pull request sebelum menjalankan merge ke branch utama. Setelah melakukan review, Anda bisa menekan Merge pull request untuk memulai penggabungan.
+
+13. Setelah melakukan review, masukkanlah commit description dalam Pull Request (PR) tersebut. Sebelum melakukan pull request, klik Use your administrator privileges to merge this pull request,. Fitur ini merupakan hak prerogatif yang dimiliki pengelola atau hak administrator untuk menggabungkan sebuah pull request. Jika sudah, klik Confirm merge untuk melanjutkan merge
+
+14. Pastikan merge berhasil dilakukan dengan cara cek branch main di repository asal (original repository). Seperti inilah perbandingan antara repositori asal (original repository) dengan repositori salinan (fork repository) setelah perintah merge berhasil dijalankan melalui Pull requests.
+
+15. Selamat. Anda telah memahami cara menyalin repository dengan fork dan melakukan perubahan dalam repositori salinan (fork repository) menggunakan pull request.

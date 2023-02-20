@@ -17,3 +17,26 @@ ini akan menjawab sejumlah pertanyaan mengenai cara mengembalikan kode/data pada
 -->     berkolaborasi pada public repository (open source)
 Git revert dapat dianggap sebagai perintah ‘undo’
 Mengapa demikian? Sebab, Git revert adalah cara terbaik untuk mengembalikan perubahan (commit) yang telah dilakukan, kemudian membuat commit baru dengan riwayat perubahan commit yang telah dipilih.
+Hal ini bertujuan agar kita tidak kehilangan riwayat perubahan pada proyek selama berkolaborasi
+
+Penting untuk dipahami bahwa git revert akan membatalkan beberapa commit, bukan "mengembalikan" status proyek pada commit tertentu dan menghapus semua commit setelahnya. Jika Anda ingin menghapus beberapa commit yang dilakukan, maka dapat menggunakan git reset.
+
+Revert memiliki dua keuntungan dibandingkan ketika menggunakan reset : 
+    1. revert tidak akan mengubah riwayat proyek. Sehingga, operasi yang dilakukan tergolong "aman" untuk commit yang telah dipublikasikan ke remote repository.
+    2. git revert mampu menargetkan commit individu pada titik yang diinginkan dalam riwayat.
+
+Sedangkan git reset hanya dapat bekerja mundur dari commit saat ini. Misalnya, jika ingin membatalkan commit yang telah dilakukan dengan git reset, Anda harus menghapus semua commit yang terjadi setelah commit target, kemudian menghapusnya, dan melakukan commit kembali
+
+-->     PRAKTIK MENGGUNAKAN GIT REVERT
+-   Buka salah satu repository yang sudah Anda praktikkan. Pilih tab Pull request dan lanjutkan dengan menekan tombol closed.
+-   Dalam daftar "Pull request", klik salah satu pull requests yang ingin dikembalikan.
+-   Pada bagian bawah pull request, tekan Revert
+-   Kemudian masukkan deskripsi pada kolom Write, lalu klik Create pull request
+-   Selanjutnya klik Confirm merge untuk melanjutkan.
+-   Proses revert telah berhasil dilakukan sehingga data/kode pada riwayat sebelumnya telah dikembalikan. Selain itu, Anda juga telah membuat satu commit baru yang berisi data/kode hasil revert.
+-   Setelah melakukan revert, akan ada branch baru. Branch ini merupakan riwayat yang telah Anda buat sebelumnya. Anda dapat menghapus branch ini jika dirasa tidak memerlukannya
+-   Untuk menghapus branch, klik Closed untuk melihat daftar pull request. Kemudian klik pull request yang terkait dengan cabang yang ingin Anda hapus.
+-   Pada bagian bawah pull request, klik Delete branch. Tombol ini tidak tampil jika  saat ini ada antrian pull request pada branch.
+-   Untuk mengembalikan branch yang telah terhapus, Anda dapat menekan Restore branch
+
+Seperti itulah revert dalam git. Setiap riwayat perubahan (history commit) pada repository dapat dilakukan pengembalian (revert). Sehingga, anggota tim tidak perlu merasa khawatir ketika mengalami masalah atau bug.

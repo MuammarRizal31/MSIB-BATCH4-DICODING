@@ -1,1 +1,22 @@
 APA ITU KOLABORASI ? Kolaborasi adalah proses dua orang atau lebih, entitas atau organisasi yang bekerja sama untuk menyelesaikan tugas atau mencapai suatu tujuan.
+
+Bentuk kolaborasi yang dilakukan sangat tergantung dengan apakah repository-nya publik atau privat.
+    -repository publik adalah repository open source, karena siapa pun bisa melihat isi dari source code-nya.
+    - repository privat adalah repository yang tidak untuk publik/umum dan hanya terbatas untuk tim dengan anggota tertentu saja.
+
+Ketika suatu repository bersifat privat, hanya orang yang sudah ditambahkan sebagai collaborator-lah yang dapat mengakses repository tersebut. Perhatikan gambar di bawah ini untuk skenario private repository
+
+seorang collaborator belum tentu adalah seorang contributor (orang yang berkontribusi) ke repository tersebut
+
+Contributor adalah orang yang sudah pernah menambahkan commit di repository tersebut.
+
+Pada private repository, seorang collaborator memang mendapatkan hak akses untuk melihat repository tersebut. Namun, bisa saja ia hanya perlu melihat source code tanpa menambahkan commit satu pun
+
+Pada repository publik, semua orang dapat melihat isi dari repository. Owner-nya pun tetap dapat menambahkan collaborator pada repository tersebut. Menariknya lagi, kita sebagai pihak luar pun tetap dapat berkontribusi ke repository tanpa harus menjadi collaborator terlebih dahulu. 
+
+fork untuk menyalin repository tersebut ke dalam repository pribadi.
+
+Dengan menggunakan fitur pull-request, mereka dapat meminta persetujuan collaborator
+
+Cara lain untuk memahami ekosistem proyek adalah dengan melihat kode yang ada dan sejarah perubahan kode dengan perintah git log. Dengan membaca commit message dan style code, Anda dapat mengetahui berbagai informasi yang ada dalam proyek repository.
+
