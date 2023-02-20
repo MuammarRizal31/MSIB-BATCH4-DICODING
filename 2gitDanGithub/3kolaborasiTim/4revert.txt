@@ -1,0 +1,19 @@
+-->     TUJUAN
+Latihan melakukan revert bertujuan untuk mengetahui cara mengembalikan kode/data dalam repository pada commit tertentu
+biasanya revert digunakan ketika melakukan perubahan(commit),tetapi justru menimbulkan masalah/bug pada project repository.
+ini akan menjawab sejumlah pertanyaan mengenai cara mengembalikan kode/data pada commit tertentu, seperti:
+    1. apa itu revert ? 
+    2. bagaimana cara mengulang commit yang salah atau menimbulkan bug ? 
+    3. apa yang harus dilakukan ketika melakukan git revert ? 
+    4. apa dampak setelah melakukan git revert ?
+
+-->     TAHAPAN PROSES
+    - membuka repository
+    - membuka halaman riwayat commit
+    - membuka salah satu detail commit
+    - melakukan revert
+    - menghapus branch yang terbentuk dari revert
+
+-->     berkolaborasi pada public repository (open source)
+Git revert dapat dianggap sebagai perintah ‘undo’
+Mengapa demikian? Sebab, Git revert adalah cara terbaik untuk mengembalikan perubahan (commit) yang telah dilakukan, kemudian membuat commit baru dengan riwayat perubahan commit yang telah dipilih.

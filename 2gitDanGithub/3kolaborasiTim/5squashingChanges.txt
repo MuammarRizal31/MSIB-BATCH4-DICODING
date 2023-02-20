@@ -1,0 +1,7 @@
+APA ITU SQUASHING CHANGES ? 
+Squash adalah opsi Git untuk menggabungkan atau merekap semua commit tambahan dalam pull request menjadi satu commit
+
+Squash bertujuan untuk membuat riwayat commit  yang lebih ramping dalam repository. Pada dasarnya setiap commit akan membantu untuk melihat setiap perubahan yang telah dilakukan, tetapi tak semua commit selalu menjadi hal yang penting untuk disimpan dalam riwayat Git. Contohnya ketika melakukan beberapa perubahan pada formating (perubahan spasi, titik, koma). 
+
+Jika Anda menggabungkan beberapa commit ini menjadi satu commit, perubahan yang dilakukan menjadi terlihat lebih jelas terlihat, serta menjadi lebih fokus pada tujuan dari commit tersebut.
+singkatnya akan menghancurkan semua komit dan menjadikan hanya 1 commit saja
