@@ -74,6 +74,3 @@
     - Dengan begitu, proses Pull request berhasil dilakukan dan penggabungan antara branch development ke branch main sukses
 
 Dengan adanya fitur menambahkan kolaborator baru ke dalam project repository, Anda dapat membuat tim dengan orang lain. Selain itu, ada juga fitur pull-request yang membuat Anda menjadi lebih fokus pada pekerjaan yang dilakukan, tanpa harus menunggu dan mengganggu pekerjaan orang lain. Mengapa demikian? Sebab, pull-request memungkinkan Anda menggabungkan dua cabang pekerjaan  menjadi satu. Sehingga Anda dan rekan tim Anda dapat bekerja dengan lebih efisien dalam membangun produk aplikasi atau sejenisnya.
-
-
-

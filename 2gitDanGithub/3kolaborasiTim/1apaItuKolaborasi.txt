@@ -19,4 +19,3 @@ fork untuk menyalin repository tersebut ke dalam repository pribadi.
 Dengan menggunakan fitur pull-request, mereka dapat meminta persetujuan collaborator
 
 Cara lain untuk memahami ekosistem proyek adalah dengan melihat kode yang ada dan sejarah perubahan kode dengan perintah git log. Dengan membaca commit message dan style code, Anda dapat mengetahui berbagai informasi yang ada dalam proyek repository.
-

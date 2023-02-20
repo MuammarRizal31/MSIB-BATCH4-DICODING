@@ -5,3 +5,35 @@ Squash bertujuan untuk membuat riwayat commit  yang lebih ramping dalam reposito
 
 Jika Anda menggabungkan beberapa commit ini menjadi satu commit, perubahan yang dilakukan menjadi terlihat lebih jelas terlihat, serta menjadi lebih fokus pada tujuan dari commit tersebut.
 singkatnya akan menghancurkan semua komit dan menjadikan hanya 1 commit saja
+
+-->     PENGGABUNGAN PESAN KETIKA SQUASHING 
+Saat Anda menggabungkan beberapa commit menjadi satu, GitHub menghasilkan pesan commit yang dapat Anda ubah jika diinginkan
+Default pesan tersebut tergantung pada jumlah commit yang ada dalam pull request.
+
+PERBEDAAN KETIKA HANYA TERDAPAT SATU COMMIT DAN BEBERAPA COMMIT DALAM PULL REQUEST : 
+
+jika hanya satu commit -> pesan commit berisi pesan commit terakhir -> pesan deskripsi commit terakhir
+lebih dari satu commit -> berisi nama pull request diikuti dengan nomor pull request -> berisi daftar pesan commit dari semua commit dalam satu pull request
+
+-->     SQUASHING AND MERGE PADA BRANCH YANG SUDAH BERJALAN LAMA
+Jika Anda berencana untuk melanjutkan pekerjaan dalam head branch (branch lain yang telah diubah dan digabungkan ke base branch sewaktu pull request) setelah melakukan squashing and merge dalam pull request (squashing), Git tidak menyarankan untuk melakukan squash and merge kembali melalui pull request
+
+melakukan squashing and merge melalui pull request kembali. Inilah yang tidak disarankan oleh Git. Mengapa demikian?
+Sebab, ketika Anda membuat pull request, Git akan mengidentifikasi semua commit terbaru dalam di head branch (feature) dan base branch (master). Sehingga ketika Anda melakukan squashing and merge melalui pull request, Git akan membuat commit di base branch yang berisi semua perubahan yang dibuat dalam head branch
+
+Jika Anda tetap melanjutkan pekerjaan di dalam head branch dan melakukan pull request ke base branch, pull request yang dilakukan akan menyertakan semua commit yang telah dilakukan termasuk commit sebelum penggabungan ( (termasuk commit D dan E yang sudah dilakukan squashing and merge) sebelumnya
+
+Hal inilah yang dapat menimbulkan konflik atau masalah. Jika Anda terus melanjutkan pekerjaan di head branch, Anda perlu menyelesaikan conflict yang muncul sebelum menggabungkannya ke dalam base branch. Oleh karena itu, setelah melakukan squashing and merge, alangkah baiknya Anda hapus branch sebelumnya dan buat branch baru untuk melanjutkan pekerjaan. Hal ini dapat meminimalisir bug yang muncul sewaktu pull request ke base branch (cabang utama)
+
+-->     SQUASHING PADA GITHUB
+Penggunaan Squashing dapat dilakukan sewaktu melakukan pull request. Seperti yang dijelaskan sebelumnya bahwa squashing bertujuan untuk merekap beberapa commit menjadi satu commit yang utuh. Proses ini hampir sama ketika Anda melakukan merge dalam pull request, tetapi squashing akan menyebabkan perbedaan pada history commit.
+
+Untuk melihat hasil penerapan dari squashing, buka Network graph yang berada pada fitur Insights. Fitur ini gratis jika menggunakan repository dengan jenis public. Lalu bagaimana jika ingin menggunakan dalam private repository? Anda bisa menggunakannya, tetapi harus berbayar. 
+
+Dalam Network graph, semua commit yang dilakukan akan terlihat dalam bentuk jalur history. History ini terdiri dari kumpulan titik/dot yang mewakili commit dan pull request yang telah dilakukan.
+
+1. Branch1 menggunakan metode squash and merge, sehingga commit yang ada akan dikumpulkan menjadi satu commit baru di dalam branch main
+
+2. Branch2 menggunakan metode rebase and merge, sehingga commit yang ada akan dipindahkan ke dalam branch main
+
+3. Branch3 menggunakan metode merge, sehingga commit yang ada akan masuk dalam history commit branch main dan terbentuk satu commit baru hasil dari penggabungan tersebut.
