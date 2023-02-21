@@ -1,0 +1,36 @@
+-->     PENALARAN LOGIKA INDUKTIF DAN DEDUKTIF
+--> INDUKTIF
+penalaran logika induktif adalah logika pendukung pembuktian.
+Jenis penalaran ini melibatkan pembentukan generalisasi berdasarkan pengalaman, pengamatan, dan fakta. Secara sederhana, penalaran induktif merupakan metode berpikir menggunakan pengamatan dan digabungkan dengan pengalaman yang sudah Anda ketahui kebenarannya untuk mendapatkan sebuah kesimpulan
+
+PROSES PENALARAN INDUKTIF DIMULAI DARI
+    1. Pengamatan terhadap suatu peristiwa atau hal lainnya
+    2. mendeteksi pola dan keteraturan dari pengalaman yang telah terjadi
+    3. merumuskan beberapa hipotesis sementara yang dapat kita eksplorasi
+    4. mengambil kesimpulan
+
+observasi adalah suatu aktivitas pengamatan mengenai suatu objek tertentu secara cermat secara langsung di lokasi penelitian tersebut berada
+
+Sekumpulan dari fitur dari sebuah objek dengan pertimbangan tertentu
+
+hipotesis tentatif merupakan hipotesis yang diturunkan dalam suatu penelitian hanya menggunakan kajian literatur-literatur yang relevan saja
+
+--> DEDUKTIF
+logika penalaran deduktif adalah sistem yang tepat dan teratur bertujuan untuk memberikan dukungan pasti untuk suatu kesimpulan.
+
+silogisme adalah bentuk,cara berpikir atau menarik simpulan yang terdiri atas premis umum,premis khusus dan simpulan
+
+contoh silogisme : 
+1. semua burung memiliki bulu
+2. semua kenari adalah burung
+KESIMPULAN : semua kenari memiliki bulu
+
+1. semua hewan berbisa berbahaya
+2. ular adalah hewan yang berbisa
+KESIMPULAN : ular adalah hewan yang berbahaya
+
+Proses penalaran deduktif terhadap sebuah informasi dimulai dari :
+    1. Premis pertama yang berisi pernyataan umum. Jika premis pertama itu valid, seharusnya juga valid untuk segala kasus yang berhubungan dengan premis tersebut
+    2. Premis kedua dibuat berdasarkan premis pertama (lebih khusus). Jika premis pertama sudah valid, maka pernyataan dalam premis kedua ini harusnya juga valid
+    3. Kedua premis tersebut diuji dalam berbagai skenario
+    4. Menarik kesimpulan berdasarkan hasil pengujian untuk menetapkan sebuah informasi yang diuji valid atau tidak.

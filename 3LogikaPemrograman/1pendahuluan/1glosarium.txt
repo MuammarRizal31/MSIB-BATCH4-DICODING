@@ -1,0 +1,9 @@
+HIPOTESIS
+- Sesuatu yang dianggap benar untuk alasan atau pengutaraan pendapat (teori, proposisi, dan sebagainya) meskipun kebenarannya masih harus dibuktikan
+
+PREMIS
+- Apa yang dianggap benar sebagai landasan kesimpulan; dasar pemikiran;
+
+VARIABLE
+- sebuah wadah untuk menyimpan suatu nilai yang dapat berubah ubah
+
