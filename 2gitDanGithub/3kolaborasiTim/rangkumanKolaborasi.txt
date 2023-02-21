@@ -1,0 +1,50 @@
+RANGKUMAN KOLABORASI DENGAN TIM
+- Kolaborasi adalah proses dua orang atau lebih, entitas atau organisasi yang bekerja sama untuk menyelesaikan tugas atau mencapai suatu tujuan
+
+- Sebagian besar kolaborasi membutuhkan kepemimpinan, meskipun bentuk kepemimpinan dapat bersifat sosial dalam kelompok yang terdesentralisasi dan egaliter (sederajat).
+
+- Fitur kolaborasi ini dapat Anda temukan pada GitHub dengan menambahkan akun lainnya (kolaborator) ke dalam repository yang tersimpan.
+
+- Di dalam GitHub sendiri terdapat dua cara kolaborasi bersama tim yang sering digunakan:
+    * Repository Organisasi: Pemilik organisasi dapat menambahkan kolaborator dengan tingkat izin yang berbeda untuk berbagai repository.
+
+    * Repository Pribadi: Pemilik repository dapat menambahkan kolaborator dengan akses read & write untuk satu repository.
+
+- Fork adalah proses menyalin proyek repository orang lain ke repository pribadi.
+
+- Fork bertindak sebagai jembatan antara repositori asli (original repository) dan repositori salinan (fork repository).
+
+- Anda dapat menawarkan perubahan yang dilakukan pada repositori salinan ke repositori asli untuk membantu membuat proyek orang lain lebih baik dengan melakukan pull request.
+
+- Squash bertujuan untuk membuat riwayat commit yang lebih ramping dalam repository
+
+- Pada dasarnya setiap commit akan membantu untuk melihat setiap perubahan yang telah dilakukan, tetapi tak semua commit  selalu menjadi hal yang penting untuk disimpan dalam riwayat Git. Contohnya ketika melakukan beberapa perubahan pada formating (perubahan spasi, titik, koma) Jika Anda menggabungkan beberapa commit ini menjadi satu commit, perubahan yang dilakukan menjadi terlihat lebih jelas terlihat, serta menjadi lebih fokus pada tujuan dari commit tersebut.
+
+- Untuk melakukan squashing dalam GitHub, Anda dapat menggunakan Squash & Merge sewaktu melakukan pull request.
+
+- Network graph dalam GitHub digunakan untuk melihat berbagai alur dari riwayat commit sebuah repository.
+
+- Network Graph dalam GitHub hanya tersedia secara gratis untuk repository publik dengan akun pribadi dan akun organisasi.
+
+- Sedangkan untuk repository private dapat digunakan secara berbayar melalui GitHub Pro, GitHub Team, GitHub Enterprise Cloud, dan GitHub Enterprise Server.
+
+- Network graph semua commit yang dilakukan akan terlihat dalam bentuk jalur history. History ini terdiri dari kumpulan titik/dot yang mewakili commit dan pull request yang telah dilakukan
+
+- Code reviews bertujuan untuk  mengomentari perubahan, menyetujui perubahan, atau meminta perubahan lebih lanjut sebelum pull request digabungkan.
+
+- Berikut beberapa aspek yang dapat digunakan sebagai acuan dalam melakukan ulasan kode/code reviews:
+    * kode dirancang dengan baik
+    * Fungsionalitasnya dapat berjalan dengan baik
+    * Setiap perubahan yang dilakukan masuk akal dan terlihat bagus.
+    * Kodenya tidak lebih kompleks dari yang seharusnya.
+    * Developer mengimplementasikan hal-hal yang diperlukan saat ini saja. Bukan menyediakan kode untuk masa depan, tetapi tidak digunakan saat ini.
+    * Kode memiliki unit test (pengujian unit) yang sesuai
+    * Pengujian dirancang dengan baik.
+    * Pengembang menggunakan nama yang jelas untuk segala penamaan
+    * Komentar yang ditambahkan jelas dan bermanfaat. Selain itu komentar ditujukan untuk menjelaskan kode apa yang ditulis beserta alasannya
+    * Kode telah didokumentasikan dengan tepat.
+    * Kode ditulis sesuai dengan panduan (style guideline) yang telah disepakati
+
+- Code review dilakukan ketika anggota tim/kontributor melakukan perubahan dan melakukan pull request.
+
+- 

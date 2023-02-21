@@ -2,7 +2,7 @@
 
 Mempelajari tentang dunia web developer baik front-end maupun backend
 
-**16 februari 2023**
+**Dasar Pemrograman**
 
 - Belajar kelas memulai dasar pemrograman untuk menjadi pengembang software (progress 100%)
   - persiapan
@@ -11,8 +11,10 @@ Mempelajari tentang dunia web developer baik front-end maupun backend
   - konsep dasar pemrograman
   - dokumentasi perangkat lunak
 
-**19 februari 2023**
+**Git dan Github**
 
-- Belajar kelas git/github (progress 50%)
+- Belajar kelas git/github (progress 100%)
   - Mempelajari tentang github/git
   - belajar dasar dasar git
+
+**Logika Pemrograman**

@@ -1,0 +1,71 @@
+-->     RANGKUMAN KELAS DARI AWAL SAMPAI AKHIR
+
+- memahami kebutuhan aplikasi
+User Requirement Specification (URS) adalah dokumen yang menyimpan informasi mengenai kebutuhan pengguna yang dibuat sebelum proses pengembangan suatu software. Dokumen ini bertujuan agar ketika ada yang membaca dokumen ini maka akan mendapatkan pemahaman yang sama akan kebutuhan user pada aplikasi.
+
+Dokumen User Requirement Specification tidak boleh menggunakan jargon teknis yang hanya dipahami oleh kelompok tertentu, melainkan harus menggunakan bahasa yang bisa dipahami oleh seluruh stakeholder (pemegang kepentingan), seperti manajer, developer, customer, dan user
+
+Beberapa teknik requirement gathering yang bisa kita gunakan adalah : 
+    - interview,proses wawancara yang berupa tanya jawab
+    - user stories,menuliskan kebutuhan user sesuai dengan role dan keinginan nya
+    - straw man,menyampaikan ide tanpa menggunakan kode
+    - prototyping, membuat sampel program yang hanya memiliki fitur fitur utama saja
+
+Spesifikasi Teknis Aplikasi yakni dokumen yang menyimpan informasi detail mengenai fungsionalitas dari sistem/aplikasi, servis, dan juga limitasi-limitasinya.
+
+Beberapa prinsip yang perlu diperhatikan ketika membuat spesifikasi teknis aplikasi seperti : 
+    - clear (jelas)
+    - Unambiguous (tidak ambigu)
+    - mudah dipahami
+    - complete (lengkap)
+
+
+Dalam proses pembuatan spesifikasi teknis aplikasi kita perlu mempertimbangkan kebutuhan dari berbagai macam stakeholder (pemegang kepentingan)
+    - developer
+        * Dari sisi developer tentunya yang diperlukan ada kedetailan dan kejelasan spesifikasi. Karena merekalah yang akan mengimplementasinya ke dalam aplikasi
+    - client
+        * Dari sisi client meskipun spesifikasi teknis lebih mengarah ke teknis akan tetapi mereka berharap tetap bisa dimengerti
+    - legal
+        * Karena spesifikasi teknis ini bisa menjadi kontrak, maka perlu memasukkan acceptance criteria dengan jelas juga. Acceptance criteria adalah klausul kriteria yang berisi apakah suatu fitur sudah berjalan dengan baik. Jika aplikasi yang dibuat lulus semua acceptance criteria maka seharusnya tidak ada masalah dari sisi kontrak/legal.
+
+Dalam mengembangkan aplikasi, sebaiknya disiapkan juga plan B atau contingency plan. Contingency plan adalah suatu tindakan alternatif yang dipersiapkan ketika tindakan utama yang direncanakan untuk melakukan sesuatu gagal atau terhambat oleh berbagai faktor.
+-->     akhir   <--
+
+-->         PERENCANAAN MODIFIKASI APLIKASI     <--
+
+- Spesifikasi kebutuhan perangkat lunak
+    * Spesifikasi Kebutuhan Aplikasi Perangkat Lunak adalah sebuah dokumen yang dibuat sebelum mengembangkan sebuah aplikasi perangkat lunak. Dokumen ini menjelaskan cara kerja dan kebutuhan fungsional maupun non-fungsional dari aplikasi yang digunakan pengguna nantinya.
+
+- Beberapa keuntungan yang didapatkan dari pembuatan dokumen Spesifikasi Kebutuhan Aplikasi Perangkat Lunak:
+    * Desainer dalam tim baik dari sisi UI/UX akan mendapat gambaran sehingga mereka dapat mencocokkan desain dengan kebutuhan aplikasi.
+    * Tim penguji aplikasi (tester) akan mendapatkan panduan untuk membuat studi kasus untuk melakukan proses pengujian aplikasi
+    * Pengguna (end user) akan mendapatkan gambaran umum terkait aplikasi yang akan dibuat.
+    * Pihak investor juga akan mendapatkan gambaran umum terkait fitur apa saja yang ada di dalam aplikasi
+
+- Cakupan elemen yang ada dalam dokumen Spesifikasi Kebutuhan Perangkat Lunak:
+    * Tujuan dari aplikasi
+    * Deskripsi umum mengenai aplikasi
+    * Kebutuhan fungsional dan non fungsional dari aplikasi
+    * Performa aplikasi dalam proses produksi
+    * Antarmuka eksternal atau bagaimana sebuah aplikasi berinteraksi dengan perangkat keras atau perangkat lunak lainnya.
+    * Batasan dari sistem aplikasi yang akan dibuat.
+
+- Kebutuhan fungsional menggambarkan bagaimana sistem membantu menyelesaikan tugas atau kebutuhan pengguna ketika menggunakan aplikasi yang kita buat. Kebutuhan fungsional ini sama halnya dengan fitur yang ditawarkan aplikasi untuk pengguna. Tanpa terpenuhinya kebutuhan fungsional dalam dokumen SKPL, sama halnya dengan Anda meniadakan fungsi atau fitur dari sebuah aplikasi.
+
+- Kebutuhan non fungsional mendukung kebutuhan fungsional yang sudah ada. Tanpa adanya persyaratan non fungsional, sistem aplikasi masih akan tetap bisa berjalan untuk memenuhi kebutuhan yang diinginkan pengguna. Walaupun begitu, kebutuhan non fungsional juga tetap harus diperhatikan karena dapat mempengaruhi pengalaman pengguna (user experience) ketika menggunakan aplikasi. Biasanya persyaratan non fungsional ini, meliputi kinerja, keandalan, keamanan, dan kegunaan dari aplikasi itu sendiri
+-->     akhir <--
+
+-->         STRUKTUR PENULISAN DOKUMEN SPESIFIKASI KEBUTUHAN PERNAGKAT LUNAK(SKPL)
+Anda dapat mengacu pada standar IEEE 1998 untuk menulis dokumen Spesifikasi Kebutuhan Perangkat Lunak. Standar ini dapat Anda sesuaikan kembali bergantung pada kebutuhan aplikasi atau perangkat lunak yang ingin dikembangkan. Untuk lebih jelasnya, simak tabel berikut ini:
+
+PENGANTAR                   -->     Menjelaskan secara singkat fungsi dari sistem yang dibuat dan cara kerja aplikasi
+GLOSARIUM                   -->     Berisi definisi istilah-istilah teknis yang ada dalam dokumen
+Kebutuhan pengguna          -->     Menjelaskan secara umum layanan yang disediakan sistem untuk pengguna. 
+Sistem arsitektur           -->     Menjelaskan gambaran tingkat tinggi (high level overview) dari sistem arsitektur yang digunakan dalam aplikasi.
+Spesfikasi Kebutuhan sistem -->     Menjelaskan secara lebih rinci tentang kebutuhan fungsional dan non fungsional dari aplikasi yang akan dibuat
+Modul sistem                -->     Menjelaskan object model, data-flow models, atau semantic data models yang digunakan dalam aplikasi
+Rencana pengembangan sistem -->     Menjelaskan asumsi Anda terkait rencana pengembangan sistem di masa depan
+Apendiks                    -->     Menjelaskan detail tambahan yang mendukung pengembangan aplikasi
+
+-->         PROSES KOMUNIKASI APLIKASI DENGAN KOMPUTER
+Bahasa pemrograman tidak bisa langsung berkomunikasi dengan komputer. Komputer hanya bisa memahami bahasa mesin. Oleh karena itu diperlukan jembatan yaitu compiler atau interpreter supaya bahasa pemrograman bisa dipahami oleh komputer. Selengkapnya mengenai perbedaan compiler bisa Anda simak di tabel berikut.
