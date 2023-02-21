@@ -18,3 +18,8 @@ Mempelajari tentang dunia web developer baik front-end maupun backend
   - belajar dasar dasar git
 
 **Logika Pemrograman**
+
+- Logika pemrograman/programming logic 101 (progress 100%)
+  - Pendahuluan
+  - Gerbang logika
+  - computational thinking
