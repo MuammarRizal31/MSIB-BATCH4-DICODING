@@ -23,3 +23,8 @@ Mempelajari tentang dunia web developer baik front-end maupun backend
   - Pendahuluan
   - Gerbang logika
   - computational thinking
+
+**Dasar pemrograman WEB**
+
+- Dasar pemrograman web CSS,HTML (progress 30%)
+  -HTML5
