@@ -1,0 +1,13 @@
+Kemampuan memecah permasalahan menjadi bagian-bagian kecil merupakan hal alami yang dimiliki manusia dan sangat berguna untuk banyak hal. Bayangkan ada sebuah mesin pabrik yang besar dan rumit. Menurut Anda bagaimanakah proses pengiriman mesin tersebut dari pihak pembuat hingga sampai di pabrik tersebut? Jika langsung diangkut dalam bentuk yang besar pasti menyusahkan proses pengirimannya. Selain itu juga beresiko rusak di perjalanannya juga. 
+
+Supaya lebih mudah maka mesin tersebut dipecah menjadi beberapa bagian dan dikirimkan per bagian. Sehingga ketika sudah sampai, teknisi pabrik yang berbekal buku panduan akan merakit mesin tersebut. Sehingga dari ilustrasi di atas kita melihat masalah dari proses pengiriman mesin yang besar yang tidak memungkinkan langsung dikirim dalam bentuk utuh. Maka dari itu kita perlu memecah beberapa komponen menjadi bagian-bagian kecil untuk mempermudah proses pengiriman. Jika kita hubungkan dengan computational thinking, maka teknik pemecahan masalah menjadi bagian-bagian kecil juga bisa disebut dengan decomposition. Tujuan dari decomposition ini sendiri adalah membuatnya lebih mudah dikelola dan dikerjakan.
+
+Kita ambil contoh sederhana lainnya yaitu membuat nasi goreng. Membuat nasi goreng bukanlah satu perintah yang langsung bisa dikerjakan. Di dalamnya harus kita pecah terlebih dahulu supaya lebih mudah dikerjakan. Berikut bagian-bagian kecil dari contoh kasus membuat nasi goreng.
+
+Apa saja alat yang dibutuhkan?
+Apa saja bahan-bahannya?
+Berapa lama waktu yang dibutuhkan?
+Bagaimana cara memasaknya?
+Bagaimana cara penyajiannya?
+Dengan adanya tugas-tugas kecil seperti di atas mulai dari menyiapkan alat dan bahan hingga cara memasak, maka kita dapat mulai mengerjakannya satu per satu. Misalnya kita menyiapkan alat terlebih dahulu seperti kompor, penggorengan, dan spatula. Kemudian beralih ke bahan-bahannya seperti minyak goreng, sepiring nasi, telur, penyedap rasa, dan sebagainya. Dengan teknik decomposition tersebut, maka kita tidak lagi melihat sebuah permasalahan sebagai hal yang kompleks. Karena kita telah memecahnya menjadi bagian atau tugas-tugas kecil yang bisa dikerjakan.
+

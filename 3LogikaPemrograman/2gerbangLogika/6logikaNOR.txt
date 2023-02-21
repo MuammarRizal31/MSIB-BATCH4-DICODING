@@ -1,0 +1,2 @@
+Gerbang logika NOR merupakan gabungan dari logika NOT dan logika OR yang menghasilkan output berlawanan dengan gerbang logika OR. Maka dari itu ia disebut NOR atau NOT OR. Gerbang logika NOR setidaknya harus memiliki dua masukan untuk mendapatkan satu keluaran
+

@@ -1,0 +1,11 @@
+Computational thinking sebagai proses berpikir dalam perumusan masalah beserta solusinya. Sehingga solusi tersebut akan direpresentasikan dalam bentuk kegiatan secara efektif oleh agen pengolah informasi
+
+Mereka akan mencari solusi dari permasalahan secara terstruktur dan seefisien mungkin. Proses pemecahan masalah tersebut dikenal juga dengan nama, computational thinking.
+
+kita sebagai agen pengolah informasi bisa mencari solusi dari sebuah permasalah dengan lebih mudah. Computational thinking bukanlah sebuah istilah tunggal karena di dalamnya terdapat beberapa elemen penting. Elemen tersebut terdiri dari 5 metode yang dapat dilakukan dalam pemecahan sebuah masalah baik dalam pemrograman atau kehidupan sehari-hari. Kelima elemen computational thinking yang akan kita bahas di modul ini antara lain:
+    1. Memecahkan permasalahan yang besar menjadi bagian kecil(decomposition)
+    2. pelajari pola dari setiap permasalahan (pattern recognition)
+    3. mengabsctraksikan suatu permasalahan (abstraction)
+    4. susun langkah menggunakan algoritma (algorithm)
+    5. mengevaluasi solusi yang didapatkan (evaluation)
+

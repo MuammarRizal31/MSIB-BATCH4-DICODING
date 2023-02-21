@@ -1,0 +1,11 @@
+"Tanpa evaluasi diri yang tepat, kegagalan tak akan bisa dihindari." ~ John Wooden
+
+Sama seperti quote dari John Wooden di atas, kita tidak boleh melewatkan kegiatan evaluasi. Karena salah satu penyebab kegagalan adalah kurangnya proses evaluasi yang tepat. Kita telah melalui proses pemecahan masalah menjadi bagian kecil hingga merangkainya menjadi sebuah solusi.
+
+Proses terakhir yang dapat kita lakukan adalah melakukan evaluasi terhadap solusi yang telah kita dapatkan. Proses ini perlu dilakukan sebelum melangkah ke permasalahan atau tugas yang baru. 
+
+Bayangkan Anda membuat sebuah program yang menurut Anda sudah tidak ada eror. Karena Anda tidak mengevaluasi, kemudian seorang pengguna menemukan sebuah kendala yang membuat program tersebut terasa lambat. Ketika Anda memeriksa kembali ternyata ada beberapa kode yang harusnya perlu ditambahkan untuk membuat programnya berjalan lancar. Seandainya Anda telah melakukan evaluasi sebelum aplikasi tersebut dicoba oleh pengguna, maka pengguna tidak akan merasakan aplikasinya berjalan lambat.
+
+Tidak hanya pada bidang pemrograman, dalam kehidupan sehari-hari pun kita harus selalu mengevaluasi solusi dari permasalahan yang kita hadapi. Sehingga jika kita merasa solusi dari permasalahan kita kurang maksimal, maka bisa kita pelajari kembali lantas dan perbaiki untuk mengatasi permasalahan serupa di masa mendatang.
+
+Nah, dalam modul ini kita telah membahas banyak hal terkait computational thinking terkait proses pemecahan masalah. Beberapa teknik yang sudah dijelaskan secara urut mulai dari proses pemecahan masalah menjadi bagian kecil (decomposition); mempelajari pola setiap permasalahan (pattern recognition); abstraksi (abstraction); menyusun langkah-langkahnya dengan algoritma; hingga mengevaluasi dari solusi yang didapatkan. Dengan memahami proses tersebut, kita dapat membiasakan diri untuk menyelesaikan permasalahan dengan lebih efektif dan efisien baik dalam bidang pemrograman maupun kehidupan sehari-hari

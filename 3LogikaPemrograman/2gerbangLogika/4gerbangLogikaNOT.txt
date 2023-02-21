@@ -1,0 +1,4 @@
+Berbeda dengan dua gerbang logika sebelumnya, gerbang logika NOT hanya memerlukan 1 input untuk mendapatkan satu keluaran. Gerbang logika NOT akan menghasilkan keluaran yang berlawanan dari input. Logika NOT dilambangkan dengan tanda overline 202102200847033306fc8447d353f819c3d3c4644f908a.png di atas inputnya seperti berikut
+
+Sehingga jika logika NOT dibaca menjadi seperti berikut, “Jika input W bernilai 1 (true), maka hasilnya 0 (false). Sebaliknya, jika inputnya bernilai 0 (false), maka outputnya bernilai 1 (true).”
+

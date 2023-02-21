@@ -1,0 +1,8 @@
+Gerbang logika NAND merupakan gabungan dari logika NOT ditambah logika AND yang menghasilkan output yang berlawanan dengan gerbang logika AND. Maka dari itu ia disebut NAND atau NOT AND. Gerbang logika NAND setidaknya harus memiliki dua masukan untuk mendapatkan satu keluaran.
+
+Gerbang logika NAND merupakan gabungan dari logika NOT ditambah logika AND yang menghasilkan output yang berlawanan dengan gerbang logika AND. Maka dari itu ia disebut NAND atau NOT AND. Gerbang logika NAND setidaknya harus memiliki dua masukan untuk mendapatkan satu keluaran.
+
+Logika NAND dilambangkan dengan perkalian (multiply) yang menggunakan tanda titik (“.”) atau tanpa titik dengan tambahan tanda overline untuk menandakan negasi. Sehingga logika NAND bisa diekspresikan sebagai
+
+PADA INTINYA INI KEBALIKAN DARI AND
+

@@ -1,0 +1,4 @@
+Berdasarkan simbol di atas, A dan B merupakan masukan (input) sedangkan X adalah keluaran (output). Gerbang logika OR setidaknya harus mempunyai dua masukan untuk mendapatkan satu keluaran. Berbeda dengan logika AND, pada logika OR jika salah satu input saja bernilai 1 (true), maka outputnya akan bernilai 1 (true).
+
+Sama seperti gerbang logika, tabel kebenaran berisi angka 0 untuk menunjukkan kondisi false dan 1 untuk kondisi true.
+Dalam tabel kebenaran logika OR di atas terdapat nilai A = 0 dan B = 1 menghasilkan output X = 1. Mengapa demikian? Kembali lagi ke prinsip logika OR, jika salah satu input saja ada yang  bernilai 1 (true), maka hasil outputnya adalah 1 (true). Sedangkan jika semua inputnya bernilai 0 (false), maka hasilnya juga tetap 0 (false).

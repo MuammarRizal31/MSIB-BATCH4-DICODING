@@ -1,0 +1,17 @@
+Gerbang logika atau logic gate adalah sebuah rangkaian sirkuit digital yang berguna untuk memproses logika boolean (logika yang menghasilkan output benar atau salah). Gerbang logika ini menghasilkan output berupa 0 (salah) dan 1 (benar) berdasarkan input (masukan) yang kita berikan.
+
+Istilah gerbang logika biasanya dihubungkan dengan sistim elektronika digital yang berhubungan dengan komponen IC (Integrated Circuit), Transistor, dan kawan-kawannya
+
+Terdapat 7 jenis gerbang logika yang akan dibahas
+    1. AND
+    2. OR
+    3. NOT 
+    4. NAND 
+    5. NOR 
+    6. XOR 
+    7. XNOR
+
+Gerbang logika biasanya digambarkan seperti diagram sirkuit atau bisa juga dalam bentuk tabel kebenaran. Apa itu tabel kebenaran? Tabel kebenaran merupakan kumpulan kombinasi beberapa nilai input berdasarkan logika yang kita buat untuk menghasilkan output (keluaran) yang masuk akal. Salah satu contoh gerbang logika dan tabel kebenaran digambarkan sebagai berikut
+
+Dalam gerbang logika AND, jika input A dan input B bernilai 1 (True) maka output X yang dihasilkan adalah 1 (True). Jika salah satu inputnya ada yang bernilai 0 (False) maka hasilnya adalah 0 (False).
+
