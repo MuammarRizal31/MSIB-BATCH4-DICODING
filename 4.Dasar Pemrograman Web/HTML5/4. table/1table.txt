@@ -1,0 +1,47 @@
+-->     TABLE
+Ada beberapa jenis informasi yang perlu ditampilkan dalam bentuk tabel, contohnya klasemen olahraga atau sebuah jadwal layaknya kalender. Ketika kita membuat sebuah tabel, pastinya kita akan banyak bermain dengan baris dan kolom. Pada materi ini kita akan belajar bagaimana cara membuat dan mengorganisir sebuah tabel pada HTML
+
+Tapi sebelum itu, apa sih sebenarnya tabel dalam HTML itu? Pembuatan tabel dalam HTML menggunakan elemen <table>. Elemen <table> ini merepresentasikan data tabular atau informasi yang disajikan dalam sebuah tabel. Tabel sendiri disajikan dalam dua dimensi yang terdiri dari baris dan kolom (cell) yang berisikan sebuah data. Berikut contoh data sepakbola yang disajikan dalam bentuk tabel.
+
+-->     STRUKTUR DASAR SEBUAH TABLE
+Tabel pada HTML disusun dari tiga buah elemen, yaitu <table>, <tr> sebagai "table row", dan <td> sebagai "table data" atau <th> sebagai "Table head". Elemen <table> digunakan untuk menandakan dimulai dan diakhirinya sebuah konten tabel dan juga sebagai wadah untuk tabel itu sendiri. Kemudian, elemen <tr> digunakan untuk membuat sebuah baris baru yang di dalamnya terdapat elemen <td> atau <th> sehingga menghasilkan sebuah cell
+
+Tabel pada HTML disusun dari tiga buah elemen, yaitu <table>, <tr> sebagai "table row", dan <td> sebagai "table data" atau <th> sebagai "Table head". Elemen <table> digunakan untuk menandakan dimulai dan diakhirinya sebuah konten tabel dan juga sebagai wadah untuk tabel itu sendiri. Kemudian, elemen <tr> digunakan untuk membuat sebuah baris baru yang di dalamnya terdapat elemen <td> atau <th> sehingga menghasilkan sebuah cell.
+
+Elemen <td> yang berarti “table data” selain membuat cell elemen ini juga merupakan tempat di mana data pada tabel ditampung. Selanjutnya untuk elemen <th> atau “table header” digunakan untuk menentukan sebuah header pada kolom datanya. Untuk lebih jelasnya perhatikan ilustrasi berikut:
+
+<h1>Pemenang Piala Dunia tiga tahun terakhir</h1>
+ 
+<table>
+   <tr>
+       <th>Tahun</th>
+       <th>Juara 1</th>
+       <th>Juara 2</th>
+       <th>Juara 3</th>
+   </tr>
+   <tr>
+       <td>2018</td>
+       <td>Prancis</td>
+       <td>Kroasia</td>
+       <td>Belgium</td>
+   </tr>
+   <tr>
+       <td>2014</td>
+       <td>Jerman</td>
+       <td>Argentina</td>
+       <td>Belanda</td>
+   </tr>
+   <tr>
+       <td>2010</td>
+       <td>Spanyol</td>
+       <td>Belanda</td>
+       <td>Jerman</td>
+   </tr>
+</table>
+
+
+-->     SPANNING CELL
+Terkadang kita membutuhkan sebuah sel yang mencakup untuk dua kolom ataupun dua baris sekaligus. Dalam aplikasi seperti Microsoft Excel, hal ini biasa kita kenal sebagai merging cell atau menggabungkan dua atau lebih sebuah sel. Ini memang menjadi sebuah fitur dasar dalam membuat sebuah tabel. Sehingga, pada HTML pun kita dapat melakukan hal tersebut. 
+
+Pada HTML hal ini lebih dikenal sebagai Spanning cell yang artinya menjangkau atau merentangkan sebuah ukuran sel lebih dari ukuran yang biasanya. Dengan spanning cell kita dapat membuat sebuah tabel yang lebih kompleks, tetapi akan membuat markup yang kita tulis menjadi sedikit sulit dibaca.
+

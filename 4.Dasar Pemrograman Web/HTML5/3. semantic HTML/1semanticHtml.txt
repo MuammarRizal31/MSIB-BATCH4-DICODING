@@ -1,0 +1,8 @@
+Semantic HTML - Mengorganisasikan Halaman Konten
+Seperti yang sudah disebutkan pada sub-modul sebelumnya, sebuah website memiliki hierarki konten yang sama seperti dokumen sehari-hari yang kita baca, misalnya seperti majalah, dan koran. Sehingga, hierarki pada sebuah website merupakan hal yang penting. Namun, tentu saja elemen yang terdapat pada HTML perlu kita kelompokkan menjadi beberapa bagian.
+
+Sebelum HTML5, kita mengelompokan suatu elemen HTML yang memiliki konten serupa dalam sebuah generic element <div> (kita akan membahas div secara dalam nanti). Kita mengelompokkan sebuah header website dengan menggunakan <div>, membuat sebuah navigation dengan menggunakan <div> juga, artikel atau section yang lainnya. Kita biasa gunakan atribut class atau id untuk mengindikasikan peran dari elemen tersebut. Hal ini membuat struktur pada website hilang (semantic meaningless)
+
+Pada HTML5, kita dikenalkan pada beberapa elemen yang dapat digunakan dalam mengelompokkan sebuah elemen dengan lebih jelas dan memiliki arti (semantic HTML). Elemen-elemen ini memiliki nama sesuai dengan fungsi atau peran dari elemen tersebut.
+
+Kedua contoh gambar di atas menunjukkan struktur halaman yang sama, yang mana pada contoh pertama banyak elemen <div> yang dapat diubah dengan layout elemen HTML5

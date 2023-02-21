@@ -1,0 +1,29 @@
+-->     Inline Formatting Text
+Pada materi kali ini, kita akan mengenal beberapa formatting text yang digunakan dalam sebuah baris teks (inline text). Sebelum menjelaskan elemen inline untuk formatting text yang dapat digunakan, sepertinya kita perlu membahas sekilas mengenai block dan inline.
+
+Standarnya elemen HTML memiliki dua sifat, yaitu block dan inline. Elemen yang bersifat block selalu membuat baris baru ketika di-render. Contohnya seperti elemen paragraf, list, heading, dan lainnya. Lawan dari elemen tersebut, yaitu elemen inline. Elemen ini tidak menambahkan baris baru ketika di-render. Apa saja elemen tersebut? Mari kita bahas satu persatu.
+
+-->     ANCHOR
+Apa itu anchor ? Anchor (jangkar) merupakan elemen yang digunakan untuk membuat sebuah hyperlink ke halaman atau website lain, file, alamat email, atau URL lainnya. Untuk menggunakan elemen ini kita gunakan tag <a>...</a> bersama dengan atribut href untuk menetapkan sebuah target yang akan dituju. 
+
+lihat gambarnya pada folder file
+
+--> EMPHASIZED TEXT
+Gunakan elemen <em> untuk menunjukan bagian kata yang perlu kita tekankan. Elemen ini menunjukan stress emphasis atau konten/kata yang perlu mendapatkan penekanan atau perhatian khusus. Berikut contoh penggunaannya
+
+<p><em>Oding</em> adalah seorang pelajar</p>
+<p>Dia adalah seorang <em>pelajar</em></p>
+
+Pada kalimat pertama, penekanan terdapat pada “siapa” seorang pelajar. Sedangkan pada kalimat kedua, penekanan terdapat pada “apa” yang sedang dijabati atau diperani oleh Oding.
+
+Standarnya pada browser sebuah kata yang ditekankan akan ditampilkan dalam gaya miring pada teks nya.
+
+-->     important text
+Gunakan elemen <strong> untuk menunjukan sebuah teks yang begitu penting (strong importance), serius, ataupun mendesak. Dalam arti teks tersebut harus dapat perhatian lebih dari teks biasa lainnya.
+
+Standarnya pada browser, sebuah teks yang dibungkus dengan tag  <strong> akan ditampilkan secara tebal. Dan ketika pengguna menggunakan pembaca layar (screen reader), suara yang terdengar akan berbeda. Ini mengartikan bahwa teks tersebut penting tidak hanya sekedar tebal.
+
+-->     SHORT QUOTATIONS
+Gunakan elemen <q> untuk menandai sebuah kutipan dalam sebuah teks. Elemen short quotations berbeda dengan <blockquote>. Elemen ini digunakan untuk kutipan pendek yang terletak di dalam baris (inline).
+
+<p>Sebelum pulang kerja, ia berkata kepadaku: <q>Maaf saya tidak bisa hadir dalam pertemuan nanti</q></p>

@@ -1,0 +1,38 @@
+Teks Terformat
+Sejauh ini, kita sudah mengenal paragraf, heading dan juga list pada HTML. Tapi masih ada beberapa lagi yang merupakan spesial teks format yang dapat kita gunakan yaitu <blockquote>, <pre>, dan <figure>.
+
+-->     Long quotations
+Jika pada konten kita memiliki sebuah kutipan ataupun sebuah testimonial, kita dapat gunakan format long quotations dengan menggunakan tags <blockquote>. Konten di dalam elemen <blockquote> ini dapat berupa sebuah paragraf, heading, ataupun list. 
+
+Pada elemen ini kita dapat menggunakan atribut cite untuk menentukan sumber URL dari sebuah kutipan (Jika kutipan tersebut bersumber dari sebuah situs website).
+
+-->     PREFORMATTED TEXT
+Pada sub-modul sebelumnya, kita sudah mengetahui bahwa HTML akan mengabaikan penulisan spasi yang dituliskan secara berulang dan juga line breaks (baris baru). Tetapi pada beberapa tipe konten seperti contoh kode atau puisi hal tersebut sangat berarti. Dengan begitu, terdapat sebuah elemen yang dapat kita gunakan untuk menampilkan konten sesuai yang kita tulis pada text editor. Untuk menggunakannya, kita gunakan elemen <pre> sebagai pembungkus kontennya. Perhatikan contoh berikut:
+
+-->     FIGURE
+Elemen ini digunakan untuk merepresentasikan konten tersendiri (self-contained content) seperti ilustrasi, diagram, foto atau bisa juga sebuah baris kode. Banyak hal yang dapat digunakan dalam elemen ini. 
+
+Elemen ini digunakan untuk mengelompokkan blok konten yang dapat dipindahkan posisinya dari blok utama sebuah dokumen tanpa mempengaruhi arti dari induk dokumen.
+
+Di dalam elemen figure kita dapat menuliskan elemen <figcaption> sebagai sebuah caption (judul) untuk konten tersebut. Berikut contoh penggunaan figure pada sebuah konten gambar.
+
+-->     Subscript dan Superscript
+Subscript <sub> dan superscript <sup> merupakan elemen yang dapat membuat teks yang ditampilkan nampak kecil, dengan posisi di bawah (sub) atau di atas (sup) dari teks biasanya. Elemen ini digunakan untuk menunjukan sebuah rumus kimia ataupun matematika.
+
+<p>Sukrosa merupakan suatu disakarida yang dibentuk dari monomer-monomernya yang berupa unit glukosa dan fruktosa,dengan rumus molekul C<sub>12</sub>H<sub>22</sub>O<sub>11</sub>.</p>
+ 
+<p>Salah satu persamaan paling umum dalam semua fisika adalah E=MC<sup>2</sup></p>
+
+-->     highlighted text
+Untuk menandai atau menyorot sebuah teks kita bisa menggunakan elemen <mark>. Elemen ini digunakan ketika terdapat sebuah teks yang memiliki peran penting, biasanya teks tersebut merupakan bagian yang paling relevan atau penting dalam sebuah konteks kalimat.
+
+Untuk menandai atau menyorot sebuah teks kita bisa menggunakan elemen <mark>. Elemen ini digunakan ketika terdapat sebuah teks yang memiliki peran penting, biasanya teks tersebut merupakan bagian yang paling relevan atau penting dalam sebuah konteks kalimat.
+
+<p>Ini adalah periode perang saudara. Pesawat ruang angkasa pemberontak, menyerang dari pangkalan tersembunyi, telah
+   memenangkan kemenangan pertama mereka melawan Kekaisaran Galactic yang jahat. Selama pertempuran,
+   <mark>mata-mata
+       Pemberontak berhasil mencuri rencana rahasia
+   </mark>
+   ke senjata pamungkas Kekaisaran, STAR DEATH, stasiun ruang angkasa
+   berlapis baja dengan kekuatan yang cukup untuk menghancurkan seluruh planet.
+</p>

@@ -1,0 +1,46 @@
+-->     Column Spans
+Untuk merentangkan sebuah kolom (column spanning) kita bisa menggunakan atribut colspan pada elemen <td> atau <th>. Berikut contoh untuk penggunaan atribut colspan sehingga sebuah header mencangkup dua kolom.
+
+Column Spans
+Untuk merentangkan sebuah kolom (column spanning) kita bisa menggunakan atribut colspan pada elemen <td> atau <th>. Berikut contoh untuk penggunaan atribut colspan sehingga sebuah header mencangkup dua kolom.
+
+<table>
+   <tr>
+       <th>18:00</th>
+       <th>19:00</th>
+       <th>20:00</th>
+   </tr>
+   <tr>
+       <td colspan="2">Avenger Infinity Wars</td>
+       <td>It Chapter 2</td>
+   </tr>
+   <tr>
+       <td>One Piece: Stampede</td>
+       <td>Weathering With You</td>
+       <td>Gundala</td>
+   </tr>
+   <tr>
+       <td>Gundala</td>
+       <td colspan="2">Avenger Infinity Wars</td>
+   </tr>
+</table>
+
+-->     Row Spans
+Untuk merentangkan sebuah baris (row spanning) kita dapat menggunakan atribut rowspan. Sama seperti column spanning, tetapi atribut ini akan merentangkan sebuah sel ke bawah. Berikut contohnya
+
+<table border="1">
+   <tr>
+       <th rowspan="3">18:00</th>
+       <td>Avenger Infinity Wars</td>
+   </tr>
+   <tr>
+       <td>One Piece: Stampede</td>
+   </tr>
+   <tr>
+       <td>Gundala</td>
+   </tr>
+</table>
+
+Perhatikan elemen <th> yang diberi nilai atribut rowspan. Elemen tersebut berada pada baris pertama dan akan memanjang menjadi tiga baris ke bawahnya. Jadi pada baris tersebut kita membutuhkan dua buah elemen (<th> dan <td>) dan pada baris selanjutnya (baris dua dan tiga) kita hanya perlu satu buah elemen <td> saja di dalam elemen <tr> setelahnya. Sehingga jika dilihat pada browser akan nampak seperti ini:
+
+Catatan: Sayangnya pada contoh kode diatas, penggunaan atribut border pada elemen <table> sudah deprecated (usang) sehingga kita tidak direkomendasikan untuk menggunakannya. Solusi masalah ini adalah menggunakan property border pada stylesheet. Keterangan ini dapat lebih lengkap dipelajari pada situs MDN ini

@@ -1,0 +1,22 @@
+Untuk menuliskan sebuah atribut kita memerlukan nama dari atribut itu diikuti dengan nilai atribut tersebut dalam bentuk string (Dituliskan dalam tanda kutip dua). Untuk lebih jelasnya, perhatikan :
+
+Dengan menambahkan atribut translate dan memberikan nilai “no” pada elemen paragraf tersebut, maka konten dari elemen yang dimaksud tidak akan diterjemahkan oleh layanan sistem translate otomatis seperti Google Translate.
+
+Lantas atribut apa saja yang dapat digunakan pada elemen HTML? Pada elemen HTML terdapat dua jenis atribut, yaitu Global Attribute dan atribut yang hanya bisa digunakan pada elemen tertentu. Untuk atribut yang spesifik pada sebuah elemen, kita akan mengulasnya   pada pembahasan elemen tersebut. Untuk Global Attribute, berikut daftar atribut yang bisa kita gunakan di seluruh elemen HTML.
+
+Attribute       ||      Description
+accesskey       || Menentukan tombol shortcut untuk mengaktifkan/memfokuskan pada sebuah element.
+class           || menentukan satu atau lebih classname untuk sebuah element
+contenteditable || Menentukan konten dari elemen merupakan konten yang dapat diubah atau tidak
+data-*          || Digunakan untuk menyimpan sebuah data pribadi khusus ke halaman atau aplikasi.
+dir             || Menentukan arah teks untuk konten pada suatu elemen.
+draggable       || Menentukan apakah suatu elemen dapat di-drag atau tidak
+dropzone        || Menentukan apakah data yang di-drag adalah data yang disalin, dipindahkan, atau ditautkan saat dijatuhkan.
+hidden          || Menentukan apakah suatu elemen ditampilkan atau tidak pada browser.
+id              || Menetapkan id pada elemen.
+lang            || menentukan bahasa pada konten elemen
+Spellcheck      || menentukan apakah elemen harus diperiksa ejaan nya dan tata bahasanya atau tidak
+style           || menentukan styling secara satu barus untuk suatu elemen
+tabindex        || Menentukan urutan dari suatu elemen
+title           || menentukan informasi tambahan tentang suatu elemen
+translate       || menentukan apakah konten elemen harus diterjemahkan atau tidak

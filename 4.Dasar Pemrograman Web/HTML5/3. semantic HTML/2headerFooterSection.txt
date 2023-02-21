@@ -1,0 +1,100 @@
+-->     Header dan Footer
+Elemen ini dapat kita gunakan untuk:
+1. Sebuah header dan footer utama yang muncul pada awal dan akhir di sebuah halaman <body>. 
+2. Header digunakan sebagai pengantar atau pembuka konten dalam sebuah elemen <article> atau <section>. 
+3. Footer digunakan sebagai catatan kaki pada sebuah elemen <article> atau <section>.
+
+Pada contoh dibawah ini elemen <header> digunakan untuk menampilkan nama situs dan navigasi utama
+<body>
+  <header>
+    <h1>Bandung</h1>
+    <p>Kota metropolitan terbesar di Provinsi Jawa Barat, sekaligus menjadi ibu kota provinsi tersebut.</p>
+    <nav>
+      <ul>
+        <li><a href="#sejarah">Sejarah</a></li>
+        <li><a href="#geografis">Geografis</a></li>
+        <li><a href="#wisata">Wisata</a></li>
+      </ul>
+    </nav>
+  </header>
+</body>
+
+-->     Dan elemen <footer> digunakan sebagai informasi hak cipta
+<body>
+  <header>
+    <h1>Bandung</h1>
+    <p>Kota metropolitan terbesar di Provinsi Jawa Barat, sekaligus menjadi ibu kota provinsi tersebut.</p>
+    <nav>
+      <ul>
+        <li><a href="#sejarah">Sejarah</a></li>
+        <li><a href="#geografis">Geografis</a></li>
+        <li><a href="#wisata">Wisata</a></li>
+      </ul>
+    </nav>
+  </header>
+  <footer>
+    &copy; 2019, Dicoding Academy
+  </footer>
+</body>
+
+Selain itu, elemen <header> dan <footer> dapat digunakan pada sebuah elemen <article> atau <section>. Header biasanya menampung judul dan penulis, footer dapat menampung sebuah link untuk membagikan artikel pada sebuah sosial media.
+
+<article>
+  <header>
+    <h1>Judul Artikel</h1>
+    <h2>Oleh: Dicoding Indonesia</h2>
+  </header>
+  <p>....... Konten artikel dimulai dari sini ......</p>
+  <footer>
+    <p>Bagikan artikel ini melalui</p>
+    <ul>
+      <li>Twitter</li>
+      <li>Facebook</li>
+      <li>......</li>
+    </ul>
+  </footer>
+</article>
+Perlu kita ketahui bahwa elemen <header> dan <footer> tidak boleh ditulis di dalam elemen <header> dan <footer> lainnya (bertumpuk/nested)
+
+-->     MAIN
+Element <main> digunakan untuk menampung/mewadahi konten utama (dominan) dalam <body>. Konten main dapat terdiri dari banyak section, ataupun artikel, atau konten apapun di dalam elemen main, selama termasuk konten utama yang dimiliki oleh website.
+
+<body>
+  <header>
+    <!-- Konten header website -->
+  </header>
+  <main>
+    <section>
+      <article>
+        <p>Sebuah article</p>
+      </article>
+    </section>
+    <article>
+      <p>Sebuah article lain</p>
+    </article>
+  </main>
+  <footer>
+    <!-- Konten footer website -->
+  </footer>
+</body>
+
+Catatan:
+<!-- --> merupakan tag komentar pada HTML, teks yang terdapat di antara tag tersebut, tidak akan ditampilkan pada website. Fungsinya untuk memberikan komentar saja/catatan
+
+Karena elemen <main> merupakan inti konten pada website, jangan gunakan elemen main lebih dari satu pada berkas HTML.
+
+-->     NAV
+Elemen <nav> digunakan untuk menampung sebuah navigasi yang sifatnya penting (major), contohnya navigasi utama pada sebuah website.
+
+Tapi tidak menjamin pada sebuah website hanya ada satu navigasi. Contohnya, sebuah akhir artikel pada blog terdapat tautan navigasi menuju artikel yang dianggap relevan dengan artikel yang telah kita baca. Navigasi tersebut tidak dianggap sebagai navigasi yang penting, sehingga kita tidak perlu menggunakan elemen <nav> untuk menampilkannya.
+
+Pada pembahasan header dan footer, kita sudah melihat contoh penggunaan dari elemen <nav> yang diletakkan pada elemen <header>. 
+
+<nav>
+  <ul>
+    <li><a href="#sejarah">Sejarah</a></li>
+    <li><a href="#geografis">Geografis</a></li>
+    <li><a href="#wisata">Wisata</a></li>
+  </ul>
+</nav>
+Sebuah navigation pada dasarnya sangat berguna untuk aksesibilitas website kita. Contohnya ketika pengguna website kita menggunakan screen reader dalam mengunjungi website, pengguna akan mudah mencari bagian yang dia inginkan tanpa harus menelusuri seluruh konten website.

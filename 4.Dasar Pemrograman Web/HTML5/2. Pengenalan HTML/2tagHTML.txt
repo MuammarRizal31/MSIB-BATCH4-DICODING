@@ -1,0 +1,9 @@
+-->     Paragraf
+Paragraf adalah elemen paling mendasar dari sebuah dokumen teks. Pada HTML, kita bisa menunjukkan sebuah paragraf dengan menggunakan elemen <p>.
+
+-->     Heading
+Heading
+Pada sub-modul sebelumnya, kita sudah melihat contoh penggunaan header yang diterapkan pada konten yang kita siapkan. Kita menggunakan <h1> dan <h2> dalam mengindikasi judul dan sub judul di dalam kontennya. Pada HTML terdapat <h1> hingga <h6> elemen heading yang dapat kita gunakan.
+
+Ketika kita menambahkan heading pada konten, Heading ini merepresentasikan garis besar halaman pada sebuah browser. Alat bantu baca seperti screen reader membaca garis besar halaman untuk bantu memetakan dan mengarahkan pengguna selama menjelajahi halaman. Selain itu, heading juga merupakan elemen yang dicari oleh mesin pencarian contohnya Google Search.
+

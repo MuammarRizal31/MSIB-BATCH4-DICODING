@@ -1,0 +1,32 @@
+-   BROWSER
+browser adalah alat atau tools yang digunakan untuk mengakses atau mengembangkan website
+
+-   CSS
+CSS atau cascading style sheet adalah bahasa markup atau markup language yang digunakan untuk mempercantik website
+
+-   CLIENT
+Client adalah perangkat yang memiliki kemampuan mengirimkan permintaan atau request kepada server melalui protocol HTTP
+
+-   DNS
+DNS atau domain name system adalah layanan jaringan yang berguna untuk menerjemahkan nama domain menjadi alamat IP
+
+-   HTML
+HTML atau hyper text markup language adalah bahasa markup standar untuk mengembangkan halaman web
+
+-   HTTP Server
+Server berperan pada sebuah website sebagai sebuah software yang dapat menerima transaksi dari hyper Text transfer protocol
+
+-   Rich Text
+Rich Text adalah teks terformat.biasanya digunakan dalam pembuatan document menggunakan aplikasi microsoft word atau lainnya
+
+-   Sistem Operasi
+Sistem operasi adalah sebuah perangkat lunak sistem yang mampu mengelola sumber daya dari perangkat lunak dan perangkat keras agar dapat berjalan dengan baik serta memudahkan proses interaksi dengan pengguna(brainware)
+
+-   Text Editor
+Text editor adalah alat atau tools pengedit kode yang digunakan untuk mengembangkan website
+
+-   Website
+halaman yang menampilkan informasi kepada pengguna berupa teks atau gambar. Website dapat diakses melalui internet dengan menggunakan browser
+
+-   WWW
+WWW atau world wide web adalah sebuah ruang informasi yang mana direferensikan sebagai sumber daya di identifikasikan oleh pengindentifikasi global yang dinamai dengan uniform resource identifiers (URI)

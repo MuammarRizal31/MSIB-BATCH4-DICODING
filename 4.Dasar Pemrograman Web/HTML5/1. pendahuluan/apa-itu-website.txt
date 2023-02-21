@@ -1,0 +1,34 @@
+Website adalah sebuah halaman yang menampilkan informasi berupa teks atau gambar.website dapat diakses melalui internet menggunakan browser
+
+website ini unik karena tiap halaman dapat saling terhubung dengan mneggunakan hypertext links.umumnya sebuah website memuat informasi yang disediakan secara perorangan,kelompok atau organisasi...semua informasi yang tersedia pada halaman website disimpan pada server
+
+Website sudah berkembang sangat pesat. Sekarang, website digunakan tidak hanya untuk media berbagi informasi atau berita. Layaknya sebuah aplikasi pada komputer dan handphone kita, website dapat digunakan untuk komunikasi secara real-time, mendengarkan sebuah lagu, bahkan photo editing sekarang dapat dilakukan pada sebuah website.
+
+Website sendiri merupakan teknologi yang sudah ada sejak 30 tahun silam. Tim Berners-Lee seorang ilmuwan Inggris menemukan World Wide Web (WWW) pada tahun 1989 ketika ia bekerja di CERN (Conseil Européen pour la Recherche Nucléaire). Web awalnya dibuat dan dikembangkan untuk memenuhi permintaan dalam berbagi informasi secara otomatis antar ilmuwan di universitas dan lembaga di seluruh dunia. Web pertama di CERN didedikasikan sebagai web pertama di dunia. Selain itu, pada tahun 2013 CERN merilis “a project to restore this first ever website: info.cern.ch” untuk mengabadikan website pertama di dunia. Thank you CERN! Thank you
+
+-->     CACATAN PENTING : 
+- Website : Halaman yang menampilkan informasi kepada pengguna berupa teks atau gambar. Website dapat diakses melalui internet dengan menggunakan browser.
+
+- Browser : Sebuah perangkat lunak yang dapat menerjemahkan berkas HTML, CSS, dan JavaScript yang didapat dari web server untuk ditampilkan dalam bentuk halaman website.
+
+- HTTP Server : Server berperan pada sebuah website sebagai sebuah software yang dapat menerima transaksi dari HyperText Transfer Protocol.
+
+- DNS Server : Server yang dapat mengubah/mengarahkan website melalui sebuah nama domain
+
+- client : perangkat yang meminta(request) suatu layanan tertentu ke suatu website
+
+- HTML : salah satu bahasa markup (markup language) yang digunakan untuk membuat struktur dan menampilkan konten pada world wide web(website)
+
+- HTML : Salah satu bahasa markup (markup language) yang digunakan untuk membuat struktur dan menampilkan konten pada World Wide Web (Website).
+
+- CSS : Bahasa markup yang digunakan untuk mengatur dan mempercantik tampilan pada website.
+
+- JavaScript : Bahasa pemrograman yang digunakan untuk membantu website menampilkan informasi secara dinamis.
+
+- Text Editor : Sebuah perangkat lunak yang digunakan untuk mengelola plain text. Kode HTML, CSS, dan Javascript dituliskan menggunakan perangkat ini.
+
+- Plain Text : Teks yang tidak terformat. Format teks ini digunakan dalam penulisan berkas HTML, CSS, dan Javascript
+
+- Rich Text : Teks yang terformat. Format teks ini digunakan jika kita ingin menulis menggunakan Microsoft Word atau teks editor berbasis WYSIWYG (What You See Is What You Get).
+
+- Element : Sebuah komponen pada HTML yang ditandai dengan tag pembuka dan penutup

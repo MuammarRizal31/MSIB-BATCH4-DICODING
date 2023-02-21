@@ -1,0 +1,24 @@
+WEB SERVER
+Seperti yang sudah disebutkan sebelumnya,informasi pada sebuah website disimpan pada server.
+lantas apa itu server? banyak yang mengira bahwa server adalah sebuah komputer dengan performa tinggi dan berukuran besar.hal tersebut tidak salah karena biasanya komputer yang dijadikan server memang harus memiliki performa yang tinggi. selain untuk menyimpan data(HTML,CSS DAN JS disimpan disini) server juga harus melakukan pekerjaan yang cukup berat, yaitu menanggapi, menyediakan, dan mengelola data yang diminta oleh client. Tidak hanya satu client, namun bisa ratusan bahkan ribuan.
+
+Tetapi pengertian server sebenarnya lebih merujuk pada sebuah software yang dapat menghubungkan sebuah komputer dengan komputer lain. Jadi penekanan sebuah server bukan pada sebuah komputernya, melainkan pada rule atau fungsi dari sebuah komputer tersebut
+
+-->     HTTP Server
+HTTP Server merupakan sebuah software yang dapat menerima transaksi dari HyperText Transfer Protocol dalam suatu website atau biasa disebut dengan “HTTP Server”. Banyak software yang dapat melakukan tugas tersebut. Apache adalah salah satunya yang cukup friendly, gratis, dan tersedia untuk seluruh komputer dengan basis UNIX (termasuk MacOS) dan juga Windows
+
+-->     DNS SERVER
+Setiap perangkat baik komputer, smartphone, modem, maupun router yang terkoneksi internet akan memiliki IP Address. Contohnya, komputer yang menjadi host dari dicoding.com memiliki IP 104.28.20.105, Jika kita menggunakan IP tersebut untuk mengakses sebuah website, tentu akan repot. Mengingat beberapa angka mungkin masih mudah dilakukan, tapi bagaimana jika harus mengingat 10 IP? Untuk mengatasinya, dibuatlah Domain Name System (DNS) yang dapat mengubah/mengarahkan website melalui sebuah nama domain (“dicoding.com”). 
+
+-->     CLIENT
+Jika ada penyedia (server) tentu ada pengguna bukan? Perangkat yang meminta (request) suatu layanan tertentu ke suatu server disebut dengan client. Browser merupakan salah satu client yang memanfaatkan HTTP Server dalam transaksi datanya. Jelas, tujuannya adalah untuk mengolah, menampilkan, dan melakukan interaksi dengan dokumen yang disediakan oleh web server. Layaknya sebuah pelukis, browser mampu menyajikan informasi dalam bentuk visual yang indah bersumber dari data mentah yang diperoleh dari server.
+
+-->     Server-side dan Client-side
+Dalam pengembangan web, terdapat istilah “Client-Side” atau “Server-side”. Hal ini merujuk pada sebuah proses yang dilakukan pada sisi client atau di sisi server. Untuk client side, semua proses terjadi di sisi pengguna, client meminta data ke server di mana data yang dikirimkan nanti diolah di sisi client. Biasanya data yang diolah dalam bentuk HTML, CSS, dan JavaScript. 
+
+Sedangkan untuk server side, semua proses yang terjadi dilakukan di sisi server. Server side bertanggung jawab untuk merespon data yang diminta oleh client side. Biasanya server side merupakan tempat di mana terjadinya interaksi pada database, sehingga sisi client tidak mengetahui prosesnya dan memang tidak boleh tahu. Client hanya diberikan sebuah data hasil olahan dari sisi server.
+
+-->     Bagaimana Website bekerja?
+Ketika kita mengunjungi dicoding.com, tentu kita membutuhkan sebuah koneksi internet. Hal ini dikarenakan website disimpan dalam sebuah web server yang dapat diakses di mana saja. Ketika kita menuliskan “dicoding.com” pada address bar di browser dan menekan enter pada keyboard, hal yang pertama dilakukan browser adalah menghubungi Domain Name System (DNS) server untuk mengarahkan ke alamat server. Kemudian browser mengirimkan sebuah permintaan (request) agar server mengirimkan salinan dari informasi yang nantinya ditampilkan pada client (browser). Jika request tersebut berhasil, maka server mengirimkan hasil tanggapan (response) dari permintaan tersebut dan mulai mengirimkan salinan yang dibutuhkan secara berangsur. Browser menggabungkan bagian-bagian informasi yang diperoleh untuk kemudian tampil di jendela browser.
+
+Untuk menampilkan informasi pada jendela, browser menggunakan HTML dan CSS yang dikirimkan dari server. Dengan begitu, informasi dalam bentuk HTML dan CSS-lah yang dikirimkan server untuk client (browser). Beberapa halaman website juga membutuhkan informasi ekstra seperti berkas gambar, suara atau video, tetapi berkas tersebut sebenarnya hanya ditanamkan (embed) pada HTML. Dan beberapa halaman website sebenarnya juga membutuhkan JavaScript untuk me-render HTML atau CSS agar dapat menampilkan informasi secara dinamis.

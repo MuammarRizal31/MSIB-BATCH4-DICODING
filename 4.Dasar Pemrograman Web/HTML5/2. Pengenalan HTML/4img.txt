@@ -1,0 +1,31 @@
+Pada HTML untuk menampilkan sebuah gambar kita bisa menggunakan tag <img>. Berbeda dengan elemen lain, elemen <img> tidak menuliskan konten diantara tag pembuka dan tag penutup sebagaimana tag lainnya. Namun untuk menetapkan gambar yang ditampilkan kita gunakan sebuah atribut src
+
+Selain itu, yang perlu kita perhatikan adalah atribut yang ada pada elemen tersebut, terdapat dua atribut yang harus kita gunakan ketika menerapkan elemen <img>.
+
+Yang pertama, atribut src. Atribut ini berfungsi sebagai sumber dari gambar yang ditampilkan. Atribut ini dapat bernilai url gambar atau path gambar lokal dari gambar yang digunakan.
+
+Selanjutnya adalah atribut alt. Atribut ini sebenarnya tidak wajib untuk diterapkan, hanya saja atribut ini akan sangat berguna ketika gambar tidak berhasil ditampilkan. Nilai atribut ini merupakan gambaran dari gambar yang ditampilkan dalam bentuk tulisan. Sehingga ketika gambar gagal ditampilkan maka akan memunculkan teks alternatif yang dapat mewakili arti dari gambar tersebut.  
+
+Selanjutnya terdapat atribut lain yang bisa Anda gunakan pada elemen ini, contohnya title. Atribut title berfungsi sebagai informasi tambahan untuk sebuah gambar. Informasi tersebut akan muncul ketika kita mengarahkan sebuah cursor pada gambar yang ditampilkan.
+
+ekstensi Format     --> keterangan
+.gif                --> Dapat digunakan untuk gambar animasi,Ukuran file biasanya kecil,Kualitas gambar terbatas.
+
+.jpg, .jpeg,        --> Kualitas text pada gambar dapat menjadi buruk, Ukuran file lumayan kecil, biasanya digunakan untuk gambar yang tidak banyak text
+.jfif, .pjpeg, .pjp
+
+.png                --> Text lebih bisa terbaca dibandingkan jenis Jpeg, Ukuran file dapat menjadi besar sehingga mengurangi kecepatan memuat situs
+
+.webp               --> Dibandingkan dengan gambar berkualitas sama pada jpeg atau png, ukuran file pada webp dapat menjadi lebih kecil. Namun tidak semua web browser dapat membaca webp.
+
+.svg                --> Kualitas gambar terjaga dan ukuran file kecil, Namun tidak cocok untuk gambar yang terlalu kompleks seperti foto, Pada website biasanya digunakan untuk logo atau icon
+
+-->     MENGATUR UKURAN PADA GAMBAR
+Untuk mengatur ukuran gambar yang ditampilkan juga tentunya menggunakan sebuah atribut. Untuk menentukan lebar gambar kita gunakan atribut width, dan untuk menentukan tinggi tentu gunakan atribut height.
+
+Ketika menggunakan atribut ini disarankan hanya gunakan salah satunya.
+
+Dengan menetapkan hanya satu atribut ukurannya, maka ukuran lainnya akan mengikuti sesuai dengan rasio gambar aslinya. Contohnya, kita bisa menetapkan ukuran gambar berdasarkan nilai lebarnya saja.
+
+Atau kita bisa tetapkan ukuran gambar berdasarkan tingginya. Dengan begitu nilai lebar akan menyesuaikan nilainya berdasarkan rasio gambar aslinya.
+

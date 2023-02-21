@@ -1,0 +1,38 @@
+-->     Generic Element
+Setelah mengenal beberapa elemen yang ada, bagaimana jika tidak terdapat elemen sesuai yang mampu menggambarkan konten kita? Dalam dunia nyata, jenis informasi sangat beragam dan mungkin tidak semua semantik elemen yang kalian ketahui dapat menggambarkan jenis informasinya. Untungnya, HTML menyediakan dua tipe elemen umum (generic element) yang bisa kita kustomisasi untuk menggambarkan konten kita dengan tepat. 
+
+Terdapat dua generic elemen yang dapat kita manfaatkan. 
+
+-->     DIV
+Yang pertama elemen <div>, elemen ini merupakan sebuah wadah (container) yang bersifat umum untuk menampung beberapa konten. Elemen ini tidak akan memberikan efek apapun pada konten atau layout sebelum menerapkan sebuah style menggunakan CSS.
+
+Sebagai sebuah wadah yang murni, elemen <div> tidak merepresentasikan apapun. Elemen ini lebih sering digunakan untuk mengelompokkan sebuah konten sehingga dapat memudahkan styling dengan menggunakan atribut class atau id.
+
+<!DOCTYPE html>
+<html>
+ 
+<head>
+   <title>Div Element</title>
+   <style>
+       .shadowbox {
+           width: 15em;
+           border: 1px solid #333;
+           box-shadow: 8px 8px 5px #444;
+           padding: 8px 12px;
+           background-image: linear-gradient(180deg, #fff, #ddd 40%, #ccc);
+       }
+   </style>
+</head>
+ 
+<body>
+   <div class="shadowbox">
+       <p>Paragraf ini berada di dalam elemen div, namun akan ditampilkan sama seperti paragraf biasanya. Elemen ini lebih sering digunakan untuk mengelompokkan sebuah konten sehingga dapat memudahkan styling dengan menggunakan atribut class atau id.
+       </p>
+   </div>
+</body>
+
+-->     SPAN
+Yang kedua elemen <span>, elemen ini memberikan manfaat yang sama seperti <div>, bedanya elemen ini digunakan sebagai phrase elements dan tidak terdapat line breaks ketika menggunakannya. Sederhananya, <span> merupakan sebuah <div> yang digunakan dalam sebuah baris teks yang dapat diwadahi oleh paragraf, list, heading atau lainnya.
+
+Mari kita ambil contoh. Tidak ada elemen pada inline element yang memiliki arti untuk menampung sebuah informasi telepon. Maka dari itu, tiap item pada nomor telepon bisa ditampung dalam elemen <span> dan diklasifikasikan (menggunakan atribut class) dengan nilai “phone”.
+
