@@ -1,0 +1,31 @@
+logika pemrograman adalah sebuah kemampuan dasar yang menerapkan pemahaman operasi logika terhadap data ke dalam ilmu komputer
+
+logika pemrograman juga dapat membantu Anda untuk menyelesaikan masalah (problem solving), baik dalam bidang pemrograman maupun kehidupan sehari-hari
+
+Istilah logika pemrograman sering kita dengar ketika masuk dunia programming
+
+ADA 3 JENIS LOGIKA PEMROGRAMAN
+    1. LOGIKA ARITMATIKA
+    2. LOGIKA PERBANDINGAN
+    3. LOGIKA PERULANGAN
+
+-->     PERBEDAAN LOGIKA DAN ALGORITMA PEMROGRAMAN
+Algoritma pemrograman merupakan langkah-langkah penyelesaian masalah yang terangkai secara masuk akal, urut, dan sistematis.
+
+Logika dan algoritma merupakan dua hal yang berbeda tetapi saling berkaitan satu sama lain. Jika sebelumnya logika pemrograman dapat membantu Anda untuk menyelesaikan permasalahan (problem solving), algoritma bertugas untuk membuat penyelesaiannya lebih terstruktur
+
+KETIKA MENYUSUN ALGOITMA TERDAPAT BEBERAPA HAL YANG HARUS DIPERHATIKAN
+    1. Finiteness (keterbatasan)
+        * algoritma yang berjalan dan memproses setiap langkah-langkahnya memiliki sifat terbatas, sehingga ia harus berhenti ketika semua langkah-langkahnya selesai dikerjakan. Jangan membuat algoritma yang panjang dan tidak ada akhirnya karena akan bertentangan dengan sifat finiteness ini.
+
+    2. Definiteness (kepastian)
+        * setiap langkah algoritma harus jelas,detail dan tidak ambigu (makna ganda)
+
+    3. effectiveness (efektivitas)
+        * Setiap algoritma harus dibuat secara efektif. Langkah-langkah yang ada di dalamnya juga harus sesuai kebutuhan dan tidak perlu berlebihan
+
+    4. Input (masukan)
+        * Algoritma pasti membutuhkan nol atau lebih masukan (input) sebelum prosesnya dimulai.
+
+    5. Output (keluaran)
+        * Setiap input yang diproses oleh algoritma pasti memiliki satu atau lebih keluaran (output). Keluaran adalah besaran nilai yang memiliki hubungan dengan masukan (input). Keluaran harus berupa solusi atau penyelesaian dari suatu masalah
