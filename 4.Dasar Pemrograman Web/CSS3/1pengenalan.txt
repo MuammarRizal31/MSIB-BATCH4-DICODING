@@ -1,0 +1,23 @@
+-->     Pengenalan ke Styling
+Pada sub-modul pengenalan sudah disinggung seperti apa peran CSS pada website. Website nampak begitu membosankan dan mengerikan tanpa adanya CSS. Cascading Style Sheet atau biasa disingkat CSS merupakan W3C standar yang digunakan untuk mengatur visualisasi  berkas yang ditulis pada HTML. Pada sub-modul ini kita akan belajar penggunaan dasar dari CSS. Tepatnya mulai dari pembuatan berkas CSS, pengenalan struktur sintaksnya, hingga menerapkan dasar styling seperti memberikan warna pada sebuah teks.
+
+CSS syntax berbeda dengan HTML, begitu pula dengan JavaScript. CSS bukanlah sebuah bahasa pemrograman karena di dalamnya tidak terdapat logika, tidak dapat sintaks pengondisian, tidak adanya proses iterasi, dsb. CSS hanya sebuah declarative language yang digunakan untuk mendeklarasikan suatu nilai yang nantinya digunakan untuk mengatur seperti apa sebuah elemen HTML ditampilkan pada browser
+
+->>     KEUNTUNGAN MENGGUNAKAN CSS
+Dengan menerapkan CSS, tampilan website kita akan lebih menarik. Berikut beberapa keuntungan yang didapatkan ketika kita menerapkan CSS.
+
+    * Dapat mengontrol dan menerapkan layout secara presisi. Dengan menggunakan CSS kita bisa membuat sebuah website seperti dokumen cetak dengan desain yang menarik dan presisi.
+
+    * Menghindari pekerjaan yang berulang-ulang dalam menerapkan styling. Kita dapat menetapkan styling pada beberapa berkas HTML hanya dengan menggunakan satu berkas CSS.
+
+    * Didukung banyak browser. Seluruh browser saat ini minimal sudah mendukung CSS versi 2. Untuk browser yang populer seperti Chrome dan Firefox sudah mendukung CSS versi 3. 
+
+Sudah jelas, bukan? Tiada alasan kita tidak menerapkan CSS. Terkecuali dukungan pada browser yang terkadang berbeda setiap vendornya (contohnya vendor prefixes), tetapi hal tersebut tidak menjadi masalah ketika kita tahu di mana letak perbedaan dan cara penerapannya.
+
+
+-   Bagaimana Style Sheet Bekerja?
+Sebuah style sheet bekerja melalui tahapan berikut:
+
+Dimulai dari sebuah dokumen yang telah ditandai dengan tag elemen HTML.
+Menuliskan aturan styling untuk menentukan bagaimana elemen HTML akan ditampilkan.
+Melampirkan aturan styling yang sudah dibuat pada dokumen HTML. Ketika browser memuat dokumen, tampilan elemen yang ditampilkan akan menyesuaikan dengan aturan styling yang sudah ditetapkan.

@@ -1,0 +1,31 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: sans-serif;
+}
+
+header {
+  height: 50vh;
+  background-color: aqua;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+article > h2 {
+  color: blueviolet;
+}
+
+section > h3 {
+  color: blueviolet;
+}
+
+footer {
+  background-color: #00a2c6;
+  padding: 20px;
+  text-align: center;
+  color: white;
+}

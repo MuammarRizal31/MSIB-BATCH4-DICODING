@@ -1,0 +1,76 @@
+pada sub modul sebelumnya kita sudah mengetahui apa itu selector,dan menggunakannya. yang kita gunakan tersebut merupakan selector basic,sebenarnya terdapat beberapa macam dari selector basic yakni :
+    - type selector
+    - class selector
+    - ID selector
+    - attribute selector
+    - universal selector
+
+Mari kita bahas satu persatu
+
+* TYPE SELECTOR
+Type Selector menggunakan nama elemen sebagai target untuk diterapkannya rule. Dengan kata lain, ketika menggunakan selector ini tentu rule akan diterapkan pada seluruh elemen target yang ada pada dokumen HTML.
+
+* CLASS SELECTOR
+class selector menetapkan target elemen berdasarkan nilai dari attribute class yang diterapkan pada elementnya. Untuk penulisan selector diawali dengan tanda titik(.)
+
+* ID SELECTOR
+ID selector menetapkan target elemen berdasarkan nilai dari atribut id yang diterapkan pada elemennya. Sama seperti class, atribut id dapat diterapkan pada seluruh elemen HTML, dan kebanyakan atribut ini digunakan untuk memberikan sebuah arti pada generic element seperti <div> dan <span>. Namun atribut id ini tidak bersifat shareable, yang artinya nilai id ini harus unik dan digunakan pada satu elemen saja.
+
+* ATTRIBUTE SELECTOR 
+Attribute selector merupakan cara menetapkan target elemen berdasarkan sebuah atribut yang digunakan atau bahkan bisa lebih spesifik dengan nilainya.
+contoh : 
+    a[href] {
+        color: blue;
+    }
+
+- element yang menerapkan nilai pada href dengan akhiran ".org"
+    a[href$=".org"] {
+        color: red;
+    }
+
+-  element yang menerapkan nilai pada href yang mengandung teks "insensitive" tidak mementingkan huruf kapital
+    a[href*="insensitive" i] {
+       color: cyan;
+    }
+
+- element yang menerapkan nilai pada href yang mengandung teks "example" 
+    a[href*="example"] {
+       background-color: silver;
+    }
+
+dari kode diatas terlihat banyak sekali kondisi yang dapat diterapkan pada attribute selector,supaya lebih mudah marih kita rangkum dalam sebuah table Berikut
+
+Syntax          ||      Description
+[attr]          || menargetkan element yang menerapkan attribtue attr
+[attr=value]    || menargetkan elemen yang menerapkan attribtue attr dengan nilai value
+[attr~=value]   || menargetkan elemen yang menerapkan attribtue attr dengan salah satu nilainya adalah value
+[attr^=value]   || menargetkan element yang menerapkan attribute attr yang nilainya diawali dengan nilai value
+[attr$=value]   || menargetkan elemen yang menerapkan attribute attr yang nilainya diakhiri dengan value
+[attr*=value]   || menargetkan elemen yang menerapkan attribute attr yang lainnya mengandung value
+
+
+*   UNIVERSAL SELECTOR
+Universal selector digunakan untuk diterapkan pada seluruh elemen.tetapi selector ini juga bisa secara spesifik menargetkan sebuah elemen dengan menggabungkan bersama selector yang lainnya
+
+contoh : 
+
+/* Menargetkan seluruh tipe elemen */
+    * {
+      color: green;
+    }
+    
+/* Menargetkan seluruh tipe elemen yang mengandung nilai "en" pada atribut lang */
+    *[lang^=en] {
+      font-style: italic;
+    }
+    
+/* Menargetkan seluruh tipe elemen yang memiliki nilai "warning" pada atribut class */
+    *.warning {
+      color: red;
+    }
+    
+/* Menargetkan seluruh tipe elemen yang memiliki nilai "content" pada atribut id */
+    *#content {
+      border: 1px solid blue;
+      padding: 20px;
+    }

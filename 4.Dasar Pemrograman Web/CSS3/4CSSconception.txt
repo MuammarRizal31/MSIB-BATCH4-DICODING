@@ -1,0 +1,27 @@
+-->     INHERITANCE
+styling HTML bersifat inheritance yang artinya dapat memawarisi properti style "tertentu" pada elemen yang ada didalam nya.
+Contohnya pada rules yang kita tuliskan untuk elemen <body> akan diterapkan pada seluruh elemen yang ada di dalam elemennya (body). Contoh lainnya, pada rules yang diterapkan pada elemen <footer> dengan properti color yang bernilai white, akan diterapkan pada seluruh elemen yang ada di dalam <footer>. Hal ini menjadi alasan mengapa memahami struktur dokumen itu penting.
+
+-->     GROUP Selector
+Jika kita menerapkan rule yang sama pada beberapa selector yang berbeda, di CSS kita dapat menggabungkan selector tersebut sehingga dapat meminimalisir penulisan kode yang berulang.
+
+-->     RULE ORDER
+Sesuai dengan namanya, cascading artinya “mengalir.” Demikian halnya dengan alur kerja CSS dalam membaca kode yang mengalir dari atas ke bawah. Karena itu kita harus memperhatikan urutan dalam penulisan rules, terutama saat terjadi sebuah konflik.
+
+Konflik dapat terjadi karena kita dapat menerapkan beberapa styling pada satu dokumen HTML. Contohnya, apa yang seharusnya ditampilkan pada browser ketika eksternal css mengharuskan elemen <p> menampilkan warna merah, tetapi pada embedded css <p> harus menampilkan warna biru? Kembali pada alur kerja CSS yang membaca dari atas ke bawah, sehingga warna yang akan diterapkan adalah warna yang paling akhir didefinisikan
+
+-->     IMPORTANT
+Tetapi kita bisa membuat sebuah property styling agar dianggap penting untuk diterapkan oleh browser dan tidak memperhatikan urutannya. Kita bisa menambahkan keyword !important diakhir nilai propertinya. 
+
+Gunakan !important ketika memang benar-benar dibutuhkan saja. Sebaiknya kita pahami aturan urutan pada CSS dengan baik sehingga meminimalisir penggunaan tanda tersebut
+
+RECAP   :
+    * Rule : Sebuah aturan styling yang harus diterapkan pada elemen HTML. Dalam sebuah rule terdapat selector dan deklarasi properti styling.
+    * Selector : Sebuah bagian dari rule, yang mengidentifikasi target elemen untuk menetapkan sebuah rule.
+    * Declaration : Sebuah bagian dari rule, yang terdiri dari pasangan properti dan nilainya.
+    * External Style Sheet : Berkas terpisah yang di dalamnya hanya terdapat sebuah rules yang akan digunakan pada website.
+    * Embedded Style Sheet : Kumpulan rules yang dituliskan dalam berkas HTML dengan menggunakan elemen <style>.
+    * Inline Style : styling yang diterapkan pada elemen HTML dengan menggunakan atribut style.
+
+
+

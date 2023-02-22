@@ -1,0 +1,18 @@
+-->     COMBINATORS
+Kita sudah mengeetahui beberapa basic selector yang ada pada CSS. tidak hanya sampai disitu,CSS selector dapat berisi lebih dari satu basic selector diantara basic selector kita dapat menyertakan sebuah kombinator
+
+-->     ADJACENT SIBLING SELECTOR (+)
+adjacent sibling selector menggabungkan dua buah basic selector dengan menggunakan tanda +
+contoh : 
+    img + p {
+        color: blue;
+    }
+
+Adjacent Sibling Selector terdiri dari dua buah target elemen, namun hanya elemen kedua yang menerapkan rule selama elemen tersebut dituliskan langsung setelah elemen pertama pada berkas HTML. Selain itu kedua elemen tersebut harus berada di dalam induk elemen yang sama.
+
+-->     GENERAL SIBLING SELECTOR (~)
+Mirip seperti adjacent sibling selector namun rules akan ditetapkan pada seluruh elemen kedua yang berada setelah elemen pertama.denagn catatan induknya sama,walaupun posisi elemen kedua tidak berada tepas setelahnya.general sibling selector menggunakan tanda ~ untuk menetapkan elemennya
+contoh: 
+    img ~ p {
+        color: green;
+    }
