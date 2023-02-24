@@ -1,0 +1,19 @@
+-->         FLOATING
+Sederhananya properti float dapat membuat elemen berada pada sebelah kanan atau kiri. Saat diterapkan pada elemen inline, properti float juga memungkinkan elemen di sekitarnya mengelilingi elemen tersebut (wrap). 
+
+Selain dalam membuat text wrapping. Float juga merupakan salah satu teknik dalam membuat layout website. Teknik ini masih banyak digunakan oleh developer karena sangat mudah dipahami dan tergolong mudah untuk multiple column seperti gambar berikut
+
+Hal ini dapat dilakukan dengan mudah menggunakan properti float, karena nilai dari properti ini adalah left dan right. Nilai tersebut menunjukan posisi elemen harus diletakkan
+
+Ketika menggunakan properti float jangan lupa menentukan ukuran lebar dari propertinya, karena nilai dari lebar menentukan seberapa banyak ruang yang dicakup oleh elemen. Pada contoh di atas kita menetapkan nilai 30% untuk konten kiri dan 70% untuk konten sebelah kanan.
+
+Lantas jika nilainya hanya left dan right, bagaimana jika ada lebih dari dua kolom dalam menyusun layout? Hal tersebut sangat mudah dilakukan. Kita hanya perlu menetapkan nilai left pada ketiga kolomnya, lantas kolom akan tampil bersebelahan sesuai urutan penulisan elemen.
+
+-->         PERMASALAHAN PENERAPAN FLOAT
+Properti float terlihat sangat mudah untuk digunakan, baik dalam text wrapping maupun dalam penyusunan layout. Tetapi bukan berarti ketika menggunakan properti ini, tiada efek samping atau masalah yang ditimbulkan. Apa itu?
+
+Jika sebuah elemen induk hanya memiliki satu elemen dengan menerapkan properti float, ia akan memiliki nilai tinggi 0px
+
+Hal ini menunjukkan bahwa elemen yang menerapkan float “tidak dianggap ada” oleh induk elemen yang menaunginya karena jika menggunakan float, elemen akan dikeluarkan dari normal flow.
+
+-->         CARA MENANGANINYA

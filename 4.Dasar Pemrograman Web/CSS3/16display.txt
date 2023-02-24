@@ -1,0 +1,23 @@
+-->     DISPLAY ROLES
+kita pernah membahas mengenai inline dan block pada sub modul pendalaman HTML.kita telah paham bahwa standarnya,tiap elemen HTML memiliki dua tipe yaitu block dan inline.
+
+-->     INLINE ELEMENT
+    * Element HTML yang secara default tidak menambahkan baris baru ketika dibuat
+    * nilai lebar dan tinggi elemen inline sebesar konten didalamnya,dan tidak dapat diubah
+    * margin dan padding hanya mempengaruhi elemen secara horizontal,tidak vertikal
+
+-->     BLOCK ELEMENT
+    * elemen html secara default menambahkan baris baru ketika dibuat
+    * jika tidak diatur lebarnya, lebar dari elemen block akan memenuhi lebar dari browser atau elemen yang menaunginya
+    * kita dapat mengatur dimensi dari element block
+    * didalam elemen block,kita dapat menyimpan tag elemen HTML
+
+Dengan menggunakan properti display, kita dapat mengubah sebuah elemen inline menjadi block, begitupun sebaliknya. Dalam hal ini, properti ini juga dapat digunakan untuk menyembunyikan elemen yang ditampilkan.
+
+NILAI DARI PROPERTI INI DAPAT BERUPA
+    * inline        -> digunakan untuk mengubah elemen block berperilaku seperti elemen inline
+    * block         -> digunakan untuk mengubah elemen inline berperilaku seperti elemen block
+    * inline-block  -> membuat elemen block tidak menambahkan baris baru ketika dibuat,namun tetap mempertahankan sifat lain dari element block
+    * none          -> digunakan untuk menyembunyikan elemen dari halaman
+
+Properti ini banyak sekali digunakan dalam kasus pembuatan navigasi. Biasanya navigasi dibuat menggunakan elemen list yang memiliki sifat block, sehingga item list selalu ditampilkan dalam baris baru. Dengan menggunakan properti display, kita dapat mengubah perilaku elemen list tersebut dengan menerapkan inline, sehingga item list dapat ditampilkan secara horizontal

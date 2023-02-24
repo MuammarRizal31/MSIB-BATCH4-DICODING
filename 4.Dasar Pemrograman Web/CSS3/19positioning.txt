@@ -1,0 +1,31 @@
+-->     POSITIONING
+Kita sudha mengetahui posisi dari sebuah elemen dengan menggunakan margin.namun ketika melakukannya,posisi elemen lain disekitarnya akan terpengearuh.lantas bagaimana jika kita ingin memindahkan tanpa menggangu posisi elemen lainnya?solusinya kita perlu mengubah positioning chema dengan menggunakan properti position dalam mengontrol letak elemen tersebut. Berikut nilai dari properti position yang ada pada CSS :
+    - Normal flow/static flow : merupakan default behaviour yang dimiliki elemen,dimana setiap elemen blok akan ditampilkan dalam baris baru ketika dibuat. Sehingga setiap elemen block selalu muncul dibawah dari elemen block sebelumnya..bahkan jika masih terdapat ruang kosong pada samping elemen nya,mereka tidak akan nampak bersebelahan.
+
+    - relative positioning: membuat elemen bisa berpindah posisi ke atas,kanan,bawah,maupun kiri dari posisi semula atau posisi elemen disekitarnya karena ketika menggunakan relative positioning,elemen tersebut akan dipindahkan dari normal flow sehingga kita dapat memindahkan posisi elemen ke atas,kanan,bawah,maupun kiri secara leluasa tanpa mengganggu elemen disekitarnya.namun posisinya relatif pada jendela browser dan induk elemen selama induk elemen juga berada diluar dari normal flow
+
+    - fixed positioning: merupakan absolute position namun posisinya selalu relatif pada jendela browser.bahkan ketika pengguna scrolling pun,posisinya dilayar akan tetap tidak berubah
+
+-->     PERBEDAAN STATIC FLOW DAN NON STATIC FLOW
+sebenarnya CSS memiliki dua buah flow yang bisa digunakan untuk menampilkan elemen,yakni static dan non-static. agar mudah memahami perbedaan antar keduanya kita gambarkan sebuah halaman website dengan tampilan tiga dimensi
+
+-->     NORMAL FLOW
+dalam flow normal,setiap elemen block ditempatkan dibawah elemen sebelumnya.karena ini merupakan cara standar browser memperlakukan elemen HTML,kita tidak perlu menetapkan nilai properti position ketika ingin membuat perilaku seperti ini tetapi secara sintaks perilaku ini ditetapkan dengan nilai static
+
+-->         RELATIVE POSITIONING
+Seperti yang kita ketahui sebelumnya, dengan menetapkan relative pada properti position, kita dapat melakukan perpindahan posisi elemen ke atas, kanan, bawah, maupun kiri. Perpindahan posisi yang dilakukan tidak akan berpengaruh terhadap posisi elemen di sekitarnya karena dengan  relative positioning, elemen tersebut akan dipindahkan dari normal flow. Untuk menggunakan relative positioning kita tetapkan nilai relative pada properti position.
+
+-->         ABSOLUTE POSITIONING
+Ketika properti position diberikan nilai absolute, akan berperilaku sama dengan relative. Elemen akan dikeluarkan dari normal flow sehingga jika elemen dipindahkan posisinya tidak akan berpengaruh pada elemen lain di sekitarnya
+
+Namun yang membedakannya adalah elemen ini benar-benar tidak dianggap ada oleh elemen pada normal flow. Akibatnya, lokasi awal elemen yang diberikan nilai absolute akan ditempati oleh elemen di bawahnya.
+
+Dan perpindahan posisi ketika menggunakan absolute akan relatif pada jendela browser. Kita bisa lihat bahwa elemen heading bergeser 500px dari kiri. Tapi selain relatif terhadap jendela browser, nilai ini juga dapat relatif pada elemen yang menaunginya (elemen induk) selama elemen tersebut juga berada di luar normal flow. Namun jika tidak, elemen akan menghiraukan elemen induknya tersebut
+
+Pada contoh kode di atas kita bisa lihat pada .parent kita tidak menetapkan properti position, sehingga elemen yang menerapkannya berada pada flow normal. Sehingga elemen heading akan menghiraukan elemen induknya
+
+Berbeda ketika .parent menerapkan properti position dengan nilai yang dapat mengeluarkannya dari normal flow, contohnya nilai relative.
+
+Dengan begitu posisi elemen heading akan relatif terhadap .parent.
+
+-->         FIXED POSITIONING

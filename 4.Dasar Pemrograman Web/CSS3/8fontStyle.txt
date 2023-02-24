@@ -1,0 +1,95 @@
+-->     FONT STYLING
+Ketika kita membuat sebuah dokumen teks, termasuk dokumen cetak, langkah awal kita biasanya adalah menentukan jenis font yang akan digunakan. Pada pengembangan website pun demikian. Dalam CSS, font ditentukan dengan menggunakan beberapa paket properti font. Kita bisa atur tipe font, ukuran, ketebalan, dan gaya. Berikut ini merupakan properti font yang akan kita pelajari antara lain :
+    * font-family : Menetapkan jenis font yang akan diterapkan pada target.
+    * font-weight : Menentukan ketebalan pada teks. 
+    * font-size : Menentukan ukuran pada teks
+    * font-style : Menetapkan styling yang diterapkan pada teks.
+    * font-variant : Menentukan teks untuk menggunakan gaya small caps (huruf kapital kecil).
+    * font : Shorthand dari properti font yang ada.
+
+-->     FONT FAMILY
+Pada sub-modul pengenalan CSS kita sudah mencoba menggunakan font properties ini untuk mengubah standar font yang ditampilkan pada browser dengan menggunakan font-family pada elemen <body>.
+
+Pada rule tersebut kita mengubah standar font yang digunakan browser dengan font ‘sans-serif’. Sebenarnya untuk nilai dari properti ini dapat lebih dari satu (dikenal sebagai font stack). Tujuannya adalah sebagai fallback jika terjadi kegagalan dalam menggunakan font yang kita gunakan
+    * Seluruh nilai font yang bukan merupakan generic font families harus dituliskan secara kapital. Contohnya “Arial” bukan dituliskan “arial”.
+    * Gunakan tanda koma (,) untuk memisahkan antar nilai font yang digunakan.
+    * Selalu tanda kutip (“) untuk membungkus nilai font yang memiliki spasi pada namanya (Contohnya “Open Sans”).
+
+Mungkin kita bertanya-tanya mengapa perlu memberikan lebih dari satu nilai pada font-family? Hal tersebut penting karena tidak semua browser mendukung semua jenis font. Memberikan lebih dari satu nilai font dapat menawarkan alternatif tampilan font pada browser. Terutama jika font utama yang diterapkan tidak didukung oleh browser yang digunakan. 
+
+Bagaimana urutan prioritasnya? Mulai dari jenis font yang pertama dituliskan. Jika font pertama didukung oleh browser, maka browser akan menggunakannya. Namun jika tidak, maka browser akan memeriksa nilai font yang kedua dan menggunakannya (jika didukung), demikian dan seterusnya.  
+
+Pastikan untuk menggunakan generic font families pada akhir nilai properti font-family, karena nilai ini dipastikan didukung oleh seluruh browser saat ini. Lantas apa saja nilai dari generic font families ini? Berikut nilai-nilai generic font families yang dapat kita gunakan untuk fallback mechanism:
+
+    * serif : jenis font yang memiliki runcing pada garis akhir karakternya. Times New Roman merupakan salah satu jenis serif font.
+    * sans-serif : jenis font yang tidak meruncing pada garis akhir karakternya. Contohnya “Open Sans”, “Fira Sans” dan lainnya.
+    * monospace : jenis font yang memiliki nilai lebar tiap karakternya sama. Consolas merupakan salah satu jenisnya.
+    * cursive: jenis font yang tampak seperti handwriting atau hasil tulisan tangan.
+    * fantasy : jenis font yang merepresentasikan karakteristik yang menyenangkan.
+    * system-ui : jika menerapkan nilai ini maka font yang diterapkan akan sama seperti font yang digunakan pada sistem operasi kita.
+    * math : jenis font yang digunakan untuk penulisan rumus-rumus matematika.
+    * emoji : jenis font yang digunakan untuk menampilkan emoji.
+    * fangsong : jenis font yang menampilkan gaya penulisan Chinese
+
+Dalam memilih jenis font terdapat istilah yang dinamakan web safe font. Web safe font adalah jenis font yang umumnya sudah pasti tersedia di sebagian besar komputer. Sehingga dapat dipastikan bahwa website akan terlihat sebagaimana mestinya pada browser. Berikut merupakan beberapa contoh font yang masuk ke kategori ini.
+    * Arial (sans-serif)
+    * Verdana (sans-serif)
+    * Helvetica (sans-serif)
+    * Tahoma (sans-serif)
+    * Trebuchet MS (sans-serif)
+    * Times New Roman (serif)
+    * Georgia (serif)
+    * Garamond (serif)
+    * Courier New (monospace)
+    * Brush Script MT (cursive)
+
+-->     FONT SIZE
+Mengubah nilai font pada sebuah dokumen adalah hal yang sangat wajar terjadi, begitu pula pada website. Untuk menetapkan ukuran font, kita perlu menerapkan properti font-size. Kita bisa menetapkan nilai dari properti ini dengan menuliskan langsung nilai dan satuannya.
+
+Satuan dalam menetapkan ukuran font terdapat dua jenis. Yang pertama relative, yakni satuan yang nilainya tergantung pada sesuatu hal, contohnya ukuran dari viewport, induk elemen ataupun ukuran teks standar. Dan yang kedua adalah absolute, yakni satuan yang nilainya telah ditentukan atau digunakan dalam dunia nyata.
+
+em --> Font size --> Satuan relatif terhadap ukuran font yang sedang digunakan pada elemen (contohnya, 2em berarti 2 kali lebih besar dari ukuran font seharusnya).
+
+ex --> Font height --> Satuan relatif terhadap tinggi font saat ini, satuan ini sangat jarang sekali digunakan
+
+rem --> Font size --> Mirip seperti em, tetapi rem merupakan satuan relatif terhadap ukuran font dari root element.
+
+ch --> Font width --> Satuan relatif terhadap lebar dari karakter “0” nol.
+
+vw --> Viewport width --> Satuan relatif terhadap 1% lebar viewport. Contoh 1vw = 1% dari lebar viewport. Satuan ini tidak didukung pada browser IE8 ke bawah.
+
+vh --> Viewport height --> Satuan relatif terhadap 1% tinggi viewport. Contoh 1vh = 1% dari tinggi viewport. Satuan ini tidak didukung pada browser IE8 ke bawah.
+
+-->     FONT WEIGHT
+Setelah mengenal font families dan font size, selanjutnya ada juga font-weight yang digunakan untuk mengatur ketebalan dari font yang ditampilkan. Nilai dari properti ini dapat ditentukan dengan menggunakan numeric values (100 sampai 900) atau dengan menggunakan descriptive terms (normal, bold, bolder, dan lighter). 
+
+Properti font-weight dapat diaplikasikan ke seluruh elemen yang ada di HTML dan nilainya dapat diturunkan pada elemen turunannya.
+
+-->     FONT STYLE
+Properti selanjutnya adalah font-style. Properti ini digunakan untuk menentukan postur dari teks yang ditampilkan, apakah bentuknya vertikal (normal) atau miring (italic dan oblique).
+
+Italic dan oblique keduanya menampilkan teks yang miring. Perbedaanya adalah italic menerapkan tipe miring (italic font version) dari suatu font sedangkan oblique adalah font normal yang hanya dibuat miring.
+
+Properti font-style dapat diaplikasikan ke seluruh elemen yang ada di HTML dan nilainya dapat diturunkan pada elemen turunannya
+
+-->     FONT VARIANT
+Kita yang terbiasa dengan aplikasi document editor (rich text) seperti Microsoft Word, tentu tahu atau sudah mencoba fitur small caps. Fitur ini dapat membuat teks menjadi kapital tetapi dituliskan secara kecil dan merapat, seperti ini:
+
+Untuk membuat tulisan seperti gambar di atas, kita bisa memanfaatkan properti font-variant dengan nilai small-caps pada propertinya.
+
+Properti font-variant dapat diaplikasikan ke seluruh elemen yang ada di HTML dan nilainya dapat diturunkan pada elemen turunannya.
+
+-->     SHORTHAND
+Menspesifikasikan masing-masing nilai properti font akan menghasilkan banyak sekali kode repetitif. Dengan begitu CSS memberikan suatu “jalan pintas” untuk menuliskan properti-properti tersebut ke dalam satu properti yaitu font. 
+
+Dengan menggunakan properti font kita dapat menuliskan beberapa properti hanya dalam satu properti pada satu rule.
+
+CONTOH : 
+h1 {
+    font: <style> <weight> <variant> <size> <font-family>
+}
+
+Nilai dari properti font merupakan nilai dari seluruh properti dari font yang sudah kita bahas. Tiap nilai dipisahkan menggunakan spasi. Pada properti ini urutan nilai merupakan hal yang penting, sehingga jangan sampai salah urutan dalam menuliskannya. Kesalahan penulisan atau urutan menyebabkan seluruh struktur rule menjadi tidak valid.
+
+Walaupun begitu kita bisa tidak menuliskan seluruh nilai properti yang ada, tetapi nilai dari properti font-size dan font-family wajib ada ketika menggunakan properti ini. Berikut contohnya penulisan minimal ketika kita menggunakan properti font:
+

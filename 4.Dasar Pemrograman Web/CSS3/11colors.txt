@@ -1,0 +1,58 @@
+-->     MENETAPKAN NILAI WARNA
+Setiap warna pada layar komputer kita terdiri dari campuran warna merah, hijau, dan biru. Layar komputer dibuat dari ribuan kotak kecil yang biasa disebut pixel. Ketika layar monitor tidak menyala maka pixel pun tidak akan menyala. Ketika layar monitor menyala, tiap pixel dapat menghasilkan warna yang berbeda sehingga dapat menampilkan gambar
+
+Di dalam pixel terdapat tiga buah lampu kecil berwarna merah, hijau, dan biru. Ribuan warna dapat dihasilkan dari kombinasi tiga warna tersebut.
+
+Ketika ingin menetapkan warna, kita tidak perlu menghafal kombinasi dari ketiga warna tersebut. Banyak pemilih warna yang dapat membantu kita dalam menetapkan warna yang diinginkan. Contohnya seperti color picker yang ada pada Photoshop, GIMP atau Gravit Designer
+
+Kita bisa melihat nilai RGB melalui color picker. Lantas bagaimana jika kita tidak memiliki aplikasi design seperti yang telah disebutkan tadi? Tenang, sekarang color picker banyak tersedia online, bahkan ketika kita menuliskan “color picker” pada Google Search, tools tersebut tersedia pada hasil pencariannya.
+
+Untuk menetapkan nilai warna pada CSS kita dapat menggunakan Numeric Value dan Predefined Color Name. Apa sih maksud kedua hal tersebut? Mari kita bahas satu persatu yah
+
+-->     NUMERIC VALUE
+Cara yang paling banyak digunakan dalam menetapkan warna adalah  dengan menggunakan numeric value. Mengapa demikian? Dengan menggunakannya kita dapat menentukan warna yang kita inginkan dengan tepat. Terlebih dengan bantuan color picker maka kita tak perlu repot memahami dan mencari nilai kode warna secara manual
+
+Berikut contoh penulisan nilai warna pada CSS dengan numeric value:
+
+/* Warna hijau menggunakan format RGB */
+color: rgb(78,231,23);
+ 
+/* Warna hijau Menggunakan format HEX */
+color: #4ee717;
+ 
+/* Warna hijau menggunakan format HSL (hanya di CSS3)*/
+color: hsl(104, 82%, 50%);
+
+Kode tersebut merupakan nilai warna hijau yang dituliskan dalam beberapa format. Dari kode tersebut kita tahu tidak hanya format RGB yang dapat digunakan dalam menetapkan warna. Selain RGB ada juga format Hex dan HSL (Hue, Saturation, Light).
+
+-->     PREDEFINED COLOR NAME
+Menentukan warna bisa juga dilakukan selain dengan menggunakan format angka. Kita bisa menggunakan sebuah kata seperti blue, yellow, red dan lainnya
+
+color: black;
+color: white;
+color: blue;
+
+Dengan menggunakan kata tentu kita dapat lebih mudah dan cepat dalam menentukan warna, tetapi mungkin hanya warna dasar yang sudah kita hafal. Faktanya, varian warna ada banyak jumlahnya! Hampir seluruh browser saat ini mendukung 140 nama warna, wow! Kita dapat melihat apa saja warna yang tersedia pada tautan berikut:
+
+-->     OPACITY
+CSS3 mengenalkan properti opacity yang dapat menspesifikasikan nilai transparan pada elemen HTML. Nilai dari properti opacity merupakan angka desimal antara 0.0 hingga 1.0, jika kita menetapkan nilainya 0.5 itu berarti 50% transparan.
+
+Selain pada elemen, menetapkan opacity juga dapat kita lakukan pada warna. Untuk melakukannya bisa menggunakan format rgba, dan hsla, di mana format ini merupakan format rgb ditambahkan nilai alpha. Selain itu, dapat juga dilakukan menggunakan format hex dengan memberikan dua digit dibelakang kode hexadecimal.
+
+-->     TEXT COLOR
+Pada sub-modul Pendahuluan Styling kita sudah mencoba bagaimana mudahnya mengganti warna pada teks yang ditampilkan. Sejujurnya tidak ada lagi yang perlu kita bahas disini. Kita dapat dengan mudahnya mengganti warna teks dengan properti color.
+
+Nilai dari properti color dapat berupa predefined color name atau sebuah numeric value dengan menggunakan RGB, RGBA, HEX, HSL, ataupun HSLA. Berikut sebagai contoh, seluruh elemen <p> akan diberi warna abu-abu (gray) dengan menggunakan beberapa cara yang ada:
+
+Terdapat dua cara dalam penetapan nilai color menggunakan format hexadecimal, yaitu dengan menyebutkan digit hexadecimal secara lengkap (6 digit) dan menyebutkan tiga digit (paling sedikit) hexadecimal. Pada contoh diatas, nilai #666666 dan #666 memiliki hasil yang sama. Artinya setiap digit dari #666 akan melakukan duplikasi dari digit pertama ke digit kedua, digit ketiga ke digit keempat dan digit kelima ke digit keenam, sesuai urutan pendefinisiannya.
+
+Properti color dapat diaplikasikan ke seluruh elemen yang ada pada HTML dan nilainya dapat diturunkan pada elemen turunannya. Jadi kita bisa mengubah warna teks pada seluruh dokumen HTML dengan menerapkan properti color pada elemen <body>, seperti ini:
+
+-->     BACKGROUND-COLOR
+CSS memperlakukan setiap elemen HTML seperti berada pada sebuah kotak (kita akan mempelajari ini pada pembahasan box model). Properti background-color dapat mengatur warna latar belakang dari kotak tersebut. 
+
+Sama seperti text color, kita dapat menspesifikasikan warna yang dipilih dengan numeric values atau dengan predefined color name. Properti background-color akan bernilai transparan jika tidak kita tetapkan (default).
+
+Kebanyakan browser menetapkan nilai putih sebagai standar untuk nilai background-color, tetapi nilai standar tersebut dapat pengguna ubah menggunakan pemilihan mode cerah atau mode gelap pada pengaturan browser-nya. Maka untuk memastikan website kita memiliki tampilan background color putih, kita dapat terapkan nilai background-color: white; pada elemen <body>.
+
+Biasanya kita juga menerapkan padding saat menetapkan background-color guna memberi jarak antara konten dan tepi kotak elemen.

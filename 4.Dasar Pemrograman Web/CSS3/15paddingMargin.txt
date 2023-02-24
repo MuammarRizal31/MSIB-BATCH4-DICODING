@@ -1,0 +1,19 @@
+-->     PADDING
+erupakan jarak antara area konten dan border. Padding banyak diterapkan pada elemen jika elemen tersebut menerapkan warna latar atau pun border. Padding memberikan sedikit ruang sehingga konten di dalam elemen dapat lebih nyaman untuk ditampilkan.
+
+Seperti yang kita lihat, paragraf kedua jauh lebih nyaman dibaca karena terdapat jarak antara teks dan border dari kotak. Kotak pun menjadi sedikit lebar karena adanya padding.
+
+Pixel merupakan satuan yang sering digunakan dalam menetapkan nilai properti ini (meskipun kita bisa juga menggunakan persentase atau ems). Jika menetapkan menggunakan persentase, maka nilai akan menjadi relatif pada elemen induk atau jendela browser (jika tidak memiliki induk elemen).
+
+--> MARGIN
+Seperti halnya padding, margin merupakan ruang atau jarak pada sebuah elemen. Namun jarak tersebut terletak di luar dari konten dan border elemen. Margin digunakan untuk menjaga elemen agar tidak bertabrakan satu sama lain atau dari tepi jendela browser
+
+Margin ini bersifat collapsed, yang artinya dapat menumpuk jika terdapat dua margin yang saling bertumpukan. Anda bisa melihat pada margin bawah dan margin atas pada kedua elemen tersebut. Hal itu menjelaskan mengapa jarak vertikal antar elemen tersebut tidak 40px melainkan 20px. Jika terjadi pertumpukan margin, maka nilai yang paling besar yang akan diterapkan.
+
+-->     MEMBUAT KOTAK BERADA DITENGAH /CENTERING CONTENT
+Bagaimana meletakkan sebuahkotak tepat pada tengah sebuah halaman atau didalam elemen induknya? aturlah margin kanan dan kiri dengan nilai auto.
+
+Lebih lanjut, kita juga harus menentukan lebar dari kotak tersebut (menggunakan properti width). Jika tidak, kotak akan mengambil lebar penuh pada halaman atau induk elemen.
+
+Setelah kita menentukan lebar kotak dan mengatur margin kiri dan kanan menjadi auto, maka secara otomatis browser akan memberi jarak yang sama di setiap sisi horizontal kotak, sehingga membuat kotak berada di tengah halaman. 
+

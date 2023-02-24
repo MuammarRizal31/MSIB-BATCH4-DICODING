@@ -1,0 +1,84 @@
+-->     Box Model
+Pada pembahasan background-color disinggung bahwa setiap elemen ditampilkan seperti sebuah boxes atau kotak. Box model merupakan salah satu konsep dari CSS. Setiap elemen yang dibuat pada HTML akan menciptakan sebuah kotak untuk menampung kontennya.  Layaknya bentuk kotak pada umumnya, pasti terdapat nilai seperti width (lebar), height (tinggi), padding (tebal lapisan), border (garis tepi), dan juga jarak. Pada CSS nilai - nilai tersebut dapat kita atur.
+
+Kita mungkin sudah sedikit paham bagaimana konsep box model ini bekerja dengan mengikuti latihan sebelumnya. Di sini kita akan membahas lebih lanjut mengenai properti apa saja yang dapat memanipulasi boxes tersebut. Tapi sebelum itu, kita pahami lebih tentang konsep box atau kotak pada elemen HTML agar kita dapat gambaran lebih tentang hal tersebut.
+
+-->     BOX ELEMENT
+Seperti yang kita lihat pada gambar di atas, setiap elemen pada HTML baik itu block-level atau inline elemen, akan menghasilkan sebuah kotak elemen
+    * Content : Merupakan sebuah inti dari kotak elemen yang merupakan konten dari elemen itu sendiri
+    * Padding : Area yang menjadi jarak antara border elemen dengan konten yang ditampilkan. Ketika kita menerapkan background-color maka warna tersebut diterapkan pada area padding. Penerapan ukuran padding pada elemen merupakan opsional.
+    * Border : Merupakan garis terluar yang mengelilingi konten dan padding. Penerapan border pada elemen merupakan opsional.
+    * Margin : Berbeda dengan padding, margin merupakan area jarak diluar dari border. Pada ilustrasi diatas, margin ditunjukkan dengan warna merah muda namun pada aslinya margin selalu transparan dan penerapan margin pada elemen merupakan opsional.
+    * Edge of element : merupakan batas dari suatu elemen. Di dalamnya terdapat margin, border, padding dan konten. Pada ilustrasi di atas, batas elemen ditunjukkan dengan garis putus tetapi pada aslinya batas elemen selalu tidak terlihat
+
+-->     BOX DIMENSIONS
+Secara standar sebuah box yang dihasilkan tiap elemen selalu cukup untuk menampung konten. Tetapi kita dapat mengatur nilai dimensi dari box tersebut dengan properti width dan height
+
+Cara yang paling banyak digunakan dalam menentukan dimensi kotak adalah dengan menggunakan pixel, persentase, atau ems. Secara tradisional, pixel merupakan cara yang paling populer karena kita dapat merancang dan mengontrol ukuran secara akurat
+
+Berbeda ketika kita menggunakan persentase, ukuran kotak akan relative atau menyesuaikan dari ukuran lain, seperti ukuran jendela browser atau ukuran induk yang menaunginya. Sedangkan ketika menggunakan ems, nilai dimensi kotak akan menyesuaikan berdasarkan ukuran teks yang ditampilkan pada konten elemen tersebut.
+
+-->     BOX SIZING
+Pada CSS2 ukuran lebar dan panjang elemen mengacu pada konten elemen (content-box). Itu berarti ukuran elemen seluruhnya merupakan nilai panjang dan lebar yang kita spesifikasikan ditambah dengan nilai padding dan border yang diterapkan pada elemen. Hal tersebut membuat sebagian developer menjadi sulit menetapkan ukuran dimensi.
+
+Setelah CSS3 kita dapat memilih tipe pengukuran lain dalam menentukan dimensi elemen. Dengan menggunakan properti box-sizing kita dapat menentukannya berdasarkan border box, di mana ukuran elemen sudah termasuk content, padding dan border. Dengan metode ini, hasil elemen yang ditampilkan (termasuk padding dan border) akan memiliki dimensi yang sama persis seperti yang kita tentukan.
+
+-->     BORDER
+Border merupakan sebuah garis yang mengelilingi area konten dan padding (opsional). Kita bisa mengatur tipe, ketebalan, serta warna garis yang ditampilkan sesuai dengan yang kita inginkan. Kita juga bisa mengatur dalam menampilkan sebagian atau keseluruhan garis pada elemen. Mari kita eksplorasi apa saja properties yang dapat mengatur border.
+
+-->     BORDER WIDTH
+Properti border-width digunakan untuk mengatur ketebalan dari border. Nilai dari properti ini dapat berupa pixel atau menggunakan predefined names value seperti thin, medium, dan thick. Kita tidak bisa menggunakan nilai persentase (%) pada properti ini.
+
+Kita dapat mengatur ukuran garis secara individual dengan menggunakan empat properti terpisah seperti ini:
+
+Properti border-width digunakan untuk mengatur ketebalan dari border. Nilai dari properti ini dapat berupa pixel atau menggunakan predefined names value seperti thin, medium, dan thick. Kita tidak bisa menggunakan nilai persentase (%) pada properti ini.
+
+Kita dapat mengatur ukuran garis secara individual dengan menggunakan empat properti terpisah seperti ini:
+
+.box {
+   border-top-width: 2px;
+   border-right-width: 1px;
+   border-bottom-width: 1px;
+   border-left-width: 2px;
+}
+
+Tetapi kita juga dapat menetapkan nilai keempatnya sekaligus dalam satu properti seperti ini
+
+.box {
+  border-width: 2px 1px 1px 2px; /*top right bottom left*/
+}
+
+Properti border-width dapat ditentukan dengan menggunakan satu, dua, tiga, atau empat nilai. Berikut penjelasannya: 
+
+    * Ketika satu nilai ditentukan, maka nilai berlaku untuk empat sisi.
+    * Ketika dua nilai ditentukan, nilai pertama berlaku untuk sisi atas dan bawah, nilai kedua untuk sisi kiri dan kanan.
+    * Ketika tiga nilai ditentukan, nilai pertama berlaku untuk sisi atas, nilai yang kedua untuk sisi kiri dan kanan, nilai ketiga   untuk sisi bawah.
+    * Ketika empat nilai ditentukan, nilai pertama berlaku untuk sisi atas, nilai yang kedua untuk sisi kanan, nilai yang ketiga untuk sisi bawah, dan nilai yang keempat untuk sisi kiri. Urutan tersebut berdasarkan arah jarum jam (clockwise).
+
+-->     BORDER STYLE
+Kita bisa menetapkan tipe border dengan menggunakan properti border-style. Berikut nilai - nilai yang dapat digunakan pada properti ini:
+
+NILAI PROPERTI      ||      Penjelasan
+Solid               ||  tipe garis padat (tidak terputus putus)
+dotted              ||  garis yang dibentuk dengan titik titik
+dashed              ||  garis yang dibentuk dari dua buah garis padat
+groove              || tipe garis yang berbentuk seperti frame
+hidden              || digunakan untuk menyembunyikan garis pada elemen
+
+Properti terakhir adalah border-color. Properti ini digunakan untuk menentukan warna pada garis dengan menggunakan nilai RGB, Hex, atau nama warna pada CSS.
+
+/* menggunakan rgb format */
+border-color: rgb(80, 138, 212);
+ 
+/* menggunakan format hex */
+border-color: #4ee717;
+ 
+/* menggunakan nama warna */
+border-color: red;
+
+Sama seperti properti border yang lain, kita dapat menentukan warna pada individual sisi pada elemen dengan menggunakan properti yang terpisah.
+
+-->     SHORTHAND
+untuk menerapkan border pada element kita harus mendefinisikan seluruh properti border yang ada.dimulai dari menetapkan ketebalan(border-width),tipe (border-style) dan warna(border-color).jika kita lupa menetapkan salah satu properti tersebut,maka garis tidak akan nampak pada element
+
+dengan begitu tentu untuk menetapkan border pada elemen,kita perlu menuliskan properti yang banyak..tetapi CSS menyediakan jalan  pintas(shorthand) untuk membuat border denagn satu properti saja.properti border memiliki tiga buah nilai yang digunakan untuk menetapkan ketebalan,tipe dan warna pada border

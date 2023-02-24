@@ -1,0 +1,5 @@
+-->     MENAMBAHKAN META TAG VIEWPORT
+Setelah berhasil membuat layout dengan menggunakan float, apakah terpikir bagaimana tampilan yang dihasilkan pada mobile device? Tampilan website kita terlihat baik ketika dibuka menggunakan laptop atau desktop tetapi belum tentu akan sama pada mobile device. 
+
+Pada browser Google Chrome dan Mozilla Firefox terdapat fitur inspection. Fitur ini sangat bermanfaat bagi developer web dalam membantu pengembangan website. Jika ingin mempelajari lebih lanjut mengenai fitur ini, Anda bisa melihat detailnya pada dokumentasi yang tersedia pada tautan berikut:
+
