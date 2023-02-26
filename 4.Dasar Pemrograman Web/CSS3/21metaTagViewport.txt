@@ -3,3 +3,13 @@ Setelah berhasil membuat layout dengan menggunakan float, apakah terpikir bagaim
 
 Pada browser Google Chrome dan Mozilla Firefox terdapat fitur inspection. Fitur ini sangat bermanfaat bagi developer web dalam membantu pengembangan website. Jika ingin mempelajari lebih lanjut mengenai fitur ini, Anda bisa melihat detailnya pada dokumentasi yang tersedia pada tautan berikut:
 
+Yang jelas pada inspector tersebut terdapat fitur di mana kita dapat mensimulasikan halaman website dalam tampilan mobile device atau tablet. Untuk membuka fitur inspector kita bisa gunakan shortcut ctrl + shift + i pada browser, atau dengan melakukan klik kanan -> inspect / inspect page
+
+Untuk mengatasinya, kita perlu menetapkan tag viewport agar dapat responsif pada peranti mobile
+
+Viewport merupakan area yang dapat dilihat oleh pengguna kita pada halaman website. Ukuran viewport bervariasi berdasarkan device-nya. Ukuran viewport pada sebuah peranti mobile, lebih kecil dibandingkan dengan layar komputer.
+
+Sebelum adanya tablet ataupun handphone, halaman website didesain hanya untuk ukuran layar komputer. Dengan begitu, banyak sekali website yang menerapkan tampilan dan ukuran yang static. Maka ketika halaman tersebut diakses melalui handphone atau tablet, ukuran akan terlalu besar untuk ditampilkan. Untuk mengatasi permasalahan tersebut kita perlu mengatur sebuah viewport pada halaman website kita.
+
+Mengatur viewport dapat melalui sebuah tag <meta> yang disisipkan pada head berkas html. Silakan buka berkas index.html kemudian tambahkan script berikut di dalam <head>.
+

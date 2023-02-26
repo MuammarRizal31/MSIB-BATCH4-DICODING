@@ -29,3 +29,4 @@ Berbeda ketika .parent menerapkan properti position dengan nilai yang dapat meng
 Dengan begitu posisi elemen heading akan relatif terhadap .parent.
 
 -->         FIXED POSITIONING
+Fixed positioning merupakan absolute position namun posisinya selalu relatif pada jendela browser (meskipun diletakan di dalam induk elemen diluar dari flow normal). Bahkan ketika pengguna melakukan scrolling posisinya akan tetap nampak pada posisinya di layar.

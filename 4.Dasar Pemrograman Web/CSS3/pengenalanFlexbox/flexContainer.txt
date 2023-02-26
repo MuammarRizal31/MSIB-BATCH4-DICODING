@@ -1,0 +1,86 @@
+-->         PROPERTI PROPERTI PADA FLEX CONTAINER
+Pada materi ini,kita akan berkenalan terlebih dahulu dengan properti properti yang dilibatkan kepada flex container(parent elemen).properti properti ini akan berpengaruh secara langsung kepada flex items dalam menampilkan susunannya.
+
+-->         1.  Display
+kita telah menggunakan properti display untuk mengatur sifat elemen dengan value block dan inline.nah kali ini,jika kita ingin mendefinisikan elemen agar disusun sebagai flexible box.kita dapat menggunakan properti yang sama
+
+-->         2. Flex direction
+ini untuk mengatur arah flex,mau dari atas 
+    - bawah ke atas atau atas kebawah
+    - kiri kekanan atau kanan kekiri
+
+valuenya terdapat
+flex-direction: row | row-reverse | column | column-reverse
+
+default dari properti ini adalah row
+
+-->         3. Flex wrap
+Ini tempat yang tidak muat dia akan turun kebawah/baris baru.
+Secara bawaan, value dari properti ini adalah nowrap.
+
+.container{
+    display: flex;
+    flex-wrap: nowrap | wrap | wrap-reverse;
+}
+
+berikut adalah penjelasan setiap value dari properti flex-wrap
+    a. nowrap: flex items hanya akan ditempatkan dalam satu baris
+    b. wrap: flex items akan ditampilkan dalam multiple lines,yakni dari atas kebawah
+    c. wrap-reverse: flex items akan ditampilkan dalam multiple lines,tetapi dari arah bawah ke atas
+
+-->         4. Justify content
+untuk membuat child element agar berada ditengah secara horizontal atau jarak antar child elemen setara,dll
+
+.container{
+    display: flex;
+    justify-content: flex-start | flex-end | center | space-between | space-around | space-evenly | 
+}
+
+penjelasan 
+    - flex-start: untuk meletakkan child element dimulai dari main-start
+    - flex-end: untuk meletakkan child element dimulai dari main-end
+    - center: untuk meletakkan child element ditengah parent child
+    - space-between: membuat element pertama berada di kiri dan element kedua di tengah,tetapi ketika ada elemen lainnya dia akan berada ditengah
+    - space-around: setiap element memiliki panjang celah yang sama pada sisi horizontal
+    - space-evenly: setiap child element akan memiliki jarak yang setara,termasuk jarak ke tepi main-start dan main-end
+
+-->         5. Align ITEMS
+untuk membuat child element agar berada ditengah secara vertikal,setara,dll
+
+.container{
+    display: flex;
+    align-items: streetch | flex-start | flex-end | center | baseline;
+}
+
+penjelasan setiap value dari properti align-items
+    - stretch : melebar hingga memenuhi container...setiap child element akan memiliki nilai height yang sama meskipun isi konten berbeda
+    - flex-start: setiap elemen memiliki ukuran height sesuai dengan isi konten serta seluruhnya akan berada di awal cross-start
+    - flex-end: setiap elemen memiliki ukuran height sesuai dengan isi konten serta seluruhnya akan berada di akhir cross-end
+    - center : setiap elemen memiliki ukuran height sesuai dengan isi konten serta seluruhnya akan berada di tengah
+    - baseline: nilai pada asalnya akan menyerupai flex-start. Namun, jika konten pertama pada masing-masing child element memiliki ukuran height yang berbeda, child element lainnya akan menyesuaikan posisinya secara cross axis dari cross-start.
+
+-->         6. Align content
+Tingkah laku properti ini hampir mirip dengan properti justify-content yang mengatur tata letak flex items di sisi main axis.
+
+Hal yang perlu diperhatikan adalah penggunaan properti ini hanya akan berpengaruh pada multi-line flex container, yang mana properti flex-wrap dilibatkan. Flex container yang hanya memiliki single line tidak akan memiliki efek diterapkannya properti align content
+
+penjelasan 
+    - flex-start: untuk meletakkan child element dimulai dari main-start
+    - flex-end: untuk meletakkan child element dimulai dari main-end
+    - center: untuk meletakkan child element ditengah parent child
+    - space-between: membuat element pertama berada di kiri dan element kedua di tengah,tetapi ketika ada elemen lainnya dia akan berada ditengah
+    - space-around: setiap element memiliki panjang celah yang sama pada sisi horizontal
+    - space-evenly: setiap child element akan memiliki jarak yang setara,termasuk jarak ke tepi main-start dan main-end
+
+-->         7.Gap (celah)
+Sering kali kita ingin memberikan jarak atau celah pada flex items. Biasanya kita akan mengandalkan properti margin dalam hal ini. Namun, ada cara yang lebih efektif, yaitu menggunakan properti gap.
+
+.container {
+  display: flex;
+  gap: 1rem; /*diterapkan secara vertikal dan horizontal dengan nilai yang sama*/
+  gap: 1rem 2rem; /*diterapkan secara vertikal dan horizontal*/
+  row-gap: 1rem; /*diterapkan secara horizontal*/
+  column-gap: 1rem; /*diterapkan secara vertikal*/
+}
+
+

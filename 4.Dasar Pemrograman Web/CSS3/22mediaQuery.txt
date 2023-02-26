@@ -1,0 +1,19 @@
+-->     MENETAPKAN RULES PADA UKURAN LAYAR TERTENTU
+Walaupun sudah menetapkan meta tag viewport, tampilan pada mobile device belum baik karena informasi yang ditampilkan pada elemen <aside> sulit terbaca.
+
+Untuk mengatasi hal ini, CSS menyediakan sebuah fitur yang dapat kita gunakan untuk menentukan rule hanya pada ukuran viewport tertentu. Fitur tersebut dinamakan CSS Media Queries. Berikut contoh penulisannya:
+
+/* Rule yang dituliskan dalam block @media di bawah akan diterapkan pada device yang memiliki ukuran viewport di bawah 992px */
+@media screen and (max-width: 992px) {
+  /* ..... */
+}
+ 
+/* Rule yang dituliskan dalam block @media di bawah akan diterapkan pada device yang memiliki ukuran viewport di bawah 600px */
+@media screen and (max-width: 600px) {
+  /* ..... */
+}
+
+Setelah mengetahui fitur media queries, kita dapat memperbaiki halaman profil dengan memindahkan elemen <aside> di bawah dari elemen #content. Pemindahan ini hanya ada pada device yang memiliki ukuran layar kecil sehingga <aside> dapat menyesuaikan kembali lebarnya.
+
+Untuk melakukannya, kita tetapkan elemen <aside> dan #content agar memiliki lebar 100% (memenuhi layar). CSS properti ini akan diterapkan jika ukuran lebar viewport kurang dari 1000px (maksimal 999px). Nilai ini didefinisikan pada media queries yang dapat disesuaikan sesuai kebutuhan. Silakan tuliskan kode berikut pada style.css:
+

@@ -17,3 +17,17 @@ Jika sebuah elemen induk hanya memiliki satu elemen dengan menerapkan properti f
 Hal ini menunjukkan bahwa elemen yang menerapkan float “tidak dianggap ada” oleh induk elemen yang menaunginya karena jika menggunakan float, elemen akan dikeluarkan dari normal flow.
 
 -->         CARA MENANGANINYA
+Terdapat dua cara yang akan kita bahas, yakni dengan pertama, menggunakan properti clear dan kedua, menetapkan nilai overflow: auto pada container.
+
+1. CLEAR PROPERTY
+    - Cara yang pertama adalah dengan menggunakan properti clear. Properti clear memang dibuat untuk menghilangkan sifat float, dengan demikian elemen yang menerapkan properti float akan kembali “dianggap ada”. Namun untuk menerapkan properti ini kita perlu membuat sebuah elemen kosong (biasanya menggunakan div tanpa konten) yang menerapkan properti clear.
+
+    Nilai dari properti clear merupakan nilai yang digunakan pada properti float karena properti clear akan menghapus sifat float sesuai dengan nilai yang ditetapkan.
+
+    Lalu bagaimana jika terdapat dua elemen yang menerapkan nilai float berbeda (left dan right)?  Terdapat satu nilai lagi yang dapat menghilangkan kedua sifat float tersebut, yakni nilai both. Gunakanlah nilai tersebut jika kita ingin sepenuhnya menghilangkan sifat float pada elemen.
+
+2. OVERFLOW: AUTO;
+    - Cara yang kedua adalah dengan menetapkan properti overflow: auto; pada elemen yang menampung elemen float. Sebagian developer lebih memilih menggunakan cara ini karena lebih praktis dan tidak perlu membuat elemen baru ketika menggunakannya
+
+Untuk menerapkannya sangatlah simpel. Cukup tambahkan properti overflow dengan nilai auto pada container.
+
