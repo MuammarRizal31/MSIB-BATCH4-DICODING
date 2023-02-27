@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap");
+
+:root {
+  --warna-nav: #222831;
+  --warna-bg: #fdbe33;
+  --warna-heading: #4a4c70;
+  --warna-text: #393e46;
+  --warna-putih: #eeeeee;
+  --warna-biru: #00adb5;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+}
+
+img {
+  width: 100%;
+}
+/* header */
+header {
+  width: 100%;
+  display: flex;
+  height: 62px;
+  background-color: var(--warna-nav);
+  align-items: center;
+  padding-inline: 100px;
+  box-shadow: 0 2px 5px black;
+  position: fixed;
+}
+
+.logo {
+  text-transform: uppercase;
+  color: var(--warna-biru);
+  font-weight: bold;
+  font-style: italic;
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+nav {
+  display: flex;
+  width: inherit;
+  justify-content: space-between;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+}
+
+nav .nav-items ul {
+  display: flex;
+  gap: 15px;
+  list-style-type: none;
+}
+
+nav .nav-items ul li a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  color: var(--warna-putih);
+  padding-block: 5px;
+  padding-inline: 20px;
+  border-radius: 99px;
+  transition: 0.5s all ease-out;
+}
+
+nav .nav-items ul li:hover a {
+  background-color: var(--warna-putih);
+  color: var(--warna-nav);
+}
+/* akhir header */
+
+main {
+  height: 100vh;
+  margin-inline: auto;
+  width: 90%;
+}
+
+#content {
+  padding-inline: 3rem;
+  width: inherit;
+  margin: 0 auto;
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.socials-media {
+  position: absolute;
+  inset-block-end: 50px;
+}
+.article {
+  width: 50%;
+}
+
+.hero-image {
+  width: 400px;
+}
+
+.hero-image {
+  min-width: auto;
+}
+
+@media screen and (max-width: 576px) {
+  #content {
+    gap: 0;
+  }
+  #content .hero-image {
+    order: -1;
+    padding-top: 62px;
+  }
+
+  .article {
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    margin-top: -100px;
+  }
+}

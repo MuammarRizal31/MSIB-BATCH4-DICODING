@@ -1,0 +1,10 @@
+SEJARAH JAVASCRIPT
+javascript dibuat pada tahun 1995 oleh brendan eich,Programmer dari netscape.Bahasa ini awalnya dinamai "mocha" kemudian berubah menjadi "liverScript".Pada saat itu bahasa java merupakan bahasa pemrograman yang paling populer.Untuk memanfaatkan kepopulerannya,nama liverscript pundiubah menjadi "Javascript".Jadi, meskipun namanya mirip,javascript tidak ada hubungan nya dengan bahasa pemrograman Java
+
+Setelah diadopsi diluar netscape,javascript distandarisasi oleh european Computer manafacturers Assosiation(ECMA).sejak saat itu javascript juga dikenal dengan ECMAScript. Meskipun begitu,masih banyak yang menyebutkan dengan javascript hingga saat ini.
+
+Terdapat beberapa versi javascript yang sudah di standarisasi oleh ECMAScript.Pada tahun 2000 hingga 2010,ECMAScript 3 merupakan versi yang banyak digunakan ketika javascript sedang mendominasi. Selama waktu tersebut,ECHMAScript 4 sedang dalam proses pengembangan dengan harapan akan memberikan improvisasi yang cukup signifikan. Namun,ambisi tersebut tidak berjalan mulus sehingga pada tahun 2008 pengembangan ECHMAScript dihentikan
+
+Walaupun begitu, Ini bukan akhir dari javascript.pengembangan berganti menjadi ECMAScript 5 dengan mengurangi ambisinya dan hanya melakukan perbaikan pada hal yang tidak jadi kontroversi. Pembaruan tersebut berhasil dan akhirnya ECMAScript 5 rilis pada tahun 2009
+
+lalu.Pada tahun 2015 ECMAScript 6 rilis dengan membawa perubahan yang cukup besar termasuk ide ide yang sudah direncanakan untuk versi 4.Sejak saat itu,tiap tahun javascript melakukan update bersifaat minor

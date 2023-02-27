@@ -60,7 +60,6 @@ footer {
 
 .card {
   padding: 20px;
-  margin-top: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border-radius: 5px;
 }
@@ -73,10 +72,14 @@ footer {
   color: white;
 }
 
+nav ul {
+  padding-inline: 4rem;
+  display: flex;
+  gap: 2rem;
+}
+
 nav li {
-  display: inline;
   list-style-type: none;
-  margin-right: 20px;
 }
 
 nav {
@@ -95,18 +98,20 @@ nav a {
 
 main {
   padding: 20px;
-  overflow: auto;
+  gap: 1.5rem;
+  display: flex;
 }
 
 #content {
-  float: left;
-  width: 70%;
+  flex: 5;
+
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 1rem 2rem;
 }
 
 aside {
-  float: right;
-  width: 30%;
-  padding-left: 20px;
+  flex: 1;
 }
 
 .table {
@@ -123,10 +128,17 @@ header {
   display: inline;
 }
 
-@media screen and (max-width: 1000px) {
-  #content,
-  aside {
-    width: 100%;
-    padding: 0;
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+  main aside {
+    align-self: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main aside {
+    align-self: stretch;
   }
 }

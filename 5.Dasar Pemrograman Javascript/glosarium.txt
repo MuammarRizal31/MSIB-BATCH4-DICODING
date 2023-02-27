@@ -1,0 +1,21 @@
+COMPILER
+- program komputer yang menerjemahkan kode yang ditulis dalam satu bahasa pemrograman ke bahasa lain yang dimengerti oleh mesin
+
+DEBUGGING
+- Proses mengidentifikasi dan menghilangkan error pada aplikasi
+
+INTERPRETER
+- program untuk menerjemahkan setiap baris kode dari bahasa pemrograman menjadi bahasa yang dimengerti oleh mesin secara langsung.tanpa melalui proses kompilasi
+
+LIBRARY
+- Sekumpulan sumber daya,biasanya berupa kode atau program,yang memiliki fungsionalitas tertentu dan bisa digunakan pada program lain
+
+RUNTIME
+- Lingkungan,platform,atau sumber daya yang menjalankan suatu kode/program
+
+STRING CONCATENATION
+- proses penggabungan dua string atau lebih menggunakan operator penjumlahan
+
+STRING INTERPOLATION
+- proses mengganti placeholder didalam string dengan nilai dari variable tertentu
+

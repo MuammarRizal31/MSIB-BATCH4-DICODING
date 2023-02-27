@@ -1,0 +1,10 @@
+COMMENTS
+pada meteri sebelumnya kita telah membahas bahwa kode yang kita tulis merupakan kumpulan instruksi yang harus dijalankan oleh komputer.
+salah satu instruksi yang penting adalah memberi tahu komputer untuk mengabaikan perintah yang kita tulis.Instruksi yang ditulis dalam suatu program tetapi tidak dijalankan oleh komputer disebut COMMENTS
+
+sebuah komentar akan dilewatkan oleh interpreter atau compiler,sehingga tidak akan memengaruhi alur program yang kita tulis. Komentar ini bisa digunakan sebagai dokumentasi atau penjelasan dari kode yang kita tulis
+
+terdapat dua metode untuk memberikan komentar.
+    - Pertama untuk memberikan komentar pada satu baris saja,kita bisa gunakan tanda dua garis miring diawal baris
+    - kedua untuk memberika komentar pada banyak baris,kita bisa gunakan tanda /* */
+

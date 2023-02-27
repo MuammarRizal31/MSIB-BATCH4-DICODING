@@ -1,0 +1,13 @@
+Alasan utamanya karena javascript merupakan bahasa yang penting untuk anda kuasai jika ingin menjadi web developer,baik itu front-end maupun back-end.
+
+Berikut ini adalah beberapa kelebihan dari javascript yang dapat anda pertimbangkan sebelum mulai mempelajar javascript: 
+    1. Javascript bahasa yang versatile
+        - Javascript bisa berjalan dilingkungan browser, Server, bahkan dekstop. artinya jika anda bisa menguasai bahasa ini,maka hasilnya anda bisa digunakan dimanapun
+
+    2. Mudah dipelajari Oleh penjumlahan
+        - Javascript termasuk salah satu bahasa pemrograman yang ramah bagi pemula. Anda tidak perlu menginstal software dan lingkungan lain yang rumit untuk memulai membuat program  dengan javascript.Cukup dengan browser anda sudah bisa menulis kode javascript dan menjalankannya sekligus
+
+    3. Potensi karir yang meyakinkan
+        - Mengikuti perkembangan teknologi dan banyaknya bisnis yang mulai merambah ke ranah digital,Javascript menjadi salah satu skill yang paling banyak dicari di industri.Jika anda mencari kata kunci "Javascript" pada laman pencarian kerja seperti jobstreet akan muncul hampir 1.500 lowongan pekerjaan diindonesia yang bisa anda lamar
+
+    4. 

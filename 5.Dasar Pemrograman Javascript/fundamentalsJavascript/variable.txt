@@ -1,0 +1,22 @@
+-->     VARIABLE
+Ketika menuliskan sebuah program,kita memberi tahu komputer cara memproses informasi seperti mencetak teks ke layar atau melakukan operasi perhitungan.untuk lebih mudah dalma penggunaan dan pemanggilan data, kita bisa memanfaatkan variable..Variable umumnya digunakan untuk menyimpan informasi atau nilai yang akan dikelola dalam sebuah program.
+
+pada javascript setidaknya ada tiga cara untuk mendeklarasikan sebuah variable,Yaitu menggunakan keyword VAR,LET DAN CONST...pada versi ECMAScript 2015(ES6) dikenalkan deklarasi variable dengan let dan const untuk menggantikan var yang dinilai kontroversial dan rawan menimbulkan bug
+
+kode yang menginisialisasikan nilai kedalam sebuah variable dengan tanda sama dengan (=) ini disebut dengan assignment expression.
+
+let fullName = let lastName; // Error karena let lastName adalah sebuah statement untuk deklarasi variabel. Statement tidak bisa berada di posisi expression.
+let fullName = (lastName = "Skywalker"); // (lastName = "Skywalker") merupakan expression, sehingga kode ini tidak error.
+let fullName = "Luke" + "Skywalker"; // "Luke" + "Skywalker" juga merupakan expression, sehingga kode ini tidak error.
+
+kita bisa bayangkan variabel sebagai sebuah kotak atau wadah yang menyimpan nilai. Proses inisialisasi atau assignment berarti kita memasukkan nilai ke dalam kotak tersebut.
+
+Setiap variabel memiliki nama yang dapat kita panggil dan gunakan. Kita dapat menamai variabel dengan nama apa pun, tetapi pastikan penamaannya masih masuk akal dengan konteksnya supaya kode mudah di-maintenance.
+
+Sebaiknya hindari penamaan variabel dengan istilah umum seperti “data”. Gunakanlah penamaan variabel yang dapat mendeskripsikan nilai dari variabel itu sendiri. Berikut beberapa aturan dalam penamaan variabel yang perlu Anda ketahui:
+    - Harus dimulai dengan huruf atau underscore (_).
+    - Dapat terdiri dari huruf, angka, dan underscore (_) dengan berbagai kombinasi.
+    - Tidak boleh mengandung spasi (whitespace). Jika penamaan variabel lebih dari dua kata, tuliskan secara camelCase. Contoh firstName, lastName, catName, dll.
+    - Tidak boleh mengandung karakter spesial (! . , / \ + * = dll.)
+
+Lalu, bagaimana dengan const? Const merupakan kependekan dari constant. Artinya, kita akan mendeklarasikan sebuah variabel dengan const ketika ingin variabel bernilai konstan dan tidak bisa diubah setelah diinisialisasi nilainya. Bayangkan variabel bernilai const sebagai sebuah kotak yang ditutup dan disegel setelah diisi, sehingga nilainya tidak bisa diubah lagi

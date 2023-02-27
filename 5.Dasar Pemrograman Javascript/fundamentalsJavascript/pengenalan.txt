@@ -1,0 +1,20 @@
+PENGENALAN FUNDAMENTALS JAVASCRIPT
+setelah kita mulai mengetahui apa itu javascript dan sejarah singkat dibaliknya,pada modul ini anda akan mulai menuliskan kode javascript pertama.
+
+pada modul ini akan mempelajari "
+    - menuliskan kode javascript dan menampikannya ke konsol
+    - memahami penggunaan komentar pada kode
+    - memahami beberapa jenis tipe data pada javascript
+    - mengenal operator pada javacsript dan bagaimana menggunakannya
+    - memahami konsep percabangan pada pemrograman
+    - memahami konsep perulangan pada pemrograman
+
+-->     MENULISKAN KODE JAVASCRIPT PERTAMA
+Menulis kode dalam suatu bahasa pemrograman sederhananya adalah menuliskan instruksi-instruksi untuk dijalankan oleh komputer. Kode di bawah ini merupakan instruksi bagi terminal atau konsol untuk mencatat (log) kalimat “Hello, World!”.
+
+console.log adalah kode bawaan JavaScript untuk menampilkan pesan ke konsol, bisa berupa web konsol atau konsol dari terminal/command prompt.
+
+javascript membagi instruksi secara umum menjadi dua jenis, Yaitu expression dan statement
+    - Expression adalah unit kode yang dapat dievaluasi menjadi suatu nilai
+    - statement adalah instruksi untuk melakukan sebuah aksi tertentu,aksi ini termasuk membuat variable malakukan perulangan pengecekan kondisi
+

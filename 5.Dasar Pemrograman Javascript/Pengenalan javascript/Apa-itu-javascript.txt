@@ -1,0 +1,7 @@
+JAVASCRIPT adalah bahasa pemrograman tingkat tinggi pada awalnya dikembangkan untuk membaut website menjadi lebih hidup.bersama dengan HTML dan CSS,Javascript menjadi bahasa pemrograman paling populer untuk mengembangkan aplikasi berbasis web.Bahasa ini mampu memberikan logic ke dalam website,sehingga website tersebut memiliki fungsionalitas tambahan dan lebih interaktif.
+
+Awalnya javascript dibuat supaya dapat berjalan dilingkungan browser dan membuat website menjadi lebih interaktif.Namun,saat ini anda sebagai developer dapat mneggunakan bahasa pemrograman javascript diberbagai lingkungan pengembangan.Sehingga, tidak hanya sebatas browser/client,namun javascript juga bisa berjalan diserver menggunakan Node.JS
+
+Javascript termasuk ke dalam kategori scripting language.Apa maksudnya? salah satu ciri ciri utama dari bahasa scripting adalah kode tidak perlu dikompilasi agar bisa dijalankan.Scripting language menggunakan interpreter untuk menerjemahkan kode atau perintah yang kita tulis supaya dimengerti oleh mesin.
+
+Itulah kenapa bahasa scripting tidak membuatuhkan banyak kode yang perlu ditulis agar sebuah program bisa dijalankan.Hanya dengan satu abris kode berikut anda sudah bisa membuat program yang menampilkan teks "hello world" kelayar

@@ -1,0 +1,13 @@
+1. Introduction to javascript: mengenal apa itu javascript dari sejarah hingga alasan untuk mulai mempelajarinya
+2. Javascript fundamentals: mempelajari Seperti statement,expressions,variable,tipe data, dan control flow
+3. Data structure: Menjelaskan bagaimana menyimpan dan mengelola data yang lebih kompleks menggunakan object,array,map,set dsb
+4. Function: mempelajari bagaimana mengelompokkan kode menjadi fungsi yang dapat dipanggil ulang
+5. Object-oriented programming: memahami konsep OOP pada javascript,bagaimana membuat class,properti dan method dari class
+6. Function programming: memahami konsep functional programming seperti perilaku fungsi,anonymous function dan higher order
+7. setup environment: Proses instalasi lingkungan pengembangan seperti Node JS dan IDE pada perangkat yang anda miliki
+8. Module: mempelajari bagaimana beberapa berkas javascript dapat saling berkomunikasi dan berbagi data satu sama lain
+9. Error handling: mempelajari bagaimana menangani kegagalan yang mungkin muncul dalam program,sehingga tidak berdampak kepada pengguna
+10. concurrency: Mempelajari bagaimana menangani dan membuat proses asynchronous pada javascript
+11. Node package manager: mengetahui beberapa library yang penting untuk ditambahkan  ke dalam proyek aplikasi javascript.
+12. Javascript testing: mempelajari bagaimana melakukan pengujian otomatis pada javascript
+
