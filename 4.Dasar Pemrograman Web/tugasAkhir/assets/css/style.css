@@ -16,6 +16,26 @@
   font-family: "Quicksand", sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+  height: 3000px;
+}
+
+.btn {
+  padding-inline: 30px;
+  padding-block: 10px;
+  border-radius: 99px;
+  font-weight: bold;
+  border: 3px solid var(--warna-nav);
+  transition: 0.5s;
+}
+
+.btn:hover {
+  background-color: var(--warna-nav);
+  color: var(--warna-putih);
+  border: 3px solid transparent;
+}
+
 img {
   width: 100%;
 }
@@ -41,8 +61,9 @@ header {
 }
 
 nav {
+  /* position: fixed; */
   display: flex;
-  width: inherit;
+  width: 100%;
   justify-content: space-between;
 }
 
@@ -73,52 +94,120 @@ nav .nav-items ul li:hover a {
 }
 /* akhir header */
 
+/* main */
 main {
-  height: 100vh;
-  margin-inline: auto;
-  width: 90%;
+  width: 100%;
 }
 
-#content {
+#hero {
+  height: 100vh;
+  margin-inline: auto;
+  width: 80%;
   padding-inline: 3rem;
   width: inherit;
   margin: 0 auto;
-  height: inherit;
   display: flex;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
+  background-color: var(--warna-biru);
 }
 
-.socials-media {
-  position: absolute;
-  inset-block-end: 50px;
-}
-.article {
+.article-hero {
   width: 50%;
+}
+
+.article-hero > .button-article {
+  margin-top: 30px;
+}
+
+.article-hero h2 {
+  line-height: 46px;
+  font-size: 2.1rem;
 }
 
 .hero-image {
   width: 400px;
+  border-radius: 100%;
+  overflow: hidden;
+}
+/* akhir hero */
+
+/* tentang saya */
+.container-content {
+  width: 100%;
+}
+.container-content > h2 {
+  margin-top: 3rem;
+}
+.tentang-saya {
+  padding-inline: 48px;
+  display: flex;
+  gap: 30px;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+}
+.img-tentang {
+  width: 50%;
+}
+.text-group-tentang {
+  width: 45%;
+  box-shadow: 1px 2px 5px var(--warna-nav);
+  padding: 15px;
 }
 
-.hero-image {
-  min-width: auto;
+article.text-group-tentang {
+  font-size: 1.1rem;
+  text-align: justify;
 }
 
+.mb {
+  margin-bottom: 3rem;
+}
+.text-center {
+  text-align: center;
+}
+/* akhir tentang saya */
+/* reponsive */
 @media screen and (max-width: 576px) {
-  #content {
+  #hero {
     gap: 0;
   }
-  #content .hero-image {
+  #hero .hero-image {
     order: -1;
-    padding-top: 62px;
   }
 
-  .article {
+  .article-hero h2 {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .article-hero {
     align-items: center;
     width: 100%;
+    text-align: justify;
+    margin-top: -70px;
+  }
+
+  .nav-items {
+    display: none;
+  }
+  header .logo {
+    font-size: 1.5rem;
+  }
+  .hero-image {
+    width: 100%;
+    margin-top: 62px;
+  }
+
+  .button-article {
     text-align: center;
-    margin-top: -100px;
+  }
+
+  .img-tentang {
+    width: 100%;
+  }
+
+  .text-group-tentang {
+    width: 100%;
   }
 }
