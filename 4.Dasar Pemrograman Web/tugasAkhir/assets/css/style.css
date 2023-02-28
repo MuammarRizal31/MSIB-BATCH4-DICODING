@@ -2,7 +2,6 @@
 
 :root {
   --warna-nav: #222831;
-  --warna-bg: #fdbe33;
   --warna-heading: #4a4c70;
   --warna-text: #393e46;
   --warna-putih: #eeeeee;
@@ -18,6 +17,7 @@
 
 body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 .btn {
@@ -60,10 +60,10 @@ header {
 }
 
 nav {
-  /* position: fixed; */
   display: flex;
   width: 100%;
   justify-content: space-between;
+  position: relative;
 }
 
 .nav-items {
@@ -92,6 +92,23 @@ nav .nav-items ul li:hover a {
   color: var(--warna-nav);
 }
 /* akhir header */
+
+/* dropdown-menu */
+.dropdown {
+  position: relative;
+  display: none;
+}
+.dropdown-menu {
+  position: absolute;
+  inset-block-start: 10%;
+  inset-inline-start: 100%;
+}
+
+.dropdown-menu > img {
+  width: 50px;
+  border-radius: 100%;
+}
+/* dropdown-menu */
 
 /* main */
 main {
@@ -130,7 +147,6 @@ main {
   border-radius: 100%;
   overflow: hidden;
 }
-/* akhir hero */
 
 /* tentang saya */
 .container-content {
@@ -214,6 +230,7 @@ footer p > span {
   color: var(--warna-putih);
   font-style: italic;
 }
+/* akhir footer */
 /* reponsive */
 @media screen and (max-width: 576px) {
   #hero {
@@ -223,6 +240,19 @@ footer p > span {
     order: -1;
   }
 
+  .img-astronot,
+  .img-astronot2 {
+    width: 300px;
+  }
+
+  .img-astronot img,
+  .img-astronot2 img {
+    width: 100%;
+  }
+  .img-astronot2 img {
+    float: none;
+    margin: 0;
+  }
   .article-hero h2 {
     text-align: center;
     margin-bottom: 10px;
@@ -234,19 +264,9 @@ footer p > span {
     margin-top: -70px;
   }
 
-  .nav-items {
-    display: none;
-  }
-  header .logo {
-    font-size: 1.5rem;
-  }
   .hero-image {
     width: 100%;
     margin-top: 62px;
-  }
-
-  .button-article {
-    text-align: center;
   }
 
   .img-tentang {
@@ -256,6 +276,13 @@ footer p > span {
   .text-group-tentang {
     width: 100%;
   }
+  header {
+    padding-left: 10%;
+  }
+
+  .dropdown2 > li {
+    margin-right: 10px;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -263,6 +290,27 @@ footer p > span {
     width: 100%;
   }
 
+  .hero-image {
+    margin-top: 70px;
+  }
+
+  header nav .nav-items .dropdown2 {
+    display: inline;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: -100px;
+    background-color: var(--warna-nav);
+    padding: 30px;
+    border-bottom-left-radius: 50px;
+  }
+  header nav .nav-items li {
+    margin-bottom: 10px;
+  }
+
+  header .nav-items ul {
+    display: none;
+  }
   #hero .hero-image {
     order: -1;
   }
@@ -275,12 +323,10 @@ footer p > span {
     justify-content: center;
     width: 100%;
     text-align: justify;
-    margin-top: -70px;
-    /* display: none; */
   }
 
-  .nav-items {
-    display: none;
+  .dropdown {
+    display: inline;
   }
   #hero {
     justify-content: center;
@@ -288,6 +334,13 @@ footer p > span {
 
   .text-group-tentang {
     width: 100%;
+  }
+  .article-hero {
+    text-align: center;
+  }
+
+  .button-article {
+    display: none;
   }
 }
 
