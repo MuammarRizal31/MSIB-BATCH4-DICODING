@@ -1,0 +1,81 @@
+    ARRAY
+array merupakan tipe data yang dapat mengelompokkan lebih dari satu nilai dan menempatkannya dalam satu variable.contoh : 
+let myArray = ["Cokelat", 42.5, 22, true, "Programming"];
+console.log(myArray);
+
+/* output:
+[ 'Cokelat', 42.5, 22, true, 'Programming' ]
+*/
+
+Perbedaan array dengan object adalah data pada array disusun secara berurutan dan diakses menggunakan index. Untuk mengakses nilai di dalam array, kita gunakan tanda kurung siku [] yang di dalamnya berisi angka yang merupakan posisi nilai yang ingin diakses.
+
+indeks array dimulai dari 0 dan nilai array boleh bermacam tipe data
+
+jika kita mengakses nilai array lebih dari index-nya, maka hasilnya akan undefined. index terakhir array selalu jumlah nilai array -1
+
+--> 
+    1. PUSH
+untuk menambahkan data ke dalam array,kita bisa menggunakan method push().fungsi push ini akan menambahkan data di akhir array.
+
+contoh : 
+const myArray = ["Cokelat", 42.5, 22, true, "Programming"];
+
+myArray.push('JavaScript');
+console.log(myArray);
+
+/* output
+[ 'Cokelat', 42.5, 22, true, 'Programming', 'JavaScript' ]
+ */
+
+ -->    
+    2. pop()
+sedangkan untuk mengeluarkan data atau elemen terakhir dari array,kita bisa gunakan metode pop()
+const myArray = ["Cokelat", 42.5, 22, true, "Programming"];
+
+myArray.pop();
+console.log(myArray);
+
+/* output
+[ Cokelat, 42.5, 22, true ]
+*/
+
+--> 
+    3.shift()
+metode lain yang bisa kita gunakan untuk memanipulasi data pada array adalah shift() dan unshift()...metode shift() digunakan untuk mengeluarkan elemen pertama dari array, sementara unshift() digunakan untuk menambahkan elemen di awal array.
+
+const myArray = ["Cokelat", 42.5, 22, true, "Programming"];
+
+myArray.shift();
+myArray.unshift("Apple");
+
+console.log(myArray);
+
+/* output
+[ 'Apple', 42.5, 22, true, 'Programming' ]
+*/
+
+-->
+    4.delete()
+menghapus data array.
+namun perlu diperhatikan ketika menggunakan method delete(),nilai yang dihapus akan mendapatkan nilai undefined...maka untuk menghapus elemen gunakan method splice()
+const myArray = ["Cokelat", 42.5, 22, true, "Programming"];
+
+delete myArray[1];
+console.log(myArray);
+
+/* output
+[ 'Cokelat', <1 empty item>, 22, true, 'Programming' ]
+*/
+
+--> 
+    5.splice()
+menghapus data array namun tidak mengembalikan nilai undefined.
+
+const myArray = ["Cokelat", 42.5, 22, true, "Programming"];
+
+myArray.splice(2, 1);   // Menghapus dari index 2 sebanyak 1 elemen
+console.log(myArray);
+
+/* output
+[ 'Cokelat', 42.5, true, 'Programming' ]
+*/
