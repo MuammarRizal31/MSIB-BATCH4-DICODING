@@ -1,0 +1,77 @@
+Operator dalam bahasa pemrograman sendiri adalah simbol yang memberi tahu interpreter untuk melakukan operasi seperti matematika,relasional, atau logika untuk memberikan hasil tertentu.
+
+-->
+    1. Assignment Operator
+operator ini digunakan untuk memberikan nilai pada variable.
+
+pada dasarnya operator ini adalah tanda sama dengan(=), dimana tanda ini digunakan untuk menginisialisasi nilai pada variable. tempatkan variable yang ingin diberi nilai disebelah kiri,sementar nilainya disebelah kanan. diantara keduanya terdapat operator assignment.
+
+CONTOH : 
+let x = y;
+
+expression diatas berarti kita menginisialisasikan nilai y pada variable x,sehingga nilai x sekarang memiliki nilai yang sama dengan y
+
+ada beberapa assignment operator tambahan lain dalam menginisialisasikan nilai pada variable. kita bisa menyebutnya sebagai shortcut dalam menentukan nilai.contohnya: 
+
+Pada contoh kode di atas, terdapat expression x += y; Apa artinya? Assignment operator tersebut digunakan sebagai shortcut dari x = x + y. Cara ini juga dapat digunakan pada operator aritmatika lain seperti, perkalian, pengurangan, pembagian, dan lainnya.
+
+--> 
+    2.Comparison operator
+sekarang kita sudah mengetahui bagaimana cara menyimpai niali pada sebuah variable,nah selanjutnya kita akan belajar mengenai operator komparasi sebagai logika dasar dalam membandingkan nilai pada javascript
+
+==      ||      MEMBANDINGKAN KEDUA NILAI APAKAH SAMA(TIDAK IDENTIK)
+!=      ||      membandingkan kedua nilai apakah tidak sama (tidak identik)
+===     ||      membandingkan kedua nilai apakah identik
+!==     ||      membandingkan kedua nilai apakah tidak identik
+>       ||      membandingkan dua nilai apakah nilai pertama lebih dari nilai kedua
+<       ||      membandingkan dua nilai apakah nilai pertama kurang dari nilai kedua
+<=      ||      membandingkan dua nilai apakah nilai pertama kurang atau sama dengan nilai kedua
+>=      ||      membandingkan dua nilai apakah nilai pertama lebih atau sama dengan nilai kedua
+
+ketika kita melakukan perbandingan antara dua nilai, javascript akan mengevaluasi kedua nilai tersebutdan mengembalikan boolean dengan nilai hasil perbandingan tersebut, baik false atau true
+
+--> 
+    3. Perbedaan antara 'sama' dan 'identik'
+dalam operator komparasi dijavascript,hal yang menjadi sedikit 'tricky' adalah membedakan antara 'sama' (==) dan 'identik' (===)
+
+kita sudah mengetahui bahwa setiap nilai pasti memiliki tipe data baik itu number, string atau boolean...contohnya sebuah string '10' DAN number 10 merupakan hal yang serupa,tetapi keduanya tidak benar-benar sama
+
+hal inilah yang membedakan antara sama dan identik pada javascript.jika kita ingin membandingkan hanya dari kesamaan nilainya kita bisa gunakan  == tapi jika kita ingin membandingkan dengan tipe datanya kita gunakan ===
+
+--> 
+    4. Logical operator
+terdapat beberapa operator lain yang dapat kita gunakan untuk menetapkan logika yang lebih kompleks,takni dengan logical operators. dengan logical operator,kita dapat menggunakan kombinasi dari dua nilai boolean atau bahkan lebih dalam menetapkan logika
+
+pada javascript terdapat tiga buah karakter khusus yang berfungsi sebagai logical operator.
+
+&&      -->     operator dan(and). logika akan menghasilkan nilai true apabila semua kondisi terpenuhi(bernilai true)
+||      -->     operator atau(or). logika akan menghasilkan nilai true apabila ada salah satu kondisi terpenuhi(bernilai true)
+!       -->     operator tidak(not). digunakan untuk membalikkan suatu kondisi
+
+let a = 10;
+let b = 12;
+
+/* AND operator */
+console.log(a < 15 && b > 10); // (true && true) -> true
+console.log(a > 15 && b > 10); // (false && true) -> false
+
+/* OR operator */
+console.log(a < 15 || b > 10); // (true || true) -> true
+console.log(a > 15 || b > 10); // (false || true) -> true
+
+/* NOT operator */
+console.log(!(a < 15)); // !(true) -> false
+console.log(!(a < 15 && b > 10)); // !(true && true) -> !(true) -> false
+
+/* output
+true
+false
+true
+true
+false
+false
+*/
+
+Mungkin sebagian dari kita bertanya, sebenarnya apa kegunaan dari nilai boolean selain hanya menampilkan nilai true dan false saja? Pada pembahasan tipe data sudah pernah disebutkan bahwa boolean merupakan salah satu kunci dari logika pemrograman, karena boolean dapat mengontrol bagaimana alur program kita akan berjalan.
+
+Lantas bagaimana cara boolean mengontrol sebuah aliran program? Pada materi selanjutnya, kita akan membahas mengenai if/else statement yang dapat mengontrol flow pada program, tentunya pada penggunaan statement boolean ini sangat berguna.

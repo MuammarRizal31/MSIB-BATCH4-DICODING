@@ -1,0 +1,106 @@
+Pada materi sebelumnya kita telah belajar tentang variabel untuk menyimpan nilai. Nilai yang kita tetapkan pada variabel pasti memiliki tipe data. Tipe data merupakan pengklasifikasian data berdasarkan jenisnya. Pada JavaScript terdapat beberapa tipe data sebagai berikut:
+
+-->
+    1. Undefined
+Tipe data ini terbentuk ketika sebuah variable tidak memiliki nilai.Artinya,ketika kita mendeklarasikan variable tanpa menginisialiasikan nilainya,Variable tersebut menjadi Undefined
+CONTOH : 
+    let x;
+    console.log(typeof(x)); /*Output : undefined*/
+    
+kita mendeklarasikan variable x,tetapi kita tidak mengisialisasikan dengan nilai apapun.ketika kita memastikan tipe data dengan menggunakan fungsi typeof() ia akan menghasilkan output UNDEFINED
+    //Fungsi typeof() digunakan untuk memastikan tipe data pada variable dengan mengembalikan tipe data tersebut dalam bentuk teks
+
+
+--> 
+    2. NUMBERS
+nilai dari tipe data number adalah angka. variable bertipe data number dituliskan seperti angka pada umumnya.
+jika angka tersebut merupakan sebuah bilangan desimal,maka kita bisa gunakan tanda titik pada pecahan bilangannya
+
+pada tipe data number,kita juga dapat melakukan perhitungan aritmatika seperti penjumlahan,pengurangan,perkalian, dsb.
+
+operator yang bisa digunakan untuk tipe data numbers
+    + , - , / , + , * , % , **
+
+pada operator aritmatika juga terdapat operator increment(++) dan decrement(--). operator increment dan decrement digunakan untuk menambahkan atau mengurangi nilai 1 pada nilai variable yang ada sekarang.
+
+operator ini dapat dituliskan sebelum atau sesudah variable,tetapi hal tersebut bukan berarti sama berikut ketentuannya :
+ - jika dituliskan setelah variable(x++),expression akan menghasilkan nilai variable yang sebelum ditingkatkan nilainya
+ - jika dituliskan sebelum variable(++x),expression akan menghasilkan nilai variable setelah ditingkatkan nilainya
+
+
+--> 
+    3.BIG INT
+pada javascript,tipe data "number" hanya mencakup nilai tertentu...untuk kebutuhan umum,sebenarnya nilai tersebut sudah sangat cukup. Namun,akan ada kebutuhan tertentu dimana kita membutuhkan cakupan nilai yang lebih besar,seperti untuk kriptografi atau menentukan waktu hingga presisi microsecond
+
+untuk nilai diluar number,kita bisa menggunakan tipe bigInt. Untuk membedakan tipe bigInt dan number,tambahkan karakter 'n' diakhir angka
+    Contoh: 
+        const bigNumber = 123123123413124531431n;
+        const myInt = 123451312321413123123;
+        console.log(bigNumber) //output : 123123123413124531431n
+        console.log(myInt) // output : 1.234513123214131231e+23
+
+meskipun digunakan untuk menyimpan angka dengan nilai besar,namun bigint tetap bisa digunakan untuk nilai yang lebih kecil.
+
+kita juga bisa menggunakan BigInt untuk operasi aritmatika pada umumnya...yang membedakan adalah pada operasi pembagian,hasilnya akan dibulatkan ke bawah dan tanpa mengandung nilai desimal.
+
+
+--> 
+    4. STRINGS
+tipe data selanjutnya adalah string yang merupakan sebuah teks. untuk menetapkan nilai sebagai string pada variable gunakan tanda petik satu(') atau petik dua (") diantara teks nya
+
+tidak ada perbedaan antara menggunakan petik satu atau petik dua.anda dapat menggunakan tanda petik secara bergantian,khusunya jika anda memiliki teks yang mengandung tanda petik.
+
+const answer = '"I think it's awesome!" he answered confidently';
+console.log(answer);
+
+tentunya kode diatas akan menghasilkan error. solusinya,gunakan backslash(\) untuk mengurangi ambiguitas dalam tanda petik. mekanisme ini juga dikenal dengan nama escape string.sehingga kode diatas akan menjadi seperti berikut : 
+
+const answer = '"I think it\'s awesome!" he answered confidently';
+
+backslash sebelum tanda petik akan memberitahukan interpreter bahwa itu hanyalah tanda petik dan tidak boleh ditafsirkan sebagai pembatas string.selain tanda petik,backslash juga berguna untuk mengabaikan simbol lain yang menimbulkan ambigu di dalam string.contohnya seperti backslash itu sendiri.
+
+pada string,kita juga dapat menggunakan operator plus(+). operator tersebut berfungsi untuk menggabungkan dua teksyang terpisah menjadi satu buah teks
+
+ingat stringconcatenation seperti diatas akan menggabungkan string apa adanya,sehingga jika anda ingin menggabungkan dua kata atau lebih perlu menambahkan spasi sendiri.
+
+selain concatenation,string pada javascript juga mendukung string interpolation.sederhananya, kita bisa memasukkan variable ke dalam sebuah string template.contohnya adalah sebagai berikut
+
+perhatikan bahwa untuk mendefinisikan string template,anda perlu menggunakan backticks(`),biasanya terletak dikeyboard dibawah tombol esc . didalam string letakkan variable yang ingin dimasukan ke dalam placeholder ${myName}
+
+
+-->
+    5. Boolean
+boolean hanya memiliki dua nilai,yaitu true dan false. tipe data ini menadi kunci utama dalam penentuan logika. kita akan banyak menggunakannya nanti dalam materi if/else statement. untuk menetapkan nilai boolean pada variable,gunakan keyword true atau false
+kita juga bisa menggunakan operator komparasi seperti lebih dari (>) atau kurang dari (<)
+
+    CONTOHNYA : 
+const a = 10;
+const b = 12;
+
+let lebihKecil = a > b;
+let lebihBesar = a < b;
+console.log(lebihKecil); //hasilnya false
+console.log(lebihBesar); //hasilnya true
+
+
+-->
+    6. Null
+tipe berikutnya adalah null. Serupa dengan undefined,namun null perlu di inisialisasikan pada variable. Null biasa digunakan nilai sementara pada variable,tapi sebenernya nilai tersebut 'tidak ada'
+
+terkadang kita perlu membaut sebuah variable,namun kita belum memerlukan nilai apa-apa dan tidak ingin terikat oleh tipedata apapun... nah, daripada kita tidak menetapkan nilai apapun( variable akan undefined) sebaiknya kita beri nilai null pada variable tersebut dan ubah nanti ketika kita membutuhkannya.
+
+untuk menetapkan null pada variable,kita dapat gunakan keyword null ketika variable tersebut di inisialisasi
+
+-->
+    7. Symbol
+symbol adalah tipe data baru yang dikenalkan pada ES6. tipe data symbol digunakan untuk menunjukkan identifier yang unik. Ketika membuat symbol,kita bisa memberikan deskripsi atau nama symbol
+
+symbol disebut dengan identifier yang unik karena meskipun kita membuat dua variable symbol dengan nama atau deskripsi yang sama, kedua nilainya tetap dianggap berbeda.
+CONTOH
+const id1 = Symbol('id');
+const id2 = Symbol('id');
+
+console.log(id1 == id2);
+// output false
+
+Symbol ini umumnya digunakan sebagai nama property dari object. object sendiri merupakan tipe data kompleks untuk menyimpan berbagai struktur data.

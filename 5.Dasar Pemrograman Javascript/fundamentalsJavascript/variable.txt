@@ -20,3 +20,5 @@ Sebaiknya hindari penamaan variabel dengan istilah umum seperti “data”. Guna
     - Tidak boleh mengandung karakter spesial (! . , / \ + * = dll.)
 
 Lalu, bagaimana dengan const? Const merupakan kependekan dari constant. Artinya, kita akan mendeklarasikan sebuah variabel dengan const ketika ingin variabel bernilai konstan dan tidak bisa diubah setelah diinisialisasi nilainya. Bayangkan variabel bernilai const sebagai sebuah kotak yang ditutup dan disegel setelah diisi, sehingga nilainya tidak bisa diubah lagi
+
+cansy zerenity sefiolia
