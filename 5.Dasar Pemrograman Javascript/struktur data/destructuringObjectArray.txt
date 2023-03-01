@@ -1,0 +1,61 @@
+iterasi object dan array adalah dua hal yang paling banyak digunakan  dalam mengelola data di javascript.JSON(Javascript object notation) merupakan format data paling populer yang digunakan dalam transaksi data saat ini
+
+jika kita lihat pada struktur JSON difolder script destructuring,kita dapat menyimpulkan struktur tersebut dibangun dari array dan object. karena kedua hal ini banyak digunakan untuk mengelola data pada javascript untuk memudahkan developer,ES6 menambahkan fitur untuk destructuring object dan array.
+
+apa sebenarnya destrukturing object dan array itu ? destrukturing dalam javascript merupakan sintaksis yang dapat mengeluarkan nilai dari array atau properties dari sebuah object kedalam satuan yang lebih kecil.
+
+secara tidak sadar mungkin kita pernah melakukan destructuring. namun,sebelum ES6 hal tersebut dilakukan dengan cara seperti ini
+
+contoh : difolder script 
+
+perhatikan kode berikut,kode tersebut mengekstrasi nilai yang ada diobjek,kemudin menyimpannya pada variable lokal dengan nama sama dengan properti didalma object profile.Mungkin mengekstraksi nilai dari object dengan langkah ini terlihat mudah, tetapi bayangkan jika object memiliki banyak properti dan harus melakukan hal tersebut secara manual satu persatu. Terlalu banyak kode yang dituliskan berulang, bukan?
+
+Itulah alasan ES6 menambahkan fitur yang memudahkan kita untuk destructuring object maupun array. Ketika kita ingin memecah struktur data menjadi bagian-bagian yang lebih kecil, kita akan dipermudah untuk mendapatkan data yang diinginkan.
+
+Lantas bagaimana cara melakukan destructuring object dan array pada ES6? Mari kita simak materi berikutnya.
+
+
+pada contoh difolder : script tanda kurung kurawal merepresentasikan objek yang akan di destrukturisasi didalamnya terdapat firstName,lastName dan age yang merupakan variable untuk menyimpan nilai properti dari object profile.kita juga perlu perhatikan penamaan variablenya. pastikan penamaannya sama seperti properti objectnya. Melalui nama variable inilah nilai nilai properti objek yang akan dimasukkan secara otomatis. sehingga variable firstname akan berini nilai profile.firstname,lastname akan berisikan nilai profile.lastname dan begitu juga nilai profile.age
+
+const profile = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 18
+}
+ 
+const {firstName, lastName, age} = profile;
+ 
+console.log(firstName, lastName, age);
+ 
+/* output:
+John Doe 18
+*/
+
+Pada contoh di atas tanda kurung kurawal merepresentasikan object yang akan didestrukturisasi. Di dalamnya terdapat firstName, lastName, dan age yang merupakan variabel untuk menyimpan nilai properti dari object profile. Kita juga perlu perhatikan penamaan variabelnya. Pastikan penamaannya sama seperti properti object-nya. Melalui nama variabel inilah nilai-nilai properti object akan dimasukkan secara otomatis. Sehingga variabel firstName akan berisikan nilai profile.firstName, lastName akan berisikan nilai profile.lastName, begitu juga dengan variabel age akan berisikan nilai profile.age.
+
+Dalam destructuring object, kita bisa menentukan salah satu nilai yang ingin kita desktrukturisasikan. Sehingga kita tidak perlu membuat variabel sebanyak properti yang dimiliki objeknya, contohnya:
+
+const {lastName} =  profile;
+
+-->         DESTRUCTURING ASSIGNMENT
+pada contoh sebelumnya,kita telah melakukan destructuring object pada deklarasi variable. namun,pada kasus tertentu mungkin kita perlu melakukannya pada variable yang sudah dideklarasikan
+
+const profile = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 18
+}
+ 
+let firstName = "Dimas";
+let age = 20;
+ 
+// menginisialisasi nilai baru melalui destructuring object
+({firstName, age} = profile);
+ 
+console.log(firstName);
+console.log(age);
+ 
+/* output:
+John
+18
+*/

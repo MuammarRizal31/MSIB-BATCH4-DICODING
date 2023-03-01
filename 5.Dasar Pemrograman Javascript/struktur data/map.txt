@@ -1,0 +1,44 @@
+MAP adalah tipe data yang menyimpan koleksi data dengan format key-value layaknya object. Yang membedakan adalah map memperoleh key dengan tipe data apapun,dibandingkan objct yang hanya mengizinkan bertipe string atau symbol
+
+untuk mendefinisikan map gunakan constructor seperti dibawah ini 
+
+CONST myMap = new Map();
+
+Apabila ingin menetapkan nilai dari Map secara langsung, gunakan array multi dimensi seperti ini:
+
+const myMap = new Map([
+    ['1', 'a String key'],
+    [1, 'a number key'],
+    [true, true]
+]);
+
+console.log(myMap);
+
+/* output
+Map(3) { '1' => 'a String key', 1 => 'a number key', true => true }
+*/
+
+array yang pertama(yang berada diluar) berfungsi untuk menyimpan masing masing elemen atau pasangan key-value.dari map. kemudian array didalamnya, memiliki dua lemen dimana elemen pertama adalah key dan elemen kedua merupakan value
+
+Ketika sudah membuat objek Map, kita bisa mendapatkan nilainya berdasarkan key tertentu dengan metode get(). Lalu, untuk menambahkan pasangan key-value baru gunakan metode set().
+
+meskipun kita bisa menetapkan dan mendapatkan data pada map seperti ini :
+
+const wrongMap = new Map();
+wrongMap['My Key'] = 'myvalue';
+console.log(wrongMap["my key"]);
+
+namun,kode diatas bukanlah cara yang sesuai untuk mengoperasikan Map. ketika kita menetapkan nilai seperti diatas, data akan tersimpan sebagai generic object. ini akan mengakibatkan data tidak tersimpan dalam map query dan tidak bisa menggunakan fitur dari map seperti .has atau .delete
+
+const wrongMap = new Map();
+wrongMap["My Key"] = "My Value";
+
+console.log(wrongMap.has("My Key"));
+console.log(wrongMap.delete("My Key"));
+
+/* output
+false
+false
+ */
+
+ jadi,pastikan untuk menggunakan metode .set() dan .get() untuk map

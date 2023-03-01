@@ -1,0 +1,62 @@
+WeakMap merupakan varian dari map yang mendukung garbage collection. garbage collection adalah proses dimana interpreter javascript mengambil kembali memori yang tidak lagi "dapat dijangkau" dan tidak dapat digunakan oleh program.garbage collection dijavasciprt dilakukan secara otomatis dan bukan menjadi urusan dari developer
+
+yang dimaksud weak dalam weapMap adalah referensi terhadap nilai yang disimpan,apabila suatu nilai yang disimpan di weakMap sudah tidak terjangkau atau tidak bisa lagi diakses,maka reference ke memorinya akan dihapus
+
+berikut ini adalah beberapa hal yang membedakan antara map dan weakMap : 
+    - key dari weakmap harus berupa object atau array. nilai primitif tidak bisa digunakan sebagai key karena tidak mendukung garbage collection
+
+    -weakmap memiliki method get() ,set(),has() dan delete(). namun,weakmap tidak termasuk kategori iterable sehingga tidak memiliki method keys(),values(),atau forEach().
+
+    -weakMap juga tidak memiliki properti size.Ini karena ukuran weak map dapat berubah karena proses garbage collection
+
+let visitsCountMap = new Map(); // Menyimpan daftar user
+
+function countUser(user) {
+    let count = visitsCountMap.get(user) || 0;
+    visitsCountMap.set(user, count + 1);
+}
+
+let jonas = { name: "Jonas" };
+countUser(jonas);                // Menambahkan user "Jonas"
+
+
+setTimeOut merupakan fungsi yang digunakan untuk menunda eksekusi kode yang ada di dalamnnya hingga jangka waktu diterapkan. fungsi setTimeOut akan detail dibahas pada modul concurrency
+
+ketika reference objek jonas dihapus dengan mengubahnya menjadi nullm seharusnya map tidak lagi menyimpan data user (garbage collected). namun kenyataannya data jonas masih tersedia didalam map. artinya data jonas masih tersimpan didalam memori sampai kita benar benar menghapusnya
+
+berbeda jika kita menggunakan weakMap
+let visitsCountMap = new WeakMap();
+Ketika nilai jonas sudah tidak bisa dijangkau, object jonas akan dihapus dari memori termasuk informasi yang disimpan di dalam WeakMap.
+
+const { inspect } = require('util');
+
+let visitsCountMap = new WeakMap(); // Menyimpan daftar user
+
+function countUser(user) {
+    let count = visitsCountMap.get(user) || 0;
+    visitsCountMap.set(user, count + 1);
+}
+
+let jonas = { name: "Jonas" };
+countUser(jonas);                // Menambahkan user "Jonas"
+
+jonas = null;                    // Data object "Jonas" dihapus
+
+// delay dibutuhkan untuk menunggu garbage collector bekerja
+setTimeout(function() {
+  console.log(inspect(visitsCountMap, { showHidden: true }));
+}, 10000);
+
+/* output
+  WeakMap {  }
+*/
+
+
+WeakMap tidak dapat dilihat secara langsung menggunakan console.log. Ini merupakan issue yang terjadi pada Node.js (lihat: https://github.com/nodejs/node/issues/19001). Itulah mengapa kami menggunakan fungsi inspect untuk melihat data yang ada di dalam WeakMap.
+
+Jika hasil output tidak sesuai dengan yang diharapkan pada kode, hal itu disebabkan oleh waktu tunggu yang tidak cukup untuk menunjukkan cara kerja garbage collector. Silakan simak penjelasan pada diskusi berikut: https://www.dicoding.com/academies/256/discussions/156523
+
+seperti halnya weakMap, weakSet adalah versi weak reference dari set. perbedaan antara weak set dan set antara lain : 
+    - weakset tidak bisa menyimpan nilai primitif
+    - weakset bukan iterable dan hanya memiliki method add(),has() dan delete()
+    - weakset tidak memiliki properti size

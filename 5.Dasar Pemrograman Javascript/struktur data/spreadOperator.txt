@@ -1,0 +1,21 @@
+masih terkait dengan array,ES6 memiliki fitur yang menarik untuk membantu pengelolaan array menjadi lebih mudah,yaitu spread operator
+
+sesuai namanya "spread",fitur ini digunakan untuk menyebarkan nilai array atau lebih tepatnya iterable object menjadi beberapa elemen.spread operator dituliskan dengan titik tiga(...)
+
+contoh : buka folder spread
+
+terlihat perbedaan nya? mengapa bisa demikian? spread operator bekerja seperti meleburkan nilai array menjadi beberapa lement sesuai panjang nilai array-nya. sehingga jika kita menuliskan kode seperti ini :
+    console.log(...arr);
+
+sama saja seperti kita menuliskan kode seperti ini : 
+    console.log(arr[1],arr[2],arr[3]);
+
+spread operator juga dapat digunakan untuk menggabungkan dua buah array ke dalam array baru
+
+contoh : difolder spread 
+
+dengan menggunakan spread operator nilai dua array tersebut berhasil tergabung
+
+selain array,spread operator juga bisa digunakan untuk object literals. hal ini memungkinkan kita dapat menggabungkan beberapa object dengan kode yang lebih ringkas
+
+contoh : di folder spread

@@ -1,0 +1,80 @@
+DESTRUCTURING OBJECT
+Penulisan sintaksis destructuring object pada ES6 menggunakan object literal ({ }) di sisi kiri dari operator assignment.
+
+const profile = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 18
+}
+ 
+const {firstName, lastName, age} = profile;
+ 
+console.log(firstName, lastName, age);
+ 
+/* output:
+John Doe 18
+*/
+
+Saat melakukan destructuring assignment, kita perlu menuliskan destructuring object di dalam tanda kurung. Jika tidak menuliskan tanda kurung, tanda kurung kurawal akan membuat JavaScript mengira kita membuat block statement, sementara block statement tidak bisa berada pada sisi kiri assignment
+
+Nah, inilah fungsinya tanda kurung. Ia akan memberi tahu JavaScript bahwa tanda kurawal di dalamnya bukan sebuah block statement melainkan sebuah expression, sehingga assignment dapat dilakukan.
+
+
+-->
+    DEFAULT VALUES
+ketika kita mendestruksikan objek dan menetapkan variable dengan nama yang bukan merupakan properti dari objek,maka nilai variable tersebut menjadi udefined contoh: 
+
+const {firstName, age, isMale} = profile;
+ 
+console.log(firstName)
+console.log(age)
+console.log(isMale)
+ 
+/* output:
+John
+18
+undefined
+*/
+
+alternatifnya,kita bisa secara opsional mendefinisikan nilai default pada properti tertentu jika tidak ditemukan. untuk melakukannya,tambahkan tanda assignment(=) setelah nama variable dan tentukan nilai defualtnya seperti ini : 
+
+const profile = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 18
+}
+ 
+ 
+const {firstName, age, isMale = false} = profile;
+ 
+console.log(firstName)
+console.log(age)
+console.log(isMale)
+ 
+/* output:
+John
+18
+false
+*/
+
+-->     ASSIGNING TO DIFFERENT LOCAL VARIABLE NAMES
+Sampai saat ini kita tahu bahwa untuk melakukan destrukturisasi object pada variabel lokal, kita perlu menyeragamkan penamaan variabel lokal dengan properti object-nya. Namun, sebenarnya dalam proses destrukturisasi object kita bisa menggunakan penamaan variabel lokal yang berbeda. ES6 menyediakan sintaksis tambahan yang membuat kita dapat melakukan hal tersebut. Penulisannya mirip seperti ketika kita membuat properti beserta nilainya pada object.
+
+const profile = {
+    firstName: "John",
+    lastName: "Doe",
+    age: 18
+}
+ 
+const {firstName: localFirstName, lastName: localLastName, age: localAge} = profile;
+ 
+console.log(localFirstName);
+console.log(localLastName);
+console.log(localAge);
+ 
+ 
+/* output:
+John
+Doe
+18
+*/

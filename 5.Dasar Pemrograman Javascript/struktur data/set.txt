@@ -1,0 +1,42 @@
+SET
+struktur data yang akan kita bahasa berikutnya adalah set. set sederhananya merupakan kumpulan nilai(set of values).hal yang membedakan set dengan struktur data yang lain adalah data pada set tidak berurutan dan juga tidak di indeks. selain itu, data didalam set juga bersifat unik dan tidak ada duplikasi.. Perhatikan contoh deklarasi set dibawah ini
+
+const numberSet = new Set([1, 4, 6, 4, 1]);
+
+console.log(numberSet);
+
+/* output
+Set(3) { 1, 4, 6 }
+*/
+
+pada kode diatas terdapat beberapa angka yang duplikasi,yaitu angka 1 dan 4,secara otomatis set akan membuang angka yang sama, sehingga nilai yang tersimpan adalah {1,4,6}
+
+untuk menambahkan data ke dalam set kita bisa memanfaatkan fungsi add();
+const numberSet = new Set([1, 4, 6, 4, 1]);
+numberSet.add(5);
+numberSet.add(10);
+numberSet.add(6);
+
+console.log(numberSet);
+
+/* output
+Set(5) { 1, 4, 6, 5, 10 }
+*/
+
+fungsi add() hanya menerima satu argumen, jika anda memasukkan array. maka array tersebut akan dianggap sebagai satu elemen sendiri. nilai yang duplikat akan di abaikan
+
+const numberSet = new Set([1, 4, 6, 4, 1]);
+numberSet.add(5);
+numberSet.add(10);
+numberSet.add(6);
+
+numberSet.delete(4);
+
+console.log(numberSet);
+
+/* output
+Set(4) { 1, 6, 5, 10 }
+*/
+
+
+ingat bahwa set tidak memiliki urutan atau index, sehingga argumen yang dimasukkan ke dalam fungsi delete adalah nilai yang ingin dihapus bukan index nya
