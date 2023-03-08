@@ -1,0 +1,33 @@
+--->>>          PENGENALAN FUNCTIONAL PROGRAMMING           <<<---
+Javascript adalah bahasa yang mendukung multiparadigm. artinya, selain bahasa pemrograman berorientasi objek, penulisan syntax javascript juga menggunakan gaya functional programming.
+
+Kita juga telah membahas mengenai Object Composition. Di mana konsep ini cukup membantu ketika membuat sebuah kelas tanpa harus melakukan proses pewarisan. Ia akan memecah-mecah fungsi yang umum digunakan agar dapat digunakan kembali (reusable) tanpa proses pewarisan.
+
+--->>>          PARADIGMA FUNCTIONAL PROGRAMMING            <<<---
+Paradigma functional programming adalah paradigma pemrograman dimana proses komputasi didasarkan pada fungsi matematika murni. functional programming(selanjutnya akan kita singkat menjadi FP) Ditulis dengan gaya deklaratif yang berfokus pada 'what to solve' dibanding 'how to solve' dianut oleh gaya imperatif
+
+Sebagai gambaran buat Anda yang belum tahu apa itu deklaratif dan imperatif lebih jauh, silakan simak contoh kode berikut : 
+
+const names = ['jange','jangs','topet'];
+let namaPanggil = [];
+for(let i=0; i<names.length; i++){
+    namaPanggil.push(names[i])
+}
+
+console.log(namaPanggil)
+
+contoh kode diatas merupakan salah satu gaya penulisan kode imperatif. dimana proses pengisian nilai array baru(newNames) berdasarkan array lama(names) dilakukan secara manual. inilah maksud dari 'How to solve' dimana kita perlu memikirkan bagaimana cara melakukan perulangannya(for); kapan perulangannya harus berhenti (i<names.length); bagaimana cara memasukkan nilai baru kedalam array(namaPanggil).huft sangat melelahkan
+
+lantas bagaimana dengan gaya deklaratif? mari kita lihat kode dengan fungsi yang sama namun dengan gaya deklaratif
+
+const names = ['harry','ron','jeff']
+
+const namaPanggil = names.map((name) => `${name}`)
+
+console.log(namaPanggil);
+
+coba bandingkan dengan kode yang sebelumnnya, tentu ini jauh lebih mudah dibaca dan diringkas. inilah yang disebut dengan gaya deklaratif. kita tidak perlu pusing untuk memikirkan cara menual untuk mencapai sebuah tujuan. tidak ada proses looping manual; tidak perlu tahu kapan harus berhenti dari looping; kita cukup fokus pada 'what to solve' alias apa yang ingin kita selesaikan atau capai
+
+javascript sendiri merupakan bahasa pemrograman yang mendukung paradigma FP. banyak higher-order function yang bisa kita manfaatkan sebagai utilitas, salah satunya fungsi array map()
+
+namun FP bukan hanya sekedar menggunakan high order-function bawaaanya saja

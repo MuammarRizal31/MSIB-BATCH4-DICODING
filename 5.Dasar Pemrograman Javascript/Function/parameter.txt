@@ -1,0 +1,65 @@
+FUNCTION PARAMETER
+pada materi sebelumnya,kita telah berkenalan dengan fungsi yang merupakan suatu blok kode yang dapat menerima input dan menghasilkan output tertentu. input kedalam sebuah fungsi dikirimkan melalui parameter
+
+didalam fungsi kita akan banyak bertemu istilah parameter dan argument. penggunaan istilah ini sering kali tertukar, bahkan dikalangan developer
+
+perbedaan mendasar antara keduanya antara lain :
+    - parameter merupakan variable yang didefinisikan sebagai inputan dari sebuah fungsi
+    - argument merupakan nilai atau expression yang dimasukkan ke dalam fungsi
+
+parameter dari fungsi dapat berupa tipe data apapun, mulai dari string, number, object, bahkan fungsi lain.
+
+jika parameter dan fungsi adalah sebuah object,kita juga bisa memanfaatkan destructuring object untuk mendapatkan nilainya.
+
+const user = {
+    id: 24,
+    displayName: 'kren',
+    fullName: 'Kylo Ren',
+};
+
+function introduce({displayName, fullName}) {
+    console.log(`${displayName} is ${fullName}`);
+}
+
+introduce(user);
+
+/* output
+kren is Kylo Ren
+*/
+
+-->>>>      DEFAULT PARAMETERS      <<<<-----
+Fungsi pada javascript tidak melakukan pengecekan terhadap jumlah maupun tipe argumen yang dimasukkan ke dalam parameter. ini berarti kita bisa memasukkan argumen meskipun tidak sesuai dengan parameter yang telah didefinisikan
+
+const user = {
+    id: 24,
+    displayName: 'kren',
+    fullName: 'Kylo Ren',
+};
+
+function introduce({displayName, fullName}) {
+    console.log(`${displayName} is ${fullName}`);
+}
+
+introduce(user);
+
+/* output
+kren is Kylo Ren
+*/
+
+seperti yang kita lihat pada contoh kode diatas, ketika argumen lebih sedikit dari parameternya, maka parameter yang tidak terdefinisi akan bernilai undefined. sebagai solusi jika memungkinkan, kita bisa memberikan nilai default pada parameter.nilai ini akan digunakan jika tidak memasukkan parameter
+
+--->>>>     REST PARAMETER      <<<<-----
+masih ingat dengan spread operator (...) ? jika spread operator menyebarkan array menjadi beberapa elemen berbeda, rest parameter ini adalah kebalikan dari operator tersebut.
+
+rest parameter juga dituliskan menggunakan three consecutice dots(...) dengan rest parameter, kita dapat menggabungkan beberapa elemen menjadi satu sarray. tentu teknik ini sangat bermanfaat ketika kita hendak membuat sebuah fungsi dengan parameter yang tidak pasti
+
+contoh fungsi yang menjumlahkan seluruh nilai argument seperti berikut :
+function sum(...numbers) {
+    let result = 0;
+    for (let number of numbers) {
+        result += number;
+    }
+    return result;
+}
+
+console.log(sum(1, 2, 3, 4, 5));

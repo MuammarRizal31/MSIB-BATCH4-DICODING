@@ -1,0 +1,114 @@
+CONSTRUCTOR FUNCTION
+kebanyakan paradigma OOP diterapkan pada class-based programming languages, seperti java,C++,C# dan bahasa pemrograman berbasis class lainnya. javascript sendiri bukanlah bahasa pemrograman berbasis class karena sebelum hadirnya sintaks ES6 javascript tidak mengenal calss. namun walaupun demikian, konsep konsep yang ada di OOP masih bsia diterapkan dijavascript. 
+
+pertanyaan nya bagaimana cara membaut object blueprint dijavascript? fitrahnya, object blueprint dapat dibuat dengan menggunakan constructor function yang tampak seperti ini : 
+
+function Car(brand, color, maxSpeed, chassisNumber) {
+  this.brand = brand;
+  this.color = color;
+  this.maxSpeed = maxSpeed;
+  this.chassisNumber = chassisNumber;
+}
+ 
+Car.prototype.drive = function() {
+  console.log(`${this.brand} ${this.color} is driving`);
+}
+ 
+Car.prototype.reverse = function() {
+  console.log(`${this.brand} ${this.color} is reversing`);
+}
+ 
+Car.prototype.turn = function() {
+  console.log(`${this.brand} ${this.color} is turning`);
+}
+
+kode diatas merupakan contoh membuat objek blueprint dari sebuah mobil. anda bisa membuat objek mobil-yang merupakan instance dari Car --dengan memanfaatkan constructor function Car
+
+function Car(brand, color, maxSpeed, chassisNumber) {
+  this.brand = brand;
+  this.color = color;
+  this.maxSpeed = maxSpeed;
+  this.chassisNumber = chassisNumber;
+}
+ 
+Car.prototype.drive = function() {
+  console.log(`${this.brand} ${this.color} is driving`);
+}
+ 
+Car.prototype.reverse = function() {
+  console.log(`${this.brand} ${this.color} is reversing`);
+}
+ 
+Car.prototype.turn = function() {
+  console.log(`${this.brand} ${this.color} is turning`);
+}
+ 
+// Membuat objek mobil dengan constructor function Car
+const car1 = new Car('Toyota', 'Silver', 200, 'to-1');
+const car2 = new Car('Honda', 'Black', 180, 'ho-1');
+const car3 = new Car('Suzuki', 'Red', 220, 'su-1');
+ 
+console.log(car1);
+console.log(car2);
+console.log(car3);
+ 
+car1.drive();
+car2.drive();
+car3.drive();
+ 
+/* Output
+Car { brand: 'Toyota', color: 'Silver', maxSpeed: 200, chassisNumber: 'to-1' }
+Car { brand: 'Honda', color: 'Black', maxSpeed: 180, chassisNumber: 'ho-1' }
+Car { brand: 'Suzuki', color: 'Red', maxSpeed: 220, chassisNumber: 'su-1' }
+ 
+Toyota Silver is driving
+Honda Black is driving
+Suzuki Red is driving
+*/
+
+
+Mungkin saat ini anda bertanya-tanya, bagaimana bisa membuat sebuah objek dengan sebuah fungsi ? itulah salah satu kemampuan fungsi dijavascript. fungsi diatas bukanlah fungsi biasa, melainkan construktor function.berikut ini beberapa perbedaan yang harus anda perhatikan :
+    1. penamaan fungsi yang berupakan constructor function, secara konvensi harus ditulis dengan huruf kapital. itulah alasan kami memberi nama fungsi tersebut Car, bukan car. Hal ini penting untuk anda ikuti guna membedakan fungsi biasa dengan constructor function karena penggunaannya berbeda.
+    
+    2. Constructor function dapat memanfaatkan keyword this yang bernilai objek (instance) dirinya sendiri. keyword this dapat dimanfaatkan untuk mengakses nilai properti atau method dari objek tersebut. contoh kami menggunakan keyword this untuk menetapkan nilai properti brand dari argumen fungsi. selain itu didalam method drive, kami juga menggunakan this untuk mendapatkan nilai properti brand dan color.
+
+    3. Contructor function memiliki internal property bernama prototype. properti ini digunakan untuk mendefinisikan method method yang akan dimiliki oleh objek yang dibuat. alasan method perlu didefinisikan didalam prototype agar mudah untuk diwarisi ketika melakukan pewarisan.
+
+    4. Terakhir, agar fungsi mengembalikan sebuah objek, anda harus memanggilnya dengen menambahkan keyword new
+
+Perlu diingat bahwa constructor function hanya dapat dibuat dengan reguler function. anda tidak dapat membuat construktor function dengan arrow function. arrow function tidak dapat dipanggil dengan keyword new
+
+
+
+            --->>>          SINTAKS CLASS DI ES6        <<<---
+sintaks javasciprt modern(ES6) menawarkan cara membuat constructor function dengan menggunakan keyword class. hal ini membuat penerapan OOP dijavascript mirip seperti bahasa pemrograman berbasis class. kita bisa menulis constructor function car dengan gaya class seperti ini 
+
+class Biodata{
+    constructor (nama,npm,kelas,umur,kota){
+        this.nama = nama;
+        this.npm = npm;
+        this.kelas = kelas;
+        this.umur = umur;
+        this.kota = kota;
+    }
+
+    perkenalan(){
+        console.log(`hallo semua perkenalkan nama saya ${this.nama} dan npm saya ${this.npm}`);
+    }
+
+    ketua(){
+        console.log(`saya adalah ketua kelas dari kelas ${this.kelas}`);
+    }
+
+    asal() {
+        console.log(`asal berumur ${umur} dan saya lahir dikota ${this.kota}`)
+    }
+}
+
+jika anda memiliki pengalaman dibahasa pemrograman C++,Java atau C# pembuatan class seperti diatas tentu lebih mudah dipahami...memang inilah tujuan diciptakan sitaks class dijavascript. ia hadir untuk mempermudah penerapan OOP bagi developer yang memiliki latar belakang class-based language.
+
+walaupun dijavascript sudah hadir sintaks class, hal itu tidak membuat javascript menjadi class based language. faktanya sintaks class dijavascript hanya syntactic sugar atau cara alternatif dalam mendefinisikan constructor function. untuk membuktikan hal tersebut,kita bisa mengecek tipe class melalui operator typeof.
+
+Sekarang anda sudah mengetahui cara membuat object blueprint dijavascript dengan constructor function dan sintaks class
+
+CATATAN : anda sudah mengetahui bahwa ada dua cara dalam membuat function constructor, yakni dengan keyword function dan class

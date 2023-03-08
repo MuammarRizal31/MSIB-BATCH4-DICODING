@@ -1,0 +1,178 @@
+Untuk membuat kode yang bersih dan mudah dipahami, salah satu cara yang bisa kita lakukan adalah dengan menggunakan function
+
+beberapa hal yang telah kita bahas pada modul ini, antara lain :
+    - Function/fungsi adalah blok atau kumpulan kode yang memungkinkan untuk dipanggil berkali kali
+    - penamaan fungsi harus mendeskripsikan fungsi dengan jelas. penamaan yang bagus akan langsung memberi kita pemahaman tentang apa yang dilakukan atau dikembalikan
+    - function dapat menerima masukan nilai melalui parameter
+    - fungsi dapat menerima masukan nilai melalui parameter
+    - fungsi dapat mengembalikan nilai, jika tidak , maka hasilnya adalah undefined
+    - karena fungsi berupa nilai, fungsi dapat ditetapkan atau di deklarasikan disetiap tempat kode, termasuk variable atau parameter dari fungsi lain.
+
+
+--->>>  APA ITU FUNCTION        <<<---
+Apa itu regular function ? 
+    - sebuah blok kode program yang dapat digunakan ulang(reusable) yang didesain untuk tugas yang spesifik
+
+keuntungan dari function
+    - prinsip DRY (dont repeat yourself)
+
+deklarasi dan menjalankan function
+    - keyword function
+    - nama function
+    - () syntax
+    - block kode
+
+CARA MENJALANKAN FUNCTION ADA 3 
+    1. secara terprogram
+        - function func() {console.log('hello')};
+    
+    2. Event terjadi
+        - document.addEventListener('click',function(){});
+    
+    3. Terpanggil langsung
+        - (function (){
+            console.log('function ini terpanggil langsung);
+        })();
+
+
+--->>>      PARAMETER       <<<---
+parameter function adalah sebuah input yang akan diproses dama sub-program
+
+contoh : 
+function parameter(para1,para2){
+    return `${para1}, ${para2}
+};
+
+parameter('hello','world');
+
+--->>>      ARGUMENT        <<<---
+Default argument adalah sebuah nilai defualt ketika suatu parameter function tidak diberikan nilai
+
+contoh : 
+function func(para1,para2,para = 'oi'){
+    return 'para1,para2';
+}
+
+console.log(func('hello','world'));
+
+
+--->>>      SPREAD OPERATOR PARAMETER   <<<---
+ketika kita ingin memberi nilai para argument, maka yang terjadi akan diberi nilai dari yang pertama hingga akhir,nah cara ngatasi ini biar melewati yang pertama kita bisa menggunakan spread operator
+
+contoh : 
+function namaPara({param1 = 1,param2} = {} ){
+    console.log(`param1 : `);
+    console.log(`param2 : `);
+}
+
+console.log(namaPara({
+    param1: 'jange',
+    param2: 'topet',
+}))
+
+
+--->>>      RETURN keyword  <<<---
+Return keyword untuk mengembalikan setelah suatu function tereksekusi
+
+contoh : 
+function perkalian(number1,number2){
+    return number1 * number2;
+}
+console.log(perkalian(2,3)) //2 x 3 = 6
+
+
+--->>>      FUNCTION EXPRESSIONS        <<<---
+Function expressions adalah suatu function yang dapat disimpan dalam variable, bahkan dapat menjadi input dari function lain
+
+contoh pertama :
+const biodata = function(){
+    console.log('nama saya adalah muammar rizal');
+}
+
+biodata();
+
+contoh kedua : 
+function tampilkan(data){
+    console.log(data);
+}
+
+function pertambahan(nilai1,nilai2,callback){
+    const result = nilai1 + nilai2;
+    callback(result)
+}
+
+pertambahan(2,4,tampilkan())
+
+-->>>       REST PARAMETER PADA FUNCTION    <<<---
+rest parameter sebuah fitur di javascript dia bisa menampung seluruh argument yang diberi ketika dipanggil
+
+harus menggunakan ini :
+    - pakai syntax ... (triple dots)
+    - hanya berlaku sebagai parameter terakhir
+    - dan akan menghasilkan tipe data array 
+
+contoh :
+function func(param1,param2, ...param3){
+    console.log('param 1 : ',param1);
+    console.log('param 2 : ',param2);
+    console.log('param 3 : ',param3);
+}
+
+func(
+    'parameter pertama', -> param1
+    'parameter kedua', -> param2
+    1,2,3,6,2,4 // -> parameter3(array)
+)
+
+
+--->>>          ARROW FUNCTION          <<<---
+arrow function adalah function expression yang merupakan alternatif sederhana dari regular function 
+
+deklarasi arrow function : 
+    - () syntax
+    - => syntax
+    - body function
+
+contoh :
+const func = () => {
+    return 'ini adalah arrow function saya';
+}
+
+console.log(func())
+
+
+--->>>          REGULAR FUNCTION VS. ARROW FUNCTION <<<---
+PERBEDAAN REGULAR FUNCTION VS ARROW FUNCTION
+    - syntax
+    - objek arguments dan this
+    - new keyword
+
+--->>>          PREDEFINED FUNCTIONS/FUNCTION YANG ADA DI JAVASCRIPT    <<<---
+ada 4 function bawaan javascript : 
+    1. isFinite
+        - memeriksa suatu nilai apakah bernilai terbatas atau tak terbatas(infinity)
+        contoh : 
+            const apakahTakTerbatas = isFinite(5/0);
+            console.log(apakahTakTerbatas); //false
+        
+    2. isNan - ini banyak digunakan
+        - memerika suatu nilai bernilai not a number(nan) atau bukan
+        contoh : 
+            const apakahNan = isNaN('sepuluh'/5);
+            console.log(apakahNan); // true
+    
+    3. parseFloat
+        - konversi dari satu nilai ke nilai desimal
+        contoh : 
+            const desimal = parseFloat('1.23');
+            console.log(desimal) // 1.23 (number)
+
+    4. parseInt
+        - konversi dari suatu nilai ke bilangan bulat
+        contoh : 
+            const integer = parseInt('100');
+            console.log(integer); // 100(number)    
+        
+referensi 
+    - functions : mdn;
+    - w3schoole : javascript functions

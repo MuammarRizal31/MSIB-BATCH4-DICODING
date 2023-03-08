@@ -1,0 +1,57 @@
+--->>>          EXPORT DAN IMPORT           <<<---
+Modul bekerja dengan cara exporting dan importing nilai. baik itu nilai variable, fungsi ,array atau object atau class agar bisa digunakan pada berkas javascript lain. satu berkas javascript terdiri daris atu module yang dapat kita export menjadi lebih dari satu nilai.
+
+dalam environment Node.js, gunakan perintah module.exports untuk melakukan proses export module. setiap berkas javascript yang berjalan pada node, memiliki objek module lokal yang memiliko properti exports. properti tersebut digunakan untuk mendefinisikan nilai apa yang akan di ekspor dari berkas tersebut.
+
+buatlah berkas baru bernama state.js pada project Anda. kode dibawah merupakan contoh bagaimana melakukan expoer nilai menggunakan module.exports
+
+const coffeeStock = {
+    arabica: 100,
+    robusta: 150,
+    liberica : 200,
+}
+
+module.exports = coffeeStock;
+
+kode module.exports = coffeeStock membuat object coffee Stock ditetapkan sebagai nilai dari module.exports. nilai properti exports ini nantinya bisa diimport dan digunakan pada berkas javascript lain
+
+Jika anda mencoba melihat nilai module yang ada pada berkas state.js dengan menambahkan kode console.log(module) diakhir berkas, maka kita akan mellihat object coffeeStock menjadi nilai dari proeprti exports
+
+catatan : untuk melihat hasilnya, anda harus menjalankan dengan perintah node state.js
+
+dalam inisialisasi variable coffeStock(nama variable bebas kita tentukan),kita gunakan method require() dengan memberikan parameter lokasi berkas state.js dengan begitu variable coffeeStock akan memiliki nilai module.exports yang sama pada berkas state,js setelah mendapatkan Nilainya kita bebas menggunakan seperti variable lokal pada umumnya
+
+
+--->>>          EXPORT BEBERAPA NILAI PADA NODE.js          <<<---
+Pada materi sebelumnya kita telah mengetahui cara export nilai dari suatu berkas javascript lantas bagaimana jika kita perlu meng-export beberapa nilai sekaligus?
+
+mari kita contohkan dengan menambahkan variable isCoffeeMachineReady pada berkas state.js
+
+kita tidak bisa melakukan export dari kedua nilai diatas dengan cara seperti ini :
+module.exports = coffeeStock;
+module.exports = isCoffeeMachineReady;
+
+bari kode yang kedua berarti kita menginisialisasikan ulang nilai properti module.exports sehingga nilai yang di export hanya variable isCoffeeMachineReady
+
+solusinya adalah kita tetap mengekspor satu nilai, tetapi kita akan memanfaatkan object literals({})
+
+module.exports = {coffeeStock, isCoffeeMachineReady};
+
+jika kita lihat module pada console, nilai dari properti exports merupakan sebuah objek yang menampung nilai dari objek coffeeStock dan variable isCoffeeMachineReady
+
+lalu bagaimana cara import kedua nilai tersebut ? masih ingat dengan materi destructuring object ? pada berkas index.js kita gunakan teknik detructuring object untuk mendapatkan nilai yang diimport seperti ini :
+
+const {coffeeStock, isCoffeeMachineReady} = require('./state');
+ 
+console.log(coffeeStock);
+console.log(isCoffeeMachineReady);
+ 
+/* output
+{ arabica: 100, robusta: 150, liberica: 200 }
+true
+*/
+
+Namun ingat, ketika menggunakan destructuring object pastikan penamaan variabel lokal sesuai dengan properti objeknya. Jika tidak, maka variabel tersebut akan menghasilkan undefined.
+
+
+

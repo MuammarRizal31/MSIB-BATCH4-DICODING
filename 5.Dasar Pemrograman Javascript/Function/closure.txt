@@ -1,0 +1,79 @@
+Setelah mempelajari tentang scope pada materi sebelumnya, kali ini kita akan membahas seputar closure. sebelumnya kita telah tahu bahwa fungsi dapat didefinisikan dalam lingkup global atau didalam fungsi lain. suatu fungsi yang dapat mengakses variable didalam lexical scopenya disebut dengan closure. lexical scope berarti pada sebuah fungsi bersarang. fungsi yang berada didalam memiliki akses ke variable di lingkup induknya
+
+function init() {
+  const name = 'Obi Wan';   // Variabel lokal di dalam scope fungsi init
+    
+  function greet() {      // Inner function, merupakan contoh closure
+    console.log(`Halo, ${name}`);   // Memanggil variabel yang dideklarasikan di parent function
+  }
+
+  greet();
+}
+
+init();
+
+/* output
+Halo, Obi Wan
+ */
+
+fungsi init() memiliki variable lokal name dan fungsi great(). fungsi great() adalah inner function yang didefinisikan didalam init() dan hanya hbisa diakses dari dalam fungsi init() perhatikan bahwa fungsi great() tidak memiliki variable lokal. namun, karena inner function memiliki akses ke variable di parent function-nya, sehingga great() dapat mengakses variable name. itulah yang dimaksud dengan lexical scope
+
+function init() {
+  const name = 'Obi Wan';
+
+  function greet() {
+    console.log(`Halo, ${name}`);
+  }
+
+  return greet;
+}
+
+const myFunction = init();
+myFunction();
+
+/* output
+Halo, Obi Wan
+ */
+
+kode diatas akan menghasilkan ouput yang sama. perbedaannya adalah fungsi greet() dikembalikan (return) dari outer functionnya sebelum di eksekusi. karena variable name berada dalam scope init(), maka umumnya variable tersebut akan hilang atau dihapus ketika fungsinya selesai dijalankan. namun, pada kasus diatas fungsi great() yang diakses melalui fungsi myFunction() masih memiliki referensi atau akses ke variable name. variable pada mekanisme diatas telah tertutup(close covered) yang berarti variable tersebut beada dialam closure
+
+javascript tidak memiliki cara untuk mendeklarasikan suatu fungsi atau variable menjadi private seperti bahasa java. sehingga sebuah fungsi atau variable bisa diakses darimana pun. kenapa kita membutuhkan private method ? salah satunya adalah untuk membatasi akses ke fungsi atau variable...perhatikan contoh berikut
+
+let counter = 0;
+
+const add = () => {
+  return ++counter;
+}
+
+console.log(add());
+console.log(add());
+counter = 23;
+console.log(add());
+
+/* output
+1
+2
+24
+ */
+
+nilai counter akan bertambah ketika kita memanggil fungsi add(). namun, kita juga bisa mengubah nilai counter secara langsung dengan assignment operator. pada contoh program yang lebih kompleks, sebaiknya hal ini dihindari karena perubahan langsung pada nilai counter bisa saja memunculkan bug
+
+closure memungkinkan kita membuat fungsi dan variable seolah menjadi private. seperti inilah contoh program counter yang dibuat dengan closure : 
+const add = () => {
+  let counter = 0;
+    return () => {
+      return ++counter;
+  };
+}
+
+const addCounter = add();
+
+console.log(addCounter());
+console.log(addCounter());
+console.log(addCounter());
+
+/* output
+1
+2
+3
+ */

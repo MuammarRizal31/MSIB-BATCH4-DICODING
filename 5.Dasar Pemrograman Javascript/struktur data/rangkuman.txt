@@ -1,0 +1,205 @@
+Untuk menyelesaikan masalah yang lebih kompleks secara efisien, kita membutuhkan struktur data yang lebih canggih dibandingkan variabel primitif. JavaScript memiliki tipe data lain yang dapat menyimpan banyak data sekaligus, contohnya seperti Object, Arrays, Map, dan Set.
+
+    - Object adalah tipe data kompleks untuk menyimpan banyak data dengan format key-value. Key pada object harus berupa string.
+    - Array digunakan untuk menyimpan banyak data. Data pada array disusun secara berurutan dan diakses menggunakan index.
+    - Map menyimpan banyak data dengan format key-value seperti object. Namun, key pada Map dapat bertipe apa pun.
+    - Set digunakan untuk menyimpan banyak data secara unik, tidak ada duplikasi, tidak berurutan, dan tidak diindeks
+
+
+
+-->.....<--
+
+    DATA STRUCTURE
+    'Merupakan format untuk mengatur mengelola,dan menyimpan data...tujuannya, agar lebih efisien dalam mengakses atau memodifikasi datanya
+
+1. ARRAY
+array adalah struktur data dari kumpulan nilai yang memiliki index dan dapat disimpan pada sebuah variable
+sifat array dijavascript 
+    > element didalam array diakses atau diubah melaui key(index)
+        * index array dimulai dari 0
+    > elemen boleh memiliki tipe data yang berbeda
+    > tipe data array adalah object
+    > looping sepanjang elemen menggunakan for of,forEach dan lainnya
+    > memiliki properti length yang menyimpan jumlah dari elemen
+    > untuk mengecek array agar isinya object menggunakan properti global Array.isArray(myArray)
+     
+contoh code : 
+1. membuat array
+const nama = ['jange','jangs',21,true];
+
+2. element didalam array diakses atau diubah melalui key (index)
+nama[1] = 'muammar';
+nama[4] = 'rizal
+console.log(nama[1]) //output : muammar
+console.log(nama[4]) //output : rizal
+console.log(nama) //output : ['jange','muammar',21,true,'rizal'];
+
+3. element boleh memililki tipe data yang berbeda
+const nama = ['jange','jangs',21,true];
+
+4. tipe data array adalah objek
+console.log(typeof nama) //output : objek
+
+//merubah array menjadi tipe data array menggunakan tipe data global
+console.log(Array.isArray(nama))
+
+5. looping sepanjang element menggunakan for of,forEach,dan lainnya
+// menggunakan for looping biasa
+for(let i=0;i < nama.length; i++);
+
+//menggunakan forEach
+nama.forEach(a => console.log(a));
+
+//menggunakan for of
+for( const a of nama){console.log(a)};
+
+------>..............<-----
+
+2. OBJECT
+object adalah struktur data dari kumpulan nilai dalam bentuk key-value dan dapat disimpan pada sebuah variable
+sifat objek pada javascript 
+    - nama properti adalah string atau tipe data lain yang nantinya akan diubah menjadi string
+    - jika kita paksa ubah propertinya menjadi tipe data lain,maka otomatis objek akan membuatnya menjadi string
+    - nilai properti dapat diakses dengan 2 cara object.propertyName atau object[propertyName]
+    - properti dan nilainya dapat dihapus dengan operator delete
+    - properti objek boleh bernilai apapun
+
+contoh code :
+1. membuat objek
+const car = {
+    brand : 'honda',
+    model: 'sedan',
+    color: 'white',   
+    'jumlah roda' : 4,
+    2: true,
+}
+
+
+2. Nama properti adalah string atau tipe data lain yang nantinya akan diubah menjadi string
+output diatas : properti 2 pada car akan bernilai string
+
+console.log(car) //output {
+    brand : 'honda',
+    model: 'sedan',
+    color: 'white',   
+    'jumlah roda' : 4,
+    '2' : true,
+}
+
+3. nilai properti bisa diakses dengan 2 cara objek.namaProperti atau objek[namaProperti]
+console.log(car.brand) //output: honda
+console.log(car['jumlah roda']) //output white
+
+ingat hal hal yang tidak bisa diakses kita bisa menggunakan cara yang kedua : objek[namaProperti]
+contohnya :
+    1. nama properti ada spasinya : car['jumlah roda']
+    2. nama properti bernilai number : car['2'];
+
+properti menjadi kunci untuk mengases objek
+
+4.  properti dan nilainya dapat dihapus dengan operator delete
+setiap properti pada objek kita bisa menghapusnya menggunakan operator delete
+
+contoh :
+delete car.brand;
+delete car['jumlah roda'];
+
+
+5. properti objek boleh bernilai apapun
+
+const biodata = {
+    nama : 'muammar rizal',
+    umur : 20,
+    npm: 202043502004,
+    skill : {
+        'bahasa markup' : ['html','css','dropdown'],
+        'bahasa pemrograman' : ['javascript','java'],
+    },
+    sayHello : function(nama,npm){
+        this.nama = nama;
+        this.npm = npm;
+        return `hello nama saya ${nama} npm saya ${npm}`;
+    },
+}
+
+---->>>> RECAP <<<<-----
+- ARRAY digunakan untuk mengelompokkan nilai yang tersusun dengan index
+- object digunakan untuk mengelompokkan nilai melalui properti
+
+--->>>  MAP <<<---
+sifat dari map : 
+    1. map sama seperti objek, tetapi key bisa berupa dengan apapun.
+    2. ingat kalau objek key nya hanya berupa string tidak bisa yang lain
+
+map dijavascript :
+    1. menggunakan method map.get(key) untuk mengakses nilai
+    2. memiliki method map.keys() untuk mengembalikan seluruh kay dalam bentuk mapIterator
+    3. memiliki method map.values() yang mengembalikan seluruh value dalam bentuk map mapIterator
+    4. dapat melakukan perulangan dengan for .. of
+    5. tipe data map adalah object
+
+code : 
+//menyimpan nilai dengan map dengan method set()
+const myMap = newMap();
+myMap.set(key,value);
+myMap.set(key,value);
+
+//menyimpan nilai pada map secara langsung
+const myMap = newMap([
+    [key,value],
+    [key,value],
+]);
+
+
+//  1. membuat map
+const buah = new Map([
+    ['melon',2],
+    ['mangga',5],
+])
+
+//  2. menggunakan method map.gey(key) untuk mengakses nilai.
+const stokBuah = buah.get('melon'); //output : 2;
+console.log(stokBuah)
+
+// merubah nilai menggunakan method set()
+buah.set("melon", 10);
+console.log(buah.get("melon"));
+
+
+-->>>>      Set     <<<<---
+sama seperti array,tetapi nilai elemen nya unik
+maksudnya nilai nya tidak akan bisa duplikat walaupun kita menambahkannya atas nama yang sama
+
+sifat set di javascript :  
+    1. gunakan set.add() dan set.delete() untuk menambahkan dan menghapus nilai
+    2. memiliki method set.values() yang mengembalikan seluruh value dalam bentuk SetInterator objek
+    3. memiliki method set.has() untuk mengecek ketersediaan nilai
+    4. memiliki properti size yang menyimpan jumlah dari elemen
+    5. dapat melakukan perulangan dengan for ... of
+    6. tipe data set adalah objek
+
+
+//membuat set
+const set = new Set(
+    ['apel','jeruk','anggur','jeruk']
+)
+
+set.add('strawberi');
+set.add('melon');
+
+console.log(set) //output -> {'apel','jeruk','anggur','strawberi','melon'}
+
+// 1. contoh menggunakan set.add dan set.delete()
+set.add('salak');
+set.delete('jeruk');
+console.log(set);
+
+// 2. contoh set.values() untuk mengembalikan seluruh value dalam bentuk setInterator object
+set.values()
+console.log(set.values()); //output : [Set Iterator] { 'apel', 'anggur', 'strawberi', 'melon', 'salak' };
+
+// 3. contoh method set.has() untuk mengecek ada gak nilai ini kalau ada bernilai boolean true
+set.has('salak') // output: true;
+
+// 4. contoh method size yang menyimpan jumlah dari elemen
+console.log(set.size) // output: -> 5 ...karena ada 5 value

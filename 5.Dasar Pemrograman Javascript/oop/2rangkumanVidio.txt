@@ -1,0 +1,223 @@
+APA ITU CLASS ?
+class adalah
+    - sebuah template atau blueprint untuk membuat instance object.
+    - object merupakan hasil pemodelan dari blueprint yang dibuat
+
+
+KEUNTUNGAN DARI OOP
+    - meminimalisir/mengurangi kode dengan inheritance
+    - kemudahan memperbesar skala proyek
+    - kemudahan solving problem dengan memecah permasalahan menjadi program yang lebih kecil
+    - memudahkan pembagian pekerjaan/kolaborasi dengan bekerja dengan objek
+
+--->>>          CLASS DECLARATIONS DAN EXPRESSION           <<<---
+cara deklarasikan class : 
+    - class keyword
+    - Nama class(opsiional untuk class expressions)
+    - body class
+
+penamaan class biasanya menggunakan gaya PascalCase
+
+EXPRESSION CLASS
+contoh expressions class : 
+const MyExpressionClass = class{}
+
+--->>>          MEMBUAT INSTANCE/INSTANSIASI OBJECT         <<<---
+Class declarations : 
+    - new keyword
+    - Nama class
+    - () syntax
+
+contoh: 
+const con = new MyClass(); 
+
+--->>>          HOISTING            <<<---
+    - akan terjadi error jika membuat instance sebelum deklarasi class.
+
+contoh: 
+    const con = new MyClass();  // reference error: cannot access 'MyClass' before initialization
+    class MyClass{
+        constructor(nama){
+            this.nama = nama;
+        }
+    }
+
+
+--->>>          CLASS BODY DAN METHODS          <<<---
+fitur fitur dalam class body
+    - constructor
+    - static initialization blocks
+    - methods
+    - static methods dan properties
+    - this keyword
+    - properties
+    - Field (public dan private)
+
+PENJELASAN : 
+1. >> CONSTRUCTOR
+- suatu method atau function spesial yang terpanggil pertama kali saat membuat instance menggunakan class 
+contoh : 
+    class MyClass{
+        constructor(){
+            console.log('jange');
+        }
+    }
+
+2. >> Static Initialization blocks
+- Blok kode program yang akan dijalankan ketika class dideklarasi.
+- dapat melakukan proses kompleks untuk inisialisasi fields.
+contoh : 
+    class MyClass{
+        static{
+            console.log('jange');
+        }
+    }
+    // ini langsung menampilkan pesan jange,tanpa kita harus meng console nya
+    
+3. >> METHODS
+- sebuah function dalam class/object
+- getter dan setter untuk memperoleh dan mendapatkan data dari suatu field atau property
+
+class MyClass{
+    firstFieldl = 'field pertama';
+
+    firstMethod(){
+        console.log('ini adalah method pertama dari class${MyClass.name})
+    }
+
+    //getter
+    get getFirstField(){
+        return this.firstFieldl;
+    }
+
+    //setter
+    set setMyFirstField(value){
+        this.firstFieldl = value;
+    }
+}
+
+4. >> STATIC METHODS DAN PROPERTY
+- cara akses properties dan methods tanpa membuat instance dulu
+- menempel pada class yang dibuat
+contoh :
+    class MyClass{
+        static staticPertama = 'hello';
+        static staticKedua;
+        static{
+            MyClass.secondStaticField = 'second stati filed';
+        }
+
+        static staticPertamaMethod(){
+            return 'ini adalah method pertama dari class MyClass';
+        }
+    }
+
+    console.log(MyClass.staticPertama);
+    console.log(MyClass.staticKedua);
+    console.log(MyClass.staticPertamaMethod)
+
+
+5. >> THIS KEYWORD
+- mereferensikan pada suatu instance yang dibuat
+contoh: 
+    class MyClass{
+        fieldPertama = 'hello';
+
+        get getFirstField(){
+            return this.fieldPertama;
+        }
+
+        set setFirstField(value){
+            this.fieldPertama = value;
+        }
+    }
+
+    const myClass = new MyClass();
+    console.log(myClass.getFirstField)
+    myClass.setFirstField = '123';
+
+
+6. >> PROPERTIES
+- Seperti variable dalam class
+
+class MyClass{
+    constructor(param1= 'Rizal',param2 ='indonesia'){
+        this.param1 = param1;
+        this.param2 = param2;
+    }
+}
+
+const myClass = new MyClass();
+console.log(myClass.param1)
+console.log(myClass.param2)
+
+7. >> FIELDS
+jika ingin sama seperti bahasa pemrograman OOP beneran,kita bisa menggunakan opsi ini
+- Seperti variable dalam class.
+- Dideklarasikan tanpa let,const,var.
+- jika ingin mengakses yang bersifat private kita bisa menggunakan method getter(get)
+- terdapat dua visibility:
+    * public
+    * private
+
+class MyClass{
+    itemPertama = 'jange';
+    itemKedua = 'rizal';
+
+    // ini private
+    #privateItemPertama = 'ini gaboleh diakses';
+    #privateItemKedua = 'ini hanya bisa diakses didalam class saja'
+}
+
+const myClass = new MyClass();
+console.log(myClass.itemPertama);
+console.log(myClass.itemKedua);
+
+--->>>          EXTENDS         <<<---
+- Suatu class dapat mewarisi properti atau method
+- Langkah : 
+    - nama child class
+    - Extends keyword
+    - Nama Parent class 
+
+class Car{
+    constructor(engine = false,wheels=4,color=null,speed=100,nitro=null){
+        this.#engine = engine;
+        this.ban = wheels;
+        this.warna = color;
+        this.speed = speed;
+        this.nitro = nitro;
+    }
+
+    startEngine(){
+        console.log('Mesin menyala');
+        this.#engine = true;
+    }
+
+    driveOff(){
+        if(!this.#engine){
+        console.log('Silahkan nyalakan mesin dahulu');
+        return false;
+        }
+        console.log('jalan');
+    }
+
+    get speed(){
+        return this.speed;
+    }
+}
+
+class Buggati extends Car{
+    constructor(warna="black",nitro=100){
+        this.warna = warna;
+        this.nitro = nitro;
+    }
+
+    get speed(){
+        return this.speed + this.nitro;
+    }
+}
+
+
+--->>>          SUPER KEYWORD           <<<---
+- untuk mengakses methods atau properti dari parent class dichild class

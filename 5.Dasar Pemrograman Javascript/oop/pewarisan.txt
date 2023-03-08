@@ -1,0 +1,146 @@
+--->>>          PEWARISAN           <<<---
+dalam gambaran dunia nyata, banyak sekali objek yang berbeda, tetapi punya kemiripan tertentu. jika kita berbicara mobil, tentu banyak ragam dari mobil mulai dari mobil transportasi, mobil balap,ambulan,truk dan mobil lainnya. walaupun semua ragam tersebut termasuk dalam kategori mobil, tetapi kemampuannya berbeda-beda...contoh ,mobiil balap memiliki kemampuan dapat mengaktifkan mode sport,sehingga dapat melaju dengan cepat; mobil ambulan dapat mengaktifkan sinyal darurat; mobil truk dapat menggerakan container-nya untuk menurunkan muatan...disisi lain, mereka memiliki kesamaan yaitu sama sama mobil yang memiliki merek,warna,kecepatan maksimal dan nomor rangka.
+
+sama halnya pada objek pada pemrograman, kita sering sekali mendapati kasus membuat sebuah objek dengan spesifikasi yang serupa, tetapi memiliki beberapa perbedaan kecil. contoh, objek emailService dengan whatsappService. kedua objek tersebut sama sama pelayanan perpesanan, mereka mengirim pesan dan membutuhkan properti sender. namun beberapa perbedaan contohnya whatsapp bisa mengirim pesan secara broadcast, sedangkan emali bisa mengirim pesan secara delay.
+
+pertanyaan,bagaimana cara membuat class untuk kedua objek ini ? sebenarnya kita bisa saja membuat dua class, takni whatsappService dan emailService dengan cara seperti ini : 
+
+const emailRizal = new EmailServices("Muammar");
+
+emailRizal.kirimPesan("hallo selamat malam", "fikri priambodo");
+emailRizal.kirimPesanDelay("yo broh,gua rindu sama lu", "Tania Julia Putri", 3);
+
+
+namun, jika kita lihat kode diatas terdapat duplikasi kode untuk bagian yang sama antarkedua objek tersebut. walau terlihat sederhana, tetapi tidak menutup kemungkinan kesamaan antarobjek tersebut terus berkembang dan kita perlu melakukan duplikasi kode diantara keduanya.
+
+oke, sekarang masalahnya adalah duplikasi kode, bagaimana cara menghindari duplikasi kode pada kasus ini? sebenernya kita bisa membuat satu class yang mencakup kemampuan kedu aobjek tersbeut, sehingga kita bisa membuat instance whatsAppService dan emailService menggunakan satu class saja.
+
+class MailService {
+  constructor(sender) {
+    this.sender = sender;
+  }
+ 
+  sendMessage(message, receiver) {
+    console.log(`${this.sender} sent ${message} to ${receiver}`);
+  }
+ 
+  sendDelayedMessage(message, receiver, delay) {
+    setTimeout(() => {
+      this.sendMessage(message, receiver);
+    }, delay);
+  }
+ 
+  sendBroadcastMessage(message, receivers) {
+    for (const receiver of receivers) {
+      this.sendMessage(message, receiver);
+    }
+  }
+}
+ 
+const whatsapp = new MailService('+6281234567890');
+const email = new MailService('dimas@dicoding.com');
+
+
+namun cara ini membuat objek whatsapp dan email tidak memiliki perbedaan. masalah yang ditimbulkan adalah terdapat kemampuan yang tidak dibutuhkan diantara kedua objek tersebut. seperti sendDelayedMessage() di whatsapp dan sendBroadcastMessage() yang di email.
+
+const whatsapp = new MailService('+6281234567890');
+const email = new MailService('dimas@dicoding.com');
+ 
+whatsapp.sendDelayedMessage(); // ???
+email.sendBroadcastMessage(); // ???
+
+paradigma OOP menawarkan solusi dalam memecahkan masalah ini dengan konsep pewarisan atau lebih dikenal dengan istilah inheritance.
+
+Dengan konsep inheritance, kita bisa mewarisikan sifat sifat yang berada didalam sebuah class ke class lain. konsep inheritance cocok ketika kita ingin membuat objek yang mirip dan memiliki sedikit perbedaan seperti kasus yang kita hadapi.
+
+implementasinya, kita tampung seluruh sifat yang sama pada sebuah class induk(superclass) dan sifat tersebut nantinya diwarisi kepada class dibawahnya(subclass). kemudian pada subclass, kita bisa menambahkan kemampuan lain yang lebih spesifik
+
+contohnya,kita buat superclass bernama MainService yang mengandung seeluruh sifat yang sama pada whatsappService dan emailService
+
+//superclass
+class MailService{
+    constructor(pengirim){
+        this.sender = pengirim;
+    }
+
+    kirimPesan(penerima,pesan){
+        console.log(`hallo ${penerima} mendapat pesan dari ${this.pengirim} yang berisin ${pesan}`)
+    }
+}
+
+kemudian kita warisi sifat dari mailService ke subclass whatsapp service dan emailService dengan menggunakan keyword extends seperti ini
+
+//super class
+// Superclass
+class MailService {
+  constructor(sender) {
+    this.sender = sender;
+  }
+ 
+  sendMessage(message, receiver) {
+    console.log(`${this.sender} sent ${message} to ${receiver}`);
+  }
+}
+
+
+// Subclass
+class WhatsAppService extends MailService {
+  sendBroadcastMessage(message, receivers) {
+    for (const receiver of receivers) {
+      this.sendMessage(message, receiver);
+    }
+  }
+}
+ 
+// Subclass
+class EmailService extends MailService {
+  sendDelayedMessage(message, receiver, delay) {
+    setTimeout(() => {
+      this.sendMessage(message, receiver);
+    }, delay);
+  }
+}
+
+const whatsapp = new WhatsAppService('+6281234567890');
+const email = new EmailService('dimas@dicoding.com');
+ 
+whatsapp.sendMessage('Hello', '+6289876543210');
+whatsapp.sendBroadcastMessage('Hello', ['+6289876543210', '+6282234567890']);
+whatsapp.sendDelayedMessage(); // Error
+ 
+email.sendMessage('Hello', 'john@doe.com');
+email.sendDelayedMessage('Hello', 'john@doe.com', 3000);
+email.sendBroadcastMessage(); // Error
+
+
+--->>>          OPERTAOR INSTANCEOF         <<<---
+ketika menulis kode, kita seringkali perlu mengecek jenis dari objek tersebut. salah satu cara mengetahui jenis objek adalah dengan mengecek rantai prototype-nya, nah untuk mengetes sebuah objek berdasarkan prototype dari contructor function atau class tertentu, kita bisa menggunakan operator INSTANCEOF
+
+operand1 instance of operand2
+
+penjelasannya : 
+    - operan1: merupakan objek yang ingin dites prototype-nya
+    - operan2: merupakan constructor function atau class
+
+berikut contoh penggunaan dari operator instanceof dalam mengecek objek whatsapp yang merupakan isntance dari class whatsappService
+
+const whatsapp = new WhatsAppService('089639586047')
+console.log(whatsapp instanceof whatsAppService) //true
+console.log(whatsapp instanceof mailService) // false
+
+operator instance of mengembalikan boolean. operasinya akan menghasilkna nilai true jika objek yang dites(operan pertama) memiliki prototype yang merupakan operand kedua. jika prototype operand pertama bukanlah operand kedua, operasinya akan menghasilkan nilai fanse.
+
+operator instanceof juga akan mengecek prototype secara berantai, artinya, instanceof juga mengecek hingga prototype yang diwarisi oleh objek tersebut
+
+const whatsapp = new WhatsAppService('+6281234567890');
+const email = new EmailService('dimas@dicoding.com');
+ 
+console.log(whatsapp instanceof WhatsAppService); // true
+console.log(whatsapp instanceof EmailService); // false
+console.log(whatsapp instanceof MailService); // true
+ 
+console.log(email instanceof EmailService); // true
+console.log(email instanceof WhatsAppService); // false
+console.log(email instanceof MailService); // true
+
+

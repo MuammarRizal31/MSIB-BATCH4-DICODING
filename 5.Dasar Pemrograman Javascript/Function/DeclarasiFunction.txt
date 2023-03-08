@@ -1,0 +1,75 @@
+fungsi merupakan bagian penting dalam bahasa pemrograman. Tanpa sadar, sebenarnya kita sudah menggunakan sebuah fungsi pada contoh kode yang ada sebelumnnya.
+
+log() pada console.log() merupakan sebuah function yang berguna untuk menampilkan data pada konsol, tapi sebernarnya apa itu function? bagaimana ia bisa bekerja ?
+
+mirip dengan fungsi pada matematika, fungsi dalam pemrograman juga digunakan untuk menghasilkan output berdasarkan input tertentu
+
+namun, fungsi juga bisa digunakan sebagai block kode atau prosedur yang dapat digunakan secara berulang. dalam arti lain, kita dapat berpikir bahwa function merupakan sebuah variable yang berisi blok logika. blok logika tersebut akan dieksekusi ketika variable nya dipanggil.
+
+semua fungsi memiliki struktur yang sama. fungsi dideklarasikan dengan keyword function dan nama fungsinya. nama fungsi selalu diikuti dengan tanda kurung (oarentheses) tanpa spasi, lalu terdapat sepasang kurung kurawal yang berisi logika dari fungsi tersebut.
+
+terkadang didalam tanda kurung kita membutuhkan sebuah informasi tambahan yang disebut dengan parameter. parameter merupakan data yang digunakan pada fungsi untuk diproses didalamnya. sebagai contoh, fungsi console.log() dapat menerima argument berupa string atau data lain untuk ditampilkan ke konsol.
+
+-->     PARAMETER DAN ARGUMENT
+didalam fungsi kita akan banyak bertemu istilah parameter dan argument. penggunaan istilah ini sering kali tertukar, bahkan dikalangan developer
+
+    - Parameter merupakan variable yang didefinisikan sebagai inputan dari sebuah fungsi
+    - argument merupakan nilai atau expression yang dimasukkan ke dalam fungsi
+
+setelah membuat fungsi kita dapat memanggilnya dengan menuliskan nama fungsi diikuti tanda kurung dan memasukkan argument didalamnnya(jika ada)
+
+tetapi jika sebuah fungsi hanya menjalankan baris kode yang sama dirasa kurang fungsional,kita dapat membuat fungsi tersebut untuk menerima dan memanfaatkan parameter untuk mengubah perilaku dari fungsinya.
+
+untuk menambahkan parameter pada fungsi,tambahkan variable didalam tanda kurung fungsi.namun, variable tersebut tidak memerlukan keyword var,let,const...kita juga bisa menambahkan lebih dari satu parameter dengan memberikan tanda koma antar variable parameternya. contohnya fungsi greeting akan kita tambahkan parameter nam dan language seperti contoh difolder script
+
+function greeting(name, language) {
+    if(language === "English") {
+        console.log(`Good Morning ${name}!`);
+    } else if (language === "French") {
+        console.log(`Bonjour ${name}!`);
+    } else {
+        console.log(`Selamat Pagi ${name}!`);
+    }
+}
+
+greeting("Harry", "French");
+
+/* output
+Bonjour Harry!
+*/
+
+
+satu hal lagi,function dapat menghasilkan output atau mengembalikan sebuah nilai. dengan nilai kembalian, kita dapat membuat function yang berfungsi untuk melakukan perhitungan matematika dan hasilnya dapat kita masukkan ke dalam sebuah variable contohnya
+
+function multiply(a, b) {
+    return a * b;
+}
+
+let result = multiply(10, 2)
+console.log(result)
+
+/* output
+20
+*/
+
+agar bisa mengembalikan nilai, gunakan keyword return diikuti dengan nilai yang akan dikembalikan. nilai kembalian tidak hanya number, bisa juga berupa string,boolean,object,array,atau tipe yang lain. seperti inilah fungsi greeting() jika kita ubah agar mengembalikan nilai string: 
+
+function greeting(name, language) {
+    if(language === "English") {
+        return `Good Morning ${name}!`
+    } else if (language === "French") {
+        return `Bonjour ${name}!`;
+    } else {
+        return `Selamat Pagi ${name}!`;
+    }
+}
+
+let greetingMessage = greeting("Harry", "French");
+console.log(greetingMessage);
+
+yang perlu diperhatikan lagi, ketika statement return tereksekusi, maka fungsi akan langsung terhenti dan mengembalikan nilai
+
+-->>>       EXPRESSION FUNCTION         <<<---
+cara lain untuk membuah sebuah fungsi pada javascript adalah expression function. ingat kembali bahwa expression adalah kode atau instruksi yang mengembalikan nilai, sehingga expression function bisa disimpan dalam sebuah variable.
+
+pada expression function umumnya kita tidak perlu menuliskan nama fungsinya...fungsi yang tidak bernama juga dikenal dengan anonymous function. berikut contoh penulisan expression function : 

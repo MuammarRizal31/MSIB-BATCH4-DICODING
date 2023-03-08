@@ -1,0 +1,35 @@
+--->>>          OBJECT ORIENTED PROGRAMMING         <<<---
+object-oriented programming(OOP) adalah salah satu paradigma dalam pemrograman yang berfokus pada pembuatan sebuah objek dan interaksi dengan objek objek tersebut. Di OOP, Objek merupakan sebuah entitas yang terdiri dari dua hal, yakni properties dan methods.
+    - properti merupakan nilai di dalam objek yang menyimpan informasi tentang objek tersebut
+    - method merupakan fungsi yang menggambarkan aksi yang dapat dilakukan oleh objek tersebut
+
+Paradigma OOP kerap digambarkan dengan kehidupan nyata. objek didalam OOP, bisa kita anggap seperti objek yang ada didunia nyata. kita ambil contoh, mobil. Dalam OOP, sebuah mobil dapat dilihat sebagai objek yang memiliki beberapa properti seperti merek, warna, kecepatan maksimal dan nomor rangka...Objek tersebut memiliki kemampuan atau method seperti maju, mundur dan belok.
+
+Melalui object blueprint, kita bisa membuat cetakan untuk membuat objek yang sudah terdefinisikan macam-macam properti dan method nya. sehingga kita cukup menggunakan cetakan tersebut untuk membuat objek yang serupa, tetapi kita bisa menentukan nilai-nilai properti yang berbeda.
+
+Contohnya, adna bisa membuat sebuah blueprint bernama Car. didalam blueprint tersebut, anda bisa definisikan properti-properti dan method yang ingin dimilliki objek mobil nantinya. setelah membuat sebuah blueprint, anda bisa dengan mudah membuat banyak objek mobil contohnya myCar, yourCar dan dicodingCar dengan lebih mudah
+
+--->>>          CONSTRUCTOR FUNCTION            <<<---
+Dijavascript, object blueprint dapat dibuat dengan menggunakan contructor function yang tampak seperti ini :
+
+function Car(brand, color, maxSpeed, chassisNumber) {
+  this.brand = brand;
+  this.color = color;
+  this.maxSpeed = maxSpeed;
+  this.chassisNumber = chassisNumber;
+}
+ 
+Car.prototype.drive = function() {
+  console.log(`${this.brand} ${this.color} is driving`);
+}
+ 
+Car.prototype.reverse = function() {
+  console.log(`${this.brand} ${this.color} is reversing`);
+}
+ 
+Car.prototype.turn = function() {
+  console.log(`${this.brand} ${this.color} is turning`);
+}
+
+Kode di atas merupakan contoh membuat object blueprint dari sebuah mobil. Anda bisa membuat objek mobil--yang merupakan instance dari Car--dengan memanfaatkan constructor function Car.
+

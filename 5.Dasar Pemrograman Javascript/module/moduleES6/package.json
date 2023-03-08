@@ -1,0 +1,12 @@
+{
+  "name": "tesmodul",
+  "version": "1.0.0",
+  "description": "belajar",
+  "main": "modul.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "muammar rizal",
+  "license": "ISC"
+}

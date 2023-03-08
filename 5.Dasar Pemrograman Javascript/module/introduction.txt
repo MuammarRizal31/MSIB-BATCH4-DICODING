@@ -1,0 +1,5 @@
+--->>>          PENGENALAN MODULE           <<<---
+Ketika aplikasi sudah semakin berkembang, kita bisa saja menuliskan seluruh kode hanya dalam satu berkas. namun,bayangkan anda harus mencari baris kode yang menimbulkan bug dari ribuan bahkan juataan baris kode. sudah terbayang repotnya bukan ? untuk itulah penting untuk membagi project menjadi beberapa berkas berdasarkan tugas dan fungsinya.
+
+ketika kita membagi kode javascript menjadi beberapa berkas, disitulah kita perlu membuah sebuah modul javascript. apa tujuannya ? tak lain adalah untuk menghubungkan berkas javascript yang terpisah agar dapat saling digunakan.
+

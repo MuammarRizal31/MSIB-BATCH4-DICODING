@@ -1,0 +1,60 @@
+--->>>          BUILT-IN CLASS          <<<---
+Dijavascript sudah terdapat build-in class atau class bawaan, seperti Date, Object,Array,Math dan string. class bawaan dapat kita manfaatkan untuk berbagai hal,mulai dari manupulasi data-data terkait dengan array, operasi matematika, manipulasi karakter, ataupun menipulasi objek.
+
+mari kita ambil contoh class Date
+
+Date merupakan calss bawaan javascript yang digunakan untuk utilitas terkait tanggal dan waktu. class ini sangat membantu ketika program yang kita buat terdapat penggunaan dan manipulasi tanggal dan waktu. kita bisa mudah untuk mendapatkan waktu dalam bentuk instance date atau mengonversinya ke dalam berbagai format yang kita inginkan.
+
+berikut contoh dalam penggunaan class bawaan date.
+
+const waktu = new Date();
+
+const timeInJakarta = waktu.toLocaleString("id-ID", {
+  timeZone: "Asia/Jakarta",
+});
+
+console.log(timeInJakarta);
+
+const timeInTokyo = waktu.toLocaleString("ja-JP", {
+  timeZone: "Asia/Tokyo",
+});
+
+console.log(timeInTokyo);
+
+const timeInMakassar = waktu.toLocaleString("id-ID", {
+  timeZone: "Asia/Makassar",
+});
+
+console.log(timeInMakassar);
+
+Lihat! betapa mudahnya kita mendapatkan data waktu dijavascript dengan menggunakan class bawaan Date. selain yang kami contohkan, masih banyak hal yang bisa kita lakukan dengan class Date. anda bisa eksplorasi fitur fitur dari class Date
+
+-->>>           ARRAY           <<<---
+Sekilas, tidak ada special dari class ini karena sebenarnya kita bsia membaut array seperti dengan menggunakan array literals(tanda []) namun dengan menggunakan class Array, kita bisa menerapkan konsep pewarisan untuk membuat subclass baru yang dapat kita modifikasi sesuai Kebutuhan.
+
+Contohnya kita ingin membuat sebuah struktur data mirip array, tetapi nilai tiap elemennya unik, maka kita bisa membaut subclass uniqueArray yang mewarisi class Array. didalam subclass uniqueArray, implementasinya tampak seperti ini.
+
+class ArrayUnik extends Array {
+  constructor(...args) {
+    const isiArr = args.filter((item, index) => args.indexOf(item) === index);
+
+    super(...isiArr);
+  }
+  add(item) {
+    if (!this.includes(item)) {
+      super.push(item);
+    }
+  }
+}
+
+const someArray = new ArrayUnik("a", "r", "e", "p", "a");
+console.log(someArray);
+someArray.add("masuk");
+console.log(someArray);
+someArray.add("masuk");
+console.log(someArray)
+
+Dengan konsep OOP, kita bisa extends kemampuan javascript lebih dari standar yang ada.
+
+Kami tekankan lagi, di samping Date dan Array, terdapat banyak class bawaan JavaScript yang bisa Anda eksplorasi. Pemahaman Anda terhadap konsep-konsep OOP bisa membuka jalan untuk menambahkan atau memodifikasi kemampuan standar JavaScript.
+

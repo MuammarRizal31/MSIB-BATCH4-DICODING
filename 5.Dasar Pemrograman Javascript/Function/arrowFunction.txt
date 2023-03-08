@@ -1,0 +1,64 @@
+es6 memperkenalkan fungsi baru yang dinamakan arrow function expression atau lebih dikenal sebagai arrow function. arrow function mirip seperti regular function secara perilaku, tetapi berbeda dalam penulisannya. sesuai namanya, fungsi didefinisikan menggunakan tanda panah atau fat arrow ( => ). tentunya penulisan arrow function ini akan lebih singkat.
+
+selain perbedaan sitaksis, terdapat perbedaan perilaku antara arrow function dan regular function. regular function dapat berupa function declaration dan function expression. namun, arrow function hanya berupa expression function saja. itu sebabnya arrow function memiliki nama lengkap 'arrow function expression'
+
+//regular function
+// function declaration
+function sayHello(greet) {
+    console.log(`${greet}!`);
+}
+ 
+// function expression
+const sayName = function (name) {
+    console.log(`Nama saya ${name}`)
+}
+
+//arrow function
+// function expression
+const sayHello = (greet) => {
+    console.log(`${greet}!`)
+}
+ 
+const sayName = (name) => {
+    console.log(`Nama saya ${name}`)
+}
+
+
+para arrow function kita tidak perlu menuliskan keyword function setiap membuat fungsi. kita tetap menuliskan parameter didalam tanda kurung lalu diikuti dengan tanda panah (=>) sebelum kurung kurawal
+
+apabila fungsi hanya memiliki satu parameter, maka kita bisa menghapuskan tanda kurung seperti berikut
+
+const sayName = name => {
+    console.log(`Nama saya ${name}`)
+}
+
+sayName("Leia");
+
+/* output
+Nama saya Leia
+ */
+
+ namun, jika kita sama sekali tidak membutuhkan parameter, maka kita tetapi menuliskan tanda kurung namun kosong
+
+
+satu hal yang menarik. ketika body dari function terdiri dari satu baris, kita bisa menghapus tanda kurung kurawal. tentunya ini akan menghemat baris kode yang kita tulis
+
+const sayName = name => console.log(`Nama saya ${name}`);
+sayName("Leia");
+
+const sayHello = () => console.log("Selamat pagi semuanya!");
+sayHello();
+
+/* output
+Nama saya Leia
+Selamat pagi semuanya!
+ */
+
+ketika sebuah fungsi perlu mengembalikan nilai, kita tidak perlu lagi menuliskan return(hanya bekerja untuk fungsi satu baris)
+
+const multiply = (a, b) => a * b;
+console.log(multiply(3, 4));
+
+/* output
+12
+ */

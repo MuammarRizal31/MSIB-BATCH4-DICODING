@@ -1,0 +1,209 @@
+Fitur pewarisan pada class begitu lebih dalam memangkas duplikasi kode. kita tidak perlu repetitif menulis kode yanng sama ketika dua class atau lebih memiliki kemampuan yang sama, namun, apakah pewarisan di javascript mampu memecahkan masalah yang lebih kompleks ? mari kita cari tahu.
+
+Didunia nyata, ada banyak peran dari seorang developer, tetapi ada tiga peran yang mungkin anda sudah familier seperti front-end,back-end,devops dan fullstack developer. semuanya masuk ke dalam kategori developer dan mereka mampu menulis dan mengubah kode(commit changes) selain itu, terdapat juga kemampuan yang spesifik terhadap perannya masing-masing, seorang front-end dapat membangun antarmuka(build UI) dan backend dapat membangun API(build API) dan devOps mampu mendeploy aplikasi. peran fullstack developer adalah satu satunya peran yang mempu melakukan banyak hal,disamping menulis dan mengubah kode, dia mampu membangun antarmuka membangun API dan mendeploy aplikasi
+
+Jika kita gambarkan skenario di atas dalam konsep OOP, Developer merupakan sebuah superclass; sedangkan Front-End Developer, Back-End Developer, dan DevOps adalah subclass. Struktur dari pewarisan class akan tampak seperti kode di bawah ini.
+
+class Developer{
+    constructor(nama){
+        this.name = nama;
+    }
+
+    commitChanges(){
+        console.log(`${this.name} is commiting changes`);
+    }
+}
+
+class frontEnd extends Developer{
+    buildUi(){
+        console.log(`${this.name} is building UI...)
+    }
+}
+
+class backEnd extends Developer{
+    buildAPI(){
+        console.log(`${this.name} is building API...)
+    }
+}
+
+class devOps extends Developer{
+    deployAPP(){
+        console.log(`${this.name} is deploy Apps...)
+    }
+}
+
+seluruh class sudah terdefinisikan dengan baik, tetapi kurang full-stack developer. apakah anda punya ide cara mendefinisikan class FullStack developer yang efektif tanpa ada kode repetitif menggunakan pewarisan ? 
+
+jika menggunakan pewarisan tentu tidak ada cara selain menulis kembali method buildUI(),buildAPI(), dan deployAPP() didalam fullstackDeveloper
+
+class FullStackDeveloper extends Developer {
+ buildUI() {
+   console.log(`${this.name} is building UI...`);
+ }
+ 
+ buildAPI() {
+   console.log(`${this.name} is building API...`);
+ }
+ 
+ deployApp() {
+   console.log(`${this.name} is deploying app...`);
+ }
+}
+
+cara ini sungguh tidak efektif karena jika terjadi perubahan pada salah satu fungsi, kita perlu mengubahnya didua tempat
+
+lalu apa solusinya ?
+
+solusinya adalah meninggalkan pewarisan dan gunakan teknik objek composition. jika anda lihat kembali kode diatas, pewarisan mendorong kita untuk menstrukturkan kode dengan pendekatan peran atau identitas class, yakni front-end developer,backgend dan fullstack..sedangkan object composition, dia tidak memperdulikan peran, melainkan kode distrukturkan berdasarkan kemampuan yang dapat dilakukan seperti buildUI(),buildAPI() dan deployApp().
+
+class Developer {
+  constructor(name) {
+    this.name = name;
+  }
+ 
+  commitChanges() {
+    console.log(`${this.name} is committing changes...`);
+  }
+}
+ 
+function canBuildUI(developer) {
+  return {
+    buildUI: () => {
+     console.log(`${developer.name} is building UI...`);
+    }
+  }
+}
+ 
+function canBuildAPI(developer) {
+  return {
+    buildAPI: () => {
+      console.log(`${developer.name} is building API...`);
+    }
+  }
+}
+ 
+function canDeployApp(developer) {
+  return {
+    deployApp: () => {
+      console.log(`${developer.name} is deploying app...`);
+    }
+  }
+}
+
+Dengan memecah kode berdasarkan kemampuan, ke depannya kita akan lebih mudah dalam membuat objek dengan peran apa pun, mau Front-End Developer, Back-End Developer, DevOps, Full-Stack, atau peran lain yang membutuhkan kombinasi dari kemampuan-kemampuan yang ada, tanpa ada kode yang repetitif.
+
+Agar lebih mudah dalam membuat objek, kita bisa membuat sebuah fungsi sebagai object creator dengan mengomposisikan kemampuan-kemampuan yang dibutuhkan. Di JavaScript, kita bisa secara mudah mengomposisikan objek dengan menggunakan method Object.assign().
+
+function createFrontEndDeveloper(name) {
+  const developer = new Developer(name);
+  return Object.assign(developer, canBuildUI(developer));
+}
+ 
+function createBackEndDeveloper(name) {
+  const developer = new Developer(name);
+  return Object.assign(developer, canBuildAPI(developer));
+}
+ 
+function createDevOps(name) {
+  const developer = new Developer(name);
+  return Object.assign(developer, canDeployApp(developer));
+}
+ 
+function createFullStackDeveloper(name) {
+  const developer = new Developer(name);
+  return Object.assign(developer, canBuildUI(developer), canBuildAPI(developer), canDeployApp(developer));
+}
+
+Setelah membuat fungsi object creator, kita bisa secara mudah membuat objek Front-End Developer, Back-End Developer, DevOps, dan Full-Stack Developer
+
+class Developer {
+  constructor(name) {
+    this.name = name;
+  }
+ 
+  commitChanges() {
+    console.log(`${this.name} is committing changes...`);
+  }
+}
+ 
+function canBuildUI(developer) {
+  return {
+    buildUI: () => {
+      console.log(`${developer.name} is building UI...`);
+    }
+  }
+}
+ 
+function canBuildAPI(developer) {
+  return {
+    buildAPI: () => {
+      console.log(`${developer.name} is building API...`);
+    }
+  }
+}
+ 
+function canDeployApp(developer) {
+  return {
+    deployApp: () => {
+      console.log(`${developer.name} is deploying app...`);
+    }
+  }
+}
+ 
+function createFrontEndDeveloper(name) {
+  const developer = new Developer(name);
+  return Object.assign(developer, canBuildUI(developer));
+}
+ 
+function createBackEndDeveloper(name) {
+  const developer = new Developer(name);
+  return Object.assign(developer, canBuildAPI(developer));
+}
+ 
+function createDevOps(name) {
+  const developer = new Developer(name);
+  return Object.assign(developer, canDeployApp(developer));
+}
+ 
+function createFullStackDeveloper(name) {
+  const developer = new Developer(name);
+  return Object.assign(developer, canBuildUI(developer), canBuildAPI(developer), canDeployApp(developer));
+}
+ 
+const frontEndDeveloper = createFrontEndDeveloper('Fulan');
+frontEndDeveloper.commitChanges();
+frontEndDeveloper.buildUI();
+console.log(`is ${frontEndDeveloper.name} developer? `, frontEndDeveloper instanceof Developer);
+ 
+const backEndDeveloper = createBackEndDeveloper('Fulana');
+backEndDeveloper.commitChanges();
+backEndDeveloper.buildAPI();
+console.log(`is ${backEndDeveloper.name} developer? `, backEndDeveloper instanceof Developer);
+ 
+const devOpsDeveloper = createDevOps('Fulani');
+devOpsDeveloper.commitChanges();
+devOpsDeveloper.deployApp();
+console.log(`is ${devOpsDeveloper.name} developer? `, devOpsDeveloper instanceof Developer);
+ 
+const fullStackDeveloper = createFullStackDeveloper('Fulanah');
+fullStackDeveloper.buildUI();
+fullStackDeveloper.buildAPI();
+fullStackDeveloper.deployApp();
+console.log(`is ${fullStackDeveloper.name} developer? `, fullStackDeveloper instanceof Developer);
+ 
+/**
+* Output:
+* Fulan is committing changes...
+* Fulan is building UI...
+* is Fulan developer?  true
+* Fulana is committing changes...
+* Fulana is building API...
+* is Fulana developer?  true
+* Fulani is committing changes...
+* Fulani is deploying app...
+* is Fulani developer?  true
+* Fulanah is building UI...
+* Fulanah is building API...
+* Fulanah is deploying app...
+* is Fulanah developer?  true
+*/

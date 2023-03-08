@@ -1,0 +1,165 @@
+--->>>          KONSEP-KONSEP FUNCTIONAL PROGRAMMING        <<<---
+Setelah anda memiliki sedikit gambaran tentang bagaimana peradigma FP dapat membuat kode yang anda tuliskan lebih mudah dibaca dan ringkas.
+
+DISINI KITA AKAN MEMBAHAS 4 KONSEP BESAR YANG ADA DI FP.
+    1. Pure function
+    2. Immutability
+    3. Recursive
+    4. High Order Function
+
+--->>>       PURE FUNCTIONA          <<<---
+Salah satu konsep besar dari paradigma FP adalah pure function.
+Pure function merupakan konsep dari pembuatan fungsi yang seharusnya fungsi untuk tidak bergantung terhadap nilai yang berada diluar fungsi atau parameternya. sehingga mau seperti apa keadaannya, fungsi yang dibuat selalu menghasilkan sesuatu yang sama, Terkecuali bila fungsi tersebut diberikan nilai parameter yang berbeda.
+
+CONTOH : 
+let PI = 3.14;
+
+const hitungLuasLingkaran = (jariJari) => {
+  return PI * (jariJari * jariJari); 
+}
+
+console.log(hitungLuasLingkaran(4)); // 50.24
+
+PI = 5; // tidak sengaja nilai PI berubah
+
+console.log(hitungLuasLingkaran(4)); // 80
+
+Menurut anda, apakah fungsi hitung luas lingkaran merupakan pure function atau impure function? jika anda menjawab impure function, anda tepat sekali
+
+Fungsi tersebut tidak bisa dikatakan pure function karena ia membutuhkan nilai yang berbeda diluar dari fungsinya, yakni nilai PI, bila nilai PI berubah, maka penggunaan fungsi menghasilkan nilai yang berbeda walaupun diberikan nilai parameter yang sama.
+
+Lantas, bagaimana cara membuat fungsi tersebut menjadi pure ?
+
+const hitungLuasLingkaran = (jariJari) => {
+  return 3.14 * (jariJari * jariJari); 
+}
+
+console.log(hitungLuasLingkaran(4)); // 50.24
+console.log(hitungLuasLingkaran(4)); // 50.24
+console.log(hitungLuasLingkaran(8)); // 200.96
+console.log(hitungLuasLingkaran(8)); // 200.96
+
+dengen memindahkan nilai PI secara konstan didalam fungsi, maka dapat dipastikan nilai tersebut tidak akan berubah atau tak sengaja diubah. dengan begitu fugnsi selalu menghasilkan nilai yang sama bila nilai parameter yang diberikan sama.
+
+Selain dilarang untuk bergantug terhadap nilai luar, pure function juga dilarang keras untuk mengubah nilai yang berada diluar baik secara sengaja atau tidak sengaja. pure function tidak boleh menimbulkan efek samping(no side effect) ketika digunakan.
+
+const createPersonWithAge = (age,person) => {
+    person.age = age;
+    return person;
+}
+
+const person = {
+    name : "Bobo"
+};
+
+const newPerson = createPersonWithAge(18,person)
+
+fungsi createPersonWithAge bertujuan untuk membuat objek person baru dengan tambahakn properti age dari objek person yang ada. namun alih alih hanya membuat objek baru. ia juga malah mengubah nilai dari objek lama. nah inilah yang menyebabkan fungsi CreatePersonWithAge bukanlah pure function
+
+lalu bagaimana cara membuat fungsi menjadi pure? kita memanfaatkan destructuring objek daripada mengubah objek tersebut secara lagnsung.
+
+const createPersonWithAge = (age, person) => {
+  return { ...person, age };
+};
+
+const person = {
+  name: 'Bobo'
+};
+
+const newPerson = createPersonWithAge(18, person);
+
+console.log({
+  person,
+  newPerson
+});
+
+/**
+ * Output:
+ *  { 
+ *    person: { name: 'Bobo' },
+ *    newPerson: { name: 'Bobo', age: 18 } 
+ *  }
+*/
+
+Agar lebih mudah dalam mengetahui apakah fungsi yang anda buat sudah pure atau belum, pastikan 3 konsep ini ada pada fungsi yang anda buat.
+    - Mengembalikan nilai yang sama bila inputannya (nilai parameter) sama
+    - hanya bergantung pada argumen yang diberikan
+    - tidak menimbulkan efek samping
+
+bila 3 konsep diatas terpenuhi,maka bisa dipastikan anda membuat sebuah pure function.
+
+--->>>          IMMUTABILITY            <<<---
+Konsep yang kedua adalah immutability. immutable berarti sebuah objek tidak boleh diubah setelah objek tersebut dibuat. kontras dengan muteble yang artinya objek boleh diubah setelah objek tersebut dibuat.
+
+Konsep immutability sangat kental pada paradigma FP. anda bisa lihat sebelumnya pada contoh penggunaan array map. ketika menggunakan array.map() alih alih ia mengubah nilai dari array itu sendiri, malah ia membuat atau menghasilkan array baru.
+
+const names= ['jange','jangs','rizal']
+
+const newNamesWithExcMark = names.map((name) => `${name}!`);
+
+console.log({
+    names,
+    newNamesWithExcMatk,
+})
+/**
+ * {
+     names: [ 'Harry', 'Ron', 'Jeff', 'Thomas' ],
+     newNamesWithExcMark: [ 'Harry!', 'Ron!', 'Jeff!', 'Thomas!' ]
+   }
+ */
+
+lantas, bagaimana bila kita benar benar perlu mengubah nilai dari sebuah objek ? contohnya seperti ini : 
+
+const user = {
+    firstname: 'Harry',
+    lastName: 'Protter', // ups, typo!
+}
+
+const renameLastNameUser = (newLastName, user) => {
+    user.lastName = newLastName;
+}
+
+renameLastNameUser('Potter', user);
+
+console.log(user);
+
+/**
+ * output:
+ * { firstname: 'Harry', lastName: 'Potter' }
+ * 
+ */
+
+yup! tujuan anda memang tercapai namun itu bukanlah konsep dari paradigma FP. bila anda ingin menerapkan FP sepernuhnya, hidnari cara seperti diatas. lantas bagaimana solusinya ? sama seperti fungsi array map(),alih alih mengubah nilai objek secara langsung, terapkan perubahan tersebut pada nilai return dalam objek baru.
+
+const user = {
+    firstname: 'Harry',
+    lastName: 'Protter', // ups, typo!
+}
+
+const createUserWithNewLastName = (newLastName, user) => {
+    return { ...user, lastName: newLastName }
+}
+
+const newUser = createUserWithNewLastName('Potter', user);
+
+console.log(newUser);
+
+/**
+ * output:
+ * { firstname: 'Harry', lastName: 'Potter' }
+ * 
+ */
+
+hasilnya sama kan ? selain itu, anda juga bisa menyesuaikan nama fungsinya dari renameLastNameUser menjadi createUserWithNewLastName. hal itu perlu untuk mengindikasikan bahwa fungsi mengembalikan atau menghasilkan objek user baru.
+
+
+Rangkuman Materi
+Anda berada di akhir dari modul Functional Programming. Mari kita uraikan materi yang sudah Anda pelajari untuk mempertajam pemahaman.
+
+Anda sudah mengenal paradigma Functional Programming.
+Anda sudah mengenal konsep Pure Function, Immutability, Recursive, dan Higher-Order Function pada paradigma Functional Programming.
+Anda sudah mencoba beberapa reusable function yang ada di JavaScript seperti array map, array filter, dan array forEach.
+Dengan ringkasan tersebut, diharapkan Anda dapat memahami semua materi yang telah disampaikan. Jika belum, Anda bisa ulas kembali materi yang diberikan pada modul ini. Untuk Anda yang sudah merasa mantap, yuk lanjut ke modul berikutnya!
+
+
+

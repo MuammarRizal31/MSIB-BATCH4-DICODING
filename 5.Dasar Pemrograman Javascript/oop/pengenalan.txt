@@ -1,0 +1,56 @@
+PENGANTAR OBJECT-ORIENTED PROGRAMMING DI JAVASCRIPT
+
+Objek oriented programming atau disingkat OOP merupakan paradigma pemrograman yang banyak diterapkan ketika membangun aplikasi. paradigma OOP kental dengan konsep objek yang mengandung dua hal, yaitu atribute dan method. lain itu oop juga kental dengan konsep object blueprint yang akrab dikenal dengan sebutan class
+
+meskipun javascript bukan bahasa pemrograman yang berbasis class seperti java, tetapi di javascript kita juga bisa menerapkan paradigma OOP
+
+--->>>      OBJEK ORIENTED PROGRAMMING      <<<---
+objecct-oriented programming( OOP ) adalah salah satu paradigma dalam pemrograman yang berfokus pada pembuatan sebuah objek dan interaksi dengan objek objek tersebut. DI OOP ,objek merupakan sebuah entitas yang terdiri dari dua hal, yakni properties dan methods
+
+    - properti merupakan nilai didalam objek yang menyimpan informasi tentang objek tersebut
+    - method merupakan fungsi yang menggambarkan aksi yang dapat dilakukan oleh objek tersebut
+
+paradigma OOP kerap digambarkan dengan kehidupan nyata. objek didalam OOP, bisa kita anggap seperti objek didunia nyata. kita ambil contoh,mobil...dalam OOP, sebuah mobil dapat dilihat sebagai objek yang memiliki beberapa properti seperti merek,warna,kecepatan maksimal,nomor rangka. objek tersebut memiliki kemampuan atau method seperti maju, mundur, dan belok
+
+seperti apa bentuk objek mobil dalam bentuk javascript ? sama seperti yang sudah anda ketahui dimodul struktur data. objek mobil dibuat dengan menggunakan tanda kurung kurawal dan untuk method-nya. anda cukup buat properti yang merupakan sebuah fungsi,contohnya seperti ini : 
+
+const car = {
+  // properties
+  brand: 'Ford',
+  color: 'red',
+  maxSpeed: 200,
+  chassisNumber: 'f-1',
+  // methods
+  drive: () => {
+    console.log('driving');
+  },
+  reverse: () => {
+    console.log('reversing');
+  },
+  turn: () => {
+    console.log('turning');
+  }
+}
+ 
+console.log(car.brand); // Ford
+console.log(car.color); // red
+console.log(car.maxSpeed); // 200
+console.log(car.chassisNumber); // f-1
+car.drive(); // driving
+car.reverse(); // reversing
+car.turn(); // turning
+
+kode diatas merupakan contoh objek mobil atau car dijavascript. seperi yang anda lihat, objek car memiliki properti brand, color, maxSpeed, dan chasisNumber; dan juga method drive,reverse dan turn...kita bisa akses nilai properti dan panggil method yang ada didalam objek tersebut.
+
+dijavascript untuk membuat sebuah objek terlihat mudah...masaha yang dipecahkan oleh paradigma OOP tidak hanya sebatas membuat objek sederhana saja. seiring berkembangnya aplikasi, pembuatan objek akan semakin banyak dan saling berinteraksi dengan yang lainnya. sehingga, kita harus menegetahui cara efektif mengelola objek termasuk cara membuatnya.
+
+mari kita angkat sebuah masalah baru dari contoh kode diatas,bagaimana jika anda membuat objek dua mobil baru dengan nilai yang berbeda ? haruskah anda mendefinisikan properti dan method yang sama secara berulang
+
+kami rasa sungguh tidak efektif,bagaimana jika ada banyak mobil yang harus anda buat? contoh, anda membangun aplikasi yang memiliki entitas pelanggan, jika anda menggunakan cara diatas mampukan anda membuat objek pelanggan jika aplikasi sudah digunakan oleh 100 pelanggan ? 
+
+dalam memecahkan masalah ini, OOP menawarkan sebuah solusi yakni dengan membuat object blueprint. malalui objek blueprint, kita bisa membuat cetakan untuk membuat objek yang sudah terdefinisikan macam macam properti dan methodnya. sehingga kita cukup menggunakan cetakan tersebut untuk membuat objek yang serupa, tetapi kita bisa menentukan nilai nilai properti yang berbeda
+
+contohnya, anda bisa membuat sebuah blueprint bernama car. didalam blueprint tersebut, anda bisadefinisikan properti properti dan mehtod yang ingin dimiliki objek mobil nantinya. setelah membuat sebuah blueprint. anda bisa dengan mudah membaut banyak objek mobil contohnya mycar, yourCar dan dicodingCar dengan lebih mudah
+
+
+DIDALAM OOP, OBJEK BLUEPRINT TERSEBUT BERNAMA CLASS.

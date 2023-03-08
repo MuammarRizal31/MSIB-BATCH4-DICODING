@@ -1,0 +1,46 @@
+runtime lain yang bisa menjalankan javascript yaitu node.js. node js memungkinkan javascript dapat berjalan di berbagai platform, tidak hanya browser. itulah kenapa javascript yang awalnya dikenal sebagai bahasa untuk front-end web, kini mulai merabah juga ke ranah backend dari website
+
+node memberikan akses javascript ke seluruh sistem operasi, memungkinkan program javascript dapat membaca dan menulis file. mengirim dan menerima data melalui jaringan; serta membuat dan melayani permintaan HTTP. 
+
+selanjutnya kita akan fokus untuk pengembangan program javascreip pada lingkungan node. tentunya kita perlu menginstal node.js terlebh dlu
+
+-->>>           NODE.js         <<<---
+Node.js adalah runtime untuk javascript yang bersifat oper source dan cross platform. dengan node.js kita dapat menjalankan kode javascript dimanapun, tidak hanya terbatas pada lingkungan browser
+
+node.js menjalankan V8 javascript engine(yang juga merupakan inti dari google crome) diluar browser. ini memungkinkan node.js memiliki performa yangg tinggi.
+
+node.js juga menyediakan banyak library/ module javascript yang membantu menyederhanakan pengembangan aplikasi web. berikut ini adalah beberapa fitur penting dari node.js yang menjadikan pilihan utama dalam pengembangan aplikasi :
+    - ASYNCHORONOUS DAN EVENT-DRIVEN
+        > Semua API dari Node.js bersifat asynchronous, artinya tidak memblokir proses lain sembari menunggu satu proses selesai. Server Node.js akan melanjutkan ke pemanggilan API berikutnya lalu memanfaatkan mekanisme event notification untuk mendapatkan respon dari panggilan API sebelumnya
+    
+    - VERY FAST
+        > eksekusi kode dengan node.js sangat cepat karena berjalan pada V8 javascript engine dari google chrome
+
+    - SINGLE THREADED BUT HIGHLY SCALABLE
+        > Node.js menggunakan model single thread dengan event looping. Mekanisme ini membantu server untuk merespon secara asynchronous dan menjadikan server lebih scalable dibandingkan server tradisional yang menggunakan banyak thread untuk menangani permintaan.
+
+node.js dirancang untuk aplikasi dengan proses I/O yang intensif seperti network server atau backend API. pemrograman dengan multithreading relatif lebih berat dan sulit untuk dilakukan. jika kita ingin membuat web server yang bisa menangani ratusan request bersamaan, menggunakan ratusan thread akan membutuhkan memori yang besar. oleh karena itu, karakteristik node yang asynchronous dan single thread dirancang untuk memungkinkan implementasi server yang dapat menangani banyak reques pada waktu yang sama.
+
+--->>>          RUNSCRIPT           <<<---
+Pada berkas package.json terdapat beberapa object yang penting untuk kita perhatikan, salah satunya adalah object scripts. Secara default object tersebut akan terbentuk ketika package.json dibuat menggunakan perintah init. Nilai default dari scripts adalah seperti ini:
+
+Object scripts merupakan objek yang mengandung kumpulan script di dalamnya. Script tersebut dapat dijalankan kapan saja pada proyek kita. Untuk menjalankan script, gunakan perintah npm run <script-name> yang dapat Anda tulis seperti di bawah ini:
+
+Pada object scripts biasanya kita menetapkan script yang sering digunakan secara berkala, seperti menjalankan aplikasi (selama proses development), compiling source code ke tahap produksi, atau melakukan testing.
+
+Untuk menetapkan nilai baru pada object scripts, kita tuliskan nama script sebagai properti. Kemudian tuliskan perintah yang akan dieksekusi sebagai nilai dari properti tersebut. Mari kita buat script baru untuk menjalankan kode dari berkas index.js.
+
+Pada object scripts, tuliskan nilai baru dengan properti bernama start, kemudian tambahkan perintah untuk mengeksekusi berkas sebagai nilainya
+
+
+--->>>          RANGKUMAN MATERI            <<<---
+Pada modul ini Anda telah menyiapkan tools yang dibutuhkan untuk mengembangkan aplikasi JavaScript. Dengan ini Anda dapat mulai membuat dan menjalankan aplikasi pada perangkat Anda sendiri tanpa tanpa tergantung platform seperti Dicoding atau lainnya.
+
+Pada modul ini juga Anda telah mempelajari beberapa hal, seperti:
+    1. Perbedaan runtime browser dan node
+    2. Instalasi text editor
+    3. Instalasi Node
+    4. Membuat dan menjalankan project Node.js
+
+    
+
