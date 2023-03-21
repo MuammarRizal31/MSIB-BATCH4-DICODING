@@ -1,0 +1,89 @@
+Setelah mengetahui seluk beluk Android Developer, saatnya kita beralih ke jalur karier selanjutnya yang tak kalah keren yaitu iOS Developer. Seorang iOS Developer adalah Software Developer yang berspesialisasi dalam merancang dan membangun aplikasi untuk pasar sistem operasi iOS. iOS atau iPhone OS merupakan sistem operasi yang dikeluarkan oleh Apple.inc, iOS yang dibuat khusus untuk iPhone dan iPad.
+
+Lalu, produk apa yang dapat dihasilkan seorang iOS Developer? Sesuai dengan namanya, ia akan membuat sebuah aplikasi iOS. Untuk membuat sebuah aplikasi terbaik, dibutuhkan proses yang tidak main-main. Inilah yang biasa disebut dengan development cycle. Lalu bagaimanakah prosesnya?
+
+Seorang Developer iOS akan memulai dengan menentukan ide dari aplikasi tersebut. Biasanya ide tersebut dilandasi dari permasalahan yang ada. Setelah menganalisanya, seorang iOS Developer akan membuat rancangan aplikasi tersebut. Di sini akan dijabarkan berbagai fitur dan alur dari aplikasi tersebut dalam bentuk yang bermacam-macam, seperti desain lo-fi, wireframe, mockup, hingga prototype.
+
+Setelah merasa yakin dengan flow dan fitur yang telah dibuat, masuk ke tahap selanjutnya yakni implementasi. Di sinilah tombak keahlian dari seorang iOS Developer, membuat aplikasi iOS sesuai dengan fitur dan flow yang telah ditentukan.
+
+Setelah selesai, ia akan menguji aplikasi yang telah dibuat baik secara manual ataupun otomatis. Manual artinya menguji dengan menjalankannya secara langsung, sedangkan otomatis artinya menggunakan tools-tools yang dapat membantu automasi dalam sebuah pengujian.
+
+Setelah lolos dari pengujian, aplikasi iOS siap dipasarkan ke publik. Biasanya mereka menggunakan bantuan App Store. Tahukah Anda apa itu App Store? App Store merupakan sebuah tempat untuk para iOS developer mendistribusikan aplikasinya sehingga dapat digunakan oleh miliaran pengguna
+
+Selama lebih dari satu dekade, App Store, Store resmi milik Apple ini terbukti menjadi tempat yang aman dan terpercaya untuk mengunduh aplikasi. App Store bukan sekadar toko aplikasi, melainkan destinasi inovatif yang fokus untuk menghadirkan pengalaman pengguna yang luar biasa. Pengalaman tersebut bisa terwujud dengan memastikan aplikasi yang ditawarkan telah mengikuti standar tertinggi untuk privasi, keamanan, dan konten. App Store menawarkan hampir dua juta aplikasi yang dapat diunduh oleh pengguna setia device berbasis Apple [23].
+
+Biasanya ketika developer, perusahaan, atau start-up sudah membuat aplikasi Android, mereka akan membuat aplikasi versi iOS juga. Tujuannya untuk mendapatkan pengguna sebanyak mungkin. Contohnya GOJEK yang masuk dalam daftar di atas. Seperti yang kita tahu, GOJEK terlebih dulu membuat aplikasi untuk pasar Android. Namun ia juga membuat aplikasi iOS untuk mendapatkan pengguna sebanyak mungkin.
+
+--->>>          YANG DIPERLUKAN UNTUK MENJADI SEORANG IOS DEVELOPER
+
+> HARDWARE
+Kebutuhan penting nomer wahid adalah hardware yang meliputi komputer dan peranti iPhone. Berikut spesifikasi dari hardware yang diperlukan untuk berkarier sebagai iOS Developer
+    1. Komputer/laptop dengan spesifikasi minimal : 
+        a. Sistem operasi macOs mojave 10.14.4
+        b. prosesor intel i3 (rekomendari core i5 keatas)
+        c. RAM sebesar minimum 4 GB (rekomendasi 8 GB)
+        d. Resolusi layar 1366x768 (rekomendasi Full HD 1920x1080)
+
+    2. Peranti dengan sistem operasi iOS, yakni iPhone. Berikut beberapa detail yang dapat Anda perhatikan : 
+        a. usahakan terinstal IOS versi terbaru.
+        b. terdapat memori untuk menginstall aplikasi buatan anda.
+        c. jangan lupa kabel data.
+
+Dalam jalur karier ini, Anda memerlukan komputer/laptop yang terinstal macOS. Spesifikasi yang dibutuhkan tak terlalu tinggi untuk membuat sebuah aplikasi iOS. Tetapi, untuk performa terbaik dalam pengembangan aplikasi iOS, tidak ada salahnya Anda menggunakan spesifikasinya yang tinggi. Peranti mobile berbasis Apple juga Anda butuhkan untuk menguji proses berjalannya aplikasi secara langsung.
+
+> SOFTWARE
+Selanjutnya dari sisi kebutuhan software kita akan membutuhkan Xcode. Ia merupakan IDE resmi dari Apple untuk membuat aplikasi iOS, iPad OS, dan mac OS. Dengan menggunakan Xcode, para developer iOS dapat membuat aplikasi dari nol hingga dapat terpublish ke dalam app store. Xcode juga mempunyai berbagai fitur yang sangat membantu para developer untuk memaksimalkan proses pembuatan aplikasi. 
+
+selain Xcode, anda juga perlu menginstal browser. browser akan membantu anda melakukan banyak hal, mulai dari membaca halaman dokumentasi apple atau Xcode hingga mencari solusi dari permasalahan yang anda hadapi ketika membangun aplikasi IOS. dan tentunya masih banyak lagi yang dapat anda lakukan disana.
+
+> SKILL/PENGETAHUAN
+Ketika sudah mengetahui kebutuhan dari sisi hardware dan software, lalu skill apa yang perlu Anda pelajari? Anda dapat mulai belajar dari bahasa pemrogramannya dahulu, yaitu Swift. Sejak diperkenalkan di Apple Worldwide Developer Conference (WWDC) tahun 2014, Swift telah menjadi bahasa resmi yang didukung oleh Apple Inc. untuk pengembangan aplikasi iOS, iPadOS, macOS, watchOS, tvOS, Linux, dan OS X. Swift merupakan bahasa pemrograman yang modern, cepat, dan type-safe
+
+Pada tahun 2018, Swift telah mengalahkan Objective-C sebagai bahasa pemrograman yang digunakan untuk iOS dan platform Apple lainnya. Menurut survei yang dilakukan Stack Overflow, Swift menjadi bahasa pemrograman yang paling disukai pada tahun 2019 [24]. Dibandingkan tahun 2018, pecinta Swift naik dari 65% menjadi 69% [25].
+
+Menurut Apple sebagai pemilik iOS, seorang iOS Developer harus memiliki keahlian dalam bahasa pemrograman Swift dan penggunaan IDE Xcode. Seorang iOS Developer harus mampu mengintegrasikan teknologi mutakhir dari iOS untuk menciptakan pengalaman luar biasa pada aplikasinya. Berikut poin-poin yang bisa Anda pelajari:
+
+    - Application Patterns and Architecture : Mempelajari pattern MVC(Model-View-Controller) di dalam iOS, serta life cycle dari aplikasi iOS
+
+    - Views and Windows : Mempelajari cara membuat desain dari aplikasi iOS, seperti View Hierarchy, Auto Layout, Containers View, Navigation dan Tab Bars, serta Alert Views dan Action Sheets.
+
+    - Storyboards : Mengenalkan tentang storyboards, yaitu fitur untuk mendesain beberapa view controller dalam satu berkas, dan juga membuat transisi antar view controller.
+    
+    - Navigation Based Applications : Mempelajari penggunaan Root View Controller dan Navigation Controller.
+    
+    - Table Views : Mempelajari cara menampilkan banyak data dalam bentuk list dengan Table Views.
+    
+    - Human Interface Guideline : Mempelajari cara mendesain sebuah aplikasi sesuai dengan guideline/standar yang ada.
+
+    - Mobile App Design : Mempelajari cara membuat desain aplikasi sesuai dengan guideline yang ada
+
+    - SwiftUI : Mempelajari cara baru dalam pembuatan tampilan di iOS.
+    
+    - Concurrency : Mempelajari thread dalam memproses data agar lebih efisien.
+    
+    - Networking : Belajar cara mengambil data dari Network/API dan menampilkannya.
+
+    - Multitasking : Mempelajari cara menjalankan berbagai pekerjaan dalam satu waktu.
+    
+    - Working with Data : Mempelajari cara mengelola data dalam aplikasi iOS
+
+    - Testing : Mempelajari cara menguji aplikasi iOS, baik secara kode maupun tampilan.
+    
+    - Notifications : Mempelajari cara membuat notifikasi dalam aplikasi iOS.
+    
+    - App Store and Apple Developer Program : Mengenalkan komponen yang dibutuhkan untuk mengunggah aplikasi ke App Store.
+    
+Selain dari semua yang telah dijelaskan di atas, apakah masih butuh skill lain yang harus dikuasai? Untuk memenangkan kompetisi pasar dan mengatasi mahalnya biaya akuisisi pengguna, diperlukan aplikasi iOS dengan performa tinggi yang siap saing dan pro pada retensi pengguna.
+
+Seorang iOS Developer adalah sosok yang mampu mewujudkan App paripurna tersebut. Minim bug, level keamanan tinggi, dan kecilnya ukuran aplikasi adalah faktor yang harus ia pertimbangkan demi kenyamanan pengguna. 
+
+Sementara itu dari sisi kode, seorang iOS Developer harus memastikan aplikasinya scalable alias tetap bekerja dengan baik saat produk berubah mengikuti kebutuhan bisnis. App tersebut juga harus robust alias dibangun dengan pondasi kode yang kuat. Jika tidak, perusahaan akan terbebani biaya pengembangan yang tinggi karena sulitnya perbaikan akibat code smell, yakni kode yang berantakan atau berstruktur buruk.
+
+--->>>          ALUR BELAJAR UNTUK MENJADI SEORANG IOS DEVELOPER
+1. Memulai pemrograman dengan Swift
+2. Belajar prinsip pemrograman SOLID
+3. belajar membuat aplikasi IOS untuk pemula
+4. Belajar fundamental aplikasi IOS
+5. menjadi IOS DEVELOPER EXPERT
+6. documentation
+

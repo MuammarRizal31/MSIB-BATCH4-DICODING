@@ -1,0 +1,27 @@
+- MACAM MACAM EVENT :
+    - WINDOW EVENT
+    - FORM EVENT
+    - KEYBOARD EVENT
+    - CLIPBOARD EVENT
+    - MOUSE EVENT
+
+- Menambahkan event handler pada HTML element : 
+    - menggunakan method element.addEventListener
+
+- CUSTOM EVENT : 
+    - merupakan event yang nama dan cara membangkitkannya ditentukan oleh kita sendiri
+
+- KONSEP EVENT BUBBLING DAN EVENT CAPTURING
+    - event bubbling : event yang terjadi dari element dalam ke element luar
+    - event capturing : event yang terjadi dari element luar ke element dalam.
+
+- Event pada element <form> :
+    - onSubmit : event yang dibangkitkan ketika tombol submit pada form ditekan
+
+- Event pada element <input> :
+    - onInput : Event yang dibangkitkan setiap kali menulis atau menghapus nilai pada elemen input
+    - onFocus : Event yang dibangkitkan ketika elemen input dalam keadaan fokus.
+    - onBlur  : Event yang dibangkitkan ketika elemen input dalam keadaan fokus berubah menjadi tidak fokus.
+    - onChange : event yang dibangkitkan ketika nilai element input berubah.
+    - onCopy : event yang dibangkitkan ketika pengguna men-copy nilai dari input.
+    - onPaste : event yang dibangkitkan ketika pengguna men-paste nilai pada input.

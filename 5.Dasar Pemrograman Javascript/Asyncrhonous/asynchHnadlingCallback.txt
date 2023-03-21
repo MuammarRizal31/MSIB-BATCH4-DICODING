@@ -1,0 +1,101 @@
+--->>>          ASYNCHRONOUS HANDLING DENGAN CALLBACK           <<<---
+Di materi sebelumnya kita sudah mengetahui bahwa ada kalanya operasi di JavaScript akan berjalan secara asynchronous. Asynchronous membuat JavaScript dapat mengeksekusi proses selanjutnya tanpa menunggu proses sebelumnya selesai. Perilaku ini membuat penanganan proses asynchronous berbeda dengan synchronous. Sebagai developer, kita harus tahu cara menangani proses asynchronous agar kelak kita bisa mendapatkan nilai yang dihasilkan dari proses tersebut.
+
+Saat ini ada dua cara atau pola yang digunakan JavaScript dalam menangani operasi yang berjalan secara asynchronous. Pola pertama yang akan kita bahas adalah callback.
+
+--->>>          POLA CALLBACK       <<<---
+Pola callback merupakan salah satu cara menangani proses asynchronous. tidak hanya di javascript, pola ini juga digunakan pada bahasa pemrograman lainnya. callback merupakan sebuah fungsi yang disisipkan pada argumen fungsi asynchronous dan akan dipanggil ketika proses dinyatakan selesai. fungsi callback akan membawa nilai nilai yang dihasilkan dari proses asynchronous sehingga kita bisa memanfaatkan nilai tersebut.
+
+jika masih belum terbayang simak kode dibawah ini
+function getUser(callback){
+    //simulasi network delay
+    setTimeout(()=>{
+        const user = ['jange','jangs','rizal'];
+        callback(users);
+    },3000);
+}
+
+anggaplah getuser() merupakan fungsi yang digunakan untuk mendapatkan data nama pengguna yang diambil dari internet. kami gunakan setTimeout() untuk menyimulasikan bahwa fungsi berjalan secara asynchronous. anda juga bisa melihat bahwa fungsi tersebut mamnggil argumen callback ketika prosesnya selesai dan membawa data users.
+
+berikut adalah cara mengonsumsi fungsi tersebut untuk mendapatkan nilai user
+getUser((user)=> {
+    console.log(user)
+})
+
+ketika menggunakan fungsi getUsers() kita perlu memanggil dengan memberikan argumen fungsi. fungsi ini akan dipanggil ketika proses asynchronous selesai sekaligus membawa data user untuk dihasilkan. didalam cakupan fungsi inilah kita bisa mengonsumsi nilai user yang dihasilkan dari proses asynchronous. inilah yang dimaksud dengan pola callback
+
+CATATAN : Callback merupakan salah satu implementasi dari konsep high order function yang sudah kita bahas pada modul functional programming.
+
+agar kode lebih mudah dibaca, anda bisa mendeklarasikan fungsi callback diluar dari argumen seperti ini
+
+function getUsers(callback){
+    //simulasi network delay
+    setTimeout(()=> {
+        const user = ['jange','jangs','topet']
+        callback(user);
+    },3000)
+}
+
+function data(user){
+    console.log(user)
+}
+
+getUsers(data);
+
+proses yang dijalankan secara asynchronous, biasanya berpotensi menghasilkan eror. contohnya sebuah fungsi yang mengambil data dari internet akan menghasilkan eror ketika jaringan kita bermasalah atau fungsi yang membaca berkas akan menghasilkan eror ketika berkas tersebut tidak ditemukan.
+
+dengan alasan tersebut. pada fungsi callback selain membawa argumen data, ia juga membawa argumen error. argumen error hanya akan memiiliki nilai ketika proses asynchronous gagal atau error
+
+contohnya
+
+function getUsers(isOffline,callback){
+    setTimeOut(()=>{
+        const user = ['john','jack','jangs'];
+
+        if(isOffline){
+            callback(new Error('cannot retrieve users due offile'),null);
+            return;
+        }
+        callback(null,users);
+    },3000)
+}
+
+kami menambahkan argumen isOffline pada fungsi getUsers() untuk menentukan proses asynchronous berhasil atau gagal. sebab prosesnya berpotensi gagal, nilai yang dibawa oleh fungsi callback harus disesuaikan.
+
+fungsi callback yang digunakan dijavascript secara standar(convention) memiliki struktur seperti kode dibawah ini.
+
+function callback(error, data){
+    //logika ketika proses asynchronous selesai
+}
+
+argumen pertama dari fungsi callback merupakan error. agumen ini hanya akan berniali jika proses asynchronous gagal, sebaliknya biasanya berniali null. argumen kedua dari fungsi callback merupakan data yang dibawa ketika prosesnya berhasil. jika proses asynchronous gagal,dia akan bernilai null.
+
+selain itu, anda juga perlu mengingat bahwa convention yang ditetapkan oleh Node.js argumen callback selalu diletakkan terakhir. itulah alasannya kami mendefinisikan argumen isOffline kemudian callback pada fungsi getUsers().
+
+CATATAN : 
+harap untuk diingat convention tersebut karena banyak proses asynchronous yang terdaoat oada node.js API menggunakan struktur tersebut dalam penggunaan callback, seperti fungsi fs.readFile() pada node.js
+
+dengan diubahnya fungsi getUsers() kita juga perlu menyesuaikan struktur callback nya. untuk menangani proses asynchronous pada fungsi getUsers() baik ketika prosesnya berhasil ataupun gagal, maka fungsi usersCallback() perlu diubah menjadi seperti ini
+
+function getUser(isOffline,callback){
+    setTimeout(()=>{
+        let user = ['rizal','jange','jangs'];
+        if(isOffline){
+            callback(new Error('tidak bisa mengambil data'),null);
+            return;
+        }
+        callback(null,users);
+    },3000)
+}
+
+function usersCallback(error,users){
+    if(error){
+        console.log('proses gagal : ',error.message);
+        return;
+    }
+
+    console.log('proses sukses : ',users);
+}
+
+getUsers(false, usersCallback); // process success: ['John', 'Jack', 'Abigail']
+getUsers(true, usersCallback); // process failed: cannot retrieve users due offline

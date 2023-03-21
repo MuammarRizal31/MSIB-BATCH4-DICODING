@@ -1,0 +1,18 @@
+APA YANG DIMAKSUD DENGAN CUSTOM EVENT ? custom event pada materi ini merujuk kepada penggunaan class Event() untuk membuat event dengan nama yang sudah kita tentukan sendiri. misal, sebelumnya kita telah menggunakan nama nama event yang sudah dikenali oleh javascript yakni seperti 'click' dan 'load'. apakah mungkin jika kita membuat event sendiri? misalnya event dengan nama buatan kita sendiri?jawabannya sangat mungkin.
+
+// membuat custom event
+const eventBuatan = new Event('eventBuatanKita');
+
+// meletakkannya pada sebuah method addEventListener();
+element.addEventListener('eventBuatanKita);
+
+kode diatas menunjukan kepada kita car amembuat custom event dan menerapkkannya pada eventListener. jika anda bertanya tanya. kenapa kita harus mempelajari custom event? jawabannya adalah tidak seperti event biasanya 'dikenali' oleh method addEventListener, custom event memungkinkan kita untuk menjalankan sebuah event handler setelah sebuah event handler lain selesai dipanggil.
+
+--->>>          BEST PRACTICE UNTUK CUTOM EVENT         <<<---
+Saat kita membuat custom event, mungkin saja kita secara bebas membuat event dimanapun dengan nama yang sudah kita tentukan secara sembarang sebelum anda melakukan hal tersebut, kita perlu tahu mengapa hal seperti itu tidak baik untuk dijadikan kebiasaan. hal tersebut akan berpotensi menyebabkan bug dan penyelesaian akan semakin sulit seiring semakin komplesnya program kita.
+
+untuk mencatat custom event apa saja yang telah dibuat, sebaiknya buatlah variable konstanta yang menyimpan semua nama custom event. hal tersebut dilakukan supaya tidak ada kejadian yang tidak diinginkan. salah satu resikonya adalah ter-overwrite dengan suatu custom event yang sama sehingga kita perlu memberi tahu dan membuat kesepakatan rekan programmer lain tentang hal tersebut
+
+--->>>          MENJALANKAN CUSTOM EVENT                <<<---
+Disini ktia akan membangkitkan custom event yang sudah dibuat pada materi sebelumnya. dalam praktik ini, kita tidak perlu menambahkan banyak kode, melainkan hanya fungsi yang berisi proses dispatch atau pemanggilan custom event handler.
+

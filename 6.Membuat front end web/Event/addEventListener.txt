@@ -1,0 +1,7 @@
+method addEventListener() menerima beberapa parameter, tetapi yang perlu kita ketahui sementara adalah parameter pertama dan kedua. parameter pertama harus diisi dengan tipe event yang digunakan, yang mana akan mentrigger atau memancing kode javascript untuk menjalankan sebuah fungsi khusus. function khusus diletakkan pada parameter kedua yang akan dijalankan ketika tipe event yang didefinisikan terjadi.
+
+ada satu aturan yang perlu kita ketahui, yaitu nama event yang kita definisikan tidak seperti sebelumnya menggunakan onload dan onclick(tanpa imbuhan 'on'). namun, kita dapat menuliskan secara langsung. sebagai contoh function onload menjadi load, function onclick menjadi click
+
+apa kelebihan yang ditawarkan method addEventListener() ? kelebihannya adalah kita bisa menambahkan satu atau lebih fungsi sebagai event handler. fitur itulah yang tidak dapat dilakukan oleh event handler inline.
+
+selain mamapu menambahkan multiple event listener dalam satu event

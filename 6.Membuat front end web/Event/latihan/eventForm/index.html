@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <title>Form World</title>
+    <style>
+      .contents {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 2px solid black;
+        padding: 15px;
+      }
+      .contents > h2 {
+        text-align: center;
+      }
+      .form-element {
+        margin: 8px;
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contents">
+      <h2>Isi data diri</h2>
+      <div class="formContent">
+        <form id="formDataDiri">
+          <div class="form-element">
+            <label for="inputNama">Nama:</label><br />
+            <input type="text" id="inputNama" name="nama" placeholder="Nama Anda" required /><br />
+          </div>
+          <div class="form-element">
+            <label for="inputDomisili">Domisili:</label><br />
+            <input type="text" id="inputDomisili" name="domisili" placeholder="Domisili Anda" required /><br />
+          </div>
+          <div class="form-element">
+            <input type="submit" value="Submit Data" />
+          </div>
+        </form>
+      </div>
+      <h3 id="messageAfterSubmit"></h3>
+    </div>
+
+    <script>
+      // masukkan kodemu di sini
+      const formData = document.getElementById("formDataDiri");
+
+      formData.addEventListener("submit", function (e) {
+        const nama = document.getElementById("inputNama");
+        const domisili = document.getElementById("inputDomisili");
+        const pesan = `Hallo ${nama.value} bagaimana cuaca di ${domisili.value} ? `;
+        const messageSubmit = document.getElementById("messageAfterSubmit");
+
+        messageSubmit.innerText = pesan;
+        console.log(e);
+        e.preventDefault();
+      });
+    </script>
+  </body>
+</html>

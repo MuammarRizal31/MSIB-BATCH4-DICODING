@@ -1,0 +1,38 @@
+--->>>          MACAM MACAM EVENT 
+
+Berikut beberapa pembahasan terhadap kategori umum serta beberapa event-event yang tergolong pada kategori tersebut.
+
+* WINDOW EVENTS
+windows event adalah kejadian kejadian yang berasal dari browser alias pada window
+
+onload      -> event ini akan terjadi setelah halaman web selesai diunduh dan tampilkan
+onpageshow  -> event ini akan terjadi jika halaman web kembali dikunjungi 
+onresize    -> event ini akan terjadi jika window browser di resize oleh user atau oleh hal lainnya
+
+* FORM EVENTS
+form evenets adalah kejadian kejadian yang berasal dari sebuah elemen HTML dengan tag <form> 
+
+onreset     -> event ini akan terjadi ketika user menekan tombol 'reset' pada elemen form
+onsubmit    -> event ini akan terjadi ketika user menekan tombol 'submit' pada form
+
+* KEYBOARD EVENTS
+keyboard events adalah kejadian kejadin yang berasal dari ditekan atau dilepasnya tombol pada keyboard
+
+onkeydown   -> event ini akan terjadi ketika sebuah tombol pada keyboard ditekan.
+onkeypress  -> event ini akan terjadi dimana tombol masih dalam keadaan ditekan.
+onkeyup     -> event ini akan terjadi ketika sebuah tombol pada keyboard dilepas.
+
+* CLIPIBOARD EVENTS
+clipboard events adalah kejadian kejadian yang berasal dari proses cut,copy atau paste sebuah elemen
+
+oncopy      -> event ini akan terjadi ketika kita melakukan proses copy
+oncut       -> event ini akan terjadi ketika kita melakukan proses cut
+onpaste     -> event ini akant erjadi ketika kita melakukan proses paste
+
+*   MOUSE EVENTS
+mouse event adalah kejadian kejadian yang berasal dari kegiatan klik mouse
+
+onclick     -> event ini akan terjadi ketika kita menekan elemen tertentu dengan cursor
+ondbclick   -> event ini akan terjadi ketika kita menekan elemen tertentu dua kali berturut turut dengan cursor
+onmouseover -> event ini akan terjadi cursor kita berada diatas sebuah elemen tertentu
+

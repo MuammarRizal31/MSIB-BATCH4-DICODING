@@ -1,0 +1,10 @@
+--->>>          PENGENALAN EVENT            <<<---
+Kita telah mempelajari browser object model, document object model, penggunaan BOM untuk membangkitkan fungsionalitas khusus dari browser, dan cara menggunakan DOM untuk memanipulasi atau mengubah konten dari sebuah berkas HTML.
+
+lalu bagaimana javascript menjalankan serangkaian perintah jika user berinteraksi dengan salah satu element pada Halaman web? mmisalnya, menampilkan pesan menggunakan method alert() ketika user menekan sebuah tombol pada web atau meengubah tampilan halaman web jika user menekan sebuah key khusus pada keyboard?
+
+solusinya terdapat pada meteri ini, mari berkenalan dengan EVENT
+
+ketika browser selesai menampilkan halaman web, menekan tombol tertentu pada keyboard atau mungkin meletakkan kursor pada elemen HTML tertentu, itulah yang dinamakan event alias 'kejadian'. hampir apapun yang berhubungan dengan adanya interaksi dengan Berkas HTML bisa kita sebut sebagai event,lalu apa fungsinya ?
+
+melalui javascript, kita bisa menulis kode tertentu yang akan dijalankan ketika merasakan sebuah kejadi tertentu contohnya jika user menekan sebuah tombol, javascript melalui DOM akan mengubah tampilan halam web kita seperti mengubah warna pada element tertentu, atau bahkan membawa kita ke bagian tertentu pada halaman web tersebut. sebagai contoh, ketika elemen button ini ditekan, akan memunculkan dialog box dengan pesan 'halo! apa kabar'

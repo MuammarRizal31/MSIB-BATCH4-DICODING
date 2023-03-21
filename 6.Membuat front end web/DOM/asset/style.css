@@ -1,0 +1,25 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 500px;
+}
+.container {
+  text-align: center;
+  width: 800px;
+  margin: 40px auto;
+}
+
+.btn {
+  width: 300px;
+  margin-block: 10px;
+  text-transform: uppercase;
+  background-color: blueviolet;
+  color: #eee;
+  height: 30px;
+  border-radius: 100px;
+  border: none;
+}

@@ -1,0 +1,90 @@
+Seorang front end webd eveloper adalah software developer yang bertanggung jawab untuk merancang dan membangun berbagai aplikasi web secara responsif,interaktif dan juga user friendly.
+
+Website adalah sebuah halaman yang menampilkan informasi melalui teks atau gambar. website dapat diakases melalui internet menggunakan browser. website ini unik karena tiap halaman dapat saling terhubung. umumnya sebuah website memuat informasi yang disediakan secara perorangan,kelompok atau organisasi. semua informasi yang tersedia pada halaman website disimpan pada server.
+
+website diera sekarang sudah menjadi kebutuhan utama yang tidak bisa diabaikan. seluruh sektor bisnis atau edukasi dapat memanfaatkan website sebagai alat untuk promosi, saling tukar informasi, dan lainnya. per desember 2020 terdapat 1.228.111.563 website yang aktif, berdasarkan survei dari Netcraft Web Server Survey [29]. Berdasarkan data dari World Wide Web Technology Surveys, dari seluruh website yang aktif per Desember 2020, 91.5% menggunakan HTML, 96.1% menggunakan CSS, dan 97.1% menggunakan JavaScript [30]
+
+lalu sebagai front-end web developer, produk apa yang dibuat ? tentunya ia dapat membuat sebuah situs atau website. mulai dari merencakan ide, membuat flownya membuat desainnya, mengimplementasikan dalam sebuah fitur, bahkan melakukan pengujian sebelum website itu digunakan secara publik. proses ini melibatkan banyak orang ya. bahkan diperusahaan tertentu, pekerjaan itu biasanya cukup fokus pada apa yang akan diimplementasikan ke dalam website.
+
+Seperti yang kita tahu, penggunaan teknologi digital telah merambah ke segala lini kehidupan kita. Dalam kehidupan sehari-hari semua telah menggunakan teknologi digital. Perangkat dan aplikasi digital juga terus berkembang, sehingga diperlukan skill-skill yang mendukung perkembangan tersebut.
+
+--->>>          YANG DIPERLUKAN UNTUK MENJADI SEORANG FRONT-END DEVELOPER 
+> Hardware
+kebutuhan penting nomer wahid yaitu hardware yang meliputi komputer. berikut spesifikasi dari hardware yang diperlukan untuk berkarier sebagai front-end web developer : 
+    1. Microsoft Windows, Linux, atau MacOS.
+    2. Prosesor Intel Dual Core (Rekomendasi Core i3 ke atas).
+    3. RAM sebesar minimum 1 GB (Rekomendasi 2 GB).
+    4. Terdapat 2 GB ruang kosong pada penyimpanan (Rekomendasi 4 GB).
+    5. Resolusi layar 1280x800 (Rekomendasi Full HD 1920 x 1080).
+
+spesifikasi yang dibutuhkan tidak terlalu tinggi untuk membuat sebuah website. tentu semakin tinggi spesifikasi akan membantu anda lebih cepat dalam membangun aplikasi tersebut.
+
+> SOFTWARE
+Anda dapat membuat website menggunakan teks editor. Beberapa sistem operasi sebenarnya sudah menyediakan text editor usungannya sendiri. Contohnya Windows memiliki Notepad, Linux memiliki Text Editors, dan Macintosh memiliki TextEdit. Ketiga aplikasi tersebut bisa kita gunakan untuk belajar membuat sebuah website, meskipun masih banyak alternatif text editor lainnya selama masih dapat menyimpan sebuah plain text dengan format .html.
+
+Perlu diperhatikan bahwa kode yang Anda tuliskan merupakan sebuah plain text. Pastikan kita menggunakan text editor yang tepat. Jangan pernah menggunakan Microsoft Word untuk menuliskan sebuah kode karena aplikasi tersebut menampilkan teks yang telah diformat atau biasa disebut dengan rich text
+
+Selain text editor usungan sistem operasi yang kita gunakan, berikut tiga text editor lainnya yang bisa kita gunakan untuk membuat sebuah website.
+
+- Visual Studio Editor merupakan sebuah text editor yang dikembangkan oleh Microsoft. Dalam text editor ini terdapat fitur debugging, Git control, syntax highlighting, code completion, snippets, dan code refactoring. Visual Studio Code tersedia untuk sistem operasi Windows, Mac maupun Linux, dan tentunya text editor ini bisa kita gunakan secara gratis. Untuk mengunduhnya silakan kunjungi website berikut: https://code.visualstudio.com/.
+
+- Atom merupakan text editor gratis dan juga open source untuk Windows, Linux, dan MacOS. Sama seperti Visual Studio Editor, kedua text editor ini merupakan editor yang populer digunakan oleh web developer. Untuk mengunduhnya, silakan kunjungi website berikut: https://atom.io/
+
+- Emacs Editor ini mungkin tidak secanggih opsi-opsi sebelumnya dalam menuliskan kode HTML, CSS, dan JavaScript. Namun, jika kalian tertarik belajar melalui proses tanpa fitur yang mempermudah kita dalam menuliskan sebuah kode, maka text editor ini cocok untuk dicoba. Emacs memiliki fitur yang tidak disangka-sangka untuk sebuah text editor, seperti news reader, kalkulator, dan fitur untuk enkripsi/dekripsi file. Emacs tersedia untuk Windows, Macs, maupun Linux secara gratis. Untuk mencobanya, kalian bisa mengunjungi halaman website berikut: https://www.gnu.org/software/emacs/
+
+Seperti yang sudah kita ketahui, untuk mengakses website membutuhkan sebuah browser. Tentu untuk mengembangkan website juga diperlukan sebuah browser untuk melihat seperti apa tampak website yang sedang kita kembangkan. Kita bisa menggunakan browser apa pun untuk mengunjungi sebuah website, tetapi hasil yang ditampilkan mungkin dapat berbeda pada di setiap browser. Walaupun tampilan pada setiap browser berbeda, pada modul ini kalian tidak perlu mencobanya satu per satu untuk melihatnya pada masing-masing browser. Kami sarankan Anda untuk menggunakan browser yang populer yaitu Google Chrome atau Mozilla Firefox. 
+
+> SKILL DAN PENGETAHUAN
+Lalu apa saja yang perlu Anda pelajari? Tentu yang Anda perlu pelajari adalah bahasanya, yakni HTML, CSS, dan JavaScript. Apa itu?
+    - Hypertext Markup Language atau HTML, berperan sebagai struktur untuk membangun sebuah halaman website; Cascading Style Sheet atau biasa disingkat CSS, merupakan W3C standar yang digunakan untuk mengatur visualisasi berkas yang ditulis pada HTML; dan JavaScript, merupakan bahasa pemrograman client-side sehingga seluruh prosesnya berjalan pada sisi pengguna bukan server. 
+    
+    - JavaScript diperlukan pada pengembangan website ketika website butuh berinteraksi dengan pengguna. Sesungguhnya website hanya menampilkan konten yang statis jika hanya menggunakan HTML dan CSS. Menurut survei yang dilakukan Stack Overflow pada tahun 2020, JavaScript menjadi bahasa terbaik. Sedangkan HTML/CSS menduduki urutan ke-2 
+
+selain mempelajari bahasa pemrograman, anda juga perlu mempelajari cara membangun sebuah web. berikut beberapa poin yang perlu anda pelajari : 
+    - pengenalan HTML : mempelajari fungsi HTML dalam website, memahami struktur dasar HTML dengan mencoba membuat sebuah halaman HTML sederhana
+
+    - HTML lebih dalam : mempelajari cara mengorganisir konten dengan elemen semantik yang ada, mengenal attribute pada HTML, mengenal paragraf,header,gambar,list dan element teks lainnya. memahami perbedaan inline dan block element.
+
+    - pengenalan CSS : Memahami peras CSS dalam pembuatan website, benefit menerapkan CSS, dan mengetahui sintaks dasar CSS dengan menerapkan beberapa basic styling pada elemen HTML.
+
+    - CSS lebih dalam : memahami lebih dalam mengenai selector CSS, memahami penerapan styling untuk font dan text(mengubah tipe dan ukuran font, mengubah warna teks,dsb),memahami tentang foreground color dan background color, memahami tentang box model dan layouting menggunakan float.
+
+    - layout responsife menggunakan flexbox : memahami penggunaan flexbox sebagai layout dasar membangun kalkulator berbasis website. flex merupakan teknik baru dalam menyusun layout yang responsif, dan dapat dikombinasikan dengan media query agar lebih optimal ketika diakses menggunakan mobile devices
+
+    - JavaScript Basic dan Manipulasi DOM : Memahami peran JavaScript dalam pengembangan website, menuliskan sintaks dasar JavaScript, memahami dasar JavaScript seperti statement, comment, variabel, tipe data, dsb. Mengetahui Browser Object dan event yang ada, dan memanipulasi DOM menggunakan JavaScript. 
+
+    - Web Storage : Mengetahui tipe penyimpanan/storage yang ada pada web.
+    
+    - ECMAScript 2015 (ES6) : Mempelajari penerapan sintaks terbaru pada JavaScript seperti block scope variable, template literals, destructuring object and array, spread operator dan rest parameters, arrow function, classes, promise hingga JavaScript module.
+    
+    - Web Component : Mempelajari cara membangun component UI website yang bersifat reusable dan encapsulated dengan custom element dan shadow DOM.
+
+    - Node Package Manager : Mempelajari cara menambahkan, menghapus, dan menggunakan package JavaScript yang ada di NPM. Serta dapat membedakan fungsi dari development dependency dan production dependency.
+    
+    - Webpack : Mempelajari penggunaan webpack sebagai environment dan build tools dalam membangun website yang optimized.
+    
+    - JavaScript Asynchronous Request : Mempelajari transaksi data melalui protocol HTTP/HTTPS menggunakan fetch API baik pada method GET, POST, PUT, dan DELETE.
+    
+Lalu apakah masih butuh skill lain yang harus dikuasai? Seorang Front-End Web Developer adalah sosok yang mampu mewujudkan website dengan minim bug, tinggi level keamanannya, dan dapat beradaptasi ke smartphone. Itu merupakan faktor yang harus ia pertimbangkan demi kenyamanan pengguna.
+
+Sementara itu dari sisi kode, seorang Front-End Web Developer harus memastikan bahwa websitenya dapat scalable alias tetap bekerja dengan baik saat produk berubah mengikuti kebutuhan bisnis. Website tersebut juga harus robust alias dibangun dengan pondasi kode yang kuat. Jika tidak, perusahaan akan terbebani biaya pengembangan yang tinggi karena sulitnya perbaikan akibat code smell, yakni kode yang berantakan atau berstruktur buruk.
+
+--->>>          LANGKAH LANGKAH YANG HARUS DILALUI SEORANG FRONT END DEVELOPER
+1. Belajar dasar pemrograman web
+    - Pelajari komponen-komponen dasar HTML, CSS, dan JavaScript yang merupakan fondasi utama untuk menjadi web developer.
+
+2. Belajar fundamental front-end web development
+    - Pelajari sintaks ES6, Web Component, dan Build Tools dalam membangun website dengan teknik yang simple, reusable, dan optimized.
+    
+3. Menjadi seorang front-end web developer expert
+    - Pelajari teknik-teknik expert serta modern dalam membangun website yang optimal pada seluruh perangkat, terutama pada perangkat mobile.
+    
+4. DOCUMENTASI
+Anda juga dapat belajar langsung di dokumentasinya secara langsung. Situs resminya beralamatkan di w3.org. World Wide Web Consortium (W3C) adalah komunitas internasional yang mengembangkan standar untuk memastikan pertumbuhan jangka panjang dari Web. 
+
+kami merekomendasikan Anda agar lebih condong ke situs MDN (Mozilla Developer Network). Pada laman tersebut, Anda dapat mempelajari segala hal tentang teknologi website, seperti, tools yang digunakan, library yang sudah siap Anda gunakan, sampel kode untuk menambah wawasan, info terbaru, dan sebagainya. 
+
+Situs lain yang kami rekomendasikan adalah web.dev. Anda dapat mempelajari bagaimana membangun web modern di sana. Kemudian mengimplementasikan skill tersebut ke website Anda
+
+Dokumentasi buatan Google ini tak kalah bagusnya dari MDN. Uniknya adalah, web.dev menyediakan sebuah halaman untuk menguji bagaimana performa website yang Anda bangun. Silakan kunjungi alamat https://web.dev/measure/, lalu masukkan alamat website yang ingin Anda uji. Maka hasilnya akan langsung keluar.
+

@@ -1,0 +1,22 @@
+-   Browser Object Model(BOM)
+    > objek javascript yang tersedia dibrowser yang dapat digunakan untuk mengontrol browser
+
+- member dari BOM yang sering digunakan : 
+    > alert : menampilkan pop-up pesan pada browser
+    > promp : Menampilkan  pop-up pesan yang dapat menerima input dari pengguna
+    > console : Menampilkan pesan atau nilai pada console browser.
+
+- document object model(DOM)"
+    > object javascript yang tersedia di browser yang dapat digunakan untuk mengontrol dan memanipulasi konten yang ditampilkan pada website
+
+- DOM TREE:
+    - struktur website dalam bentuk javascript objek yang terbentuk seperti bagan pohon.
+    - DOM tree terbentuk berdasarkan dari struktur berkas HTML.
+
+- teknik manipulasi DOM : 
+    - Mendapatkan elemen : document.querySelector, document.querySelectorAll, document.getElementById, dan sebagainya.
+    - membuat elemen : document.createElement.
+    - mengubah konten: element.innerHTML, element.innerText, element.setAttribute(), dan sebagainya.
+    - menambahkan elemen : elemen appendChild
+
+Dengan ringkasan tersebut, diharapkan Anda dapat memahami materi yang telah disampaikan. Jika belum, Anda bisa ulas kembali materi yang diberikan pada modul ini dan menanyakannya di forum diskusi.    

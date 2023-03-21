@@ -1,0 +1,46 @@
+--->>>          MENCARI DOM (MENDAPATKAN DOM)           <<<---
+Untuk mengakses sebuah elemen HTML melalui DOM, kita gunakan objek yang bernama document. Objek ini berisi semua elemen yang berada pada HTML atau keseluruhan halaman yang terlihat pada jendela browser saat itu. Jika kita coba mengakses nilai dari global obyek document pada console browser maka tampilannya akan sebagai berikut:
+
+Cukup dengan objek document, kita dapat mengakses keseluruhan konten pada HTML yang terdapat root element <html>. Sehingga, jika dicermati kembali di dalamnya terdapat elemen lainnya seperti <head> dan <body>.
+
+Secara sekilas isi dari objek document hanyalah terlihat seperti isi dari sebuah berkas HTML saja. Namun, layaknya sebuah objek JavaScript, objek document memiliki beberapa properti dan method yang bisa kita gunakan untuk mengakses koleksi elemen maupun elemen tertentu. Misalnya, mendapatkan konten-konten pada elemen dengan tag <head> melalui objek document dengan kode berikut:
+
+const head = document.head;
+Bagaimana jika kita ingin mendapatkan elemen <body> saja? Caranya hampir sama, yakni dengan kode berikut:
+
+const body = document.body;
+
+Kedua properti yakni head dan body akan mengembalikan elemen yang sama seperti document yakni sebuah objek.
+
+Bagaimana jika kita ingin lebih spesifik lagi? Misalnya sebuah elemen tunggal? Kita bisa menggunakan method-method yang tersedia oleh objek document. Salah satu method yang bisa kita gunakan adalah getElementById(). Method tersebut berfungsi untuk mendapatkan elemen berdasarkan nilai id-nya. Pada contoh di atas, elemen gambar  memiliki id "gambarUtama". Jika kita ingin mengakses elemen tersebut, caranya sebagai berikut:
+
+const gambar = document.getElementById('gambarUtama');
+Objek document juga memiliki banyak sekali method yang tersedia, berikut beberapa method yang umum digunakan serta fungsinya:
+
+getElementById()        --->>> Mengembalikan satu elemen yang memiliki nilai id "display".
+getElementsByName()     --->>> Mengembalikan banyak elemen (HTMLCollection) yang memiliki attribute name dengan nilai "button".
+getElementsByClassName()--->>> Mengembalikan banyak elemen (HTMLCollection) yang memiliki attribute class dengan nilai "button".
+getElementsByTagName()  --->>> Mengembalikan banyak elemen (HTMLCollection) yang merupakan <div> element.
+querySelector()         --->>> Mengembalikan elemen pertama (node) yang menerapkan class "button"
+querySelectorAll()      --->>> Mengembalikan banyak Node dalam bentuk NodeList yang menerapkan class "button".
+
+Pada method di atas ada yang mengembalikan nilai HTML elemen secara tunggal. Selain itu, ada juga yang mengembalikan banyak elemen dari sebuah berkas HTML yang biasa disebut sebagai HTMLCollection. Dikarenakan semua method di atas dimiliki oleh objek document, maka jangan lupa mengawali semua pemanggilan method-method di atas dengan sintaks document.<nama_method> ya.
+
+Misalnya kita bisa mendapatkan elemen paling pertama yang menerapkan nilai "button" pada atribut class dengan method querySelector('.button').
+
+Sedangkan untuk mendapatkan semua elemen yang nilai atribut class-nya "button", gunakan method querySelectorAll('.button'). Method tersebut akan mengembalikan semua elemen yang sesuai dalam bentuk HTMLCollection.
+
+Ada fakta menarik tentang HTMLCollection, yakni memiliki karakteristik yang mirip dengan array. Contohnya, kita bisa menggunakan properti length untuk mendapatkan jumlah elemen yang terdapat di dalamnya. Selain itu, kita bisa mengakses nilai individual elemennya menggunakan indexing.
+
+Karena HTMLCollection memiliki karakteristik yang mirip dengan array, maka kita juga bisa melakukan looping terhadap elemen-elemennya, yakni melalui sintaks looping for of. Berdasarkan contoh di atas, maka implementasinya sebagai berikut:
+
+for (let item of buttons) {
+  console.log(item);
+}
+
+Sesuai dengan nama method tersebut, method querySelector() dan querySelectorAll() membutuhkan query khusus sebagai parameternya. Jika tujuan kita adalah mendapatkan elemen berdasarkan atribut class, maka parameternya harus diawali dengan tanda titik ("."), sedangkan jika berdasarkan atribut id, kita harus mengawali nilai parameternya dengan tanda pagar ("#"). Hal ini sama seperti ketika kita bekerja dengan selector di CSS.
+
+Cobalah untuk bereksperimen dengan method-method yang sudah dijelaskan sebelumnya untuk mendapatkan pemahaman yang baik dan elemen yang sesuai. Kemudian carilah perbedaan dari fungsi method-method tersebut.
+
+
+

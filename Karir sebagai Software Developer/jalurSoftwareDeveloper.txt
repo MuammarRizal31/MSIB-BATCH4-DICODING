@@ -1,0 +1,74 @@
+Setelah Anda memahami berbagai jalur Software Developer yang ada, kini saatnya Anda memilih dan merencanakan untuk mencapainya. 
+
+--->>>          HARDWARE
+Hardware merupakan hal pertama yang dapat mempengaruhi keputusan Anda dalam memilih jalur yang sesuai. Berikut skenarionya:
+
+    1. Laptop/komputer spesifikasi rendah dengan sistem operasi Windows atau Linux. Beberapa jalur software developer yang bisa Anda pilih antara lain:
+        - web developer
+        - machine learning developer
+        - azure cloud developer
+
+    2. Laptop/komputer spesifikasi tinggi dengan sistem operasi Windows atau Linux. Beberapa jalur software developer yang bisa Anda pilih antara lain:
+        - android developer
+        - multi platform app developer (khusus android dan web saja)
+        - web developer
+        - machine learning developer
+        - azure cloud developer
+    
+    3. macBook dengan sistem operasi macOs. beberapa jalur software developer yang bisa anda pilih antara lain : 
+        - IOS developer
+        - multi-platform app developer (android,iOS dan web)
+        - android developer
+        - web developer
+        - machine learning developer
+        - azure cloud developer
+
+
+Selain itu ada juga kebutuhan peranti mobile, seperti Android dan iOS. Peranti ini tidak wajib karena sudah ada emulator Android dan simulator iOS yang bisa Anda manfaatkan. Namun, simulator hanya dikhususkan untuk perangkat MacBook.
+
+--->>>          BAHASA PEMROGRAMAN
+Setelah menyesuaikan dengan hardware yang Anda miliki, mari kita lebih fokus terhadap skill yang dibutuhkan. Silakan kulik roadmap dari Software Developer secara lebih dalam. Langkah awal yang bisa Anda pelajari adalah bahasa pemrograman. Apa sajakah bahasa pemrograman yang digunakan pada setiap jalur karier? Simak uraiannya di bawah ini:
+
+    1. iOS developer menggunakan Swift
+    2. multiplatform app developer menggunakan Dart
+    3. android developer menggunakan Kotlin
+    4. web developer menggunakan HTML,CSS DAN JavaScript
+    5. machine learning developer menggunakan python
+    6. azure cloud developer menggunakan java,python atau yang lainnya
+
+Setelah itu, Anda perlu mengetahui hal apa saja yang perlu dikuasai dari bahasa pemrograman tersebut. Contohnya ketika Anda mempelajari Swift, maka point-point pentingnya seperti ini:
+
+    1. Dasar Swift : Memahami dasar-dasar Swift seperti penggunaan constant dan variable, comment, semicolon dll. Anda juga akan mempelajari bagaimana mencetak sebuah teks ke dalam console
+
+    2. Operator : Memahami operator-operator yang bisa diimplementasikan di dalam bahasa Swift, seperti arithmetic operator, logical operator, comparison operator dll.
+
+    3. String dan Character : Memahami penggunaan serta implementasi string dan character di dalam Swift, bagaimana mengoperasikan sebuah teks dan memanipulasinya.
+    
+    4. Collection Type : Memahami collection type seperti array, sets, dan dictionary untuk menyimpan koleksi dari sebuah nilai di dalam Swift.
+    
+    5. Control Flow : Memahami pernyataan control flow di dalam Swift seperti perulangan dan pernyataan kondisional.
+
+    6. Function : Memahami bagaimana penggunaan serta implementasi function di dalam Swift sehingga kode akan menjadi lebih rapi.
+    
+    7. Closure : Menjelaskan bagaimana penggunaan serta implementasi closure di dalam Swift.
+
+    8. Enumeration : Memahami penggunaan serta implementasi enumeration di dalam Swift.
+    
+    9. OOP : Memahami Object Oriented Programming (OOP) di dalam Swift seperti class dan struct, method, property, subscript, dan protocol. 
+    
+--->>>          ROADMAP
+Katakanlah Anda sudah mempelajari bahasanya. Apa yang perlu Anda lakukan? Cari tahu roadmap-nya dengan jelas. Roadmap merupakan sebuah peta yang dapat digunakan untuk menentukan arah. Jadi dengan roadmap ini, proses belajar yang Anda lakukan akan lebih mulus, terstruktur, dan mudah.
+
+Anda bisa mencarinya melalui Google, bertanya ke teman-teman, masuk ke forum diskusi terkait, mengikuti webinar, ikut ke komunitas, melihat langsung di dokumentasinya, dan masih banyak cara lainnya. Tentu inti dari pencarian roadmap ini agar Anda bisa mengerti tahapan proses yang harus dilalui. 
+
+Manfaatkanlah internet supaya Anda bisa mendapatkan informasi dengan lebih mudah. Banyak pula developer yang telah mem-posting roadmap mereka ketika belajar. Mari kita ambil contoh dari Roadmap Android developer.
+
+--->>>      MENGASAH SKILL
+Terakhir, sebaik apa pun roadmap yang Anda dapatkan; materi yang sudah Anda kumpulkan; dan berbagai resource yang Anda temui, tak akan berguna tanpa keseriusan Anda untuk belajar, berlatih, dan mencoba. Jadi poinnya adalah berlatih dengan cara mempraktikkan langsung. 
+
+Asah skill codingmu lebih dalam. Bisa dimulai dari tools yang digunakan, kumpulan library yang bisa dimanfaatkan, implementasinya, hingga membuat aplikasinya. Jangan lupa untuk membagikan karya Anda ke orang lain untuk mendapatkan feedback. Dari feedback, Anda akan tahu apa yang kurang dan perlu ditingkatkan. Sehingga, proses belajar akan menjadi lebih efektif.
+
+Jika Anda sudah merasa mempunyai skill yang cukup, cobalah untuk bekerja atau sekedar kerja lapangan/magang. Ini akan memperkuat skill yang Anda miliki dengan lebih cepat. Untuk awalan yang baik, jangan terlalu banyak mengejar materi. Namun fokus pada skill yang ingin Anda kembangkan. Sebab, ketika skill sudah dalam, Anda akan memiliki peluang yang lebih besar untuk bekerja di perusahaan impian.
+
+Intinya, ketika Anda menentukan salah satu jalur dari Software Developer, tak perlu takut untuk memulainya. Sebab ini akan jadi langkah awal untuk merubah diri Anda menjadi lebih baik. Tak perlu ragu untuk bertanya di forum diskusi ya. 
+

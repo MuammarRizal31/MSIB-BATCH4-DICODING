@@ -1,0 +1,12 @@
+--->>>          MACAM MACAM WEB STORAGE DAN CARA MENGETAHUI DUKUNGAN WEB STORAGE
+web storage terbagi menjadi 2 yakni local storage dan session storage. sebelum menggunakan web storage baik sessionStrorage atau localStorrage, kita perlu memastikan browser support terhadap fitur tersebut,dengan cara menjalankan perintah berikut pada console browser
+
+typeof(Storage);
+
+seharusnya browser yang ada saat ini sudah mendukung kedua fitur tersebut, seperti google chrome dan mozila firefox.
+
+data yang tersimpan dalam sessionStorage atau localStorage adalah nilai dengan tipe data primitif seperti number,boolean,atau string. namun kita juga dapat menyimpan data berbentuk javascript object dengan mengubahnya kedalam string(JSON) terlebih dahulu/ begitu pula sebaliknya ketika kita ingin menggunakan datanya kembali.
+
+metode yang dapat digunakan untuk menyimpan dan mengakses data pada storage adalah key-value. disini key menjadi sebuah kunci untuk mengakses data pada storage. ibarat sebuah loker, jika anda ingin menyimpan sebuah benda pasti memerlukan kunci unik untuk loker tersebut. sama halnya jika anda ingin mengambil kembali barang tersebut, yakni membukanya dengan kunci yang tepat.
+
+data yang disimpan pada web storage dapat kita lihat menggunakan devTools pada tabApplication(google chrome) atau tabStorage(mozila Firefox)

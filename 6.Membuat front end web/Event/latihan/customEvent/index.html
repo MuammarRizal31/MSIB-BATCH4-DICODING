@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <title>Event World</title>
+    <style>
+      .buttons {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border: 2px solid black;
+        padding: 15px;
+      }
+      .button {
+        margin: 8px;
+        height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="buttons">
+      <h3 id="caption">Silakan tekan salah satu tombol di bawah...</h3>
+      <button class="button" id="tombol">Tombol Custom Event</button>
+    </div> -->
+
+    <div>
+      Hello
+      <div>
+        Saya
+        <div>Rizal</div>
+      </div>
+    </div>
+    <script>
+      // event bubbling
+      //   const eventBaru = new Event("apa");
+      //   window.addEventListener("load", function () {
+      //     const tombol = document.getElementById("tombol");
+
+      //     tombol.addEventListener("apa", customEventHandler);
+      //     tombol.addEventListener("click", function () {
+      //       tombol.dispatchEvent(eventBaru);
+      //     });
+      //   });
+
+      //   function customEventHandler(e) {
+      //     console.log("Event ", e.type, " telah dijalankan");
+      //     const caption = document.getElementById("caption");
+      //     caption.innerText = "anda telah membangkitkan custom event";
+      //   }
+
+      // event capturing
+      const divs = document.getElementsByName("div");
+
+      for (let div of divs) {
+        div.addEventListener(
+          "click",
+          () => {
+            alert("hello");
+          },
+          true
+        );
+      }
+    </script>
+  </body>
+</html>

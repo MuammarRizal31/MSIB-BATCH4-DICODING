@@ -1,0 +1,114 @@
+--->>>          CALLBACK HELL           <<<---
+Seiring kompleksnya pengembangan aplikasi, kita akan semakin banyak menggunakan fungsi yang berjalan secara asynchronous. tidak jarang kita perlu mengagregasikan banyak data dari berbagai proses asynchronous. masalah akan timbul ketika sebuah proses asynchronous perlu dijalankan setelah proses asynchronous lainnya selesai.
+
+sebagai developer pemula, kita sangat tersbiasa dengan operasi yang saling menunggu pada proses synchronous. jika anda coba baca kode dibawah ini, tentu akan mudah memahami alurnya.
+
+function getUser(id){
+    if(!id){
+        throw new Error('user id harus diisi);
+        return {
+            id,name:'muammar rizal',location: 'jakarta'
+        };   
+    }
+}
+
+function getWeather(location){
+    if(location === "jakarta"){
+        return {weather: 'sunny',temperature: 30};
+    }
+
+    throw new Error('location tidak ditemukan');
+}
+
+module.exports = {getUser,getWeather};
+
+const { getUser, getWeather } = require('./utils');
+
+function getUserWeather(userId) {
+  try {
+    const user = getUser(userId);
+    const weather = getWeather(user.location);
+    return { ...user, ...weather };
+  } catch (error) {
+    console.log(error.message);
+    return null;
+  }
+}
+
+const userWeather = getUserWeather(1);
+console.log(userWeather); // { id: 1, name: 'John Doe', location: 'Jakarta', weather: 'Sunny', temperature: 30 }
+
+kode diatas menunjukan sebuah fungsi getUserWeather() yang bertujuan untuk mendapatkan cuaca berdasarkan userID. anda juga bisa melihat bahwa data cuaca didapatkan dengan cara mengagregasi dua fungsi, yaknni getUser() dan getWeather().Jika kedua fungsi tersebut berjalan secara sinkron, tentu proses agregasi akan mudah karena proses berjalan secara terurut dan saling menunggu.
+
+sekarang bayangkan jika fungsi getUser() dan getWeather() berjalan secara asingkron dan memanfaatkan pola callback. untuk menghasilkan output yang sama, kita perlu ubah kode menjadi seperti ini.
+
+function getUser(id, callback) {
+  setTimeout(() => {
+    if (!id) {
+      callback(new Error("User ID is required"), null);
+    }
+
+    callback(null, { id, name: 'John Doe', location: "Jakarta" });
+  }, 1000);
+}
+
+function getWeather(location, callback) {
+  setTimeout(() => {
+    if (!location) {
+      callback(new Error("Location is required"), null);
+    }
+
+    callback(null, { weather: "Sunny", temperature: 30 });
+  }, 1000);
+}
+
+module.exports = { getUser, getWeather };
+
+const { getUser, getWeather } = require('./utils');
+
+function getUserWeather(userId, callback) {
+  getUser(userId, (error, user) => {
+    if (error) {
+      callback(error, null);
+    }
+
+    getWeather(user.location, (error, weather) => {
+      if (error) {
+        callback(error, null);
+      }
+
+      callback(null, { ...user, ...weather });
+    });
+  });
+}
+
+getUserWeather(1, (error, userWeather) => {
+  if (error) {
+    console.log(error);
+  }
+
+  console.log(userWeather); // { id: 1, name: 'John Doe', location: 'Jakarta', weather: 'Sunny', temperature: 30 }
+});
+
+
+Menurut Anda, apakah kode di atas masih nyaman untuk dibaca? Jelas tidak jika kita bandingkan dengan versi sinkron. Ini merupakan contoh sederhana dalam penggambaran masalah yang sering dihadapi di kasus nyata ketika bermain dengan proses asinkron. Kami baru mencontohkan penggunaan dua fungsi asinkron yang saling membutuhkan, bagaimana jika ada tiga atau bahkan lebih? Tentu kodenya lebih semrawut untuk dibaca.
+
+Menurut kami, masalah yang berhubungan dengan readability code adalah masalah yang serius. Saking seriusnya, masalah ini dikenal sebagai callback hell atau pyramid of doom. Anda bisa lihat betapa menyeramkannya lengkungan kode ketika kita banyak menggunakan callback, hingga bisa tampak seperti gambar di bawah ini.
+
+
+Pola callback dapat digunakan pada bahasa pemrograman apapun, begitu juga masalah yang dihasilkan olehnya. beruntunglah dijavascript terdapat cara lain dalam menangani proses asynchronous lebih baik lagi dengan menggunakan promise. promise dapat membuat kdoe kita lebih mudah dibaca dibanding callback. berikuat adalah gambaran dari kode yang memanfaatkan promise dalam proses asynchronousnya
+
+const {get,user,getWeather} = require('./utils');
+
+function getUserWeather(userId){
+    let user;
+    return getUser(userId){
+        getUser((_user)=> {
+            return getWeateher(user.location)
+        }).then((weather)=> {
+            ({...user,...weather})
+        })
+    }
+}
+
+getUserWeather(1).then(console.log).catch(console.log);

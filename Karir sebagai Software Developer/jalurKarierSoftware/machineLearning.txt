@@ -1,0 +1,81 @@
+seorang machine learning developer adalah pakar dalam menggunakan data untuk model pelatihan. model-model tersebut kemudian digunakan untuk mengotomatisasi proses seperti klasifikasi gambar, pengenalan suara, dan perkiraan pasar. sering kali ada penggabungan dengan peran data scientist atau artificial intelligence(AI) engineer.
+
+Machine learning adalah sub-bidang AI yang berfokus pada analisis data untuk menemukan hubungan antara input dan output yang diinginkan. Seorang pengembang pemelajaran mesin harus mampu menghasilkan solusi yang dibuat khusus untuk setiap masalah dan mencapai hasil optimal dengan hati-hati memproses data dan memilih algoritma terbaik untuk konteks yang diberikan.
+
+Bidang ini juga sangat penting untuk dipahami, terlihat dari pernyataan Presiden Joko Widodo pada awal Desember 2019 yang menjabarkan rencana pemerintah untuk mengganti eselon III/IV dengan kecerdasan buatan [37]. Louis Columbus, Senior Contributor di Forbes.com, mengatakan “Pasar ML dunia akan mengalami pertumbuhan tahunan sebesar 44% [38].” Pasar ini akan menjadi salah satu pasar paling menguntungkan di dunia IT.
+
+Lalu sebagai Machine Learning Developer, produk apa yang dibuat? Tentunya ia dapat membuat model untuk kebutuhan sebuah produk, seperti untuk prediksi, deteksi, atau kebutuhan lain. Mulai dari merencanakan ide, membuat flow, mengumpulkan data, membuat desain, mengimplementasikan, bahkan melakukan pengujian sebelum model itu digunakan. Proses ini akan melibatkan banyak orang ya. Bahkan di perusahaan tertentu, pekerjaan itu biasanya cukup fokus pada apa yang akan diimplementasikan ke dalam model.
+
+Kira-kira bagaimana penerapan machine learning dalam sebuah produk ya? Mari kita lihat salah satu platform layanan streaming yang yang cukup populer akhir-akhir ini, yakni Netflix. Netflix adalah layanan streaming berbasis langganan yang memungkinkan anggota menonton acara TV dan film tanpa iklan di perangkat yang terhubung ke Internet. Anda juga dapat men-download acara TV dan film ke iOS, Android, atau perangkat Windows 10 dan menonton tanpa koneksi Internet [39].
+
+Ketika Anda telah menonton sebuah film atau acara tv, maka Netflix akan merekomendasikan Anda menonton film terkait. Di sinilah penerapannya. Woo, mantap ya. Mohammad Sabbah, Senior Data Scientist Netflix, mengatakan bahwa, “Sekitar 75% dari pengguna Netflix memilih film berdasarkan rekomendasi algoritma machine learning aplikasi tersebut [40].” Sudah terbayang kan, bagaimana model machine learning bekerja.
+
+Lalu, adakah developer lokal yang sudah mengimplementasikan Machine Learning ini? Di Indonesia sendiri banyak yang sudah mengimplementasikan Machine Learning agar bisnis mereka menjadi lebih baik. Contohnya adalah GOJEK. GOJEK menggunakan Machine Learning untuk memprediksi dan mengatur tarif yang dinamis
+
+--->>>          jika ingin menjadi seorang machine learning developer, apasaja sih yang diperlukan ?
+> HARDWARE
+kebutuhan penting nomer wahid yaitu hardware yang meliputi komputer.Berikut spesifikasi dari hardware yang diperlukan untuk berkarier sebagai Machine Learning Developer:
+
+    1. Microsoft Windows, Linux, atau MacOS.
+    2. Prosesor Intel Dual Core (Rekomendasi Core i3 ke atas).
+    3. RAM sebesar minimum 2 GB (Rekomendasi 4 GB).
+    4. Terdapat 2 GB ruang kosong pada penyimpanan (Rekomendasi 4 GB).
+    5. Resolusi layar 1280x800 (Rekomendasi Full HD 1920 x 1080).
+    
+Spesifikasi yang dibutuhkan tidak terlalu tinggi untuk membuat sebuah model dalam machine learning. Tentu semakin tinggi spesifikasi, akan membantu Anda lebih cepat dalam membangun aplikasi tersebut.
+
+> SOFTWARE
+Yang Anda butuhkan pertama kali adalah IDE. Integrated Development Environment (IDE) lebih dari sekedar text editor untuk membuat kode, di dalamnya tergabung juga berbagai fasilitas development misalnya Code Versioning, Interpreter, Visualization, dan lain sebagainya.
+
+Untuk menulis program pada bahasa Python, bahasa populer untuk menjalankan machine learning, Anda dapat menggunakan teks editor apa pun, misalnya Notepad++ atau sejenisnya (Windows), Nano, Vim, Gedit (Linux), atau Visual Studio Code/Atom/Sublime (semua platform). Anda juga bisa menggunakan IDLE dalam bundel package python atau IDE lain yang khusus dibuat untuk Python, misal PyCharm dari JetBrains.
+
+Selain itu, Anda juga dapat memanfaatkan IDE lain misalnya Jupyter Notebook. Jupyter Notebook adalah aplikasi web open-source yang memungkinkan Anda membuat dan berbagi dokumen yang berisi kode langsung, persamaan, visualisasi, dan teks naratif. Kegunaannya meliputi: pembersihan dan transformasi data; simulasi numerik; pemodelan statistik; visualisasi data; pembelajaran mesin; dan masih banyak lagi.
+
+IDE yang paling saya rekomendasikan adalah Google Colaboratory atau yang bisa disebut Google Colab. IDE yang dapat digunakan untuk menulis dan mengeksekusi Python di browser Anda dengan beberapa fitur seperti tidak perlu konfigurasi, akses gratis ke GPU, dan berbagi dengan mudah. Sehingga dapat mempermudah pekerjaan Anda.
+
+Dengan Google Colab, Anda dapat mengimpor kumpulan data gambar, melatih klasifikasi gambar di atasnya, dan mengevaluasi model. Semua hanya dilakukan dalam beberapa baris kode. Notebook Colab mengeksekusi kode di server Google Cloud, yang berarti Anda dapat memanfaatkan kekuatan hardware Google dan yang Anda butuhkan hanyalah browser.
+
+COLAB DIGUNAKAN SECARA LUAS DALAM KOMUNITAS MACHINE LEARNING DENGAN APLIKASI TERMASUK :
+    - mengintegrasikan dengan tensorFlow
+    - Mengembangkan dan melatih jaringan saraf tiruan.
+    - Melakukan eksperimen dengan TPU (Tensor Processor Unit).
+    - Menyebarluaskan penelitian AI.
+    - Membuat tutorial.
+    
+seperti yang sudah kita tahu, untuk mengakses website google colab dan jupyter membutuhkan sebuah browser. anda bisa menggunakan broser apapun untuk mengunjungi website tersebut.
+selain itu browser akan membantumu dalam melakukan banyak hal, mencari documentasi bertanya tanya diforum mencari jawaban dari permasalahan yang dialami dan lainlain.
+
+> SKIL DAN PENGETAHUAN
+Lalu apa saja yang perlu Anda pelajari? Tentu yang Anda perlu pelajari pertama adalah bahasanya, yakni Python. Apa itu?
+
+Python adalah bahasa pemrograman interpretatif yang dapat digunakan di berbagai platform dengan filosofi perancangan yang berfokus pada tingkat keterbacaan kode. Python juga jadi salah satu bahasa populer yang berkaitan dengan Data Science, Machine Learning, dan Internet of Things (IoT). Keunggulan Python yang bersifat interpretatif banyak digunakan untuk prototyping, scripting dalam pengelolaan infrastruktur, hingga pembuatan website berskala besar. 
+
+ADA BEBERAPA POIN YANG PERLU ANDA PELAJARI JUGA,YAKNI : 
+    * PROBLEM FRAMING
+        - dapat merumuskan solusi machine learning untuk suatu masalah.
+    * EXPLORATORY DATA ANALYSIS
+        - dapat menganalisa data tersebut untuk menentukan fitur baru dalam suatu produk.
+    * VISUALISASI DATA
+        - Dapat mengkomunikasikan sebuah informasi atau data dalam bentuk visual dengan baik, seperti diagram,grafik atau representasi visual laiinya.
+    * Dasar Matematika dan Statistika
+        - Dapat melakukan perhitungan dasar matematika dan statistika mulai dari rata-rata statistik hingga standar deviasi.
+    * DASAR MACHINE LEARNING
+        - Dapat membuat model, mencari parameter model terbaik, mengembangkan dengan format data yang berbeda dan dasar-dasar lain
+    * FEEDBACK DAN TESTING
+        - Dapat menguji kualitas dan akurasi dari sebuah model machine learning.
+    * LIBRARY MACHINE LEARNING
+        - Dapat memahami dan menggunakan library machine learning, contohnya adalah Tensorflow. Tensorflow merupakan library yang powerful, dipakai untuk mengembangkan project machine learning.
+    * DEPLOYMENT
+        - Dapat men-deploy sebuah model pada website dan smartphone.
+    
+Lalu apakah masih butuh skill lain yang harus dikuasai? Seorang Machine Learning Developer adalah sosok yang mampu mewujudkan model dengan minim bug, tinggi level keamanannya, dan digunakan untuk menyelesaikan masalah yang kompleks. Itu merupakan faktor yang harus ia pertimbangkan demi maksimalnya sebuah fitur.
+
+Sementara itu dari sisi kode di dalam sebuah model, seorang Machine Learning Developer harus memastikan bahwa model yang ia buat dapat scalable alias tetap bekerja dengan baik saat produk berubah mengikuti kebutuhan bisnis. Model tersebut juga harus dibangun dengan fondasi algoritma yang kuat. Jika tidak, perusahaan akan terbebani biaya pengembangan yang tinggi karena sulitnya perbaikan akibat algoritma yang fatal.
+
+--->>>          TAHAPAN MENJADI SEORANG MACHINE LEARNING
+1. Belajar dasar visualisasi Data
+2. Memulai pemrograman dengan python
+3. belajar machine learning untuk pemula
+4. Belajar pengembangan machine learning
+5. documentation
+

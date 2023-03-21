@@ -1,0 +1,65 @@
+Android adalah sistem operasi yang dikeluarkan oleh Google. Android dibuat khusus untuk smartphone dan tablet. Berbagai macam produsen telah menggunakan Android sebagai sistem operasi untuk peranti (device) yang mereka produksi.
+
+--->>>          KEBUTUHAN YANG HARUS DIPENUHI           <<<---
+1. HARDWARE
+Kebutuhan penting nomer wahid yaitu hardware yang meliputi komputer dan peranti android. berikut spesifikasi dari hardware yang diperlukan untuk berkarier sebagai android developer :
+    1. Komputer/laptop dengan spesifikasi minimal : 
+        a. sistem operasi windows,linux atau macOs
+        b. prosesor inter i3 (rekomendasi core I5 keatas)
+        c. RAM menimum sebesar 8 GB(rekomendasi 16gb)
+        d. terdapat 8 GB ruang kosong pada penyimpanan (rekomendasi 16 GB)
+        e. Resolusi layar 1280x800 (rekomendasi FULL HD 1920 X 1080)
+
+    2. Peranti mobile dengan sistem operasi android memerlukan,
+        a. usahakan terinstal OS versi terbaru.
+        b. Terdapat memori untuk menginstal aplikasi buatan anda.
+        c. Jangan lupa kabel data.
+    
+Dalam karier ini, Anda memerlukan komputer dengan spesifikasi yang cukup tinggi untuk membuat sebuah aplikasi Android. Semakin tinggi spesifikasi komputer atau laptop yang dimiliki, akan semakin membantu Anda untuk lebih cepat dalam membangun aplikasi tersebut. Sedangkan peranti mobile Anda butuhkan untuk menguji aplikasi secara langsung, apakah aplikasi sudah berjalan dengan baik atau tidak.
+
+2. SOFTWARE
+Salah satu software atau perangkat lunak yang dapat Anda gunakan untuk membuat aplikasi Android adalah Android Studio. Pada tahun 2014 Google mengeluarkan IDE bernama Android Studio yang berbasiskan Intellij IDEA.
+
+Dengan menggunakan Android Studio, para developer dapat membuat aplikasi mulai dari nol hingga publish ke store. Android Studio juga mempunyai berbagai fitur yang sangat membantu para developer untuk memaksimalkan proses pembuatan aplikasi. 
+
+Selain IDE Android Studio, Anda juga perlu menginstal browser. Browser akan membantu Anda melakukan banyak hal, seperti membaca dokumentasi, bertanya di forum-forum untuk mencari solusi dari permasalahan yang Anda alami, dan lain-lain. 
+
+3. SKILL/PENGETAHUAN
+Ketika sudah mengetahui kebutuhan dari sisi hardware dan software, lalu skill apa saja yang perlu Anda pelajari? Anda dapat mulai belajar dari bahasa pemrogramannya dahulu, yaitu Kotlin. Kotlin merupakan bahasa utama yang digunakan dalam pengembangan Android. Saat ini, Kotlin sudah stabil dan banyak digunakan oleh industri, seperti Gojek, Netflix, Twitter, dan masih banyak lagi. 
+
+    skill android development : 
+    - prinsip dasar android : Mempelajari dasar-dasar pemrograman Android yang wajib diketahui, seperti Activity, Fragment, macam-macam Intent, dan ListView
+
+    - ui dan ux aplikasi : Mempelajari cara mendesain aplikasi yang menarik dengan menggunakan layout, style, theme, localization, CustomView, dan RecyclerView. Selain itu Anda juga perlu mendalami komponen-komponen Material Design seperti ActionBar, NavigationDrawer, BottomNavigation, dan TabLayout :
+
+    - testing : Mempelajari berbagai macam testing atau pengujian, yaitu Unit Testing dan Instrumentation Testing. Testing merupakan salah satu skill yang penting di dunia kerja. 
+
+    - background prosess: Mendalami cara mengeksekusi suatu task di background thread, seperti Service, Broadcast Receiver, AlarmManager, JobScheduler, dan WorkManager. 
+    
+    - request data API : Mempelajari cara mengambil data dari RESTful API yang berformat JSON.
+    
+    - LOCAL DATA STORAGE : Mempelajari berbagai macam cara untuk menyimpan data di Android seperti File, SharedPreference, dan Database SQLite.
+    
+Selain itu, penguasaan terhadap Jetpack juga menjadi kewajiban untuk mengoptimalkan proses pengembangan aplikasi Android. Android Jetpack terinspirasi oleh Support Library. Support Library merupakan seperangkat komponen untuk memudahkan pemanfaatan fitur Android terbaru sembari tetap menjaga kompatibilitas dengan versi-versi sebelumnya. 
+
+Jetpack merupakan serangkaian library yang tersedia untuk membantu developer agar dapat mengikuti praktik terbaik, mengurangi kode boilerplate, serta menulis kode yang berfungsi secara konsisten di berbagai versi dan perangkat Android sehingga developer dapat berfokus pada penulisan kode yang lebih penting.
+
+Google memperkenalkan Architecture Components sebagai bagian dari Android Jetpack. Ia dirancang untuk memudahkan penanganan data dalam menghadapi perubahan siklus hidup aplikasi. Sejak diperkenalkan Google  pada I/O 2018, banyak sekali perusahaan IT yang telah mengadopsinya
+
+Google menyatakan Android Jetpack telah digunakan oleh 80% dari 1000 aplikasi terbaik Google Play Store [16]. Perusahaan seperti LinkedIn, Traveloka, dan Kakao Corporation (KakaoTalk) menjumpai lebih sedikit bug dan sukses menghemat waktu pengembangan. Sehingga mereka dapat lebih fokus pada apa yang membuat aplikasi mereka unik [17].
+
+Lalu, apakah masih butuh skill lain yang harus dikuasai? Untuk memenangkan kompetisi pasar dan mengatasi mahalnya biaya akuisisi pengguna, diperlukan aplikasi Android dengan performa tinggi yang siap saing dan pro pada retensi pengguna.
+
+Sementara dari sisi kode, seorang Android Developer harus memastikan aplikasinya scalable alias tetap bekerja dengan baik saat produk berubah mengikuti kebutuhan bisnis. App tersebut juga harus robust alias dibangun dengan pondasi kode yang kuat. Jika tidak, perusahaan akan terbebani biaya pengembangan yang tinggi karena sulitnya perbaikan akibat code smell, yakni kode yang berantakan atau strukturnya buruk.
+
+--->>>          TAHAPAN BELAJAR YANG BISA DILALUI
+    1. Memulai pemrograman dengan Kotlin
+    2. belajar membuat aplikasi android pemula
+    3. belajar fundamental aplikasi android
+    4. belajar pengembang aplikasi android intermediate
+    5. belajar prinsim pemrograman solid
+    6. menjadi android developer expert
+
+
+--> DOCUMENTATION
+Selain didicoding anda juga dapat belajar langsung di dokumentasi android. google menyediakan situr android developers untuk membantu anda belajar segala hal tentang android, seperti tools yang digunakan, library yang sudah siap anda gunakan sampel kode untuk menambah wawasan info terbaru dan sebagainya,

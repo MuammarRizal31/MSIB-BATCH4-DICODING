@@ -1,0 +1,35 @@
+--->>>          PENGENALAN KE FORM
+Sejauh ini kita sudah mempelajari bagaimana cara menambahkan aspek interaktif dari halaman web, terutama mengubah layout nya. sebelum kita menyelesaikan modul ini, ada satu jenis elemen HTML yang sangat sering digunakan untuk mengumpulkan banyak input dari user sekaligus. kita sudah pernah menyebutnya pada materi materi sebelumnya tetapi hanya sekadar menyebutnya. ia adalah form.
+
+form umumnya digunakan untuk menangkap input dari user dalam jumlah banayk sekaligus. bisa ditebak dari namanya pasti bentuk form akan mirip seperti formulir.
+
+Lengkap, bukan? Ada field yang bisa diisi dan ada juga tombol bernama "Submit Data" ketika kita sudah selesai mengisi data pada form. Sama halnya dengan elemen HTML pada umumnya, terdapat beberapa event yang dihasilkan oleh form yang akan kita terapkan pada praktik. Untuk penjabarannya, perhatikan tabel di bawah ini
+
+onsubmit    -> event ini akan terjadi ketika kita menekan tombol submit milik sebuah form
+oninput     -> event ini akan terjadi ketika kita memberikan input melalui field
+onchange    -> event ini akan terjadi jika kita sudah selesai memberikan input melalui field. bisa juga diaplikasikan ke element select(dropdown menu).
+oncopy      -> event ini akan terjadi jika kita menyalin(copy) isi dari sebuah elemen.
+onpaste     -> event ini akan terjadi jika kita menempelkan(paste) isi dari hasil salin(copy) pada sebuah teks.
+onfocus     -> event ini akan terjadi jika sebuah elemen pada form dipilih untuk dilakukan proses input
+onblur      -> event ini akan terjadi jika sebuah elemen pada form tidak dipilih lagi untuk dilakukan proses input.
+
+apa fungsi dari e.preventDefault? ketika kita melakukan proses submit pada form, halaman web akan melakukan proses refresh. nah, event.preventDefault() akan mencegah proses refresh tersebut.
+
+--->>>      EVENT ONINPUT
+Event oninput akan dijalankan setiap kali kita menulis atau menghapus apapun pada sebuah field input yang memiliki event listener tersebut.
+
+--->>>      EVENT ONFOCUS
+event onFocus akan dijalankan ketika melakukan klik disebuah elemen input.
+
+--->>>      EVENT ONBLUR
+event onblur akan dijalankan ketika pada kondisi yang terbalik dengan event onfocus, yakni jika kita “pergi” dari elemen yang memiliki event handler untuk event onFocus. Apa maksud dari “pergi”? Maksudnya adalah kita tidak lagi berinteraksi secara langsung dengan elemen tersebut, seperti kita telah melakukan klik pada elemen lain.
+
+--->>>      EVENT ONCHANGE
+event onChange memiliki prilaku yang mirip dengan onInput, yaitu event yang terjadi jika terdapat perubahan nilai.
+
+event onInput akan terjadi jika element input mengalami perubahan nilai secara langsung, sedangkan event onChange akan terjadi jika elemen input mengalami perubahan nilai dan menjadi blur(user tidak focus pada element tersebut).
+
+Sederhananya, event onChange seakan-akan merupakan gabungan dari event onInput dan onBlur
+
+--->>>      EVENT onCopy
+Event onCopy tergolong dalam kelompok clipboard events. evnt ini terjadi jika kita melakukan operasi pada clipboard seperti copy,paste dan cut.

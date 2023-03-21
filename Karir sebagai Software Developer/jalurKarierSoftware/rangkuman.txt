@@ -1,0 +1,115 @@
+Seperti yang kita tahu, penggunaan teknologi digital telah merambah ke segala lini kehidupan kita. Dalam kehidupan sehari-hari semua telah menggunakan teknologi digital. Artinya, tenaga IT saat ini sangat dibutuhkan, begitu juga kebutuhan karier Software Developer. 
+
+Lantas apa saja jalur karier developer yang bisa kita tekuni? Berikut merupakan pembagiannya:
+    1. android developer
+        - Seorang Android Developer adalah Software Developer yang berspesialisasi dalam merancang dan membangun aplikasi untuk pasar operating system Android. Android adalah sistem operasi yang dikeluarkan oleh Google.
+    
+    2. IOS Developer
+        - Seorang iOS Developer adalah Software Developer yang berspesialisasi dalam merancang dan membangun aplikasi untuk pasar sistem operasi iOS. iOS atau iPhone OS merupakan sistem operasi yang dikeluarkan oleh Apple.inc, iOS yang dibuat khusus untuk iPhone dan iPad.
+        
+    3. Multi-Platform App Developer
+        - Seorang Multi-Platform Developer adalah Software Developer yang berspesialisasi dalam merancang dan membangun aplikasi yang dapat digunakan berbagai sistem operasi populer seperti Android dan iOS.
+        
+    4. front-end web developer
+        - Seorang Front-End Web Developer adalah Software Developer yang bertanggung jawab untuk merancang dan membangun berbagai aplikasi web secara responsif, interaktif, dan juga user friendly.
+    
+    5. Machine Learning Developer
+        - Seorang Machine Learning Developer adalah pakar dalam menggunakan data untuk model pelatihan. Model-model tersebut kemudian digunakan untuk mengotomatisasi proses seperti klasifikasi gambar, pengenalan suara, dan perkiraan pasar. Sering kali ada penggabungan dengan peran data scientist atau artificial intelligence (AI) engineer.
+
+    6. Azure Cloud Developer
+        - Seorang Cloud Developer dapat sepenuhnya memanfaatkan layanan yang disediakan oleh Cloud Solution Provider tersebut. Individu ini memiliki pengalaman dengan basis data terkini (next-gen database), lingkungan di mana aplikasi berjalan (runtime environment), dan alat pengembang (developer tools). Mereka juga memiliki kemampuan dengan setidaknya satu bahasa pemrograman umum dan terampil menghasilkan metrik dan log yang bermakna untuk debug dan melacak kode.
+        
+Kebanyakan dari jalur developer membutuhkan sebuah Laptop/Komputer, kecuali untuk iOS Developer membutuhkan MacBook. Seorang iOS Developer harus mempunyai setidaknya macbook, sebab software yang dibutuhkan hanya tersedia dalam os tersebut.
+
+Banyak cara untuk menjadi expert di masing-masing jalur tersebut. Tentu dengan persiapannya masing-masing, baik software, hardware, atau skill yang dibutuhkan. Anda dapat memperkuat skill dengan mengikuti kelas dari Dicoding. Sebab Dicoding mempunyai berbagai Learning Path. Anda dapat belajar secara terstruktur sehingga target belajar lebih mudah tercapai di Dicoding Academy. Berikut Learning Path yang tersedia dalam situs dicoding.com/learningpaths:
+
+1. Android Developer
+Kurikulum didesain oleh Dicoding sebagai satu-satunya Google Developers Authorized Training Partner di Indonesia. Siswa dipersiapkan untuk menjadi Android Developer berstandar global Google. Learning Path ini terdiri dari 6 Kelas Akademi:
+Memulai Pemrograman Dengan Kotlin
+Kelas pengantar untuk mempelajari Functional Programming serta Object-Oriented Programming (OOP) menggunakan Kotlin.
+
+    a. Belajar Prinsip Pemrograman SOLID
+        - Pelajari kelima prinsip desain yang merupakan pedoman untuk rancangan kode yang baik pada pemrograman berorientasi objek (OOP).
+
+    b. Belajar Membuat Aplikasi Android untuk Pemula
+        - Pelajari cara membuat aplikasi pertamamu dengan Android Studio. Kelas ini mengajarkan dasar Android mulai dari Intent sampai RecyclerView.
+
+    c. Belajar Fundamental Aplikasi Android
+        - Pelajari skill Android dengan kurikulum terlengkap yang dibutuhkan oleh perusahaan. Mulai dari design pattern, testing, API sampai database.
+
+    d. Belajar Android Jetpack Pro
+        - Pelajari Android Jetpack dengan berbagai fitur canggih dan sudah diimplementasikan 80% dari 1000 aplikasi terbaik di Google Play Store.
+
+    e. Menjadi Android Developer Expert
+        - Saatnya menjadi Android Expert dengan belajar Clean Architecture, Reactive, Dependency Injection, Modularization, Performance, dan Security.
+
+2. Azure Cloud Developer
+Kurikulum lengkap yang didesain bersama salah satu penyedia cloud solution terbesar di dunia yaitu Microsoft Azure. Setiap kelas mempersiapkan siswa untuk ujian sertifikasi resmi Azure dari Microsoft. Learning Path ini terdiri dari 2 Kelas Akademi:
+
+    a. Belajar Dasar-Dasar Azure Cloud
+        - Pahami prinsip dan konsep dari komputasi awan disertai pengenalan layanan-layanan dari Microsoft Azure sesuai kebutuhan sertifikasi AZ-900.
+
+    b. Menjadi Azure Cloud Developer
+        - Pelajari konsep dan terminologi cloud beserta berbagai layanan Azure Cloud sesuai kebutuhan sertifikasi Azure Developer Associate.
+
+3. Front-End Web Developer
+Kurikulum disusun oleh Dicoding dan pelaku industri di bidang Web Development. Siswa dipersiapkan untuk menjadi Front-End Web Developer sesuai standar kebutuhan industri. Learning Path ini terdiri dari 3 Kelas Akademi:
+
+    a. Belajar Dasar Pemrograman Web
+        - Pelajari komponen-komponen dasar HTML, CSS, dan JavaScript yang merupakan fondasi utama untuk menjadi web developer.
+
+    b. Belajar Fundamental Front-End Web Development
+        - Pelajari sintaks ES6, Web Component, dan Build Tools dalam membangun website dengan teknik yang simple, reusable, dan optimized.
+
+    c. Menjadi Front-End Web Developer Expert
+        - Pelajari teknik-teknik expert serta modern dalam membangun website yang optimal pada seluruh perangkat, terutama pada perangkat mobile.
+
+4. iOS Developer
+Kurikulum disusun oleh Dicoding dan pelaku industri di bidang iOS Development. Siswa dipersiapkan untuk menjadi iOS Developer sesuai standar kebutuhan industri. Learning Path ini terdiri dari 5 Kelas Akademi:
+
+    a. Memulai Pemrograman Dengan Swift
+        - Belajar bahasa Swift buat kamu yang ingin mempelajari konsep Pemrograman Berorientasi Objek (PBO) dalam mengembangkan iOS dan OS X.
+
+    b. Belajar Prinsip Pemrograman SOLID
+        - Pelajari kelima prinsip desain yang merupakan pedoman untuk rancangan kode yang baik pada pemrograman berorientasi objek (OOP).
+
+    c. Belajar Membuat Aplikasi iOS untuk Pemula
+        - Pelajari cara membuat aplikasi pertamamu dengan Xcode. Kelas ini mengajarkan dasar iOS mulai dari Controller sampai TableViews.
+
+    d. Belajar Fundamental Aplikasi iOS
+        - Pelajari komponen fundamental iOS berdasarkan teknik yang digunakan industri mulai dari App Design, SwiftUI, Networking, sampai Database.
+
+    e. Menjadi iOS Developer Expert
+        - Saatnya jadi iOS Expert dengan belajar Clean Architecture, Reactive, Dependency Injection, Modularization, dan Test Driven Development.
+
+5. Multi-platform app developer
+kurikulum disusun oleh dicoding bersama google beserta pelaku industri multi-platform app development. siswa dipersiapkan untuk menjadi multi-platform app developer standar kebutuhan industri. learning path ini terdiri dari 5 kelas akademi : 
+
+    a. Memulai Pemrograman Dengan Dart
+        - Kelas pengantar buat kamu yang ingin mempelajari bahasa populer dari Google untuk mengembangkan aplikasi multiplatform seperti Flutter.
+    
+    b. Belajar Prinsip Pemrograman SOLID
+        - Pelajari kelima prinsip desain yang merupakan pedoman untuk rancangan kode yang baik pada pemrograman berorientasi objek (OOP).
+    
+    c. Belajar Membuat Aplikasi Flutter untuk Pemula
+        - Pelajari cara membuat aplikasi multi-platform pertamamu menggunakan Flutter. 
+    
+    d. Belajar Fundamental Aplikasi Flutter
+        - Pelajari komponen fundamental Flutter berdasarkan teknik yang digunakan industri mulai dari state management, API, database, sampai testing.
+    
+6. Machine learning developer
+kurikulum lengkap yang disusun oleh dicoding bersama IBM dan google beserta pelaku industri. siswa dipersiapkan untuk menjadi machine laearning developer sesuai standar kebutuhan industri. learning path ini terdiri dari 4 kelas akademi : 
+
+    a. Belajar Dasar Visualisasi Data
+        - Pelajari teknik dasar untuk representasi hasil data secara visual sehingga dapat mengkomunikasikan output dari data yang telah terproses.
+    
+    b. Memulai Pemrograman Dengan Python
+        - Belajar Python yang menjadi landasan penting berbagai tren industri seperti ilmu data, pemelajaran mesin, dan manajemen infrastruktur.
+    
+    c. Belajar Machine Learning untuk Pemula
+        - Pelajari materi dasar pengembangan machine learning dan langkah menciptakan model machine learning pertamamu untuk memproses data.
+    
+    d. Belajar Pengembangan Machine Learning
+        - Pelajari implementasi machine learning pada industri mulai dari computer vision, natural language, serta deployment proyek machine learning.
+
+selain belajar dicoding. anda dapat mempelajari skill pada masing masing jalur karier developer didokumentasi atau forum diskusi terkait. silahkan mulai tentukan jalur karier mana yang membuat mu tertarik ya.

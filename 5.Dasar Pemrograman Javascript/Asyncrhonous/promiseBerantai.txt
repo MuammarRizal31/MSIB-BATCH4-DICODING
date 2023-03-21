@@ -1,0 +1,68 @@
+--->>>          PROMISE BERANTAI            <<<---
+Masih ingat tentang maslah readability code yang disebabkan callback hell?masalah tersebut kerap terjadi ketika proses agregasi data dari berbagai proses asynchronous yang saling bergantung antar satu dengan lainnya. dengan hadirnya promise, kita bisa terbebas dari callback hell.
+
+Promise didesain untuk dapat dijalankan secara berantai dengan Promise lain. Contohnya, jika Anda memiliki dua fungsi Promise, Anda bisa menjalankan kedua fungsi tersebut secara terurut, alias berantai. Agar penjelasannya lebih seru, mari kita banyangkan dengan kehidupan sehari-hari.
+
+Dalam kehidupan sehari-hari, kita mungkin pernah melakukan chaining Promise tanpa disadari. Misalkan ketika ingin menonton file di bioskop, kita perlu melakukan beberapa tahap sebelum akhirnya bisa menikmati film tersebut. Misalnya, tahap pertama kita perlu menarik uang untuk nantinya membeli tiket bioskop. Tahap ini bisa direpresentasikan menjadi sebuah fungsi bernama withdrawMoney(). Fungsi tersebut akan mengembalikan sejumlah uang jika saldonya mencukupi, dalam arti lain Promise-nya menjadi fulfilled (resolve). Selain itu, fungsi akan menampilkan pesan error jika saldonya kurang yang artinya rejected (reject). Jika Promise-nya fulfilled, tahap selanjutnya akan dijalankan.
+
+Tahap kedua adalah membeli tiket bioskop yang dapat direpresentasikan dengan fungsi bernama buyCinemaTicket(). Fungsi tersebut menerima argumen uang yang sudah kita tarik. Jika uang yang diberikan pada argumen kurang dari harga tiketnya, Promise akan di-reject dengan pesan “not enough money to buy ticket”. Jika nilai argumen cukup, Promise akan mengembalikan nilai “tiket-1”.
+
+Tahap ketiga adalah masuk ke bioskop, aktivitas ini bisa digambarkan dengan fungsi goInsideCinema() yang menerima satu argumen berupa tiket. Jika tidak ada tiket, Promise akan di-reject dengan pesan “no ticket”. Jika ada, Promise akan di-resolve dengan pesan “enjoy the movie”.
+
+Seluruh tahap yang kami jelaskan adalah Promise dan dapat dijalankan secara berantai seperti ini.
+
+function withDrawMoney(amount){
+    return new Promise((resolve,reject)=> {
+        setTimeout(()=> {
+            if(amount > 100){
+                reject(new Error('Tidak cukup uang untuk menukarkan'));
+            }
+
+            resoleve(amount);
+        },1000)
+    });
+}
+
+function buyCinemaTicket(money){
+    return new Promise((resolve,reject)=> {
+        setTimeout(()=> {
+            if(money<10){
+                reject(new Error('tidak cukup uang untuk beli tiket'))
+            }
+            resolve('tickey-1');
+        },1000);
+    });
+}
+
+function goInsideCinema(ticket){
+    return new Promise((resolve,reject)=> {
+        setTimeout(() => {
+            if(!ticket){
+                reject(new Error('no tiket'));
+            }
+            resolve('enjoy the movie');
+        },1000);
+    });
+}
+
+function watchMovie(){
+    withDrawMoney(10)
+    .then((monye)=> {
+        return buyCinemaTicket(money);
+    })
+    .then((ticket)=> {
+        return goInsideCinema(ticket);
+    })
+    .then((result)=> {
+        console.log(result);
+    })
+    .catch((error)=> {
+        console.log(error.message);
+    })
+}
+
+watchMovie()
+
+Ketika kita memanggil fungsi watchMovie(), Promise chaining akan dijalankan. Dengan teknik tersebut, kita bisa menentukan urutan pemanggilan tiap-tiap fungsi Promise berdasarkan tahapan yang harus dilakukan. Pada kode di atas, kita bisa melihat bahwa tahapan pertama adalah memanggil fungsi withDrawMoney(), kemudian buyCinemaTikcet(), dan terakhir goInsideCinema(). Setelah tahapan tersebut selesai, nilai akhir dari Promise akan ditampilkan ke dalam console dengan fungsi console.log(). Jika ada Promise yang di-reject pada salah satu tahapan, ia akan langsung ditangkap oleh catch dan menampilkan error ke console dengan fungsi console.log().
+
+Dalam chaining Promise seperti yang ditunjukkan oleh kode di atas, penting untuk diingat bahwa setiap fungsi .then() harus mengembalikan Promise baru untuk melanjutkan proses chaining karena nilai yang dikembalikan tersebut akan dibawa ke dalam fungsi .then() selanjutnya.

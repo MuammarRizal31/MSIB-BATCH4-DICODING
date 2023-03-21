@@ -1,0 +1,107 @@
+Pendahuluan Browser Object Model dan Document Object Model
+Pada kelas sebelumnya, seharusnya Anda sudah mempelajari bahasa JavaScript. Anda sudah memahami bagaimana membuat program dengan bahasa ini. Lantas, bagaimana JavaScript mempunyai pengaruh terhadap aspek front-end, yaitu halaman web? Dalam modul inilah kita akan menemukan peran dari JavaScript dalam membangun halaman web menjadi interaktif.
+
+Pada materi ini, kita akan mempelajari hal baru, yaitu Browser Object Model (BOM) dan Document Object Model (DOM). BOM dan DOM memiliki kemampuan mengubah laman web menjadi dinamis. Hal ini tidak dapat dicapai hanya dengan menggunakan HTML dan CSS saja. Pada akhir modul ini, Anda diharapkan dapat:
+
+Mengetahui peranan BOM dalam halaman web.
+Mengetahui beragam member dari BOM beserta fungsinya.
+Mengetahui peranan DOM dalam halaman web.
+Mengetahui struktur dari DOM Tree dalam halaman web.
+Memahami cara memanipulasi konten website melalui teknik manipulasi DOM.
+Supaya proses belajar menjadi lebih interaktif, jika memiliki pertanyaan perihal materi diasupi, jangan segan untuk bertanya via forum diskusi. Mentor kami akan sigap untuk berusaha menjawab pertanyaan Anda. Selain itu, Anda juga dipersilakan untuk membantu menjawab pertanyaan yang diajukan oleh siswa lainnya.
+
+Mari kita bersiap untuk membuat aspek front-end menjadi lebih keren. Let's Go!
+
+
+
+Menambahkan JavaScript di Website
+Ketika membuat berkas html, tentu kita sudah tidak asing dengan tag html, bukan? Contohnya, seperti tag <html>, <style>, <p>, <div>, beserta tag-tag lainnya. Nah, jika kita sudah familier dengan gaya penulisan tag dalam sebuah berkas html, menambahkan kode JavaScript ke dalam berkas HTML akan lebih mudah. Mengapa demikian? Karena kita hanya perlu menggunakan tag <script> sebagai pembuka dan tag </script> sebagai penutup.
+
+Ada dua cara untuk memasukkan kode JavaScript ke dalam berkas HTML kita, yakni secara internal dan external. Hmm, tampaknya terdengar familier? Betul! Hal ini mirip dengan cara menyematkan berkas CSS ke dokumen HTML, bukan? 
+
+Andaikan kita ingin meminta input dari user pada sebuah box yang muncul. Input tersebut berisi nama dari user dan akan kita munculkan kembali nama dari user tersebut pada sebuah box. Berikut adalah bentuknya dalam kode JavaScript:
+
+const tamu = prompt('Siapakah Anda?');
+alert('Selamat datang ' + tamu + '!');
+Lalu kita siapkan juga berkas HTML bernama index.html dan strukturnya seperti di bawah ini:
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2 id="pesan">Selamat datang!</h2>
+  </body>
+</html>
+Nah, dari kedua kode program di atas, selanjutnya kita mempelajari cara memasukkan kode JavaScript ke dalam berkas HTML. Bagaimana caranya? Perhatikan pembahasan di bawah ini.
+
+
+
+Internal JavaScript 
+Pertama, kita akan membahas cara menulis sintaks untuk memasukkan kode JavaScript secara internal terlebih dahulu. Caranya cukup mudah layaknya menulis CSS secara internal pada berkas HTML. Cukup tuliskan kode JavaScript kita diantara tag pembuka dan penutup (<script> dan </script>). Contohnya adalah sebagai berikut.
+
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2 id="pesan">Selamat datang!</h2>
+ 
+    <script>
+      const tamu = prompt('Siapakah Anda?');
+      alert('Selamat datang ' + tamu + '!');
+    </script>
+  </body>
+</html>
+Cukup sederhana, bukan?
+
+      
+
+External JavaScript 
+Berikutnya kita akan membahas bagaimana memasukkan kode JavaScript ke dalam berkas HTML secara eksternal. Sama seperti memasukkan CSS secara eksternal pada berkas HTML, kita perlu menulis lokasi berkas berekstensi .js (dot js) pada atribut src di dalam tag <script> alias tag pembuka. 
+
+Sebagai contoh, kita akan memisahkan kode JavaScript sebelumnya pada berkas terpisah yang bernama welcome.js. Dengan demikian, untuk memasukkan welcome.js ke dalam berkas index.html dapat dituliskan seperti berikut.
+
+<html>
+  <body>
+    <h2 id="pesan">Selamat datang!</h2>
+    <script src="{direktori_kamu}/welcome.js"></script>
+  </body>
+</html>
+Pada tahap ini pasti kita akan bertanya-tanya, "Kenapa tidak menggunakan JavaScript internal saja? Padahal kan sama saja dan cara eksternal terkesan lebih kompleks!". Pertanyaan yang bagus! 
+
+Jawabannya sama dengan ketika kita ingin mengimplementasikan CSS secara internal dan eksternal. Kita menggunakan implementasi internal jika baris atau kompleksitas kode JavaScript sedikit atau rendah.
+
+Namun, perlahan kita akan dibuat pusing jika jumlah kode JavaScript kita banyak serta memiliki kompleksitas yang tinggi. Salah satu kelebihan implementasi JavaScript secara eksternal adalah memudahkan kita untuk memperbaiki laman web ketika terdapat bugs atau error dan menambah konten ketika diperlukan. Kita pun dapat menggunakan berkas javascript pada multiple dokumen HTML sehingga kita tidak perlu menduplikasi kode. Tentu, hal ini sama seperti berkas CSS.
+
+Contohnya pada halaman utama W3C. Jika kita melihat berkas HTML-nya, terdapat sebuah elemen <script> yang merujuk ke sebuah berkas JavaScript eksternal.
+
+202104281336017f2443a87e070a3c3826b73de2031ad2.png
+
+Jika kita telaah kembali, di dalamnya terdapat kode JavaScript yang berisi perintah untuk memanipulasi struktur HTML mereka. Oleh karena itu, sebaiknya kita menggunakan cara JavaScript eksternal supaya dapat digunakan berulang kali.
+
+20210428133740390bb29751f156b2e0fc2023465a7a49.png
+
+
+
+Dimana Harus Meletakkan tag <script>?
+Walaupun implementasi JavaScript secara internal maupun eksternal terlihat mirip dengan CSS internal dan eksternal, tetapi terdapat perbedaan mendasar. Perbedaannya adalah kode CSS diletakkan dalam elemen <style> yang berada di dalam elemen <head>, sedangkan kode JavaScript diletakkan dalam elemen <script> yang terdapat di bagian akhir elemen <body>. Mengapa demikian?
+
+Implementasi JavaScript ke dalam HTML akan berbeda jika dibandingkan dengan implementasi CSS. Hal tersebut karena tag <style> harus berada di dalam tag <head> yang membuat elemen-elemen pada dokumen HTML akan bergantung pada konten dalam CSS. Sehingga, langkah paling logis adalah mempersiapkan konten CSS terlebih dahulu.
+
+Berbeda dengan JavaScript, jika website kita tidak memerlukan JavaScript untuk menampilkan halaman web, maka sebaiknya tag <script> diletakkan sebelum bagian akhir dari sebuah berkas HTML. Mengapa demikian? Karena jika meletakkannya di awal, semua konten HTML tidak akan dijalankan sebelum semua kode JavaScript yang berada pada tag <script> selesai dijalankan. Ambil contoh isi berkas HTML berikut:
+
+<html>
+  <script>alert('Silakan menekan OK di bawah untuk memunculkan isi halaman ini');</script>
+  <body>
+    <h2 id="pesan">Selamat datang!</h2>
+  </body>
+</html>
+Jika dijalankan pada browser prosesnya akan seperti berikut:
+
+2021042616411086d8b1ce403a35617d2d11fa30bede97.gif
+
+Jika diperhatikan kembali pada tampilan di atas, kita harus menekan tombol "OK" terlebih dahulu supaya dapat menampilkan konten HTML. Hal ini dikarenakan elemen script dijalankan terlebih dahulu sehingga dokumen HTML belum di-render secara menyeluruh.
+
+Anda harus benar-benar mempertimbangkan posisi peletakan tag <script> pada berkas HTML-nya. Jika tidak hati-hati, maka bisa saja tampilan halaman web menjadi tertunda dan dapat membuat pengalaman yang tidak mengenakkan bagi user yang sedang mengunjungi website kita.
+
+Apakah ini berarti tag <script> harus selalu diletakkan di bagian akhir berkas HTML? Tidak juga. Jika tampilan halaman web Anda bergantung terhadap kode JavaScript, maka sebaiknya kamu letakkan di bagian yang sesuai.
+
+
+

@@ -1,0 +1,12 @@
+DIMANA ADA EVENT MAKA KEMUNGKINAN ADA BUBBLING DAN CAPTURING.
+event bubbling maupuncapturing termasuk dalam event propagation.
+
+--->>>      BUBBLING
+fenomena bubbling adalah ketika sebuah event terjadi pada sebuah elemen, maka event handler miliki elemen tersebut akan dijalankan terlebih dahulu yang diikuti event handler elemen parentnya dan seterusnya sampai element paling atas. sama seperti fenomena gelembung udara pada minuman bersoda. bukan?
+
+semua elemen memiliki event handler untuk event onclick. sesuai dengan penjelasan bubbling jika kita menekan elemen paling dalam, maka semua event handler akan dijalankan dimulai dari elemen pertama yang di klik lalu kemudian parentnya dan seterusnya.
+
+sekarang coba tekan daerah elemen yang terdapat tulisan 'tengah', maka event handler yang dijalankan hanyalah miliki elemen tersebut serta parent parentnya dan tidak termasuk childnya. alur tersebut sama seperti prinsip gelembung udara udara yang hanya bergerak ke atas dan tidak kebawah.
+
+--->>>      CAPTURING
+Setelah membahas bubbling, mari kita bahas fenomena berikutnya yakni capturing. capturing merupakan kebalikan dari bubbling yang akan mentrigger event handler dari parent ke child.

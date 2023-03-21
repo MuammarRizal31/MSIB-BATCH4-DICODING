@@ -1,0 +1,51 @@
+--->>>          MENGUBAH CALLBACK MENJADI PROMISE DENGAN PROMISIFY          <<<---
+Di materi sebelumnya kita sudah belajar cara mengubah callback menjadi Promise. Sekarang kita akan coba mengubah callback menjadi Promise dengan pendekatan yang berbeda. Di Node.js, terdapat sebuah fungsi dari core module util yang dapat mengubah fungsi asynchronous callback-based menjadi Promise-based dengan mudah, fungsi tersebut bernama promisify.
+
+Mari kita angkat kembali kode dari fungsi getUsers() callback-based berikut
+
+function getUsers(isOffline, callback) {
+  // simulate network delay
+  setTimeout(() => {
+    const users = ['John', 'Jack', 'Abigail'];
+  
+    if (isOffline) {
+      callback(new Error('cannot retrieve users due offline'), null);
+      return;
+    }
+ 
+ 
+    callback(null, users);
+  }, 3000);
+}
+
+Di materi sebelumnya kita sudah mengubahnya menjadi Promise-based dengan me-refactor kode fungsi tersebut. Namun, dalam skenario nyata, sering kali kita tidak memiliki akses untuk me-refactor sebuah fungsi contohnya ketika menggunakan library pihak ketiga. Ketika menghadapi kasus tersebut, bagaimana cara termudah dalam mengubah fungsi tersebut menjadi callback-based?
+
+Node.js menawarkan solusi yaitu menggunakan fungsi promisify dari core module util. Dengan fungsi tersebut kita bisa secara mudah membuat fungsi baru yang mengimplementasikan Promise berdasarkan fungsi callback-based, contohnya seperti ini.
+
+const {promisify} = require('util');
+function getUsers(isOffline,callback){
+    // simulasi network delay
+
+    setTimeOut(()=> {
+        const users = ['john','jangs','muammar']
+        if(isOffline){
+            callback(new Error('Maaf tidak bisa diakses'),null);
+            return;
+        }
+
+        callback(null,users);
+    },3000)
+}
+
+create a promise version of getUsers
+const getUsersPromise = promisify(getUsers)
+
+Sekarang, kita memiliki fungsi getUsers(), tetapi menerapkan Promise tanpa perlu mengubahnya secara manual
+
+getUsersPromise(false)
+  .then(users => console.log(users)) // ['John', 'Jack', 'Abigail']
+  .catch(err => console.log(err.message));
+ 
+getUsersPromise(true)
+  .then(users => console.log(users))
+  .catch(err => console.log(err.message)); // cannot retrieve users due offline

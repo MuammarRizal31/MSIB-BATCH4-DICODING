@@ -1,0 +1,29 @@
+--->>>          MENAMBAHKAN ELEMEN HTML KE DOM          <<---
+Pada sub modul sebelumnya, kita sudah belajar bagaimana caara membuat konten HTML dan memanipulasi konten HTML Sehingga dapat berubah 'bentuk'. namun, bagaimana jika kita ingin menambahkan elemn HTML yang benar benar baru ? pada materi ini kita akan mempelajari 2 method yakni appendChild() dan insertBefore()
+
+Seperti biasanya, kita akan membuat sebuah berkas HTML terlebih dahulu. silahkan membuat berkas HTML dan strukturnya sebagai berikut
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Memasak Air</title>
+  </head>
+  <body>
+    <p id="name">Langkah-langkah memasak air</p>
+    <ol id="daftar">
+      <li id="awal">Masukkan air ke dalam wadah.</li>
+      <li id="akhir">Matikan kompor.</li>
+    </ol>
+    <hr size="2" width="95%" color="black">
+  </body>
+</html>
+
+Pada tag <hr> terdapat atribut size, width, dan color. Namun, penggunaan atribut-atribut ini sudah usang (deprecated) sehingga penggunaannya sudah tidak di rekomendasikan kembali. Solusinya adalah menuliskan aturan styling menggunakan CSS.
+
+--->>>      INSERT BEFORE       <<<---
+tidak seperti method sebelumnya, method insertBefore() memberikan kemampuan untuk menyisipkan elemen sebelum child elemen tertentu dalam parent element.
+method ini menerima dua buah parameter, yaitu
+  - (1) elemen baru yang ingin disisipkan
+  - (2) child elemen yang akan dijadikan patokan diletakkannya elemen baru
+
+tunggu dulu, apakah daftar langkah-langkah diatas ada yang aneh ? pada langkah ke2 bertuliskan matikan kompor. namun, kapan kita menghidupkannya tampaknya kita harus menambahkan langkah yang bertuliskan 'hidupkan kompor'. mari kita perbaiki

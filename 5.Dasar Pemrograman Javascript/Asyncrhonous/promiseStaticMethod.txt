@@ -1,0 +1,13 @@
+Dalam JavaScript, Promise merupakan salah satu fitur yang penting terutama ketika bekerja dengan operasi asynchronous. Di materi sebelumnya, Anda sudah mengenal dasar-dasar dari penggunaan Promise.
+
+Promise memiliki beberapa static method yang dapat digunakan untuk mempermudah penggunaan di berbagai kasus. Di materi kali ini, kami akan membahas empat static method dari class Promise yang umum digunakan, yaitu Promise.all, Promise.race, Promise.allSettled, dan Promise.any.
+
+--->>>          PROMISE.ALL         <<<---
+Promise.all() digunakan untuk mengeksekusi banyak Promise secara paralel. Method ini menerima sebuah array yang berisi beberapa Promise sebagai argumen. Fungsi ini akan mengembalikan sebuah Promise baru dan membawa nilai yang di-resolve pada masing-masing Promise yang diletakan pada array argumen.
+
+const promise1 = new Promise((resolve) => setTimeout(() => resolve(1), 1000));
+const promise2 = new Promise((resolve) => setTimeout(() => resolve(2), 2000));
+const promise3 = new Promise((resolve) => setTimeout(() => resolve(3), 3000));
+
+Promise.all([promise1, promise2, promise3]).then((values) => console.log(values)); // [1, 2, 3] setelah 3 detik
+

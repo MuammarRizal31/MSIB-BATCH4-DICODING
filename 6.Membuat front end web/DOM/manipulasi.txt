@@ -1,0 +1,86 @@
+Apakah Anda melihat kemiripannya? Ya, pada kedua properti tersebut mengeluarkan isi konten elemen yang dituju. Lalu, apa perbedaannya? Perbedaannya adalah innerHTML mengambil semua konten dalam sebuah elemen beserta tag-tag HTML yang ada, sedangkan innerText hanya mengambil teks tanpa tag-tag HTML yang ada. Oke deh, sekarang saatnya kita mulai memanipulasi konten HTML!
+
+--->>>          MANIPULASI KONTEN DENGAN INNER TEXT             <<<---
+dicoding.innerText = 'Belajar Programming di Dicoding';
+
+--->>>          MANIPULASI KONTEN DENGAN innerHTML          <<<---
+Kita sudah mengetahui bahwa innerHTML mengembalikan konten sebuah elemen beserta tag HTML-nya. Apakah Anda bisa menebak apa kegunaan fungsionalitas ini? Kuncinya terletak pada kata tag. Sudah tahu? Betul, dengan melakukan assignment ke properti ini kita bisa menyertakan tag HTML dan merendernya dengan mudah melalui string.
+
+Sekarang kita akan berlatih memanipulasi konten dengan innerHTML. Silakan siapkan kembali dokumen HTML berikut ini.
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to Cube World!</title>
+  <style>
+    button {
+      width: 200px;
+      font-size: 15px;
+      margin: 8px;
+      padding: 3px;
+    }
+    
+    #main {
+      margin: 2px;
+    }
+  </style>
+</head>
+<body>
+<div id="main" align="center">
+  <h2>Its Cube Time!</h2>
+  <img id="gambar"
+       src="https://raw.githubusercontent.com/dicodingacademy/a315-web-pemula-labs/shared-files/homepage-dicoding-challenge-illustration.png"
+       alt="Its a rubiks cube!" width="300" height="215">
+  <p id="caption"><b>Sudah siap untuk memecahkan teka-teki permainan tersebut?</b></p>
+  <div class="button-group">
+    <div class="button">
+      <button>Sejarah</button>
+    </div>
+    <div class="button">
+      <button>Permainan</button>
+    </div>
+    <div class="button">
+      <button><i>Fun Fact</i></button>
+    </div>
+    <div class="button">
+      <button disabled="disabled">Play (Coming Soon)</button>
+    </div>
+    <div class="button">
+      <button>Exit</button>
+    </div>
+  </div>
+</div>
+<hr size="2" width="95%" color="black">
+<div id="links">
+  <p>Situs lainnya yang tidak kalah menarik:</p>
+  <ul>
+    <li><a href="http://www.dicoding.com" id="dicodingLink">Dicoding</a></li>
+    <li><a href="http://www.google.com" id="googleLink">Google</a></li>
+  </ul>
+</div>
+</body>
+</html>
+
+Ada beberapa konten tambahan yakni daftar pranala eksternal di bagian bawah halaman web. Masing-masing akan membawa kita ke homepage Dicoding dan Google. Di sini kita akan coba ubah konten HTML pada tulisan pranala Dicoding dan Google sehingga tulisan yang muncul akan miring alias italic. Caranya, tambahkan tag <i> di antara teksnya.
+
+Jelas fungsionalitasnya lebih banyak ketimbang innerText karena kita bisa menyematkan teks beserta tag HTML nya yang akan diproses sebagai tag HTML seperti aslinya. Jika Anda melakukan assignment dengan string "<i>Belajar Programming di Dicoding</i>" menggunakan innerText, maka teks akan muncul beserta tag HTML-nya. Sedangkan jika menggunakan innerHTML akan menjadi seperti berikut.
+
+--->>>          MANIPULASI STYLE KONTEN DENGAN STYLE.PROPERTI           <<<---
+Sebelumnya, kita sudah bisa memanipulasi atribut element dengan method setAttribute, mengubah isi konten elemen dengan properti innerText dan innerHTML. Sebelum menyelesaikan materi ini, kita akan belajar mengubah styling sebuah elemen. Setelah melalui modifikasi yang cukup banyak, akhirnya halaman web kita memiliki tampilan sebagai berikut.
+
+Lalu, bagaimana caranya jika kita ingin membuat tombol-tombol kita memiliki pojok-pojok yang jelas? Kita dapat mengubah styling pada tombol-tombol tersebut menggunakan sintaks style.property. Pada kasus ini, kita ingin menambahkan style berupa border-radius dengan nilai "4px" dari semua button di atas.
+
+Langkah pertama adalah mendapatkan semua elemen button terlebih dahulu. Awalnya kita dapat menggunakan method querySelectorAll(). Bagaimana jika kita bereksperimen dan menggunakan method lain? 
+
+Nah, karena kita tidak menggunakan method querySelector dan querySelectorAll, kita tidak perlu menuliskan selector sebagaimana CSS. Namun, kita bisa memanggil elemen dengan menyebut value dari atribut class yang dituju. Setelah itu, kita akan mendapatkan HTMLCollection, yang mana akan kita lakukan looping terhadapnya. Setiap iterasi yang terjadi, elemen yang didapatkan memiliki properti children yang mengembalikan HTMLCollection, yaitu satu elemen <button>. Untuk mengaksesnya adalah memanggil properti children di dalam looping tersebut dan mengambil child element pertama dengan cara indexing, yaitu button.children[0]. Silakan jalankan kode berikut.
+
+for (const button of buttons) {
+  console.log(button.children[0]);
+}
+
+Setelah mendapatkan elemen yang dituju (button), kita bisa mengakses memanggil objek style dan diikuti nama properti CSS untuk melakukan perubahan style button.
+
+Lho? Styling yang kita ingin ubah pada asalnya bernama "border-radius", tapi kenapa menjadi "borderRadius"? Singkatnya, nama properti dari objek DOM mengikuti standar penamaan variabel khusus. Penamaannya tidak boleh mengandung tanda "-". Sehingga, nama properti CSS yang memiliki tanda "-" diubah menjadi bentuk camelCase. Contohnya border-radius menjadi borderRadius, font-family menjadi fontFamily, font-size menjadi fontSize, dan seterusnya.
+
+
+

@@ -1,0 +1,10 @@
+PENGERTIAN DAN FUNGSI WEB STORAGE
+apa itu web storage? web storage adalah salah satu web APAI(pengantar agar kode javascript bisa berkomunikasi dengan browser) yang dapat menyimpan data secara lokal pada sisi client(disimpan secara lokal pada perangkat kita). berbeda dengan objek dan array, data yang disimpan pada objek dan array pada javascript bersifat sementara. ia akan hilang jika terjadi reload atau pergantian URL pada browser. sedangkan data yang disimpan pada web storage akan bertahan lebih lama karena data tersimpan dalam storage browser.
+
+Data yang tersimpan dalam web storage tersedia berdasarkan domain. Artinya, data pada suatu domain web hanya dapat diakses oleh domain itu sendiri. Web storage dapat menampung sebesar 10MB untuk satu domain.
+
+kelebihan web storage >
+    - menyimpan data dalam bentuk string yang akan dihasilkan oleh sebuah halaman web agar bisa diakses secara offline.
+    - menyimpan pengaturan preferensi pribadi untuk sebuah halaman web contohnya seperti tata letak dan tema warna halaman web.
+
+bayangkan jika pada skenario diatas tidak menggunakan web storage. kita perlu mengunduh secara terus menerus untuk data yang cenderung sama. boros sekali.

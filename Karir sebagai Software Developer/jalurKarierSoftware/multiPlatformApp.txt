@@ -1,0 +1,75 @@
+Jalur karier selanjutnya yang akan kita bahas adalah Multi-Platform App Developer. Seorang Multi-Platform Developer adalah Software Developer yang berspesialisasi dalam merancang dan membangun aplikasi yang dapat digunakan berbagai sistem operasi populer seperti Android dan iOS.
+
+Untuk membuat aplikasi Multi-Platform, Anda dapat menggunakan berbagai macam cara. Namun, dalam sesi ini kita hanya akan fokus pada multi-platform dari sisi Google, yakni Flutter.
+
+Sejak dikenalkan oleh Google pada Mei 2017, Flutter langsung menarik perhatian. UI toolkit dari Google ini memungkinkan developer untuk mengembangkan aplikasi di berbagai platform mobile seperti Android dan iOS. Bahkan pada pengembangan terbarunya, Flutter tidak hanya digunakan pada platform mobile, namun sudah merambah ke sisi web dan desktop. 
+
+Lalu sebagai Multi-Platform App Developer, produk apa yang dapat dibuat? Tentunya ia dapat membuat aplikasi Android dan iOS dalam satu waktu. Keren kan? Bahkan tak hanya itu. Seorang Multi-Platform App Developer juga dapat membuat versi webiste. Sebab Flutter mendukung untuk pembuatan aplikasi iOS, Android, website, dan platform lainnya. Untuk membuat sebuah aplikasi terbaik, dibutuhkan proses yang tidak main-main. Inilah yang biasa disebut dengan development cycle. Lalu bagaimanakah prosesnya?
+
+Seorang Developer Multi-Platform App akan memulai dengan menentukan ide dari aplikasi tersebut. Biasanya ide tersebut dilandasi dari permasalahan yang ada. Setelah menganalisanya, seorang Multi-Platform App Developer akan membuat rancangan aplikasi tersebut. Di sini akan dijabarkan berbagai fitur dan alur dari aplikasi tersebut dalam bentuk yang bermacam-macam, seperti desain lo-fi, wireframe, mockup, hingga prototype.
+
+Setelah merasa yakin dengan flow dan fitur yang telah dibuat, masuk ke tahap selanjutnya yakni implementasi. Di sinilah tombak keahlian dari seorang Multi-Platform App Developer, membuat aplikasi iOS dan Android sesuai dengan fitur dan flow yang telah ditentukan dalam satu waktu
+
+Setelah selesai, ia akan menguji aplikasi yang telah dibuat baik secara manual ataupun otomatis. Manual artinya menguji dengan menjalankannya secara langsung, sedangkan otomatis artinya menggunakan tools-tools yang dapat membantu automasi dalam sebuah pengujian.
+
+Setelah lolos dari pengujian, aplikasi iOS dan Android siap dipasarkan ke publik. Biasanya mereka menggunakan bantuan App Store serta Google Play. Menurut Anda, produk apakah yang cukup terkenal dan dibuat oleh seorang Multi-Platform App Developer? Anda dapat melihat berbagai aplikasi tersebut dalam Showcase Flutter. Berbagai aplikasi terkenal di dalamnya telah mengimplementasikan Flutter.
+
+Salah satu aplikasi yang cukup terkenal dan telah menggunakan Flutter adalah Grab. Berawal dari sebuah permasalahan sekelompok sahabat ambisius (dan juga optimis), yang menjadi tapak awal untuk membangun perusahaan. Mereka memulainya dari sebuah gudang kecil sewaan di suatu tempat Kuala Lumpur, Malaysia sekitar tahun 2012 silam.
+
+Kini perusahaan itu telah bertransformasi menjadi Grab, sebuah perusahaan teknologi mobile yang cukup familiar di Asia Tenggara. Aplikasi Grab mampu menghubungkan jutaan pelanggan dengan jutaan mitra pengemudi, merchant, dan juga bisnis. 
+
+Sekilas aplikasi Grab Merchant terlihat dibuat secara native oleh Android Developer. Namun, dalam showcase ternyata Grab Merchant masuk dalam jajaran aplikasi yang dibangun dengan Flutter. Dari sana kita dapat tahu bahwa dengan Flutter, peluang Anda mendapatkan pengguna semakin besar. Sebab, Anda dapat menyasar semua pengguna mobile, baik Android atau iOS. Apalagi Flutter mempunyai fitur unggulan, yakni beautiful UI. Artinya, Anda dapat membuat aplikasi yang menarik, keren, dan bagus dengan sangat mudah.
+
+--->>>          alur belajar
+> HARDWARE
+kebutuhan penting nomer wahid yaitu hardware yang meliputi komputer dan peranti. berikut spesifikasi dari hardware yang diperlukan untuk berkarier sebagai multi-platform App Developer : 
+    1. komputer/laptop dengan spesifikasi minimal :
+        a. Microsoft windows
+        b. prosesor intel i3 (rekomendasi core i5 keatas)
+        c. RAM sebesar minumum 4 GB (rekomendasi 8 gb)
+        d. terdapat 2 GB ruang kosong pada penyimpanan (rekomendasi 4 GB)
+        e. Resolusi layar 1280x800 (Rekomendasi Full HD 1920 x 1080).
+        
+    2. Peranti dengan sistem operasi android.
+        a. Usahakan terinstal OS versi terbaru.
+        b. Terdapat memori untuk menginstall aplikasi buatan Anda
+        c. Jangan lupa kabel data.
+        
+    3. Jika anda ingin membangun aplikasi IOS sekaligus, maka anda butuh komputer/laptop dengan sistem operasi mac OS mojave 10.14.4 sedangkan untuk menjalankan aplikasi di peranti IOS, anda juga membutuhkan iPhone.
+
+spesifikasi yang dibutuhkan cukup tinggi untuk membuat sebuah aplikasi android dan IOS menggunakan flutter. tentu semakin tinggi spesifikasi, akan membantu anda lebih cepat dalam membangun aplikasi tersebut. peranti mobile dibutuhkan untuk menguji secara langsung proses berjalannya aplikasi dan kendala yang mungkin terjadi.
+
+> SOFTWARE
+anda dapat membuat aplikasi flutter menggunakan teks editor yang dikombinasikan dengan command-line tools. namun, sebaiknya gunakan salah satu plugin editor yang direkomendasikan untuk pengalamamn yang lebih baik. pluggin ini memiliki fitur seperti penyelesaian kode, penyorotan sintaks, bantuan pengeditan, dukungan untuk menjalankan dan debug, dan masih banyak lagi.
+
+instalaasi android studio sangat dibutuhkan untuk membuat apliaksi android daengan flutter, sedangkan aplikasi IOS sangat membutuhkan instalasi Xcode.
+
+Selain Xcode dan Android Studio, Anda juga perlu menginstal browser. Browser akan membantu Anda melakukan banyak hal, mulai dari membaca halaman dokumentasi Flutter hingga mencari solusi dari permasalahan yang Anda hadapi ketika membangun aplikasi multi-platform. Dan tentunya masih banyak lagi yang dapat Anda lakukan di sana.
+
+> SKILL DAN PENGETAHUAN
+Lalu apa saja yang perlu Anda pelajari? Anda dapat mulai belajar dari bahasa pemrogramannya terlebih dahulu, yaitu Dart. Dart adalah sebuah bahasa pemrograman yang dikembangkan oleh Google pada tahun 2011 dengan tujuan awal menggantikan JavaScript. Bahasa ini kembali populer ketika dikenalkan untuk mengembangkan Flutter. Dart telah digunakan oleh engineer Google untuk mengembangkan berbagai aplikasi yang terkait dengan bisnis, salah satunya adalah Google Ads.
+
+Setelah Anda mempelajari bahasa pemrograman Dart, masuk ke tahap selanjutnya yakni mempelajari cara membuat dan membangun aplikasi Multi-Platform, baik untuk Android maupun untuk iOS. Menurut Google, standar industri sebagai developer Multi-Platform App saat ini adalah memiliki keahlian dalam framework Flutter. Flutter adalah toolkit UI Google untuk membuat aplikasi yang indah. Ia juga terkompilasi secara native untuk seluler, web, dan desktop berbasis kode tunggal. 
+
+BERIKUT POIN POIN YANG BISA ANDA PELAJARI.
+    - Flutter basic : mempelajari dasar dasar dalam membuat aplikasi flutter dan pengenalan tentang package manager.
+    - widget: pengenalan widget widget dasar yang umum digunakan dalam flutter, navigasi antar halaman dan bagaimana menambahkan aset dan gambar
+    - deployment : mempelajari praktik untuk melakukan build aplikasi flutter ke dalam bentuk berkas APK.
+    - designing UI with widgets : mempelajari desain layout menggunakan berbagai jenis widget yang disediakan flutter
+    - State Management : Mempelajari bagaimana mengelola state dan data dalam lingkungan deklaratif UI seperti Flutter.
+    - Getting Data from Internet : Mempelajari bagaimana mengambil data dari internet/API dan menampilkannya.
+    - Scheduling : Mempelajari bagaimana menjalankan tugas secara terjadwal meskipun aplikasi tidak dalam kondisi terbuka.
+    - Working with Local Storage : Mempelajari pendekatan untuk menyimpan data secara lokal pada perangkat.
+    - Testing : Mempelajari bagaimana melakukan pengujian otomatis pada aplikasi Flutter.
+    - Extended Apps : Mempelajari integrasi antara Flutter dan Firebase.
+
+Lalu apakah masih butuh skill lain yang harus dikuasai? Seorang Multi-Platform App Developer adalah sosok yang mampu mewujudkan App multi-platform dengan minim bug, tinggi level keamanannya, dan kecilnya ukuran aplikasi. Itu merupakan faktor yang harus ia pertimbangkan demi kenyamanan pengguna. 
+
+Sementara itu dari sisi kode, seorang Multi-Platform App Developer harus memastikan bahwa aplikasinya scalable alias tetap bekerja dengan baik saat produk berubah mengikuti kebutuhan bisnis. App tersebut juga harus robust alias dibangun dengan pondasi kode yang kuat. Jika tidak, perusahaan akan terbebani biaya pengembangan yang tinggi karena sulitnya perbaikan akibat code smell, yakni kode yang berantakan atau berstruktur buruk.
+
+--->>> LANGKAH LANGKA BELAJAR MULTI PLATFORM
+1. MEMULAI PEMROGRAMAN DENGAN Dart
+2. belajar prinsip pemrograman SOLID
+3. belajar membuat aplikasi flutter untuk pemula
+4. Belajar fundamental aplikasi flutter.
+

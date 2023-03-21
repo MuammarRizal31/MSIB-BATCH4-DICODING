@@ -1,0 +1,97 @@
+--->>>          PENDAHULUAN BROWSER OBJECT MODEL (BOM)          <<<---
+Setiap browser menyediakan apa yang disebut Browser Object Model atau BOM yang bisa kita gunakan dalam kode JavaScript kita. Dalam browser, BOM ini diwakilkan oleh sebuah objek bernama window. Mari kita ketik window pada console browser dan lihat method dan method apa saja yang tersedia melalui objek ini:
+
+Melalui objek window inilah kode JavaScript kita bisa mengakses berbagai method dan atribut yang bisa membantu kita membuat halaman web menjadi lebih interaktif. Kemungkinan Anda akan tertegun melihat begitu banyak method serta atribut. Akan tetapi, Anda tidak diharapkan untuk menghafal semuanya karena pada materi berikutnya kita cukup membahas 3 method paling dasar yakni alert(), prompt(), dan objek console
+
+--->>>          ANGGOTA BOM         <<<---
+Pada sub-modul ini, kita akan membahas lebih dalam mengenai tiga method dari BOM. Ketiganya adalah alert(), prompt(), dan diakhiri dengan objek console.
+
+- METHOD ALERT()
+Method alert() merupakan salah satu method BOM yang menerima satu parameter opsional berupa data string yang akan ditampilkan melalui sebuah pop-up browser. Contohnya jika kita ingin menampilkan sebuah pesan berisi string "Halo user!" menggunakan console browser, maka caranya adalah sebagai berikut:
+
+Sama seperti memanggil method pada umumnya pada JavaScript, bukan? Kita juga bisa memasukkan variabel sebagai parameternya seperit berikut.
+
+let pesan = 'Halo user!';
+alert(pesan);
+
+Keren, kan? Kita bisa menampilkan pesan yang telah ditentukan melalui JavaScript. Namun, ada satu hal yang perlu kita ingat saat menggunakan alert(), yakni ketika pop-up muncul, user tidak bisa berinteraksi dengan bagian lain dari halaman web sampai pop-up tersebut tersebut ditutup
+
+- METHOD promp()
+Sebelumnya kita telah mempelajari penggunaan method alert() untuk menampilkan pesan dalam dialog browser. Nah, selain menampilkan pesan, kita juga akan belajar cara mengambil data input dari user melalui dialog browser, yaitu prompt(). Method ini akan menampilkan sebuah dialog browser yang meminta user untuk mengisi kolom inputnya. Karena bisa menangkap input dari user, method ini memiliki lebih banyak fungsionalitas ketimbang alert(). Yuk, kita bahas satu-satu.
+
+> NILAI RETURN DARI promp
+Jika kita lihat, sebenarnya method alert() mengembalikan sebuah value berupa undefined. Namun, prompt() akan mengembalikan sebuah nilai sesuai dengan inputkan oleh user. Sebagai contoh, mari jalankan kode berikut pada console browser.
+
+Jika kita lihat, sebenarnya method alert() mengembalikan sebuah value berupa undefined. Namun, prompt() akan mengembalikan sebuah nilai sesuai dengan inputkan oleh user. Sebagai contoh, mari jalankan kode berikut pada console browser.
+
+let pesanInput = prompt('Masukkan pesan sesukamu...');
+
+Kita bisa melihat bahwa nilai yang tersimpan di variabel pesanInput sesuai dengan input yang diberikan user, yakni "Aku suka belajar koding!". Jika user tidak mengisi apa pun dan tetap menekan tombol "OK", maka nilai yang diberikan hanya string kosong.
+
+Pada contoh di atas, kita telah menekan tombol "OK", tetapi apa yang terjadi jika kita menekan tombol "Cancel"? Jika kita menekan tombol "Cancel", justru nilai yang dikembalikan adalah null. Silahkan coba kembali contoh di atas tetapi kali ini tekan tombol "Cancel", nanti nilai dari variabel pesanInput akan bernilai null.
+
+Ada satu hal yang perlu kita ingat selama menggunakan prompt(), yakni nilai apa pun yang dimasukkan oleh user akan diproses dan dikembalikan menjadi data string. Silakan jalankan kode berikut pada console browser.
+
+let pesanInput = prompt('Silakan masukkan angka...');
+
+Ketika kita menampilkan tipe data dari variabel pesanInput, maka sudah pasti tipe datanya adalah string, walau yang kita masukkan berupa angka.
+
+Ketika kita menampilkan tipe data dari variabel pesanInput, maka sudah pasti tipe datanya adalah string, walau yang kita masukkan berupa angka.
+
+console.log(typeof pesanInput); // output -> 'string'
+
+Hal ini perlu kita ingat baik-baik. Kode tidak bisa menduga bahwa variabel pesanInput merupakan string atau number, ia akan tetap mengeluarkan string. Meskipun demikian, kita bisa cast atau parse hasilnya ke tipe data tertentu. Namun, harap lebih teliti karena jika kita salah melakukan parse ke tipe data maka akan menghasilkan NaN. Sebagai contoh, kita ingin mendapatkan value number dari prompt() maka kita bisa menggunakan cara ini.
+
+Jika kita periksa tipe data dari hasilnya, maka hasilnya berupa number. Selain Number(), kita juga bisa menggunakan function parseInt() untuk melakukan parsing data string ke number
+
+--> MEMBERIKAN NILAI DEFAULT PADA PROMPT()
+Terdapat satu parameter lagi yang bisa kita masukkan ke prompt(), di mana parameter ini berguna sebagai nilai alternatif. Mari kita jalankan kode berikut.
+
+Ketika kita jalankan pada browser, maka kolom input yang muncul pada dialog box akan memiliki data secara otomatis.
+
+Terdapat satu hal penting, yaitu ketika dialog box dari prompt() muncul, maka kita tidak bisa berinteraksi dengan komponen lain pada halaman web sampai dialog box tersebut ditutup. Hal ini sama halnya dengan alert(). 
+
+
+
+--->>> Console
+Akhirnya kita sampai pada pembahasan objek console . Objek ini merupakan peralatan yang wajib diketahui oleh semua Front-End Web Developer. Mengapa demikian? Karena objek console memberikan kita akses ke fitur debugging alias peralatan-peralatan yang bisa membantu menghilangkan bug yang bersembunyi di dalam kode JavaScript
+
+Tentu Anda masih ingat jika kita ingin menampilkan sebuah nilai ke console browser, maka dapat menggunakan method log(). 
+
+Wah, ternyata kita sudah menggunakan objek console sejak awal! Melalui objek console ini, kita dapat membuat kode JavaScript menampilkan pesan-pesan khusus berdasarkan konteks tertentu pada console browser. Berikut beberapa method dari objek console yang umum digunakan:
+
+log()       -->> menampilkan pesan secara umum keconsole browser
+info()      -->> menampilkan pesan yang berisi informasi penting ke console browser
+warn()      -->> menampilkan pesan yang berisi informasi dalam bentuk peringatan ke console browser
+error()     -->> menampilkan pesan yang berisi informasi dalam bentuk error ke console browser
+
+
+--->>>          CARA MEMANGGIL ANGGOTA BOM
+Sebelum kita lanjut ke materi berikutnya, kita perlu membahas satu hal terlebih dahulu. ketika kalian ingat akan pengaturan sintaks javascript, bukankah memanggil properti atau sebuah method dari suatu objek perlu menyertakan nama objek dan diikuti oleh nama properti atau function nya?
+Sebelum kita lanjut ke materi berikutnya, kita perlu membahas satu hal terlebih dahulu. Ketika kalian ingat akan peraturan sintaks JavaScript, bukankah memanggil properti atau sebuah method dari suatu objek perlu menyertakan nama objek dan diikuti oleh nama properti atau functionnya? Hal ini benar dan berlaku untuk BOM yang diwakili oleh object window pada environment browser. Supaya lebih tergambarkan, perhatian dua baris kode ini.
+
+// Cara pertama
+window.alert('Hello World');
+ 
+// Cara kedua
+alert('Hello World');
+
+Kedua cara di atas tidak memiliki perbedaan dan valid, yang mana cara pertama secara eksplisit memerintah kode JavaScript untuk memanggil method alert() milik objek window. Namun, cara yang kedua tidak menyebutkan objek window untuk menampilkan alert. Lalu, mengapa cara kedua tetap bisa dilakukan? Hal ini dikarenakan properti dan method yang dimiliki window bersifat global
+
+Walau cara kedua terkesan lebih singkat, kita harus tetap hati-hati karena jika pada scope sebuah berkas .js terdapat nama fungsi yang sama, maka pesan pada pop-up tidak akan muncul. Contohnya sebagai berikut:
+
+function alert(nama) {
+  console.log('Hati-hati, ' + nama);
+}
+ 
+alert('Chewbacca'); // Output: Hati-hati, Chewbacca
+// Output di atas akan tercetak ke console browser
+ 
+window.alert('Chewbacca'); // Output: Hati-hati, Chewbacca
+// Output di atas akan tetap tercetak pada console browser
+
+
+Jadi harap hati-hati jika kita mendefinisikan sebuah method dengan nama yang sama dengan method milik window .
+
+
+

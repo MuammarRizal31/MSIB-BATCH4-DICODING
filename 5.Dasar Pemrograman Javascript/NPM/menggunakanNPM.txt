@@ -1,0 +1,11 @@
+--->>>          USING PACKAGE           <<<---
+Perlu kita pahami kembali bahwa package yang kita tambahkan ke dalam project sebenarnya adalah module.
+Itulah kenapa di dalam project kita akan muncul juga folder node_modules. Di dalamnya berisi kode-kode JavaScript yang menyusun suatu package. Jika Anda “berani”, Anda dapat melihat seperti apa kode di dalam package lodash.
+
+Karena merupakan module, kita bisa menambahkan kode dari package menggunakan keyword import seperti yang telah dipelajari pada materi Module
+
+Sehingga, untuk menggunakan kode dari package lodash yang telah kita pasang, tambahkan kode berikut pada berkas index.js:
+Penamaan menggunakan underscore (_) seperti di atas merupakan standar dari lodash yang perlu kita ikuti.
+
+Sekarang mari kita lihat bagaimana lodash ini bekerja. Di dalam dokumentasinya, lodash menyebutkan bahwa mereka menyediakan utilitas untuk membuat JavaScript lebih mudah dengan menghilangkan kerumitan ketika menggunakan array, number, object, string, dll.
+

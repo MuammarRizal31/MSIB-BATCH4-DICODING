@@ -1,0 +1,21 @@
+--->>>          UNINSTALL PACKAGE           <<<---
+Kita sudah mengetahui cara memasang dan menggunakan package npm. Lalu, bagaimana caranya untuk menghapus package yang sudah tidak gunakan?
+
+Untuk melakukannya cukup mudah. Jika package berada pada objek dependencies, kita dapat menghapusnya menggunakan perintah:
+
+npm uninstall <package-name>
+
+Jika package terdapat pada devDependencies, kita cukup menambahkan --save-dev di akhir perintahnya.
+npm uninstall <package-name> --save-dev
+
+Contoh, jika kita ingin menghapus package lodash dari project, berarti tuliskan perintah:
+
+npm uninstall lodash
+
+Dengan begitu, package lodash akan dihapus dari objek dependencies pada berkas package.json.
+
+Selain menghapus nilainya dari package.json, perintah tersebut juga akan menghapus semua berkas yang berhubungan dengan package lodash pada folder node_modules.
+
+Setelah menghapus package, tentu fungsi-fungsi dari package lodash sudah tidak dapat kita gunakan lagi.
+
+npm uninstall -h

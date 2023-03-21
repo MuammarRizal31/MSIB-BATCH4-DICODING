@@ -1,0 +1,110 @@
+Pengembang Cloud Profesional dapat membuat aplikasi yang scalable menggunakan praktik dan alat yang direkomendasikan oleh berbagai Cloud Solution Provider. Seorang Cloud Developer dapat sepenuhnya memanfaatkan layanan yang disediakan oleh Cloud Solution Provider tersebut. Individu ini memiliki pengalaman dengan basis data terkini (next-gen database), lingkungan di mana aplikasi berjalan (runtime environment), dan alat pengembang (developer tools). Mereka juga memiliki kemampuan dengan setidaknya satu bahasa pemrograman umum dan terampil menghasilkan metrik dan log yang bermakna untuk debug dan melacak kode.
+
+KOMPUTASI AWAN ATAU CLOUD MENYEDIAKAN BERBAGAI MANFAAT,SEPERTI : 
+1. HEMAT BIAYA
+    - Sebab,cloud umumnya menggunakan model pembayaran pay-as-you-go atau bayar sesuai apa yang kita gunakan.
+    
+2. Skalabilitas
+    - Dengan cloud, Anda bisa menambah atau mengurangi sumber daya yang digunakan sesuai dengan kebutuhan dengan cepat dan mudah.
+    
+3. elastis
+    - Beban kerja yang diterima oleh server atau website bisa sangat fluktuatif tergantung dengan kondisi perusahaan.
+
+4. Bisa diandalkan
+    - Cloud mempunyai fitur backup dan replikasi data. Tujuannya untuk menjaga data tetap aman meskipun terjadi hal seperti kegagalan sistem ataupun bencana alam yang meluluhlantakkan data center.
+    
+5. Global
+    - Cloud provider biasanya tidak hanya memiliki satu data center saja, namun ada banyak data center yang tersebar di beberapa wilayah di dunia. 
+
+6. Aman 
+    - Cloud provider menyediakan sejumlah kebijakan, teknologi, dan kontrol bagi Anda untuk melindungi data, aplikasi, dan infrastruktur yang Anda kembangkan di cloud dari berbagai potensi ancaman.
+    
+Tentu masih banyak lagi manfaat yang bisa Anda dapatkan. Komputasi awan menjadi tren baru di dunia teknologi yang banyak dibicarakan
+
+Layanan Azure cloud dibagi menjadi beberapa kategori berikut:
+1. compute
+2. networking
+3. storage
+4. mobile
+5. database
+6. web
+7. intener of Things
+8. big data
+9. artificial intelligence 
+10 devOps
+
+Meskipun aplikasi AI yang disajikan melalui cloud sangat menarik, sebagian besar perusahaan yang menggunakan aplikasi cloud menggunakannya untuk jaringan dan penyimpanan.
+
+Ini adalah waktu yang tepat untuk menjelajahi karier dalam Developer Cloud. Pengembang Cloud adalah komoditas yang sedang tren karena semakin banyak perusahaan yang mengadopsi layanan komputasi awan. Sehingga keterampilan komputasi awan akan menjadi semakin tak ternilai
+
+Lalu sebagai Azure Cloud Developer, produk apa yang dibuat? Tentunya ia dapat membuat aplikasi di dalam cloud/awan. Pekerjaan yang mereka lakukan sangat mirip dengan software developer atau web developer, kecuali program yang dibuat oleh Pengembang Cloud dan dijalankan pada sistem virtual. 
+
+Beberapa perusahaan terkenal yang menggunakan Microsoft Azure antara lain Nestle, Unilever, SAP, dsb. Di Indonesia sendiri, Azure telah diimplementasikan dengan baik oleh PT Pembangunan Perumahan (Persero).
+
+Sejak menjadi Badan Usaha Milik Negara (BUMN) pada tahun 1961, PT PP (Persero) Tbk telah berkembang menjadi salah satu pemain utama dalam industri konstruksi Indonesia. Visi perusahaan adalah menjadi contoh keunggulan bisnis yang bersinergi dan berkelanjutan. Untuk mencapai hal tersebut, perusahaan menerapkan transformasi digital di seluruh dunia bisnis. 
+
+PT PP menggunakan Microsoft 365 dan Microsoft Azure untuk menciptakan sistem yang terintegrasi — meningkatkan efisiensi dan produktivitas tenaga kerjanya serta menetapkan contoh keunggulan digital di seluruh industri.
+
+Wawa Setiawan, Senior Manager of IT and Digital PT PP, mengatakan “Bagian dari misi kami adalah mengoptimalkan inovasi, teknologi informasi, dan manajemen pengetahuan untuk mencapai kinerja unggul yang berkelanjutan.” 
+
+Untuk membantu mencapai misi tersebut, mengaktifkan arus informasi yang lebih baik, dan menjadi lebih efisien, PT PP bermigrasi ke Microsoft Azure. 
+
+Azure memungkinkan kami menyimpan semua data di satu tempat, sehingga dapat diakses dengan mudah oleh 6.000 karyawan kami. Ini membuat alur kerja kami lebih lancar dan menghemat waktu yang berharga pada proyek berskala besar,” imbuh Setiawan [47]. 
+
+kita telah mengetahui tugas seorang azure cloud developer dan produk yang dihasilkan. lalu jika anda ingin menjadi seorang azure cloud developer apa saja sih yang diperlukan ?
+
+> HARDWARE
+Kebutuhan penting nomer wahid yaitu hardware yang meliputi komputer. Berikut spesifikasi dari hardware yang diperlukan untuk berkarier sebagai Azure Cloud Developer:
+
+Kebutuhan penting nomer wahid yaitu hardware yang meliputi komputer. Berikut spesifikasi dari hardware yang diperlukan untuk berkarier sebagai Azure Cloud Developer:
+
+    1. Microsoft Windows, Linux, atau MacOS. 
+    2. Prosesor Intel Dual Core (Rekomendasi Core i3 ke atas).
+    3. RAM sebesar minimum 2 GB (Rekomendasi 4 GB).
+    4. Resolusi layar 1280x800 (Rekomendasi Full HD 1920 x 1080).
+
+Spesifikasi yang dibutuhkan untuk membuat aplikasi di cloud tidak terlalu tinggi. Tentu semakin tinggi spesifikasi, akan membantu Anda lebih cepat dalam membangun aplikasi tersebut.
+
+> SOFTWARE
+Yang Anda butuhkan teks editor. Beberapa sistem operasi sebenarnya sudah menyediakan text editor usungannya sendiri. Contohnya Windows memiliki Notepad, Linux memiliki Text Editor, dan Macintosh memiliki TextEdit. Ketiga aplikasi tersebut bisa kita gunakan untuk belajar menulis kode.
+
+Selanjutnya, untuk mengakses layanan cloud membutuhkan sebuah browser. Anda bisa menggunakan browser apa pun untuk mengunjungi website tersebut. Browser juga dapat membantu Anda dalam melakukan banyak hal, mencari dokumentasi, bertanya di forum-forum, mencari jawaban dari permasalahan yang Anda alami, dan lain-lain. 
+
+Selain itu Anda dapat menginstall docker untuk mengelola aplikasi web dengan mudah. Docker adalah platform perangkat lunak yang memungkinkan Anda membuat, menguji, dan menerapkan aplikasi dengan cepat menggunakan kontainer.
+
+Sedangkan container/kontainer adalah sebuah mekanisme pengemasan aplikasi yang dapat diabstraksi dari lingkungan aplikasi tersebut dijalankan. Singkatnya, container adalah paket aplikasi yang memungkinkan kita men-deploy dengan cepat dan konsisten di beberapa lingkungan yang berbeda seperti data center, cloud publik, ataupun perangkat personal dari developer.
+
+> SKILL DAN PENGETAHUAN
+Lalu apa saja yang perlu Anda pelajari? Tentu yang Anda perlu pelajari pertama adalah bahasanya. Untuk cloud computing, mempunyai berbagai bahasa yang bisa Anda gunakan, seperti Java, C#, JS, Golang, Ruby, Python dan lain-lain. Bahasa tersebut sesuai dengan layanan yang Anda pilih.
+
+Selain itu, ada beberapa poin yang perlu Anda pelajari juga untuk menjadi Azure Cloud Developer, yakni:
+
+    * Dasar Arsitektur dan Layanan Azure
+        - Dapat membangun infrastruktur dengan menjalankan teknologi cloud dari Azure, serta dapat menggunakan berbagai jenis layanan Azure dengan baik.
+    
+    * Dasar Komputasi
+        - Dapat menggunakan layanan komputasi Azure, seperti Virtual Machines (VM), Containers, dan Serverless.
+        
+    * Dasar Penyimpanan dan Database
+        - Dapat menggunakan dengan baik jenis-jenis layanan penyimpanan untuk menyimpan dan mengelola data Anda di cloud.
+        
+    * Dasar Jaringan
+        - Mempelajari bagaimana layanan Azure saling berkomunikasi dan bagaimana membuat aplikasi Anda selalu tersedia bagi pengguna.
+        
+    * Dasar Keamanan
+        - Dapat melindungi data dan aplikasi Anda dari serangan.
+
+    * Monitor, Troubleshoot, and Optimize Solutions
+        - Dapat memantau dan mengoptimasi solusi aplikasi dengan Azure.
+    
+    * Azure and Third-party Services
+        - Dapat mengintegrasikan layanan Azure dengan layanan pihak ketiga.
+
+Lalu apakah masih butuh skill lain yang harus dikuasai? Seorang Cloud Developer adalah sosok yang mampu mewujudkan aplikasi cloud dengan minim bug, tinggi level keamanannya, dan digunakan untuk menyelesaikan masalah yang kompleks. Itu merupakan faktor yang harus ia pertimbangkan demi kenyamanan pengguna.
+
+Sementara itu dari sisi kode, seorang Azure Cloud Developer harus memastikan bahwa aplikasinya scalable alias tetap bekerja dengan baik saat produk berubah mengikuti kebutuhan bisnis. App tersebut juga harus robust alias dibangun dengan fondasi kode yang kuat. Jika tidak, perusahaan akan terbebani biaya pengembangan yang tinggi karena sulitnya perbaikan akibat code smell, yakni kode yang berantakan atau berstruktur buruk.
+
+TAHAPAN YANG HARUS DILALUI 
+    1. Belajar dasar dasar azure cloud
+    2. Menjadi azure cloud developer
+    3. documentation
