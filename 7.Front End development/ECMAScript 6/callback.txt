@@ -1,0 +1,53 @@
+apa itu callback function ? mari kita bayangkan kembali melalui pandangan dunia nyata. kita menunggu pesanan kopi datang dimeja kita tapi, pada saat itu juga kita tidak bisa berada terus ditempat itu karena ada urusan mendadak. pada kasus ini mungkin terdapat dua aksi yang bisa kita lakukan: 
+    - Synchronous kita tetap menunggu dimeja hingga kopi itu datang dan kemudian meninggalkan kedai kopi.
+
+    - Asynchronous kita meminta tolong kepada teman kita untuk menerima kopi itu, dan bertemu nanti untuk memberikan kopinya. sehingga kita perlu menunggu untuk meninggalkan kedai kopi.
+
+nav pada javascript,teman kita berperan layaknya callback function. ia diperintahkan pada sebuah fungsi asynchronous kemudian dipanggil/digunakan ketika tugas itu selesai.
+
+bagaimana cara melakukannya? yang pertama kita tambahkan parameter dengan nama callback pada fungsi asynchronous.
+
+const getCake = callback => {
+    let cake = null;
+    console.log('Sedang membuat kue, silahkan tunggu ...');
+
+    setTimeoout(() => {
+        cake = 'Kue Selesai!';
+    },3000)
+    return cake;
+}
+
+kemudian kita panggil/gunakan callback didalam function setTimeout() yang diisikan dengan data yang akan dibawa(cake) ketika taks selesai dilakukan.
+
+setTimeout(function() {
+    cake = 'kue selesai';
+    callback(cake)
+},3000);
+
+setelah menggunakan callback, fungsi tidak perlu lagi mengembalikan nilai. sehingga kita bisa hapus kode return cake. sehingga keseluruhan fungsi akan tampak seperti ini
+
+const getCake = callback => {
+    console.log('sedang membuat kue');
+    let cake = null;
+
+    setTimeout(()=> {
+        cake = 'Kue selesai dibuat';
+        callback(cake)
+    })
+}
+
+getCake(cake => {
+    console.log(cake)
+})
+
+
+--->>>          CALLBACK HELL           <<<---
+Kita sudah mengetahui bahwa callback dibutuhkan untuk mendapatkan nilai yang berasal dari asynchronous function. lantas bagaimana jika terdapat proses satu sama lain yang saling bergantungan? contohnya untuk membuat kue tahapan yang perlu kita lakukan adalah : 
+    1. mempersiapkan bahan
+    2. membuat adonan
+    3. menyiapkan adonan ke cetakan
+    4. memanggang adonan
+
+tahapan tersebut sangat tergantung satu sama lain. kita tidak bisa memanggang adonan sebelum membuat adonannya, dan kita tidak bisa membuat adonan tanpa mempersiapkan bahannya terlebih dahulu. jika seluruh tahapan tersebut berjalan secara Synchronous, mungkin kita bisa melakukannya seperti ini : 
+
+Callback hell terjadi karena banyak sekali callback function yang bersarang karena saling membutuhkan satu sama lain, sehingga kode akan tampak seperti ini:

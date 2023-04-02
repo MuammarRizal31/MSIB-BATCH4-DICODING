@@ -1,0 +1,39 @@
+--->>>          PROMISE BERANTAI            <<<---
+Kita sudah tahu buruknya penulisan callback hell.Namun kita juga tidak dapat menghindari keadaan di mana asynchronous operation saling bergantungan satu sama lain. Untuk menghindari penulisan callback hell, promise jadi salah satu solusinya
+
+Dengan promise kita dapat melakukan proses asynchronous operation secara berantai. Contohnya, Ketika kita memesan kopi robusta, maka tahapan yang dilalui oleh barista adalah memastikan biji kopi tersedia, membuat kopi, lalu menghidangkannya kepada pelanggan. Tahapan tersebut harus barista lakukan secara berurutan.
+
+Bagaimana cara melakukan proses berantai pada Promise? Kita bisa melakukannya dengan cara seperti ini:
+
+function reserveACoffee(type, miligrams) {
+  getSeeds(type, miligrams)
+      .then(makeCoffee)
+      .then(servingToTable)
+      .then(resolvedValue => {
+        console.log(resolvedValue);
+      })
+      .catch(rejectedReason => {
+        console.log(rejectedReason);
+      });
+}
+ 
+reserveACoffee('liberica', 80);
+ 
+/* Output:
+Pesanan kopi sudah selesai!
+*/
+
+Mengapa bisa seperti itu? Mari kita bedah kodenya satu persatu.
+
+Ketika kita memesan kopi melalui fungsi reserveACoffee(), pertama barista akan mengambil biji kopi melalui fungsi getSeeds(). Fungsi ini membutuhkan 2 (dua) parameter yaitu type (tipe kopi), dan miligrams (banyak kopi yang diperlukan). Fungsi ini mengembalikan objek promise, di mana jika biji yang dipesan tersedia akan mengembalikan resolve -> “Biji kopi didapatkan!”. Namun jika biji kopi tidak tersedia, maka akan mengembalikan reject -> “Maaf stok kopi habis!”. Berikut kode dari fungsi getSeeds:
+
+const getSeeds = (type, miligrams) => {
+  return new Promise((resolve, reject) => {
+    if (state.seedStocks[type] >= miligrams) {
+      state.seedStocks[type] -= miligrams;
+      resolve('Biji kopi didapatkan!');
+    } else {
+      reject('Maaf stock kopi habis!');
+    }
+  });
+};

@@ -124,13 +124,82 @@ function mencariBuku(bookId) {
   return null;
 }
 
+function checkStatus() {
+  const isCheckComplete = document.getElementById("inputBookIsComplete");
+  if (isCheckComplete.checked) {
+    return true;
+  }
+  return false;
+}
+
+function searchBooks() {
+  const inputSearchValue = document.getElementById("searchBookTitle").value.toLowerCase();
+  const incompleteBookShelf = document.getElementById("incompleteBookshelfList");
+  const completeBookShelf = document.getElementById("completeBookshelfList");
+  incompleteBookShelf.innerHTML = "";
+  completeBookShelf.innerHTML = "";
+
+  if (inputSearchValue == "") {
+    document.dispatchEvent(new Event(RENDER_EVENT));
+    return;
+  }
+
+  for (const book of books) {
+    if (book.title.toLowerCase().includes(inputSearchValue)) {
+      if (book.selesai == false) {
+        let el = `
+           <article class="book_item">
+              <h3>${book.title}</h3>
+              <p>${book.author}</p>
+              <p>${book.year}</p>
+
+              <div class="action">
+                 <button class="green" onclick="changeBookStatus(${book.id})">Selesai dibaca</button>
+                 <button class="red" onclick="removeBook(${book.id})">Hapus Buku</button>
+                 </div>
+           </article>
+           `;
+
+        incompleteBookShelf.innerHTML += el;
+      } else {
+        let el = `
+           <article class="book_item">
+              <h3>${book.title}</h3>
+              <p>${book.author}</p>
+              <p>${book.year}</p>
+
+              <div class="action">
+                 <button class="green" onclick="changeBookStatus(${book.id})">Belum Selesai dibaca</button>
+                 <button class="red" onclick="removeBook(${book.id})">Hapus Buku</button>
+                 </div>
+           </article>
+           `;
+
+        completeBookShelf.innerHTML += el;
+      }
+    }
+  }
+}
+const input = document.getElementById("searchBookTitle");
+const cari = document.getElementById("searchSubmit");
+input.addEventListener("keyup", (e) => {
+  e.preventDefault();
+  searchBooks();
+});
+
+cari.addEventListener("submit", function (e) {
+  e.preventDefault();
+  searchBooks();
+});
+
 function membuatBuku() {
   const isiTitleBuku = document.getElementById("inputBookTitle").value;
   const isiPenulisBuku = document.getElementById("inputBookAuthor").value;
   const isiTahunBuku = document.getElementById("inputBookYear").value;
+  const checkComplete = checkStatus();
 
   const menghasilkanId = menghasilkanID();
-  const bookObjek = menghasilkanBuku(menghasilkanId, isiTitleBuku, isiPenulisBuku, isiTahunBuku, false);
+  const bookObjek = menghasilkanBuku(menghasilkanId, isiTitleBuku, isiPenulisBuku, isiTahunBuku, checkComplete);
   books.push(bookObjek);
   document.dispatchEvent(new Event(RENDER_EVENT));
   simpanData();
@@ -181,6 +250,7 @@ document.addEventListener(RENDER_EVENT, function () {
 
   for (const bookItem of books) {
     const elementBuku = bbook(bookItem);
+
     if (bookItem.selesai) {
       completeBookshelfList.append(elementBuku);
     } else {

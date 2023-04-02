@@ -1,0 +1,27 @@
+--->>>          SIKTAKS ASYNC/AWAIT         <<<--
+keyword async digunakan untuk memberitahu javascript untuk menjalankan fungsi makeCoffee() secara asynchronous. lalu keyword await digunakan untuk menghentikan proses pembacaan kode selanjutnya sampai fungsi getCoffee() mengembalikan nilai promise resolve.
+
+catatan :
+walaupun await menghentikan proses pembacaan kode selanjutnya pada fungsi makeCoffee() tapi ini tidak akan menggganggu proses runtime sesungguhnya pada javscript(global) karena fungsi makeCoffee berjalan secara asynchronous. kita tidak dapat menggunakan await tanpa membuat fungsion dalam scope-nya berjalan secara asynchronous.
+
+--->>>      MENANGANI ONREJECTED MENGGUNAKAN ASYNC/AWAIT            <<<---
+Perlu jadi catatan bahwa await hanya akan mengembalikan nilai jika promise berhasil dilakukan(onFulfilled) lantas bagaimana jika promise gagal dilakukan(onRejected) ? kembali lagi pada prinsip synchronous code. kita dapat menangani sebuah error atau tolakan dengan menggunakan try...catch.
+
+ketika menggunakan async/await, biasakan untuk menggunakan try saat mendapatkan nilai resolve dari sebuah promise seperti berikut :
+async function makeCoffee() {
+    try{
+        const coffee = await getCoffee();
+        console.log(coffee)
+    }
+}
+
+dengan begitu kita dapat menggunakan block catch untuk menangani jika promise gagal dilakukan (onRejected).
+
+async function makeCoffee(){
+    try{
+        const coffee = await getCoffee();
+        console.log(coffee);
+    }catch(e){
+        console.log(e);
+    }
+}

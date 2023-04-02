@@ -1,0 +1,69 @@
+--->>>          DESTRUCTURING OBJECT            <<<---
+Penulisan destructuring object pada ES6 sintaks menggunakan objek literal { } disisi kiri dari operasi assignment.
+
+contoh :
+const profile = {
+    nama : 'Jange',
+    umur : 21,
+    lahir : 'Jakarta',
+}
+
+const {nama,umur,lahir} = profile;
+console.log(nama); /*Output: Jange*/
+
+pada contoh diatas, tanda kurung kurawal { } merepresentasikan objek yang akan di destruksikan. didalamnnya terdapat firstname,lastName dan age yang merupakan variable dimana kita menyimpan nilai properti dari objek profile. kita juga perlu perhatikan penamaan dari variablenya. pastikan penamaannya sesuai dengan nama dari properti objek. melalui nama variable inilah nilai-nilai properti objek akan dimasukan secara otomatis sehingga variable firstname akan berisikan nilai profile.firstname, lastname akan berisikan nilai profile.lastName dan seterusnya.
+
+dalam destructuring object, kita bisa menspesifikasikan salah satu nilai yang ingin kita destruksikan. dengan ini kita perlu membuat sebuah variable sebanyak properti yang dimiliki objeknya. contohnya : 
+
+const {lastName} = profile;
+
+--->>>          DESTRUCTURING ASSIGNMENT            <<<---
+pada contoh sebelumnya, kita melakukan destructuring object pada deklarasi variable. namun, pada kasus tertentu ada kalanya kita perlu melakukan assignment(inisialisasi) varibale yang sebelumnya telah dideklarasikan dengan cara destructuring. bahkan kita juga bisa melakukan assignment(inisialisasi ulang) dengan nilai properti-properti dari objek.
+
+dalam kasus diatas kita bisa melakukanna dengan cara seperti berikut.
+
+contoh : 
+const profile = {
+    nama : 'Rizal',
+    lahir: 'jakarta',
+    umur: 21,
+}
+
+let nama = 'jange';
+let umur = 22;
+({nama,umur} = profile);
+
+console.log(nama,umur)
+/*
+output : jange 22
+*/
+
+--->>>          DEFAULT VALUES          <<<---
+Jika kita mendestruksikan objek dan menetapkan variable dengan nama yang bukan merupakan properti dari objek, maka nilai dari variable tersebut menjadi undefined. contohnya :
+const profile = {
+    nama: 'Jange',
+    umur: 21,
+}
+
+const {nama,umur,kelamin = 'laki-laki'};
+console.log(nama);
+console.log(umur);
+console.log(kelamin);
+
+output : jange 21 lakilaki
+
+Dengan menambahkan default value didalam destructuring object jika properti tidak ditemukan,maka nilai default(nilai alternatif) akan diterapkan pada variable.
+
+--->>>          ASSIGNING TO DIFFERENT LOCAL VARIABLE NAMES         <<<---
+Saat ini, kita sudah mengetahui dan memahami bahwa untuk mendestruksikan objek pada variable local kita perlu menyeragamkan penamaan lokal variable dengan properti(key) objeknya.
+
+namun dalam mendestruktusikan objek kita bisa menggunakan penamaan variable lokal yang berbeda.
+ES6 menyediakan sintaks tambahan yang membuat kita dapat melakukan hal tersebut. penulisannya mirip seperti ketika kita membuat properti beserta nilainya pada object. contohnya seperti berikut ini 
+
+const profile = {
+    nama: 'jange',
+    lahir : 'jakarta',
+}
+
+const {nama : iniNamaProfile,lahir : city} = profile;
+console.log(iniNamaProfile)

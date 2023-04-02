@@ -1,0 +1,44 @@
+--->>>          INHERITANCE         <<<---
+Dalam gambaran dunia nyata, banyak objek yang berbeda tetapi punya kesamaan atau kemiripan tertentu. sebagai contoh mobil dengan motor memiliki banyak kesamaan karena objek tersebut merupakan kendaraan. mobil merupakan kendaraan darat begitu juga dengan motor. mungkin yang membedakan objek tersebut adalah jumlah roda dan kapasitas penumpan yang dapat ditampung
+
+sama halnya pada OOP, beberapa objek yang berbeda bisa saja memiliki kesamaan dalam hal tertentu. disitulah konsep inheritance atau pewarisan harus diterapkan. pewarisan dapat mencegah kita melakukan perulangan kode. 
+
+pada constructor class,kita melihat penggunaan super(),apa maksudnya itu?
+- keyword super digunakan untuk mengakses properti dan method yang ada pada induk class ketika berada pada child class.
+
+penggunaan super sangat berguna ketika kita hendak menjalankan method overriding pada method parent. contohnya kita akan melakukan method overriding pada method info() dengan menambahkan informasi jumlah roda pada mobil, maka kita dapat melakukannya dengan seperti ini : 
+
+class Car extends Vehicle {
+  constructor(licensePlate, manufacture, wheels) {
+    super(licensePlate, manufacture);
+    this.wheels = wheels;
+  }
+ 
+  droveOff() {
+    console.log(`Kendaraan ${this.licensePlate} melaju!`);
+  }
+ 
+  openDoor() {
+    console.log(`Membuka pintu!`);
+  }
+ 
+  /* overriding method info dari parent class */
+  info() {
+    super.info();
+    console.log(`Jumlah roda: ${this.wheels}`);
+  }
+}
+ 
+const johnCar = new Car('H121S', 'Honda', 4);
+johnCar.info();
+ 
+/* Output:
+Nomor Kendaraan: H121S
+Manufacture: Honda
+Mesin: Inactive
+Jumlah roda: 4
+*/
+
+dalam melakukan pewarisan kelas, tidak ada tingkatan yang membatasinya. maksudnya, kita dapat mewariskan sifat kelas A pada kelas B, lalu kelas B mewarisi sifatnya kembali pada kelas C dan selanjutnya. sama halnya dengan nenek kita.
+
+sehingga jika dilihat dari bagan sebelumnya, class tersebut masih bisa dikelompokkan kembali

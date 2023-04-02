@@ -1,0 +1,12 @@
+
+menggunakan 'use strict' 
+	- menggunakan nya hanya pakai string biasa diawal script contohtoh 'use strict'
+	- untuk membuat semua variable harus didefinisikan
+	- membuat kita gaboleh menggunakan reserved word
+	- membuat kita gabisa duplikasi parameter
+
+tool untuk minifiy kode : minify
+
+catatan: harus memakai titik koma(;)
+
+mungkin setiap selesai pembelajaran tambahkan recap nya kak,agar lebih mengerti lagi

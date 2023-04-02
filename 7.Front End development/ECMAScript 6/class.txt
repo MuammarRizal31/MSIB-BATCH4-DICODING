@@ -1,0 +1,64 @@
+--->>>          CLASS           <<<---
+Dalam paradigma object-oriented programming(oop), class merupakan sebuah blueprint yang dapat dikembangkan untuk membuat sebuah objek. blueprint ini merupakan sebuah template yang didalamnya menjelaskan seperti apa perilaku dari objek itu(berupa properti ataupun method).
+
+paradigma OOP selalu digambarkan dengan kehidupan nyata. visualisasi diatas mencontohkan gambaran umum OOP dimana terdapat sebuah blueprint kucing, nilai yang dimiliki kucing, dan kemampuan yang dapat dilakukan olehnya. dalam OOP blueprint tersebut dikenal dengan class (kelas), nilai yang dimiliki olehnya dikenal dengan properti, kemampuan yang dimilikinya dikenal sebagai behaviour/method dan reaslisasi dari sebuah blueprint tersebut disebut instance.
+
+
+--->>>          APA ITU CLASS PADA JAVSCRIPT ?          <<<---
+Kebanyakan bahasa pemrograman memanfaatkan class dalam penerapan paradigma OOP. pada javascript tidak ada konsep class murni bahkan hingga saat ini. namun bukan berarti kita tidak bisa menerapkan paradigma OOP sepenuhnya.
+
+seperti yang kita ketahui, class pada OOP merupakan sebuah blueprint. jika berbicara mengenai blueprint, javascript memiliki konsep untuk membuatnya tanpa melalui class. konsep tersebut adalah prototype. sejak awal, developer menggunakan konsep ini dalam menerapkan paradigma OOP dijavascript.
+
+walaupun dapat menggantikan class, konsep prototype tidak serupa dengan class pada bahasa lain. terlebih pada penulisan sintaksnya. hal ini menjadikan banyak developer kebingungan khususnya developer yang dasarnya dari bahasa class basis(seperti java,C++ ,C#, SWIFT, etc).meskipun banyak juga developer yang merasa bahwa class tidak diperlukan pada javascript, namun fitur class ini tetap menjadi salah satu yang dikembangkan pada ECMAScript 6.
+
+>   CLASS SEBELUM ES6
+Sebelum ES6, hal yang paling mendekati dengan class yaitu membuat sebuah objek menggunakan constructor function dan keyword new. Sedangkan untuk menambahkan method atau function padanya. kita gunakan konsep prototype.
+
+CATATAN : 
+mengapa method pada instance harus disimpan pada prototype atau __proto__ ? mengapa tidak disimpan pada constructor sama seperti properti ?
+
+alasannya adalah jika kita menyimpan method pada contructor maka method tersebut akan selalu dibuat ketika instance dibuat. ini bukan pendekatan yang baik karena jika method memiliki kode yang banyak , maka akan memakan memori yang banyak.
+
+sedangkan jika menggunakan prototype, method hanya dibuat satu kali. dan method tersebut diwarisi kepada setiap instance yang dibuat
+
+
+--->>>          CONSTRUCTOR         <<<---
+Deklarasi class menggunakan ES6 memiliki sifat yang sama seperti pembuatan class menggunakan function constructor(seperti contoh sebelumnya) namun alih alih menggunakan function contructor dalam menginisialisasi propertinya, class ini memisahkan contructornya dan ditempatkan pada body class mengunakan method spesial yang dinamakan constructor.
+
+class Car{
+    constructor(nama,warna){
+        this.nama = nama;
+        this.warna = warna;
+        this.healt = 100;
+    }
+
+    info(){
+        console.log(`Nama saya ${this.nama}`)
+    }
+}
+
+constructor biasanya hanya digunakan untuk menetakan nilai awal pada properti berdasarkan nilai yang dikirimkan pada contructor. namun sebenarnya kita juga dapat menuliskan logika didalam contructor jika memang kita memerlukan beberapa kondisi sebelum nilai properti diinisialisasi.
+
+kita juga melihat penggunaan this pada contructor. konteks dalam class, keyword this merujuk pada instance dari class tersebut. sehingga this dapat digunakan untuk mengelola properti yang terdapat pada instance.
+
+--->>>          METHOD          <<<---
+Untuk menambahkan method pada class, kita juga cukup menuliskan pada body class, tidak perlu melalui prototype seperti menggunakan contructor function.
+
+class Car{
+    constructor(nama,warna){
+        this.nama = nama;
+        this.warna = warna;
+        this.startEngine = false;
+    }
+
+    nyalakanMesin(){
+        console.log('Mesin dinyalakan');
+        this.startEngine = true;
+    }
+
+    jalankanMobil(){
+        this.startEngine ? 'Mobil dijalankan' : 'Silahkan nyalahkan mesin dulu'
+    }
+}
+
+dengan menggunakan class, walaupun kita menuliskan method pada body class, namun method tersebut tetap berada pada prototype chain milik instance yang tersebut. kita bisa melihat bagaimana objek yang dibuat menggunakan class pada console browser.

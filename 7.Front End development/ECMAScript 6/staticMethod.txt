@@ -1,0 +1,65 @@
+--->>>          STATIC METHOD           <<<---
+Seluruh kendaraan pasti butuh yang namanya perawatan bukan? jika iya, tentu kita perlu membuat method repair untuk memperbaiki kendaraan tersebut. dalam analogi dunia nyata, ketika kendaraan mengalami kerusakan maka kendaraan tersebut akan diperbaiki di bengkel(factory), sehingga kita perlu membuat class baru yang berperan sebagai factory, sebutlah class tersebut Parent. didalam kelas parent terdapat satu method repair() yang dapat menerima banyak kendaraan sebagai parameternya.
+
+// contoh biasa
+class Parent {
+  constructor(lisensi, model) {
+    this.lisensi = lisensi;
+    this.model = model;
+    this.angineActive = false;
+  }
+
+  info() {
+    console.log(`lisensi : ${this.lisensi}`);
+    console.log(`model : ${this.model}`);
+  }
+
+  startEngine() {
+    console.log("Mesin dinyalakan");
+    this.angineActive = true;
+  }
+
+  jalankan() {
+    if (this.angineActive) {
+      console.log("Mesin berjalan");
+    } else {
+      console.log("silahkan jalankan mesin");
+    }
+  }
+}
+
+class Car extends Parent {
+  constructor(lisensi, model, roda) {
+    super(lisensi, model);
+    this.roda = roda;
+  }
+
+  info() {
+    super.info();
+    console.log("Roda : ", this.roda);
+  }
+}
+
+class Motor extends Car {
+  constructor(lisensi, model, roda) {
+    super(lisensi, model, roda);
+  }
+}
+
+class PabrikKendaraan {
+  bengkel(kendaraan) {
+    kendaraan.forEach((kendaraan) => {
+      console.log(`kendaraan ${kendaraan.lisensi} sedang melakukan perawatan`);
+    });
+  }
+}
+
+const motor = new Motor("H123", "Yamaha", 2);
+const mobil = new Car("A222", "BMW", 4);
+
+const pabrikKendaraan = new PabrikKendaraan();
+pabrikKendaraan.bengkel([motor, mobil]);
+
+instance untuk sekedar memanggil satu fungsi dari class-nya tersebut. membuat instance adalah membuat sebuah objek baru yang terbentuk melalui blueprint sehingga membutuhkan memori ekstra. jika kita dapat mengakses method tersebut tanpa melalui instance mengapa tidak ?
+pada kasus inilah kita membutuhkan sebuah static method. static method merupakan method yang tidak dapat dipanggil oleh instance dari calss namun dapat dipanggil melalui classnya sendiri.
+

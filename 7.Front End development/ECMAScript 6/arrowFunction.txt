@@ -1,0 +1,53 @@
+--->>>          ARROW FUNCTION EXPRESSION           <<<---
+ES6 Memperkenalkan fungsi baru yang dinamakan arrow function expression atau lebih dikenal sebagai arrow function. arrow function mirip seperti regular function secara prilaku, namun penulisannya jauh berbeda.
+
+untuk gambaran awal perhatikan kode berikut ini : 
+const upperCase = ['muammar','riza','handsome'].map(function(name){
+    return name.toUpperCase();
+})
+
+console.log(upperCase)
+
+MENGGUNAKAN ARROW FUNCTION
+const upperCase2 = ['jange','rizal','jangs].map(name=> name.toUpperCase();)
+
+console.log(upperCase2);
+
+pada kasus fungsi yang dituliskan dalam satu baris dengan menggunakan arrow function ktia dapat menghapus kata function,tanda kurung,tanda kurawal. kata return dan semi color,kita hanya perlu menambahkan tanda panah(=>) diantara parameter dan kode fungsinya
+
+
+--->>>          FUNCTION PARAMETER          <<<---
+pada penggunaan arrow function kita melihat bahwa variable yang diletakkan sebelum tanda panah (=>) adalah merupakan parameter dari fungsi.
+
+const sayHello = name => console.log(name)
+
+namun penulisan tersebut hanya berlaku jika fungsi memiliki satu parameter saja, lantas bagaimana jika kita ingin membuat fungsi yang memiliki lebih dari satu parameter atau tanpa sebuah parameter ? hal itu sangat biasa dilakukan bukan ?
+
+pada arrow function jika terdapat dua atau lebih parameter fungsi kita perlu membungkusnya dengan tanda kurung
+
+const sayHello = (name, greet) => console.log(`${greet}, ${name}!`);
+ 
+sayHello('Dimas', 'Selamat Pagi');
+
+namun jika kita sama sekali tidak membutuhkan parameter, biarkan saja tanda kurung tersebut kosong
+
+atau beberapa developer biasanya mengubah tanda kurung menjadi garis bawah (_) agar penulisannya lebih simple
+
+--->>>          BLOCK BODY FUNCTION             <<<---
+Fungsi merupakan mini program sehingga sangat mungkin terdapat lebih dari satu logika di dalamnnya. sehingga kita ketahui bahwa logika pada pemrograman terdiri dari banyak expression ataupun statement.
+
+pada contoh kode arrow function sebelumnya kita hanya menuliskan satu buah expression sehingga penulisannya bisa sangat ringkas. namun bagaimana jika dalam sebuah fungsi terdapat banyak logika didalamnya ? apakah bisa dituliskan menggunakan arrow function?jawabannya tentu bisa.
+
+sama seperti regular function, arrow function sebenernya tidak benar benar menghilangkan tanda kurung kurawal ({}) dalam penulisannya. tanda kurung kurawal pun berfungsi sama seperti regular function yakni menampung body function dimana tempat logika fungsi dituliskan. penulisan tanda kurung kurawal menjadi opsional ketika body fungsi hanya terdiri dari satu expression atau statement saja.
+
+jika kita butuh lebih dari satu baris dalam body function, kita bisa menuliskannya seperti ini : 
+
+let sayHello = nama => {
+    if(nama == 'jange'){
+        return 'Halo ${jange}'
+    }else{
+        return 'lu siapa dah ? '
+    }
+}
+
+kita perlu menuliskan kembali keyword return agar fungsi tersebut dapat mengembalikan nilai

@@ -1,0 +1,70 @@
+--->>>          SPREADING OPERATOR           <<<---
+Spreading operator dituliskan dengan three consecutive dots(...). sesuai namanya 'spread',fitur baru ES6 ini digunakan untuk membentangkan nilai array atau lebih tepatnya iterable object menjadi beberapa elements. mari kita lihat contoh kode berikut: 
+const favorites = [
+    'Seafood',
+    'salad',
+    'nugeget',
+    'soup',
+]
+
+console.log(favorites)
+
+para kode diatas, hasil yang dicetak adalah sebuah array(ditunjukkan dengan tanda[])karena memang kita mencetak nilai faforites itu sendiri. nah, dengan menggunakan spread operator kita dapat membentangkan nilai-nilai dalam array tersebut.
+
+const favorites = ['seafood','salad','nugget','sop'];
+console.log(...faforites)
+
+sama seperti kita menuliskan kode seperti ini : 
+
+console.log(faforites[0],faforites[1],faforites[2]);
+
+spread operator ini cocok sekali digunakan sebagai nilai parameter pada variadic functions, seperti console.log() atau math.max();
+
+/* Math.max() -> Mencari nilai terbesar */
+const numbers = [12, 32, 90, 12, 32];
+ 
+// Sama seperti kita menuliskan
+// console.log(Math.max(numbers[0], numbers[1], numbers[2], numbers[3]);
+ 
+console.log(Math.max(...numbers));
+/* Output:
+90
+*/
+
+spread operator dapat digunakan untuk menggabungkan dua buah array dalam objek baru. jika tidak menggunakan spread operator ini maka hasilnya seperti ini : 
+
+const favorites = ['seafood','salad','nugget','sop'];
+const others = ['cake','pie','donat'];
+
+const allFavorites = [...faforites,...others]
+
+console.log(allFavorites);
+
+/* output:
+["Seafood", "Salad", "Nugget", "Soup","Cake", "Pie", "Donut"]
+*/
+
+--->>>          REST PARAMETER          <<<---
+Sebelumnya kita sudah tahu bahwa variadic function dapat menerima banyak parameter, namun apakah kita tahu bagaimana caranya agar function dapat menerima parameter? jika spread operator adalah pelebur array menjadi beberapa element yang berbeda, rest parameter ini adalah kebalikan dari operator tersebut.
+
+rest parameter juga dituliskan menggunakan three consecutive dots(...) dengan rest parameter, kita dapat menggabungkan beberapa elemen menjadi satu array. tentu teknik ini sangat bermanfaat ketika kita hendak membuat sebuah variadic function.
+
+sebagai contoh penggunaannya, mari kita buat sebuah variadic function yang berfungsi untuk menjumlahkan seluruh nilai argument fungsi yang diberikan.
+
+function sum(...numbers){
+    let result = 0;
+    for(let a of numbers){
+        result += a;
+    }
+    return result;
+}
+
+console.log(sum(1,2,3,4,5))
+
+Rest parameter juga dapat digunakan pada array destructuring, dimana kita dapat mengelompokkan nilai-nilai array yang terdestruksi pada variable dalam bentuk array lain.
+
+const arr = ['jange','jakarta',21,'ngoding','main game'];
+const [nama,lahir,umur,...lainLain] = arr;
+console.log(lainLain)
+
+Pada kode di atas nilai dari array refrigerator dimasukkan ke individual lokal variabel menggunakan array destructuring. Variabel manufacture, weight, door diberikan nilai index tiga pertama dari array refrigerator. Sedangkan, variabel items di mana kita menggunakan rest parameter, akan diberikan sisa nilai yang ada sebagai array.

@@ -1,0 +1,43 @@
+--->>>          PROMISE ALL         <<<---
+Materi sebelumnya kita belajar bagaimana promise dapat menangani situasi dimana terdapat asynchronous process yang saling membutuhkan untuk melaksanakan tugasnya. namun, bagaimana jika kita ingin menjalankan banyak promise sekaligus? caranya adalah menggunakan promise.all();
+
+kita sering pergi ke cafe untuk menikmati secangkir kopi bersama teman kuliah ataupun rekan kerja. ketika memesan kopi, biasanya kita melakukan secara bersamaan. meskipun kopi yang kita pesan berbeda, tak jarang pelayanan menghidangkannya berbarengan dengan kopi yang teman kita pesan. nah pada kasus inilah pelayan menggunakan teknik Promise.all().
+
+method Promise.all() dapat menerima banyak promise(dalam bentuk array) pada parameternya. kemudian method tersebut akan mengembalikan nilai seluruh hasil dari promise yang kita tetapkan dalam bentuk array.
+
+contohnya seperti ini :
+const arabicaOrder = () => {
+    return new Promise(resovle => {
+        setTimeout(()=> {
+            resolve('kopi arabika selesai!);
+        },4000)
+    })
+}
+
+const robustaOrder = () => {
+    return new Promise(resolve => {
+        setTimeout(()=> {
+            resolve('kopi Robusta selesai');
+        },2000)
+    })
+}
+
+const libericaOrder = ()=> {
+    return new Promise(resolve => {
+        setTimeout(() => {
+            resolve('kopi liberica selesai!')
+        },3000)
+    })
+}
+
+const promises = [arabicaOrder(),robustaOrder(),libericaOrder()];
+
+Promise.all(promises)
+.then(resolveValue = > {
+    console.log(resolveValue)
+})
+
+ketika kode diatas dieksekusi, kita perlu menunggu 4 detik sebelum akhirnya output pada console ditampilkan. ini menunjukan bahwa Promise.all() akan mengembalikan nilai jika seluruh proses promise didalamnya selesai dijalankan.
+
+urutan nilai yang dihasilkan oleh method ini sesuai dengan urutan promise yang kita tentukan pada parameternya.
+

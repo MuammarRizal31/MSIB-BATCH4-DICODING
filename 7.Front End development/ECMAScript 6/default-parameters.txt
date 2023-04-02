@@ -1,0 +1,21 @@
+--->>>          DEFAULT PARAMETERS          <<<---
+Fitur lainnya pada ES6 yang sangat bermanfaat adalah kita dapat menetapkan nilai default pada parameter fungsi.dengan menggunakan parameters, nilai pada parameter tidak akan menghasilkan undefined walaupun kita tidak memberikan nilai ketika fungsi tersebut dipanggil. default parameter dapat digunakan pada regular function ataupun arrow function.
+
+berikut contoh dari penggunaan default parameter : 
+
+// menggunakan function regular
+function sayHello (name = 'jange',great = 'hello'){
+    console.log(`hello ${name}`);
+}
+
+sayHello('jange','hay');
+sayHello();
+
+// menggunakan arrow function
+
+const sayHello = (nama = 'jange',umur = 20) => console.log(`hallo ${nama}`);
+
+sayHello('jange',21);
+sayHello()
+
+pada contoh diatas, kita menggunakan tanda assigmnet(=) untuk menetapkan parameter name dengan nilai default 'stranger' dan parameter greet dengan nilai default 'hello'. hal ini sangat berguna ketika kita memanggil fungsi sayHello() tanpa menetapkan nilai parameter didalamnnya, walaupun kita tidak menetapkan nilainya, kedua parameter tersebut tidak akan menghasilkan undefined

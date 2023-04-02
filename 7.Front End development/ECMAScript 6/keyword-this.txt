@@ -1,0 +1,18 @@
+--->>>          KEYWORD THIS PADA ARROW FUNCTION            ---<<<
+Perbedaan karakteristik dari arrow function dan regular function selanjutnya ada pada penggunaan keyword this.
+
+jika sebuah regular function dipanggil dengan menggunakan keyword new, maka hasilnya akan menjadi objek. contoh : 
+
+const Biodata = function(nama,umur,hoby){
+    this.nama = nama;
+    this.umur = umur;
+    this.hoby = hoby
+}
+
+const rizal = new Biodata('jange',21,['main game','ngoding'])
+
+objek yang dibuat menggunakan function dengan keyword new, sama halnya seperti kita membuat objek seperti menggunakan objek literals {};
+
+pada objek, keyword this mengembalikan nilai objeknya sendiri. this dapat digunakan untuk mengelola properti pada objeknya.namun jika sebuah fungsi tanpa menggunakan keyword new, keyword this bernilai global object(window jika dibrowser);
+
+sedangkan fungsi yang dibuat dengan menggunakan gaya arrow tidak akan pernah memiliki nilai this, yang artinya kita tidak pernah bisa membuat objek menggunakan arrow function. jika kita menggunakan this pada arrow function maka nilai this tersebut merupakan nilai objek dimana arrow function itu berada.

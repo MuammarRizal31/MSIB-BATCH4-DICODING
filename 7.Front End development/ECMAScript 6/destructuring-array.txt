@@ -1,0 +1,114 @@
+--->>>          DESTRUCTURING ARRAY         <<<---
+Destructuring array serupa dengan destructuring object. jika objek menggunakan tanda kurung kurawal{} sedangkan array menggunakan tanda kurung siku []. perbedaan lainnya adalah destructuring array ebekerja berdasarkan posisi daripada penamaan propertinya. berikut contoh dari destructuring array pada ES6 :
+
+const faforites = ['nasi goreng','mie ayam','pempek'];
+
+const [lauk1,lauk2,lauk3] = faforites;
+console.log(lauk1) // output 'nasi goreng'
+
+contoh diatas merupakan proses destructuring array. didalam array tersebut(favorites) terdapat 4 nilai string masing masing nilainya dimasukkan ke variable lokal firstfood,
+secondFood,thirdFood, dan fourthFood. nilai pada array yang dimasukkan ke variable lokal dipilih berdasarkan posisi dimana ia dideklarasikan para array notasi.
+
+const [makanan1,makanan2,makanan3] = faforites;
+
+sebernya nama dari variable local bisa apa saja. yang terpenting adalah urutan ketika deklarasi variable nya saja.
+
+kita juga bisa memilih nilai pada index tertentu utuk didestruktusikan pada array. contohnya jika kita ingin mengambil nilai ketika dari array, kita tidak eprlu menyiapkan variable lokal untuk menampoung nilai array pertama. kedua ataupun kesempati kita bisa melakukan dengan membiarkan index array yang kita tidak inginkan tetap kosong(tanpa menulis variable lokal) lebih lanjut, tanda koma tetap(,) tetapi diperlukan untuk menunjukkan posisi index-nya seperti ini : 
+
+const favorites = ['seafood','salad','nugget','sop'];
+
+const [, , itemketiga] = faforites;
+console.log(itemketiga)
+
+--->>>          DESTRUCTURING ASSIGNMENT            <<<---
+Kita juga bisa melakukan destructuring assignment pada array. namun tidak seperti objek, kita tidak perlu membungkusnya pada tanda kurung.contohnya
+
+const favorites = ['Seafood', 'Salad', 'Nugget', 'Soup'];
+ 
+let myFood = 'Ice Cream';
+let herFood = 'Noodles';
+ 
+[myFood, herFood] = favorites;
+ 
+console.log(myFood);
+console.log(herFood);
+ 
+/* Output:
+Seafood
+Salad
+*/
+
+Array destructuring assignment sangat berguna ketika kita hendak menukan nilai antar dua variable sebelum ES6, untuk melakukan hal ini kita menggunakan cara menual menggunakan algoritma sorting seperti berikut : 
+var a = 1;
+var b = 2;
+var temp;
+ 
+console.log('Sebelum swap');
+console.log('Nilai a: ' + a);
+console.log('Nilai b: ' + b);
+ 
+temp = a;
+a = b;
+b = temp;
+ 
+console.log('Setelah swap');
+console.log('Nilai a: ' + a);
+console.log('Nilai b: ' + b);
+ 
+/* Output:
+Sebelum swap
+Nilai a: 1
+Nilai b: 2
+Setelah swap
+Nilai a: 2
+Nilai b: 1
+*/
+
+
+untuk melakukan pertukaran nilai, kita membutuhkan variable penengah, pada contoh kode diatas, varibale tersebut adalah temp. variable penengah dibutuhkan untuk menyimpan data sementara pada variable yang akan ditukar. hal ini menjadi kurang efektif karena kita harus membuat variable baru yang sebenarnya hanya bersifat sementara.
+
+dengan array destructuring assignment kita bisa menukar nilai variable dengan mudah dan tanpa membuat variable ekstra.
+
+let a = 1;
+let b = 2;
+
+console.log("Sebelum swap");
+console.log(a);
+console.log(b);
+
+[a, b] = [b, a];
+
+console.log("setelah swap");
+console.log(a);
+console.log(b);
+
+
+--->>>          DEFAULT VALUES          <<<---
+Ketika melakukan array destructuring namun terdapat variable yang posisinya tidak dapat terjangkau oleh array, maka variable tersebut akan bernilai undefined. contohnya : 
+
+const favorites = ['Seafood'];
+ 
+const [myFood, herFood] = favorites
+ 
+console.log(myFood);
+console.log(herFood);
+ 
+/* Output:
+Seafood
+undefined
+*/
+
+seperti objek, pada array destructuring kita juga dapat memberikan nilai default pada variable yang tidak dapat terjangkau oleh array sehingga nilai pada variable tidak akan menjadi undefined
+
+const favorites = ['seafood'];
+
+const [myFood,herFood = 'salad'] = favorites;
+console.log(myFood);
+console.log(salad);
+
+/* Output:
+Seafood
+Salad
+*/
+
+

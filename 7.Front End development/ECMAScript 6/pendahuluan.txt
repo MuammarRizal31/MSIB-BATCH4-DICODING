@@ -1,0 +1,20 @@
+--->>>          PENDAHULUAN ECMASCRIPT 6
+bahasa javascript didefinisikan dalam standar ECMA-262. bahasa yang didefinisikan menggunakan standar ini disebut dengan ecmaScript. browser dan node.js adalah contoh implementasi dari ECMA-262. Kedua platform tersebut (Browser dan Node.js) menggunakan bahasa JavaScript dengan fungsionalitas yang berbeda. Bagi browser, JavaScript digunakan untuk membantu website menjadi lebih interaktif. Sedangkan bagi Node.js, JavaScript digunakan untuk pengembangan aplikasi diluar dari Browser, seperti Server, Desktop, Mobile, bahkan Game. Sehingga Browser dan Node.js memberikan fungsionalitas lain dengan menambahkan objek dan method sesuai kebutuhan masing - masing.
+
+Namun kembali lagi, bahwa inti dari JavaScript itu sendiri didefinisikan dalam ECMAScript. Tak heran, pengembangan dari ECMA-262 menjadi sangat vital dalam menentukan kesuksesan bahasa JavaScript.
+
+--->>>          SEJARAH SINGKAT JAVASCRIPT          <<<---
+Menurut sejarah, sebenarnya pada tahun 1995 Netscape melahirkan bahasa pemrograman ini dengan nama “LiveScript”, namun pada saat itu bahasa pemrograman Java sedang populer. 
+
+Netscape dan Sun selaku pengembang bahasa pemrograman Java (saat ini Oracle) melakukan perjanjian lisensi dan mengubah penamaan LiveScript menjadi JavaScript. Setelah diadopsi di luar Netscape, JavaScript distandarisasi oleh European Computer Manufacturer’s Association (ECMA). Itulah sebabnya terkadang ada yang menyebutnya dengan ECMAScript.
+
+Terdapat beberapa versi dari JavaScript. Pada tahun 2000 - 2010, ECMAScript 3 (ES3) merupakan versi yang banyak digunakan ketika JavaScript sedang mendominasi. Selama waktu tersebut, ECMAScript 4 (ES4) sedang dalam proses pengembangan dengan harapan akan memberikan improvisasi yang cukup signifikan, namun ambisi tersebut tidak berjalan mulus sehingga pada tahun 2008 pengembangan ES4 ditinggalkan. 
+
+Walaupun begitu, itu bukan akhir dari JavaScript. Pengembangan digantikan dengan ECMAScript 5 (ES5) dengan mengurangi ambisinya. Seperti apa? perbaikan hanya terbatas pada hal non-kontroversial. Pembaruan tersebut berhasil dan akhirnya ES5 pun rilis pada tahun 2009.
+
+Akhirnya pada tahun 2015 ECMAScript 6 (ES6) rilis dengan membawa perubahan yang cukup besar termasuk ide - ide yang sudah direncanakan untuk versi 4.
+
+Saat ini JavaScript sudah menyentuh versi ECMAScript 10 (ES10), akan tetapi mulai dari pembaruan ES6, JavaScript hanya melakukan update tahunan yang bersifat minor. Kita bisa lihat rincian updatenya pada laman wikipedia berikut.
+
+Pada modul kali ini kita akan membahas beberapa pembaruan besar yang ada pada ES6, mulai dari deklarasi variabel, template string, function syntax, class, promise, hingga module.
+

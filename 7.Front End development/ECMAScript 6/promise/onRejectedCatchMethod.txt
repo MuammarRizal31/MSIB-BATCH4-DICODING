@@ -1,0 +1,52 @@
+--->>>          ONREJECTED MENGGUNAKAN CATCH METHOD             <<<---
+Salah satu cara menulis kode yang baik adalah mengikuti prinsip yang disebut separation of concerns yang artinya pemisahan masalah. pemisahan masalah berarti mengorganisasikan kode ke bagian bagian yang berbeda berdasarkan tugas tertentu. hal ini akan memudahkan kita kelak mencari kode yang salah jika aplikasi tidak bekerja dengan baik.
+
+perlu diketahui bahwa method .then() akan mengembalikan nilai promise yang sama dengan ketika objek promise itu dipanggil. melalui sifatnya ini, daripada kita menetapkan logika resolve dan reject pada satu method .then() kita dapat memisahkan kedua logika tersebut menggunakan masing masing method .then() seperti ini :
+
+const promise = (resolve,reject){
+    const jange = false;
+    if(jange){
+        resolve('Kamu benar jange');
+    }else{
+        reject('Kamu bukan jange');
+    }
+}
+
+function benar(resolve){
+    console.log(resolve)
+}
+
+function salah(reject){
+    console.log(reject)
+}
+
+const updet = new Promise(promise);
+updet
+    .then(benar)
+    .then(null,salah)
+
+namun untuk menetapkan rejected handler kita perlu memberikan nilai null pada parameter method .then() well...hal ini sedikit merepotkan bukan ? solusinya kita dapat menggunakan method lain,yakni .catch()
+
+method .catch() mirip seperti .then() namun method ini hanya menerima satu parameter function yang digunakan untuk rejected handler. method .catch() ini akan terpanggil bilamana objek promise memiliki kondisi onRejected. berikut contoh penggunaan dari method .catch()
+
+const promise = (resolve, reject) => {
+  const jange = false;
+  if (jange) {
+    resolve("Kamu benar jange");
+  } else {
+    reject("Kamu bukan jange");
+  }
+};
+
+function benar(resolve) {
+  console.log(resolve);
+}
+
+function salah(reject) {
+  console.log(reject);
+}
+
+const updet = new Promise(promise);
+updet.then(benar).catch(salah);
+
+dengan menggunakan method catch() kita dapat menerapkan prinsip separation of concerns sekaligus membuat kodenya lebih rapi.

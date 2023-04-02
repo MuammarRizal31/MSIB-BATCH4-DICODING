@@ -1,0 +1,69 @@
+--->>>          EKSPOR DAN IMPOR SATU NILAI (DEFAULT EXPORT)            <<<---
+Pada node.js sebelumnya tidak ada perbedaan antara exporting multiple value dan single value. semua nilai yang akan diekspor, dijadikan nilai dari properti module.exports. Pada ES6 module, jika kita hanya mengekspor nilai pada sebuah javascript baik itu primitive value,function,array,object ataupun class, kita gunakan keyword export default. contohnya seperti ini :
+
+const coffeeStock = {
+  arabica: 100,
+  robusta: 150,
+  liberica: 200,
+};
+ 
+export default coffeeStock;
+
+lalu bagaimana cara untuk mengimpor nilainya ? kita dapat melakukannya dengan menggunakan keyword import ... from seperti berikut :
+import coffeeStock from '.state.js'
+
+Berbeda dengan gaya Node.js, kita gunakan keyword import untuk menggantikan const, let, ataupun var dalam mendeklarasi variabel yang diimpor. Lalu di sana, kita juga menggunakan keyword from dalam menspesifikasikan lokasi berkas JavaScript-nya.
+
+Ketika menggunakan export default, kita dapat menggunakan penamaan apa saja ketika mendeklarasikan variabel dalam mengimpor nilainya.
+
+\\ kita dapat mengubah penamaan coffeestock sesuai kebutuhan kita.import stock from '.\state.js';
+
+-->>    EKSPOR DAN IMPOR BANYAK NILAI (NAMED EXPORT/IMPORT)
+Jika sebelumnya kita hanya melakukan ekspor satu nilai pada berkas javascript menggunakan export default,pada materi kali ini kita akan membahas bagaimana cara melakukan ekspor banyak nilai dalam satu berkas javascript dengan menggunakan ES6.
+
+Named export digunakan untuk mengekspor banyak nilai dalam berkas javascript. cara kerjanya mirip seperti Node.js. Nilai yang akan diekspor dituliskan di dalam objek literals, seperti ini:
+
+const coffeeStock = {
+  arabica: 100,
+  robusta: 150,
+  liberica: 200,
+};
+ 
+const isCoffeeMakerReady = true;
+ 
+export { coffeeStock, isCoffeeMakerReady };
+
+Lalu untuk mendapatkan nilai yang diekspor menggunakan named export, kita gunakan teknik destructuring object.
+
+import { coffeeStock, isCoffeeMakerReady } from './state.js';
+ 
+console.log(coffeeStock);
+console.log(isCoffeeMakerReady);
+ 
+/* Output:
+{arabica: 100, robusta: 150, liberica: 200}
+true
+*/
+
+Dikarenakan named import menggunakan teknik destructuring object untuk mendapatkan nilainya, maka pastikan penamaan variabel sesuai dengan nama variabel yang diekspor. Jika terjadi kesalahan penulisan, maka akan terjadi error seperti berikut:
+
+import { stock, isCoffeeMakerReady } from './state.js';
+ 
+/* Output:
+SyntaxError: The requested module './state.js' does not provide an export named 'stock'
+*/
+
+Namun, jika kita tetap ingin mengubah penamaan variabel dari named import, kita bisa melakukannya dengan menambahkan keyword as setelah penamaan variabelnya.
+
+import { coffeeStock as stock, isCoffeeMakerReady } from './state.js';
+ 
+console.log(stock);
+console.log(isCoffeeMakerReady);
+ 
+/* Output:
+{ arabica: 100, robusta: 150, liberica: 200 }
+true
+*/
+
+Setelah kita berhasil mendapatkan nilai yang diekspor, kita dapat menggunakan nilainya layaknya variabel lokal biasa.
+
